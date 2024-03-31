@@ -35,17 +35,17 @@ CMake Warning:
 
 -- Build files have been written to: /var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/build-ci-release
 
-real	0m0.828s
-user	0m0.619s
-sys	0m0.190s
+real	0m0.823s
+user	0m0.614s
+sys	0m0.191s
 + make -j
 [  0%] Generating build details from Git
 [  0%] Building C object CMakeFiles/ggml.dir/ggml.c.o
-[  1%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
-[  2%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
+[  1%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
+[  2%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
 -- Found Git: /usr/bin/git (found version "2.39.2") 
 [  4%] Building CXX object CMakeFiles/ggml.dir/ggml-sycl.cpp.o
-[  4%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
+[  3%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
 [  5%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
 [  5%] Built target build_info
 /var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:1123:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
@@ -1276,6 +1276,6 @@ make[2]: *** Waiting for unfinished jobs....
 make[1]: *** [CMakeFiles/Makefile2:738: CMakeFiles/ggml.dir/all] Error 2
 make: *** [Makefile:146: all] Error 2
 
-real	0m6.212s
-user	0m13.665s
-sys	0m0.534s
+real	0m6.187s
+user	0m13.711s
+sys	0m0.535s
