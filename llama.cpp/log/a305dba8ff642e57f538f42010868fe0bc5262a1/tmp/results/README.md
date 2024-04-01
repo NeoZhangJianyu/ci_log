@@ -4,56 +4,64 @@ Runs ctest in release mode
 - status: 8
 ```
 + ctest --output-on-failure -L main
-Test project /var/jenkins_home/workspace/llama.cpp/llama.cpp/build-ci-release
+Test project /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release
       Start  1: test-quantize-fns
- 1/20 Test  #1: test-quantize-fns ...................   Passed    0.21 sec
+ 1/20 Test  #1: test-quantize-fns ...................   Passed    0.38 sec
       Start  2: test-quantize-perf
- 2/20 Test  #2: test-quantize-perf ..................   Passed    0.23 sec
+ 2/20 Test  #2: test-quantize-perf ..................   Passed    0.46 sec
       Start  3: test-sampling
- 3/20 Test  #3: test-sampling .......................   Passed    0.02 sec
+ 3/20 Test  #3: test-sampling .......................   Passed    0.06 sec
       Start  4: test-tokenizer-0-llama
- 4/20 Test  #4: test-tokenizer-0-llama ..............   Passed    0.10 sec
+ 4/20 Test  #4: test-tokenizer-0-llama ..............   Passed    0.28 sec
       Start  5: test-tokenizer-0-falcon
- 5/20 Test  #5: test-tokenizer-0-falcon .............   Passed    0.25 sec
+ 5/20 Test  #5: test-tokenizer-0-falcon .............   Passed    0.48 sec
       Start  6: test-tokenizer-1-llama
- 6/20 Test  #6: test-tokenizer-1-llama ..............   Passed    1.36 sec
+ 6/20 Test  #6: test-tokenizer-1-llama ..............   Passed    1.95 sec
       Start  7: test-tokenizer-1-baichuan
- 7/20 Test  #7: test-tokenizer-1-baichuan ...........   Passed    1.43 sec
+ 7/20 Test  #7: test-tokenizer-1-baichuan ...........   Passed    1.94 sec
       Start  8: test-tokenizer-1-falcon
- 8/20 Test  #8: test-tokenizer-1-falcon .............   Passed    1.25 sec
+ 8/20 Test  #8: test-tokenizer-1-falcon .............   Passed    1.65 sec
       Start  9: test-tokenizer-1-aquila
- 9/20 Test  #9: test-tokenizer-1-aquila .............   Passed    1.63 sec
+ 9/20 Test  #9: test-tokenizer-1-aquila .............   Passed    2.01 sec
       Start 10: test-tokenizer-1-mpt
-10/20 Test #10: test-tokenizer-1-mpt ................   Passed    1.14 sec
+10/20 Test #10: test-tokenizer-1-mpt ................   Passed    1.45 sec
       Start 11: test-tokenizer-1-stablelm-3b-4e1t
-11/20 Test #11: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    1.12 sec
+11/20 Test #11: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    1.45 sec
       Start 12: test-tokenizer-1-gpt-neox
-12/20 Test #12: test-tokenizer-1-gpt-neox ...........   Passed    1.09 sec
+12/20 Test #12: test-tokenizer-1-gpt-neox ...........   Passed    1.45 sec
       Start 13: test-tokenizer-1-refact
-13/20 Test #13: test-tokenizer-1-refact .............   Passed    1.07 sec
+13/20 Test #13: test-tokenizer-1-refact .............   Passed    1.40 sec
       Start 14: test-tokenizer-1-starcoder
-14/20 Test #14: test-tokenizer-1-starcoder ..........   Passed    1.09 sec
+14/20 Test #14: test-tokenizer-1-starcoder ..........   Passed    1.45 sec
       Start 15: test-tokenizer-1-gpt2
-15/20 Test #15: test-tokenizer-1-gpt2 ...............   Passed    1.11 sec
+15/20 Test #15: test-tokenizer-1-gpt2 ...............   Passed    1.47 sec
       Start 16: test-grammar-parser
-16/20 Test #16: test-grammar-parser .................   Passed    0.04 sec
+16/20 Test #16: test-grammar-parser .................   Passed    0.08 sec
       Start 17: test-llama-grammar
-17/20 Test #17: test-llama-grammar ..................   Passed    0.04 sec
+17/20 Test #17: test-llama-grammar ..................   Passed    0.07 sec
       Start 18: test-grad0
-18/20 Test #18: test-grad0 ..........................   Passed    1.35 sec
+18/20 Test #18: test-grad0 ..........................   Passed    2.35 sec
       Start 19: test-backend-ops
-19/20 Test #19: test-backend-ops ....................Subprocess aborted***Exception:  25.11 sec
+19/20 Test #19: test-backend-ops ....................Subprocess aborted***Exception:  39.21 sec
 ggml_init_sycl: GGML_SYCL_F16:   yes
 ggml_init_sycl: SYCL_USE_XMX: yes
-found 2 SYCL devices:
-  Device 0: 12th Gen Intel(R) Core(TM) i5-1250P,	compute capability 3.0,
-	max compute_units 16,	max work group size 8192,	max sub group size 64,	global mem size 33381060608
+found 6 SYCL devices:
+  Device 0: Intel(R) Data Center GPU Flex 170,	compute capability 1.3,
+	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
   Device 1: Intel(R) FPGA Emulation Device,	compute capability 1.2,
-	max compute_units 16,	max work group size 67108864,	max sub group size 64,	global mem size 33381060608
-Using device 0 (12th Gen Intel(R) Core(TM) i5-1250P) as main device
-Testing 3 backends
+	max compute_units 64,	max work group size 67108864,	max sub group size 64,	global mem size 540713414656
+  Device 2: Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz,	compute capability 3.0,
+	max compute_units 64,	max work group size 8192,	max sub group size 64,	global mem size 540713414656
+  Device 3: Intel(R) Data Center GPU Flex 170,	compute capability 3.0,
+	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
+  Device 4: Intel(R) Data Center GPU Flex 170,	compute capability 3.0,
+	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
+  Device 5: Intel(R) Data Center GPU Flex 170,	compute capability 1.3,
+	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
+Using device 0 (Intel(R) Data Center GPU Flex 170) as main device
+Testing 7 backends
 
-Backend 1/3 (CPU)
+Backend 1/7 (CPU)
   Backend name: CPU
 GGML_SYCL_DEBUG=0
   ABS(type=f32,ne=[128,10,10,10]): [1;32mOK[0m
@@ -1454,7 +1462,7 @@ iq3xs_init_impl: 18985 neighbours in total
   1389/1389 tests passed
   Backend CPU: [1;32mOK[0m
 
-Backend 2/3 (SYCL0)
+Backend 2/7 (SYCL0)
   Backend name: SYCL
   ABS(type=f32,ne=[128,10,10,10]): not supported [SYCL] 
   SGN(type=f32,ne=[128,10,10,10]): not supported [SYCL] 
@@ -1464,8 +1472,8 @@ Backend 2/3 (SYCL0)
   ELU(type=f32,ne=[128,10,10,10]): not supported [SYCL] 
   RELU(type=f32,ne=[128,10,10,10]): [1;32mOK[0m
   GELU(type=f32,ne=[128,10,10,10]): [1;32mOK[0m
-  GELU_QUICK(type=f32,ne=[128,10,10,10]): [GELU_QUICK] inf mismatch: SYCL=-nan CPU=-0.000000 [1;31mFAIL[0m
-  SILU(type=f32,ne=[128,10,10,10]): [SILU] inf mismatch: SYCL=-nan CPU=-0.000000 [1;31mFAIL[0m
+  GELU_QUICK(type=f32,ne=[128,10,10,10]): [1;32mOK[0m
+  SILU(type=f32,ne=[128,10,10,10]): [1;32mOK[0m
   HARDSWISH(type=f32,ne=[128,10,10,10]): not supported [SYCL] 
   HARDSIGMOID(type=f32,ne=[128,10,10,10]): not supported [SYCL] 
   GET_ROWS(type=f32,n=1,m=8,r=2,b=1,v=0): [1;32mOK[0m
@@ -1481,18 +1489,18 @@ Backend 2/3 (SYCL0)
   GET_ROWS(type=q4_0,n=256,m=5,r=4,b=1,v=1): [1;32mOK[0m
   GET_ROWS(type=q4_0,n=256,m=5,r=4,b=7,v=0): [1;32mOK[0m
   GET_ROWS(type=q4_0,n=256,m=5,r=4,b=7,v=1): [1;32mOK[0m
-  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=1,v=0): [GET_ROWS] NMSE = 0.000000154 > 0.000000100 [1;31mFAIL[0m
-  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=1,v=1): [GET_ROWS] NMSE = 0.000000133 > 0.000000100 [1;31mFAIL[0m
-  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=7,v=0): [GET_ROWS] NMSE = 0.000000137 > 0.000000100 [1;31mFAIL[0m
-  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=7,v=1): [GET_ROWS] NMSE = 0.000000132 > 0.000000100 [1;31mFAIL[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=7,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,b=7,v=1): [1;32mOK[0m
   GET_ROWS(type=q5_0,n=256,m=5,r=4,b=1,v=0): [1;32mOK[0m
   GET_ROWS(type=q5_0,n=256,m=5,r=4,b=1,v=1): [1;32mOK[0m
   GET_ROWS(type=q5_0,n=256,m=5,r=4,b=7,v=0): [1;32mOK[0m
   GET_ROWS(type=q5_0,n=256,m=5,r=4,b=7,v=1): [1;32mOK[0m
-  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=1,v=0): [GET_ROWS] NMSE = 0.000000143 > 0.000000100 [1;31mFAIL[0m
-  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=1,v=1): [GET_ROWS] NMSE = 0.000000136 > 0.000000100 [1;31mFAIL[0m
-  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=7,v=0): [GET_ROWS] NMSE = 0.000000141 > 0.000000100 [1;31mFAIL[0m
-  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=7,v=1): [GET_ROWS] NMSE = 0.000000139 > 0.000000100 [1;31mFAIL[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=7,v=0): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,b=7,v=1): [1;32mOK[0m
   GET_ROWS(type=q8_0,n=256,m=5,r=4,b=1,v=0): [1;32mOK[0m
   GET_ROWS(type=q8_0,n=256,m=5,r=4,b=1,v=1): [1;32mOK[0m
   GET_ROWS(type=q8_0,n=256,m=5,r=4,b=7,v=0): [1;32mOK[0m
@@ -1677,23 +1685,29 @@ Backend 2/3 (SYCL0)
   DUP(type=i16,ne=[10,8,3,1],permute=[0,2,1,3]): [1;32mOK[0m
   DUP(type=i16,ne=[10,8,3,1],permute=[1,2,0,3]): [1;32mOK[0m
   CPY(type_src=f16,type_dst=f32,ne=[256,4,4,4]): not supported [SYCL] 
-  CPY(type_src=f16,type_dst=f16,ne=[256,4,4,4]): GGML_ASSERT: /var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp:13913: src0->ne[3] == 1
+  CPY(type_src=f16,type_dst=f16,ne=[256,4,4,4]): GGML_ASSERT: /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13913: src0->ne[3] == 1
+Could not attach to process.  If your uid matches the uid of the target
+process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try
+again as the root user.  For more details, see /etc/sysctl.d/10-ptrace.conf
+ptrace: Inappropriate ioctl for device.
+No stack.
+The program is not being run.
 
       Start 20: test-rope
-20/20 Test #20: test-rope ...........................   Passed    0.17 sec
+20/20 Test #20: test-rope ...........................   Passed    0.28 sec
 
 95% tests passed, 1 tests failed out of 20
 
 Label Time Summary:
-main    =  39.82 sec*proc (20 tests)
+main    =  59.86 sec*proc (20 tests)
 
-Total Test time (real) =  39.83 sec
+Total Test time (real) =  59.88 sec
 
 The following tests FAILED:
 	 19 - test-backend-ops (Subprocess aborted)
 Errors while running CTest
 
-real	0m39.834s
-user	0m41.732s
-sys	0m9.794s
+real	0m59.888s
+user	0m54.481s
+sys	0m30.458s
 ```

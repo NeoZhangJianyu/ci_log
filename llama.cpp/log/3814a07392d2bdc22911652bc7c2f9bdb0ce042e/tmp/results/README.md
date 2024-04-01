@@ -1,241 +1,61 @@
 ### ctest_release
 
 Runs ctest in release mode
-- status: 8
+- status: 0
 ```
 + ctest --output-on-failure -L main
-Test project /var/jenkins_home/workspace/llama.cpp/llama.cpp/build-ci-release
+Test project /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release
       Start  1: test-quantize-fns
- 1/21 Test  #1: test-quantize-fns ...................***Failed    0.14 sec
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 1/21 Test  #1: test-quantize-fns ...................   Passed    6.88 sec
       Start  2: test-quantize-perf
- 2/21 Test  #2: test-quantize-perf ..................***Failed    0.07 sec
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 2/21 Test  #2: test-quantize-perf ..................   Passed    4.67 sec
       Start  3: test-sampling
- 3/21 Test  #3: test-sampling .......................   Passed    0.07 sec
+ 3/21 Test  #3: test-sampling .......................   Passed    0.29 sec
       Start  4: test-chat-template
- 4/21 Test  #4: test-chat-template ..................   Passed    0.07 sec
+ 4/21 Test  #4: test-chat-template ..................   Passed    0.27 sec
       Start  5: test-tokenizer-0-llama
- 5/21 Test  #5: test-tokenizer-0-llama ..............***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-llama.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 5/21 Test  #5: test-tokenizer-0-llama ..............   Passed    0.25 sec
       Start  6: test-tokenizer-0-falcon
- 6/21 Test  #6: test-tokenizer-0-falcon .............***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-falcon.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 6/21 Test  #6: test-tokenizer-0-falcon .............   Passed    0.43 sec
       Start  7: test-tokenizer-1-llama
- 7/21 Test  #7: test-tokenizer-1-llama ..............***Failed    0.10 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-llama.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 7/21 Test  #7: test-tokenizer-1-llama ..............   Passed    0.39 sec
       Start  8: test-tokenizer-1-baichuan
- 8/21 Test  #8: test-tokenizer-1-baichuan ...........***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-baichuan.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 8/21 Test  #8: test-tokenizer-1-baichuan ...........   Passed    0.48 sec
       Start  9: test-tokenizer-1-falcon
- 9/21 Test  #9: test-tokenizer-1-falcon .............***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-falcon.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+ 9/21 Test  #9: test-tokenizer-1-falcon .............   Passed    1.02 sec
       Start 10: test-tokenizer-1-aquila
-10/21 Test #10: test-tokenizer-1-aquila .............***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-aquila.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+10/21 Test #10: test-tokenizer-1-aquila .............   Passed    1.40 sec
       Start 11: test-tokenizer-1-mpt
-11/21 Test #11: test-tokenizer-1-mpt ................***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-mpt.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+11/21 Test #11: test-tokenizer-1-mpt ................   Passed    0.83 sec
       Start 12: test-tokenizer-1-stablelm-3b-4e1t
-12/21 Test #12: test-tokenizer-1-stablelm-3b-4e1t ...***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-stablelm-3b-4e1t.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+12/21 Test #12: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    0.81 sec
       Start 13: test-tokenizer-1-gpt-neox
-13/21 Test #13: test-tokenizer-1-gpt-neox ...........***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-gpt-neox.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+13/21 Test #13: test-tokenizer-1-gpt-neox ...........   Passed    0.86 sec
       Start 14: test-tokenizer-1-refact
-14/21 Test #14: test-tokenizer-1-refact .............***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-refact.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+14/21 Test #14: test-tokenizer-1-refact .............   Passed    0.80 sec
       Start 15: test-tokenizer-1-starcoder
-15/21 Test #15: test-tokenizer-1-starcoder ..........***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-starcoder.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+15/21 Test #15: test-tokenizer-1-starcoder ..........   Passed    0.84 sec
       Start 16: test-tokenizer-1-gpt2
-16/21 Test #16: test-tokenizer-1-gpt2 ...............***Failed    0.07 sec
-main : reading vocab from: '/var/jenkins_home/workspace/llama.cpp/llama.cpp/tests/../models/ggml-vocab-gpt2.gguf'
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+16/21 Test #16: test-tokenizer-1-gpt2 ...............   Passed    0.91 sec
       Start 17: test-grammar-parser
-17/21 Test #17: test-grammar-parser .................   Passed    0.02 sec
+17/21 Test #17: test-grammar-parser .................   Passed    0.07 sec
       Start 18: test-llama-grammar
-18/21 Test #18: test-llama-grammar ..................   Passed    0.07 sec
+18/21 Test #18: test-llama-grammar ..................   Passed    0.22 sec
       Start 19: test-grad0
-19/21 Test #19: test-grad0 ..........................***Failed    0.08 sec
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-test-grad0: iter:0/4
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
-
+19/21 Test #19: test-grad0 ..........................   Passed    2.36 sec
       Start 20: test-backend-ops
-20/21 Test #20: test-backend-ops ....................Subprocess aborted***Exception:   0.12 sec
-terminate called after throwing an instance of 'sycl::_V1::invalid_parameter_error'
-  what():  DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)
-
+20/21 Test #20: test-backend-ops ....................   Passed   87.52 sec
       Start 21: test-rope
-21/21 Test #21: test-rope ...........................***Failed    0.07 sec
-ggml_init_sycl: GGML_SYCL_DEBUG: 0
-ggml_init_sycl: GGML_SYCL_F16: yes
-found 2 SYCL devices:
-|ID| Name                                        |compute capability|Max compute units|Max work group|Max sub group|Global mem size|
-|--|---------------------------------------------|------------------|-----------------|--------------|-------------|---------------|
-| 0|          12th Gen Intel(R) Core(TM) i5-1250P|               3.0|               16|          8192|           64|    33381060608|
-| 1|               Intel(R) FPGA Emulation Device|               1.2|               16|      67108864|           64|    33381060608|
-DeviceList is empty. -30 (PI_ERROR_INVALID_VALUE)Exception caught at file:/var/jenkins_home/workspace/llama.cpp/llama.cpp/ggml-sycl.cpp, line:12961
+21/21 Test #21: test-rope ...........................   Passed    0.32 sec
 
-
-19% tests passed, 17 tests failed out of 21
+100% tests passed, 0 tests failed out of 21
 
 Label Time Summary:
-main    =   1.59 sec*proc (21 tests)
+main    = 111.63 sec*proc (21 tests)
 
-Total Test time (real) =   1.59 sec
+Total Test time (real) = 111.65 sec
 
-The following tests FAILED:
-	  1 - test-quantize-fns (Failed)
-	  2 - test-quantize-perf (Failed)
-	  5 - test-tokenizer-0-llama (Failed)
-	  6 - test-tokenizer-0-falcon (Failed)
-	  7 - test-tokenizer-1-llama (Failed)
-	  8 - test-tokenizer-1-baichuan (Failed)
-	  9 - test-tokenizer-1-falcon (Failed)
-	 10 - test-tokenizer-1-aquila (Failed)
-	 11 - test-tokenizer-1-mpt (Failed)
-	 12 - test-tokenizer-1-stablelm-3b-4e1t (Failed)
-	 13 - test-tokenizer-1-gpt-neox (Failed)
-	 14 - test-tokenizer-1-refact (Failed)
-	 15 - test-tokenizer-1-starcoder (Failed)
-	 16 - test-tokenizer-1-gpt2 (Failed)
-	 19 - test-grad0 (Failed)
-	 20 - test-backend-ops (Subprocess aborted)
-	 21 - test-rope (Failed)
-Errors while running CTest
-
-real	0m1.598s
-user	0m1.024s
-sys	0m0.924s
+real	1m51.661s
+user	1m38.690s
+sys	1m4.387s
 ```
