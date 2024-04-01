@@ -35,16 +35,16 @@ CMake Warning:
 
 -- Build files have been written to: /var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/build-ci-release
 
-real	0m0.827s
-user	0m0.619s
-sys	0m0.190s
+real	0m1.373s
+user	0m0.630s
+sys	0m0.289s
 + make -j
 [  0%] Generating build details from Git
 [  0%] Building C object CMakeFiles/ggml.dir/ggml.c.o
-[  2%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
-[  2%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
+[  1%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
 -- Found Git: /usr/bin/git (found version "2.39.2") 
-[  3%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
+[  2%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
+[  4%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
 [  4%] Building CXX object CMakeFiles/ggml.dir/ggml-sycl.cpp.o
 [  5%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
 [  5%] Built target build_info
@@ -1276,6 +1276,6 @@ make[2]: *** Waiting for unfinished jobs....
 make[1]: *** [CMakeFiles/Makefile2:738: CMakeFiles/ggml.dir/all] Error 2
 make: *** [Makefile:146: all] Error 2
 
-real	0m6.185s
-user	0m13.721s
-sys	0m0.511s
+real	0m6.223s
+user	0m13.675s
+sys	0m0.503s

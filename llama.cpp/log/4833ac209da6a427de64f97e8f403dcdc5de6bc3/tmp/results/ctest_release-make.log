@@ -7444,3 +7444,1244 @@ make: *** [Makefile:146: all] Error 2
 real	0m6.185s
 user	0m13.721s
 sys	0m0.511s
++ make -j
+[  0%] Generating build details from Git
+[  0%] Building C object CMakeFiles/ggml.dir/ggml.c.o
+[  1%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+[  2%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
+[  4%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
+[  4%] Building CXX object CMakeFiles/ggml.dir/ggml-sycl.cpp.o
+[  5%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  5%] Built target build_info
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:1123:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1123 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:3659:31: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+ 3659 |     if (item_ct1.get_group(0) < ne02) { // src0
+      |         ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:3701:31: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+ 3701 |         item_ct1.get_group(0) < ne02) {
+      |         ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:3700:46: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+ 3700 |     if (nidx < ne00 && item_ct1.get_group(1) < ne01 &&
+      |                        ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:8627:59: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 8627 |                                             s_sum_acc_ct1.get_pointer(), WARP_SIZE);
+      |                                                           ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:8648:54: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 8648 |                                        s_sum_acc_ct1.get_pointer(), work_group_size);
+      |                                                      ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:8673:43: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 8673 |                             s_sum_acc_ct1.get_pointer(), WARP_SIZE);
+      |                                           ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:8698:60: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 8698 |                                              s_sum_acc_ct1.get_pointer(), work_group_size);
+      |                                                            ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:8763:63: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 8763 |                                                 s_sum_acc_ct1.get_pointer(), WARP_SIZE);
+      |                                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:8784:58: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 8784 |                                            s_sum_acc_ct1.get_pointer(), work_group_size);
+      |                                                          ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9444:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9444 |                             tile_x_qs_q4_0_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9445:51: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9445 |                             tile_x_d_q4_0_acc_ct1.get_pointer(),
+      |                                                   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9446:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9446 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9447:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9447 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9479:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9479 |                             tile_x_qs_q4_0_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9480:51: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9480 |                             tile_x_d_q4_0_acc_ct1.get_pointer(),
+      |                                                   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9481:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9481 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9482:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9482 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9559:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9559 |                             tile_x_qs_q4_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9560:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9560 |                             tile_x_dm_q4_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9561:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9561 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9562:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9562 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9594:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9594 |                             tile_x_qs_q4_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9595:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9595 |                             tile_x_dm_q4_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9596:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9596 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9597:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9597 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9674:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9674 |                             tile_x_ql_q5_0_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9675:51: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9675 |                             tile_x_d_q5_0_acc_ct1.get_pointer(),
+      |                                                   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9676:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9676 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9677:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9677 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9709:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9709 |                             tile_x_ql_q5_0_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9710:51: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9710 |                             tile_x_d_q5_0_acc_ct1.get_pointer(),
+      |                                                   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9711:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9711 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9712:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9712 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9789:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9789 |                             tile_x_ql_q5_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9790:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9790 |                             tile_x_dm_q5_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9791:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9791 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9792:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9792 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9824:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9824 |                             tile_x_ql_q5_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9825:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9825 |                             tile_x_dm_q5_1_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9826:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9826 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9827:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9827 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9904:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9904 |                             tile_x_qs_q8_0_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9905:51: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9905 |                             tile_x_d_q8_0_acc_ct1.get_pointer(),
+      |                                                   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9906:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9906 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9907:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9907 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9939:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9939 |                             tile_x_qs_q8_0_acc_ct1.get_pointer(),
+      |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9940:51: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9940 |                             tile_x_d_q8_0_acc_ct1.get_pointer(),
+      |                                                   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9941:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9941 |                             tile_y_qs_acc_ct1.get_pointer(),
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:9942:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 9942 |                             tile_y_ds_acc_ct1.get_pointer());
+      |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10021:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10021 |                             tile_x_ql_q2_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10022:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10022 |                             tile_x_dm_q2_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10023:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10023 |                             tile_x_sc_q2_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10024:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10024 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10025:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10025 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10059:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10059 |                             tile_x_ql_q2_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10060:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10060 |                             tile_x_dm_q2_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10061:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10061 |                             tile_x_sc_q2_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10062:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10062 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10063:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10063 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10146:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10146 |                             tile_x_ql_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10147:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10147 |                             tile_x_dm_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10148:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10148 |                             tile_x_qh_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10149:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10149 |                             tile_x_sc_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10150:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10150 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10151:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10151 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10187:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10187 |                             tile_x_ql_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10188:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10188 |                             tile_x_dm_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10189:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10189 |                             tile_x_qh_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10190:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10190 |                             tile_x_sc_q3_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10191:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10191 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10192:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10192 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10272:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10272 |                             tile_x_ql_q4_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10273:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10273 |                             tile_x_dm_q4_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10274:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10274 |                             tile_x_sc_q4_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10275:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10275 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10276:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10276 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10310:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10310 |                             tile_x_ql_q4_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10311:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10311 |                             tile_x_dm_q4_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10312:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10312 |                             tile_x_sc_q4_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10313:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10313 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10314:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10314 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10393:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10393 |                             tile_x_ql_q5_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10394:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10394 |                             tile_x_dm_q5_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10395:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10395 |                             tile_x_sc_q5_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10396:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10396 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10397:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10397 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10431:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10431 |                             tile_x_ql_q5_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10432:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10432 |                             tile_x_dm_q5_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10433:52: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10433 |                             tile_x_sc_q5_K_acc_ct1.get_pointer(),
+       |                                                    ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10434:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10434 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10435:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10435 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10514:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10514 |                             tile_x_ql_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10515:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10515 |                             tile_x_dm_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10516:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10516 |                             tile_x_sc_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10517:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10517 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10518:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10518 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10552:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10552 |                             tile_x_ql_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10553:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10553 |                             tile_x_dm_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10554:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10554 |                             tile_x_sc_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10555:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10555 |                             tile_y_qs_acc_ct1.get_pointer(),
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10556:47: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 10556 |                             tile_y_ds_acc_ct1.get_pointer());
+       |                                               ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:11048:42: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+ 11048 |                              buf_acc_ct1.get_pointer());
+       |                                          ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/accessor.hpp:3182:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 3182 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   53 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:44:38: note: expanded from macro '__SYCL_DEPRECATED'
+   44 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:12169:13: error: no matching function for call to 'ggml_cpy_f32_f16_sycl'
+ 12169 |             ggml_cpy_f32_f16_sycl((const char *)src1_ddf_i, (char *)src1_dfloat,
+       |             ^~~~~~~~~~~~~~~~~~~~~
+/var/jenkins_home/workspace/ut_llama.cpp/llama.cpp/ggml-sycl.cpp:10638:13: note: candidate function not viable: requires 18 arguments, but 14 were provided
+ 10638 | static void ggml_cpy_f32_f16_sycl(const char *cx, char *cdst, const int ne,
+       |             ^                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10639 |                                   const int ne00, const int ne01,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10640 |                                   const int ne02, const int nb00,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10641 |                                   const int nb01, const int nb02,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10642 |                                   const int nb03, const int ne10,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10643 |                                   const int ne11, const int ne12,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10644 |                                   const int nb10, const int nb11,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10645 |                                   const int nb12, const int nb13,
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 10646 |                                   dpct::queue_ptr stream) {
+       |                                   ~~~~~~~~~~~~~~~~~~~~~~
+103 warnings and 1 error generated.
+make[2]: *** [CMakeFiles/ggml.dir/build.make:132: CMakeFiles/ggml.dir/ggml-sycl.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:738: CMakeFiles/ggml.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+real	0m6.223s
+user	0m13.675s
+sys	0m0.503s
