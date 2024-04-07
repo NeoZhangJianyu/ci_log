@@ -2,6 +2,12 @@
 
 |<div style="width:100px">Commit ID</div>|UT PassRate|Warn|Date|Title|Author|Log|
 |-|-|-|-|-|-|-|
+| 9472bce30800a581071478a839bf93abf404c893|96.0%|-1|2024-04-07 07:05:40|Run make to build the project|limitedAtonement|[log](./log/9472bce30800a581071478a839bf93abf404c893)|
+| d4f220a5ccdc6308173c1a31fad21d7c3fbc96c1|96.0%|-1|2024-04-07 10:55:59|support/fix OPs GGML_TYPE_IQ4_NL, GGML_TYPE_IQ4_XS, GGML_TYPE_IQ3_XXS, GGML_TYPE_IQ3_S, GGML_TYPE_IQ2_XXS, GGML_TYPE_IQ2_XS, GGML_TYPE_IQ2_S, GGML_TYPE_IQ1_S, GGML_TYPE_IQ1_M|Neo Zhang Jianyu|[log](./log/d4f220a5ccdc6308173c1a31fad21d7c3fbc96c1)|
+| 1b496a745c315022df2d919374052e6004ced8d3|95.0%|-1|2024-04-05 14:35:06|[SYCL] Fixed minor bug when enabling FP16 for non intel targets|Ouadie EL FAROUKI|[log](./log/1b496a745c315022df2d919374052e6004ced8d3)|
+| a74401f0e5ebb15fa4d8b6619d1baa6ea9179123|95.0%|-1|2024-04-04 10:30:02|Correct README link|limitedAtonement|[log](./log/a74401f0e5ebb15fa4d8b6619d1baa6ea9179123)|
+| 52604860f93063ef98863921da697576af1c7665|95.0%|-1|2024-04-03 10:34:40|[SYCL] Disable iqx on windows as WA|Meng, Hengyu|[log](./log/52604860f93063ef98863921da697576af1c7665)|
+| 5106ef482c65ac60ac14da9a68c7b37bca4c6993|95.0%|-1|2024-03-28 16:01:47|[SYCL] Revisited & updated SYCL build documentation|Ouadie EL FAROUKI|[log](./log/5106ef482c65ac60ac14da9a68c7b37bca4c6993)|
 | 25f4a613c4ed6451162a87cb90be10d610b49f0f|95.0%|-1|2024-03-28 08:55:24|[SYCL] fix set main gpu crash|Neo Zhang Jianyu|[log](./log/25f4a613c4ed6451162a87cb90be10d610b49f0f)|
 | e82f9e2b833d88cd2b30123ef57346c2cb8abd99|95.0%|-1|2024-03-27 08:16:40|[SYCL] Fix batched impl for NVidia GPU|AidanBeltonS|[log](./log/e82f9e2b833d88cd2b30123ef57346c2cb8abd99)|
 | 557410b8f06380560155ac7fcb8316d71ddc9837|95.0%|-1|2024-03-26 10:46:41|llama : greatly reduce output buffer memory usage|compilade|[log](./log/557410b8f06380560155ac7fcb8316d71ddc9837)|
