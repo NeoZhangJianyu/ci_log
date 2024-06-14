@@ -1,0 +1,15 @@
+Parameters:
+  log_file=ci_log/llama.cpp/log/9a17ab914b0aa7353389c656a3f2a0f086726868/gguf_raw.log
+result: OK
+[log](ci_log/llama.cpp/log/9a17ab914b0aa7353389c656a3f2a0f086726868/gguf_raw.log)
+result: Error
+Got:
+Step 1: Get to know the basics of web design
+Step 2: Set up a web hosting account
+Expected:
+Group 0:
+Step 1: Get to know the basics of web design
+Step 2: Set up a web hosting account
+Group 1:
+Step 1: Get Domain and Hosting
+The first step is to buy a domain name, which you will then use to build your website. This domain should have an extension that matches the type of site you are building (such as .com for commercial sites, .org for nonprofit organizations).

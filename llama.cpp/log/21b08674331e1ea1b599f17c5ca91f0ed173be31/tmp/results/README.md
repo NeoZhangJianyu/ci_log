@@ -4,58 +4,58 @@ Runs ctest in release mode
 - status: 0
 ```
 + ctest --output-on-failure -L main
-Test project /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release
+Test project /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build-ci-release
       Start  1: test-quantize-fns
- 1/21 Test  #1: test-quantize-fns ...................   Passed    6.83 sec
+ 1/21 Test  #1: test-quantize-fns ...................   Passed    4.27 sec
       Start  2: test-quantize-perf
- 2/21 Test  #2: test-quantize-perf ..................   Passed    4.71 sec
+ 2/21 Test  #2: test-quantize-perf ..................   Passed    2.98 sec
       Start  3: test-sampling
- 3/21 Test  #3: test-sampling .......................   Passed    0.28 sec
+ 3/21 Test  #3: test-sampling .......................   Passed    0.12 sec
       Start  4: test-chat-template
- 4/21 Test  #4: test-chat-template ..................   Passed    0.22 sec
+ 4/21 Test  #4: test-chat-template ..................   Passed    0.11 sec
       Start  5: test-tokenizer-0-llama
- 5/21 Test  #5: test-tokenizer-0-llama ..............   Passed    0.34 sec
+ 5/21 Test  #5: test-tokenizer-0-llama ..............   Passed    0.12 sec
       Start  6: test-tokenizer-0-falcon
- 6/21 Test  #6: test-tokenizer-0-falcon .............   Passed    0.43 sec
+ 6/21 Test  #6: test-tokenizer-0-falcon .............   Passed    0.25 sec
       Start  7: test-tokenizer-1-llama
- 7/21 Test  #7: test-tokenizer-1-llama ..............   Passed    0.41 sec
+ 7/21 Test  #7: test-tokenizer-1-llama ..............   Passed    0.21 sec
       Start  8: test-tokenizer-1-baichuan
- 8/21 Test  #8: test-tokenizer-1-baichuan ...........   Passed    0.48 sec
+ 8/21 Test  #8: test-tokenizer-1-baichuan ...........   Passed    0.23 sec
       Start  9: test-tokenizer-1-falcon
- 9/21 Test  #9: test-tokenizer-1-falcon .............   Passed    1.02 sec
+ 9/21 Test  #9: test-tokenizer-1-falcon .............   Passed    0.54 sec
       Start 10: test-tokenizer-1-aquila
-10/21 Test #10: test-tokenizer-1-aquila .............   Passed    1.40 sec
+10/21 Test #10: test-tokenizer-1-aquila .............   Passed    0.78 sec
       Start 11: test-tokenizer-1-mpt
-11/21 Test #11: test-tokenizer-1-mpt ................   Passed    0.86 sec
+11/21 Test #11: test-tokenizer-1-mpt ................   Passed    0.45 sec
       Start 12: test-tokenizer-1-stablelm-3b-4e1t
-12/21 Test #12: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    0.86 sec
+12/21 Test #12: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    0.45 sec
       Start 13: test-tokenizer-1-gpt-neox
-13/21 Test #13: test-tokenizer-1-gpt-neox ...........   Passed    0.79 sec
+13/21 Test #13: test-tokenizer-1-gpt-neox ...........   Passed    0.45 sec
       Start 14: test-tokenizer-1-refact
-14/21 Test #14: test-tokenizer-1-refact .............   Passed    0.83 sec
+14/21 Test #14: test-tokenizer-1-refact .............   Passed    0.45 sec
       Start 15: test-tokenizer-1-starcoder
-15/21 Test #15: test-tokenizer-1-starcoder ..........   Passed    0.93 sec
+15/21 Test #15: test-tokenizer-1-starcoder ..........   Passed    0.43 sec
       Start 16: test-tokenizer-1-gpt2
-16/21 Test #16: test-tokenizer-1-gpt2 ...............   Passed    0.82 sec
+16/21 Test #16: test-tokenizer-1-gpt2 ...............   Passed    0.45 sec
       Start 17: test-grammar-parser
-17/21 Test #17: test-grammar-parser .................   Passed    0.05 sec
+17/21 Test #17: test-grammar-parser .................   Passed    0.02 sec
       Start 18: test-llama-grammar
-18/21 Test #18: test-llama-grammar ..................   Passed    0.30 sec
+18/21 Test #18: test-llama-grammar ..................   Passed    0.10 sec
       Start 19: test-grad0
-19/21 Test #19: test-grad0 ..........................   Passed    2.37 sec
+19/21 Test #19: test-grad0 ..........................   Passed    1.02 sec
       Start 20: test-backend-ops
-20/21 Test #20: test-backend-ops ....................   Passed   86.69 sec
+20/21 Test #20: test-backend-ops ....................   Passed   29.61 sec
       Start 21: test-rope
-21/21 Test #21: test-rope ...........................   Passed    0.31 sec
+21/21 Test #21: test-rope ...........................   Passed    0.15 sec
 
 100% tests passed, 0 tests failed out of 21
 
 Label Time Summary:
-main    = 110.95 sec*proc (21 tests)
+main    =  43.21 sec*proc (21 tests)
 
-Total Test time (real) = 110.97 sec
+Total Test time (real) =  43.22 sec
 
-real	1m50.971s
-user	1m38.111s
-sys	1m2.562s
+real	0m43.217s
+user	0m40.579s
+sys	0m10.945s
 ```

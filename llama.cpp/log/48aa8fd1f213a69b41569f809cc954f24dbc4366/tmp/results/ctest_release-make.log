@@ -1,0 +1,91 @@
++ make -j
+[  1%] Generating build details from Git
+[  2%] Building C object CMakeFiles/ggml.dir/ggml.c.o
+[  3%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
+[  3%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
+[  4%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
+[  5%] Building CXX object CMakeFiles/ggml.dir/ggml-sycl.cpp.o
+[  5%] Building CXX object CMakeFiles/ggml.dir/sgemm.cpp.o
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+[  5%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  5%] Built target build_info
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13990:9: warning: TODO: generalize upscale operator [-W#pragma-messages]
+ 13990 | #pragma message("TODO: generalize upscale operator")
+       |         ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13991:9: warning:       https://github.com/ggerganov/ggml/pull/814 [-W#pragma-messages]
+ 13991 | #pragma message("      https://github.com/ggerganov/ggml/pull/814")
+       |         ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13992:26: warning: missing terminating '"' character [-Winvalid-pp-token]
+ 13992 |     GGML_ASSERT(false && "TODO: generalize upscale operator);
+       |                          ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14266:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 14266 | #ifdef GGML_SYCL_F16
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14281:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 14281 | #else
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14358:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 14358 | #ifdef GGML_SYCL_F16
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14360:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 14360 | #else
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14682:2: error: embedding a #pragma directive within macro arguments is not supported
+ 14682 | #pragma message("TODO: add ggml_sycl_op_soft_max() F16 src1 support")
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13992:5: note: expansion of macro 'GGML_ASSERT' requested here
+ 13992 |     GGML_ASSERT(false && "TODO: generalize upscale operator);
+       |     ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14683:2: error: embedding a #pragma directive within macro arguments is not supported
+ 14683 | #pragma message("ref:  https://github.com/ggerganov/llama.cpp/pull/5021")
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13992:5: note: expansion of macro 'GGML_ASSERT' requested here
+ 13992 |     GGML_ASSERT(false && "TODO: generalize upscale operator);
+       |     ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14841:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 14841 | #ifdef NDEBUG
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14869:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 14869 | #endif // NDEBUG
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:15652:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 15652 | #ifdef SYCL_USE_XMX
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:15654:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 15654 | #else
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:15684:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 15684 | #ifdef GGML_SYCL_FORCE_DMMV
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:15695:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 15695 | #endif // GGML_SYCL_FORCE_DMMV
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:15724:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 15724 | #if 0
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:16380:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 16380 | #ifndef NDEBUG
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:16608:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 16608 | #define UNUSED GGML_UNUSED
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:16799:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 16799 | #if 0
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:17497:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+ 17497 | #ifndef NDEBUG
+       |  ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:13992:5: error: unterminated function-like macro invocation
+ 13992 |     GGML_ASSERT(false && "TODO: generalize upscale operator);
+       |     ^
+/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml.h:257:9: note: macro 'GGML_ASSERT' defined here
+  257 | #define GGML_ASSERT(x) \
+      |         ^
+18 warnings and 3 errors generated.
+make[2]: *** [CMakeFiles/ggml.dir/build.make:132: CMakeFiles/ggml.dir/ggml-sycl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:838: CMakeFiles/ggml.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+real	0m2.942s
+user	0m4.149s
+sys	0m0.364s

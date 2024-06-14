@@ -2,11 +2,11 @@
 CMake Warning:
   Ignoring extra path from command line:
 
-   "/home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
+   "/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
 
 
--- The C compiler identification is GNU 11.4.0
--- The CXX compiler identification is IntelLLVM 2024.0.2
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is IntelLLVM 2024.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -14,24 +14,22 @@ CMake Warning:
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /opt/intel/oneapi/compiler/2024.0/bin/icpx - skipped
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2024.1/bin/icpx - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found Git: /usr/bin/git (found version "2.34.1") 
--- Looking for pthread.h
--- Looking for pthread.h - found
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
--- Found IntelSYCL: /opt/intel/oneapi/compiler/2024.0/include (found version "202001") 
+-- Found IntelSYCL: /opt/intel/oneapi/compiler/2024.1/include (found version "202001") 
 -- SYCL found
--- Warning: ccache not found - consider installing it for faster compilation or disable this warning with LLAMA_CCACHE=OFF
+-- ccache found, compilation results will be cached. Disable with LLAMA_CCACHE=OFF.
 -- CMAKE_SYSTEM_PROCESSOR: x86_64
 -- x86 detected
--- Configuring done
--- Generating done
--- Build files have been written to: /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release
+-- Configuring done (0.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build-ci-release
 
-real	0m1.450s
-user	0m1.046s
-sys	0m0.391s
+real	0m0.749s
+user	0m0.555s
+sys	0m0.193s

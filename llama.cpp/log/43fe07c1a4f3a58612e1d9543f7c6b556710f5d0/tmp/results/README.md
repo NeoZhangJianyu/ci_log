@@ -4,61 +4,61 @@ Runs ctest in release mode
 - status: 8
 ```
 + ctest --output-on-failure -L main
-Test project /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release
+Test project /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build-ci-release
       Start  1: test-quantize-fns
- 1/20 Test  #1: test-quantize-fns ...................   Passed    0.39 sec
+ 1/20 Test  #1: test-quantize-fns ...................   Passed    0.17 sec
       Start  2: test-quantize-perf
- 2/20 Test  #2: test-quantize-perf ..................   Passed    0.43 sec
+ 2/20 Test  #2: test-quantize-perf ..................   Passed    0.22 sec
       Start  3: test-sampling
- 3/20 Test  #3: test-sampling .......................   Passed    0.07 sec
+ 3/20 Test  #3: test-sampling .......................   Passed    0.04 sec
       Start  4: test-tokenizer-0-llama
- 4/20 Test  #4: test-tokenizer-0-llama ..............   Passed    0.33 sec
+ 4/20 Test  #4: test-tokenizer-0-llama ..............   Passed    0.12 sec
       Start  5: test-tokenizer-0-falcon
- 5/20 Test  #5: test-tokenizer-0-falcon .............   Passed    0.48 sec
+ 5/20 Test  #5: test-tokenizer-0-falcon .............   Passed    0.21 sec
       Start  6: test-tokenizer-1-llama
- 6/20 Test  #6: test-tokenizer-1-llama ..............   Passed    2.03 sec
+ 6/20 Test  #6: test-tokenizer-1-llama ..............   Passed    0.96 sec
       Start  7: test-tokenizer-1-baichuan
- 7/20 Test  #7: test-tokenizer-1-baichuan ...........   Passed    2.06 sec
+ 7/20 Test  #7: test-tokenizer-1-baichuan ...........   Passed    0.98 sec
       Start  8: test-tokenizer-1-falcon
- 8/20 Test  #8: test-tokenizer-1-falcon .............   Passed    1.88 sec
+ 8/20 Test  #8: test-tokenizer-1-falcon .............   Passed    0.90 sec
       Start  9: test-tokenizer-1-aquila
- 9/20 Test  #9: test-tokenizer-1-aquila .............   Passed    2.21 sec
+ 9/20 Test  #9: test-tokenizer-1-aquila .............   Passed    1.18 sec
       Start 10: test-tokenizer-1-mpt
-10/20 Test #10: test-tokenizer-1-mpt ................   Passed    1.43 sec
+10/20 Test #10: test-tokenizer-1-mpt ................   Passed    0.83 sec
       Start 11: test-tokenizer-1-stablelm-3b-4e1t
-11/20 Test #11: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    1.47 sec
+11/20 Test #11: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    0.82 sec
       Start 12: test-tokenizer-1-gpt-neox
-12/20 Test #12: test-tokenizer-1-gpt-neox ...........   Passed    1.48 sec
+12/20 Test #12: test-tokenizer-1-gpt-neox ...........   Passed    0.82 sec
       Start 13: test-tokenizer-1-refact
-13/20 Test #13: test-tokenizer-1-refact .............   Passed    1.43 sec
+13/20 Test #13: test-tokenizer-1-refact .............   Passed    0.80 sec
       Start 14: test-tokenizer-1-starcoder
-14/20 Test #14: test-tokenizer-1-starcoder ..........   Passed    1.45 sec
+14/20 Test #14: test-tokenizer-1-starcoder ..........   Passed    0.81 sec
       Start 15: test-tokenizer-1-gpt2
-15/20 Test #15: test-tokenizer-1-gpt2 ...............   Passed    1.52 sec
+15/20 Test #15: test-tokenizer-1-gpt2 ...............   Passed    0.82 sec
       Start 16: test-grammar-parser
-16/20 Test #16: test-grammar-parser .................   Passed    0.07 sec
+16/20 Test #16: test-grammar-parser .................   Passed    0.02 sec
       Start 17: test-llama-grammar
-17/20 Test #17: test-llama-grammar ..................   Passed    0.07 sec
+17/20 Test #17: test-llama-grammar ..................   Passed    0.02 sec
       Start 18: test-grad0
-18/20 Test #18: test-grad0 ..........................   Passed    2.42 sec
+18/20 Test #18: test-grad0 ..........................   Passed    1.02 sec
       Start 19: test-backend-ops
-19/20 Test #19: test-backend-ops ....................Subprocess aborted***Exception:  42.14 sec
+19/20 Test #19: test-backend-ops ....................Subprocess aborted***Exception:  20.00 sec
 ggml_init_sycl: GGML_SYCL_F16:   yes
 ggml_init_sycl: SYCL_USE_XMX: yes
 found 6 SYCL devices:
-  Device 0: Intel(R) Data Center GPU Flex 170,	compute capability 1.3,
+  Device 0: Intel(R) Arc(TM) A770 Graphics,	compute capability 1.3,
 	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
   Device 1: Intel(R) FPGA Emulation Device,	compute capability 1.2,
-	max compute_units 64,	max work group size 67108864,	max sub group size 64,	global mem size 540713414656
-  Device 2: Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz,	compute capability 3.0,
-	max compute_units 64,	max work group size 8192,	max sub group size 64,	global mem size 540713414656
-  Device 3: Intel(R) Data Center GPU Flex 170,	compute capability 3.0,
+	max compute_units 24,	max work group size 67108864,	max sub group size 64,	global mem size 67064815616
+  Device 2: 13th Gen Intel(R) Core(TM) i7-13700K,	compute capability 3.0,
+	max compute_units 24,	max work group size 8192,	max sub group size 64,	global mem size 67064815616
+  Device 3: Intel(R) Arc(TM) A770 Graphics,	compute capability 3.0,
 	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
-  Device 4: Intel(R) Data Center GPU Flex 170,	compute capability 3.0,
-	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
-  Device 5: Intel(R) Data Center GPU Flex 170,	compute capability 1.3,
-	max compute_units 512,	max work group size 1024,	max sub group size 32,	global mem size 16225243136
-Using device 0 (Intel(R) Data Center GPU Flex 170) as main device
+  Device 4: Intel(R) UHD Graphics 770,	compute capability 3.0,
+	max compute_units 32,	max work group size 512,	max sub group size 32,	global mem size 62569066496
+  Device 5: Intel(R) UHD Graphics 770,	compute capability 1.3,
+	max compute_units 32,	max work group size 512,	max sub group size 32,	global mem size 62569066496
+Using device 0 (Intel(R) Arc(TM) A770 Graphics) as main device
 Testing 7 backends
 
 Backend 1/7 (CPU)
@@ -1858,11 +1858,11 @@ Backend 2/7 (SYCL0)
   MUL_MAT(type_a=f16,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): [1;32mOK[0m
   MUL_MAT(type_a=f16,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] 
   MUL_MAT(type_a=f16,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] 
-  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-2.779049 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=2.454450 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=2.018890 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-10.600105 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=6.199301 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=0.672698 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=nan CPU=0.731486 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-10.043401 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-1.165027 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-2.259365 [1;31mFAIL[0m
   MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] 
   MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] 
   MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=16,k=256,bs=[1,1],nr=[1,1]): [1;32mOK[0m
@@ -1886,11 +1886,11 @@ Backend 2/7 (SYCL0)
   MUL_MAT(type_a=q4_0,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): not supported [CPU] 
   MUL_MAT(type_a=q4_0,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] not supported [CPU] 
   MUL_MAT(type_a=q4_0,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] not supported [CPU] 
-  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] NMSE = 1.008053988 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] NMSE = 1.054130782 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] NMSE = 1.009312000 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] NMSE = 1.009331959 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] NMSE = 1.020769768 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] NMSE = 1.088912659 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] NMSE = 1.004336406 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] NMSE = 1.052322156 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] NMSE = 1.017334316 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] NMSE = 1.028672667 > 0.000500000 [1;31mFAIL[0m
   MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] 
   MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] 
   MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=16,k=256,bs=[1,1],nr=[1,1]): [1;32mOK[0m
@@ -1914,11 +1914,11 @@ Backend 2/7 (SYCL0)
   MUL_MAT(type_a=q4_1,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): not supported [CPU] 
   MUL_MAT(type_a=q4_1,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] not supported [CPU] 
   MUL_MAT(type_a=q4_1,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] not supported [CPU] 
-  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-3.105463 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=7.944981 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=1.004009 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=9.637637 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=5.485502 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-3.627174 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=2.876143 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-0.030813 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=2.088510 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-3.618514 [1;31mFAIL[0m
   MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] 
   MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] 
   MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=16,k=256,bs=[1,1],nr=[1,1]): [1;32mOK[0m
@@ -1942,11 +1942,11 @@ Backend 2/7 (SYCL0)
   MUL_MAT(type_a=q5_0,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): not supported [CPU] 
   MUL_MAT(type_a=q5_0,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] not supported [CPU] 
   MUL_MAT(type_a=q5_0,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] not supported [CPU] 
-  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] NMSE = 1.148438520 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] NMSE = 1.079905017 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] NMSE = 1.013695564 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] NMSE = 1.032531281 > 0.000500000 [1;31mFAIL[0m
-  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] NMSE = 1.022281313 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] NMSE = 0.888488541 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] NMSE = 1.021839997 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] NMSE = 0.984910836 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] NMSE = 1.036714664 > 0.000500000 [1;31mFAIL[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] NMSE = 1.016300918 > 0.000500000 [1;31mFAIL[0m
   MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] 
   MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] 
   MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=16,k=256,bs=[1,1],nr=[1,1]): [1;32mOK[0m
@@ -1970,11 +1970,11 @@ Backend 2/7 (SYCL0)
   MUL_MAT(type_a=q5_1,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): not supported [CPU] 
   MUL_MAT(type_a=q5_1,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] not supported [CPU] 
   MUL_MAT(type_a=q5_1,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] not supported [CPU] 
-  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=1.708899 [1;31mFAIL[0m
-  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-10.573262 [1;31mFAIL[0m
-  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=1.521930 [1;31mFAIL[0m
-  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=12.960108 [1;31mFAIL[0m
-  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=4.442832 [1;31mFAIL[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=5.903871 [1;31mFAIL[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-3.288731 [1;31mFAIL[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,1],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-2.598029 [1;31mFAIL[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=-12.542488 [1;31mFAIL[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,1]): [MUL_MAT] inf mismatch: SYCL=-nan CPU=5.977033 [1;31mFAIL[0m
   MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] 
   MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] 
   MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=16,k=256,bs=[1,1],nr=[1,1]): [1;32mOK[0m
@@ -2194,29 +2194,83 @@ Backend 2/7 (SYCL0)
   MUL_MAT(type_a=iq2_xs,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): not supported [SYCL] not supported [CPU] 
   MUL_MAT(type_a=iq2_xs,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL] not supported [CPU] 
   MUL_MAT(type_a=iq2_xs,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL] not supported [CPU] 
-  MUL_MAT(type_a=iq3_xxs,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): GGML_ASSERT: /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:12212: false
-Could not attach to process.  If your uid matches the uid of the target
-process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try
-again as the root user.  For more details, see /etc/sysctl.d/10-ptrace.conf
-ptrace: Inappropriate ioctl for device.
-No stack.
-The program is not being run.
+  MUL_MAT(type_a=iq3_xxs,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): GGML_ASSERT: /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:12212: false
+[New LWP 2586873]
+[New LWP 2586874]
+[New LWP 2586877]
+[New LWP 2586878]
+[New LWP 2586879]
+[New LWP 2586880]
+[New LWP 2586881]
+[New LWP 2586882]
+[New LWP 2586883]
+[New LWP 2586884]
+[New LWP 2586885]
+[New LWP 2586886]
+[New LWP 2586887]
+[New LWP 2586888]
+[New LWP 2586889]
+[New LWP 2586890]
+[New LWP 2586891]
+[New LWP 2586892]
+[New LWP 2586893]
+[New LWP 2586894]
+[New LWP 2586895]
+[New LWP 2586896]
+[New LWP 2586897]
+[New LWP 2586898]
+[New LWP 2586899]
+[New LWP 2586900]
+[New LWP 2586901]
+[New LWP 2586902]
+[New LWP 2586903]
+[New LWP 2586904]
+[New LWP 2586905]
+[New LWP 2586906]
+[New LWP 2586907]
+[New LWP 2911005]
+warning: File "/opt/intel/oneapi/compiler/2024.1/lib/libsycl.so.7.1.0-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /opt/intel/oneapi/compiler/2024.1/lib/libsycl.so.7.1.0-gdb.py
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007ff605aea42f in __GI___wait4 (pid=2931188, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory.
+#0  0x00007ff605aea42f in __GI___wait4 (pid=2931188, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	in ../sysdeps/unix/sysv/linux/wait4.c
+#1  0x000000000043476b in ggml_print_backtrace ()
+#2  0x0000000000558bf0 in ggml_sycl_op_dequantize_mul_mat_vec(ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&) ()
+#3  0x00000000004e070a in ggml_sycl_op_mul_mat(ggml_tensor const*, ggml_tensor const*, ggml_tensor*, void (*)(ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&), bool) ()
+#4  0x00000000004a89cd in ggml_sycl_compute_forward ()
+#5  0x000000000054c21a in ggml_backend_sycl_graph_compute(ggml_backend*, ggml_cgraph*) ()
+#6  0x000000000048141c in ggml_backend_compare_graph_backend ()
+#7  0x0000000000419baf in test_case::eval(ggml_backend*, ggml_backend*, char const*) ()
+#8  0x00000000004159f1 in test_backend(ggml_backend*, test_mode, char const*) ()
+#9  0x00000000004096a4 in main ()
+[Inferior 1 (process 2586872) detached]
 
       Start 20: test-rope
-20/20 Test #20: test-rope ...........................   Passed    0.31 sec
+20/20 Test #20: test-rope ...........................   Passed    0.13 sec
 
 95% tests passed, 1 tests failed out of 20
 
 Label Time Summary:
-main    =  63.66 sec*proc (20 tests)
+main    =  30.90 sec*proc (20 tests)
 
-Total Test time (real) =  63.69 sec
+Total Test time (real) =  30.92 sec
 
 The following tests FAILED:
 	 19 - test-backend-ops (Subprocess aborted)
 Errors while running CTest
 
-real	1m3.697s
-user	0m57.950s
-sys	0m35.498s
+real	0m30.917s
+user	0m27.234s
+sys	0m7.873s
 ```

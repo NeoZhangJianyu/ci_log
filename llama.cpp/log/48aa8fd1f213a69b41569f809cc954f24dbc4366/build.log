@@ -1,0 +1,78 @@
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+-- The C compiler identification is IntelLLVM 2024.1.0
+-- The CXX compiler identification is IntelLLVM 2024.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/intel/oneapi/compiler/2024.1/bin/icx - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2024.1/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found IntelSYCL: /opt/intel/oneapi/compiler/2024.1/include (found version "202001") 
+-- SYCL found
+-- ccache found, compilation results will be cached. Disable with LLAMA_CCACHE=OFF.
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- x86 detected
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build
+/usr/local/bin/cmake -S/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp -B/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/bin/cmake -E cmake_progress_start /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build/CMakeFiles /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+/usr/bin/gmake  -f CMakeFiles/ggml.dir/build.make CMakeFiles/ggml.dir/depend
+/usr/bin/gmake  -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/depend
+gmake[2]: Entering directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+cd /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build/CMakeFiles/ggml.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+cd /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/common /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build/common /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build/common/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+gmake[2]: Leaving directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+/usr/bin/gmake  -f CMakeFiles/ggml.dir/build.make CMakeFiles/ggml.dir/build
+gmake[2]: Leaving directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+/usr/bin/gmake  -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build
+gmake[2]: Entering directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+gmake[2]: Entering directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+[  1%] Building C object CMakeFiles/ggml.dir/ggml.c.o
+[  1%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  2%] Building C object CMakeFiles/ggml.dir/ggml-alloc.c.o
+ccache /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/. -O3 -DNDEBUG -std=gnu11 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT CMakeFiles/ggml.dir/ggml.c.o -MF CMakeFiles/ggml.dir/ggml.c.o.d -o CMakeFiles/ggml.dir/ggml.c.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml.c
+cd /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build/common && ccache /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600  -Wno-narrowing -O3 -fsycl -L/lib -O3 -DNDEBUG -std=gnu++17 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT common/CMakeFiles/build_info.dir/build-info.cpp.o -MF CMakeFiles/build_info.dir/build-info.cpp.o.d -o CMakeFiles/build_info.dir/build-info.cpp.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/common/build-info.cpp
+ccache /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/. -O3 -DNDEBUG -std=gnu11 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT CMakeFiles/ggml.dir/ggml-alloc.c.o -MF CMakeFiles/ggml.dir/ggml-alloc.c.o.d -o CMakeFiles/ggml.dir/ggml-alloc.c.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-alloc.c
+[  2%] Building C object CMakeFiles/ggml.dir/ggml-backend.c.o
+[  3%] Building C object CMakeFiles/ggml.dir/ggml-quants.c.o
+ccache /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/. -O3 -DNDEBUG -std=gnu11 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT CMakeFiles/ggml.dir/ggml-backend.c.o -MF CMakeFiles/ggml.dir/ggml-backend.c.o.d -o CMakeFiles/ggml.dir/ggml-backend.c.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-backend.c
+[  4%] Building CXX object CMakeFiles/ggml.dir/ggml-sycl.cpp.o
+[  4%] Building CXX object CMakeFiles/ggml.dir/sgemm.cpp.o
+ccache /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/. -O3 -DNDEBUG -std=gnu11 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT CMakeFiles/ggml.dir/ggml-quants.c.o -MF CMakeFiles/ggml.dir/ggml-quants.c.o.d -o CMakeFiles/ggml.dir/ggml-quants.c.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-quants.c
+ccache /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/. -Wno-narrowing -O3 -fsycl -L/lib -O3 -DNDEBUG -std=gnu++17 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT CMakeFiles/ggml.dir/ggml-sycl.cpp.o -MF CMakeFiles/ggml.dir/ggml-sycl.cpp.o.d -o CMakeFiles/ggml.dir/ggml-sycl.cpp.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp
+ccache /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_LLAMAFILE -DGGML_USE_SYCL -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/. -Wno-narrowing -O3 -fsycl -L/lib -O3 -DNDEBUG -std=gnu++17 -I./ -I//opt/intel/oneapi/compiler/2024.1/include -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -MD -MT CMakeFiles/ggml.dir/sgemm.cpp.o -MF CMakeFiles/ggml.dir/sgemm.cpp.o.d -o CMakeFiles/ggml.dir/sgemm.cpp.o -c /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/sgemm.cpp
+gmake[2]: Leaving directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+[  5%] Built target build_info
+gmake[2]: Leaving directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'
+gmake[1]: Leaving directory '/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build'

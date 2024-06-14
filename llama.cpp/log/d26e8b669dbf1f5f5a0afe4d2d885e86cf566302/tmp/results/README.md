@@ -4,66 +4,66 @@ Runs ctest in release mode
 - status: 8
 ```
 + ctest --output-on-failure -L main
-Test project /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/build-ci-release
+Test project /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/build-ci-release
       Start  1: test-quantize-fns
- 1/21 Test  #1: test-quantize-fns ...................   Passed   13.07 sec
+ 1/21 Test  #1: test-quantize-fns ...................   Passed    8.47 sec
       Start  2: test-quantize-perf
- 2/21 Test  #2: test-quantize-perf ..................   Passed    4.82 sec
+ 2/21 Test  #2: test-quantize-perf ..................   Passed    2.90 sec
       Start  3: test-sampling
- 3/21 Test  #3: test-sampling .......................   Passed    0.32 sec
+ 3/21 Test  #3: test-sampling .......................   Passed    0.10 sec
       Start  4: test-chat-template
- 4/21 Test  #4: test-chat-template ..................   Passed    0.24 sec
+ 4/21 Test  #4: test-chat-template ..................   Passed    0.10 sec
       Start  5: test-tokenizer-0-llama
- 5/21 Test  #5: test-tokenizer-0-llama ..............   Passed    0.32 sec
+ 5/21 Test  #5: test-tokenizer-0-llama ..............   Passed    0.11 sec
       Start  6: test-tokenizer-0-falcon
- 6/21 Test  #6: test-tokenizer-0-falcon .............   Passed    0.46 sec
+ 6/21 Test  #6: test-tokenizer-0-falcon .............   Passed    0.22 sec
       Start  7: test-tokenizer-1-llama
- 7/21 Test  #7: test-tokenizer-1-llama ..............   Passed    0.45 sec
+ 7/21 Test  #7: test-tokenizer-1-llama ..............   Passed    0.21 sec
       Start  8: test-tokenizer-1-baichuan
- 8/21 Test  #8: test-tokenizer-1-baichuan ...........   Passed    0.48 sec
+ 8/21 Test  #8: test-tokenizer-1-baichuan ...........   Passed    0.23 sec
       Start  9: test-tokenizer-1-falcon
- 9/21 Test  #9: test-tokenizer-1-falcon .............   Passed    0.98 sec
+ 9/21 Test  #9: test-tokenizer-1-falcon .............   Passed    0.52 sec
       Start 10: test-tokenizer-1-aquila
-10/21 Test #10: test-tokenizer-1-aquila .............   Passed    1.41 sec
+10/21 Test #10: test-tokenizer-1-aquila .............   Passed    0.79 sec
       Start 11: test-tokenizer-1-mpt
-11/21 Test #11: test-tokenizer-1-mpt ................   Passed    0.87 sec
+11/21 Test #11: test-tokenizer-1-mpt ................   Passed    0.43 sec
       Start 12: test-tokenizer-1-stablelm-3b-4e1t
-12/21 Test #12: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    0.82 sec
+12/21 Test #12: test-tokenizer-1-stablelm-3b-4e1t ...   Passed    0.45 sec
       Start 13: test-tokenizer-1-gpt-neox
-13/21 Test #13: test-tokenizer-1-gpt-neox ...........   Passed    0.85 sec
+13/21 Test #13: test-tokenizer-1-gpt-neox ...........   Passed    0.45 sec
       Start 14: test-tokenizer-1-refact
-14/21 Test #14: test-tokenizer-1-refact .............   Passed    0.83 sec
+14/21 Test #14: test-tokenizer-1-refact .............   Passed    0.42 sec
       Start 15: test-tokenizer-1-starcoder
-15/21 Test #15: test-tokenizer-1-starcoder ..........   Passed    0.78 sec
+15/21 Test #15: test-tokenizer-1-starcoder ..........   Passed    0.44 sec
       Start 16: test-tokenizer-1-gpt2
-16/21 Test #16: test-tokenizer-1-gpt2 ...............   Passed    0.87 sec
+16/21 Test #16: test-tokenizer-1-gpt2 ...............   Passed    0.45 sec
       Start 17: test-grammar-parser
-17/21 Test #17: test-grammar-parser .................   Passed    0.09 sec
+17/21 Test #17: test-grammar-parser .................   Passed    0.04 sec
       Start 18: test-llama-grammar
-18/21 Test #18: test-llama-grammar ..................   Passed    0.28 sec
+18/21 Test #18: test-llama-grammar ..................   Passed    0.13 sec
       Start 19: test-grad0
-19/21 Test #19: test-grad0 ..........................   Passed    2.45 sec
+19/21 Test #19: test-grad0 ..........................   Passed    1.02 sec
       Start 20: test-backend-ops
-20/21 Test #20: test-backend-ops ....................Subprocess aborted***Exception:  13.87 sec
+20/21 Test #20: test-backend-ops ....................Subprocess aborted***Exception:   9.54 sec
 ggml_backend_sycl_set_mul_device_mode: true
-detect 2 SYCL GPUs: [0,1] with top Max compute units:512
+detect 1 SYCL GPUs: [0] with top Max compute units:512
 ggml_init_sycl: GGML_SYCL_DEBUG: 0
 ggml_init_sycl: GGML_SYCL_F16: yes
 found 6 SYCL devices:
 |  |                  |                                             |Compute   |Max compute|Max work|Max sub|               |
 |ID|       Device Type|                                         Name|capability|units      |group   |group  |Global mem size|
 |--|------------------|---------------------------------------------|----------|-----------|--------|-------|---------------|
-| 0|[level_zero:gpu:0]|            Intel(R) Data Center GPU Flex 170|       1.3|        512|    1024|     32|    16225243136|
-| 1|[level_zero:gpu:1]|            Intel(R) Data Center GPU Flex 170|       1.3|        512|    1024|     32|    16225243136|
-| 2|    [opencl:gpu:0]|            Intel(R) Data Center GPU Flex 170|       3.0|        512|    1024|     32|    16225243136|
-| 3|    [opencl:gpu:1]|            Intel(R) Data Center GPU Flex 170|       3.0|        512|    1024|     32|    16225243136|
-| 4|    [opencl:cpu:0]|     Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz|       3.0|         64|    8192|     64|   540713414656|
-| 5|    [opencl:acc:0]|               Intel(R) FPGA Emulation Device|       1.2|         64|67108864|     64|   540713414656|
-Testing 3 backends
+| 0|[level_zero:gpu:0]|               Intel(R) Arc(TM) A770 Graphics|       1.3|        512|    1024|     32|    16225243136|
+| 1|[level_zero:gpu:1]|                    Intel(R) UHD Graphics 770|       1.3|         32|     512|     32|    62569066496|
+| 2|    [opencl:gpu:0]|               Intel(R) Arc(TM) A770 Graphics|       3.0|        512|    1024|     32|    16225243136|
+| 3|    [opencl:gpu:1]|                    Intel(R) UHD Graphics 770|       3.0|         32|     512|     32|    62569066496|
+| 4|    [opencl:cpu:0]|         13th Gen Intel(R) Core(TM) i7-13700K|       3.0|         24|    8192|     64|    67064815616|
+| 5|    [opencl:acc:0]|               Intel(R) FPGA Emulation Device|       1.2|         24|67108864|     64|    67064815616|
+Testing 2 backends
 
-Backend 1/3 (CPU)
+Backend 1/2 (CPU)
   Skipping CPU backend
-Backend 2/3 (SYCL0)
+Backend 2/2 (SYCL0)
   Backend name: SYCL0
   ABS(type=f32,ne=[128,10,10,10]): not supported [SYCL0] 
   SGN(type=f32,ne=[128,10,10,10]): not supported [SYCL0] 
@@ -769,29 +769,83 @@ Backend 2/3 (SYCL0)
   MUL_MAT(type_a=q6_K,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,1]): not supported [CPU] 
   MUL_MAT(type_a=q6_K,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[1,2]): not supported [SYCL0] not supported [CPU] 
   MUL_MAT(type_a=q6_K,type_b=f16,m=16,n=16,k=256,bs=[10,10],nr=[2,2]): not supported [SYCL0] not supported [CPU] 
-  MUL_MAT(type_a=iq2_xxs,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): GGML_ASSERT: /home/jianyuzh/ws1/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14023: false
-Could not attach to process.  If your uid matches the uid of the target
-process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try
-again as the root user.  For more details, see /etc/sysctl.d/10-ptrace.conf
-ptrace: Inappropriate ioctl for device.
-No stack.
-The program is not being run.
+  MUL_MAT(type_a=iq2_xxs,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1]): GGML_ASSERT: /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/llama.cpp/ggml-sycl.cpp:14023: false
+[New LWP 2497027]
+[New LWP 2497028]
+[New LWP 2497031]
+[New LWP 2497032]
+[New LWP 2497033]
+[New LWP 2497034]
+[New LWP 2497035]
+[New LWP 2497036]
+[New LWP 2497037]
+[New LWP 2497038]
+[New LWP 2497039]
+[New LWP 2497040]
+[New LWP 2497041]
+[New LWP 2497042]
+[New LWP 2497043]
+[New LWP 2497044]
+[New LWP 2497045]
+[New LWP 2497046]
+[New LWP 2497047]
+[New LWP 2497048]
+[New LWP 2497049]
+[New LWP 2497050]
+[New LWP 2497051]
+[New LWP 2497052]
+[New LWP 2497053]
+[New LWP 2497054]
+[New LWP 2497056]
+[New LWP 2497055]
+[New LWP 2497057]
+[New LWP 2497058]
+[New LWP 2497059]
+[New LWP 2497060]
+[New LWP 2497061]
+[New LWP 2537754]
+warning: File "/opt/intel/oneapi/compiler/2024.1/lib/libsycl.so.7.1.0-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /opt/intel/oneapi/compiler/2024.1/lib/libsycl.so.7.1.0-gdb.py
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f136ecea42f in __GI___wait4 (pid=2557937, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory.
+#0  0x00007f136ecea42f in __GI___wait4 (pid=2557937, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	in ../sysdeps/unix/sysv/linux/wait4.c
+#1  0x00000000004345fb in ggml_print_backtrace ()
+#2  0x000000000058d9d9 in ggml_sycl_op_dequantize_mul_mat_vec(ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&) ()
+#3  0x00000000004fa4be in ggml_sycl_op_mul_mat(ggml_tensor const*, ggml_tensor const*, ggml_tensor*, void (*)(ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&), bool) ()
+#4  0x00000000004beedd in ggml_sycl_compute_forward ()
+#5  0x000000000057c59e in ggml_backend_sycl_graph_compute(ggml_backend*, ggml_cgraph*) ()
+#6  0x0000000000485cd2 in ggml_backend_compare_graph_backend ()
+#7  0x0000000000419daf in test_case::eval(ggml_backend*, ggml_backend*, char const*) ()
+#8  0x00000000004159ed in test_backend(ggml_backend*, test_mode, char const*) ()
+#9  0x000000000040ad16 in main ()
+[Inferior 1 (process 2497026) detached]
 
       Start 21: test-rope
-21/21 Test #21: test-rope ...........................   Passed    0.36 sec
+21/21 Test #21: test-rope ...........................   Passed    0.12 sec
 
 95% tests passed, 1 tests failed out of 21
 
 Label Time Summary:
-main    =  44.61 sec*proc (21 tests)
+main    =  27.13 sec*proc (21 tests)
 
-Total Test time (real) =  44.63 sec
+Total Test time (real) =  27.13 sec
 
 The following tests FAILED:
 	 20 - test-backend-ops (Subprocess aborted)
 Errors while running CTest
 
-real	0m44.635s
-user	1m0.813s
-sys	0m12.642s
+real	0m27.134s
+user	0m32.355s
+sys	0m3.633s
 ```
