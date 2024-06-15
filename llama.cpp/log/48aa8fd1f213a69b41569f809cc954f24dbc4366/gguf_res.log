@@ -1,2 +1,4 @@
 Parameters:
-  log_file=ci_log/llama.cpp/log/48aa8fd1f213a69b41569f809cc954f24dbc4366/gguf_raw.log
+  log_file=ci_log/llama.cpp//log/48aa8fd1f213a69b41569f809cc954f24dbc4366/gguf_raw.log
+[('err', 'diff in line 0:<br>exp=Step 1: Get to know the basics of web design<br>out=./examples/sycl/run-llama2.sh: line 29: ./build/bin/main: No such file or directory'), ('err', 'diff in line 0:<br>exp=Step 1: Get to know the basics of web design<br>out=./examples/sycl/run-llama2.sh: line 29: ./build/bin/main: No such file or directory'), ('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>out=./examples/sycl/run-llama2.sh: line 29: ./build/bin/main: No such file or directory')]
+gguf res: (('err', 'diff in line 0:<br>exp=Step 1: Get to know the basics of web design<br>out=./examples/sycl/run-llama2.sh: line 29: ./build/bin/main: No such file or directory'), 'NA')

@@ -1,15 +1,4 @@
 Parameters:
   log_file=ci_log/llama.cpp//log/59c17f02de8fdf7b084d6100b875b7e2bc07a83b/gguf_raw.log
-result: OK
-[log](ci_log/llama.cpp//log/59c17f02de8fdf7b084d6100b875b7e2bc07a83b/gguf_raw.log)
-result: Error
-Got:
-Step 1: Get to know the basics of web design
-Step 2: Set up a web hosting account
-Expected:
-Group 0:
-Step 1: Get to know the basics of web design
-Step 2: Set up a web hosting account
-Group 1:
-Step 1: Get Domain and Hosting
-The first step is to buy a domain name, which you will then use to build your website. This domain should have an extension that matches the type of site you are building (such as .com for commercial sites, .org for nonprofit organizations).
+[('err', 'diff in line 6:<br>exp=Step 7: Make the site responsive<br>out=Step 7: Make the site visible'), ('ok', 'pass'), ('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>out=Step 1: Get to know the basics of web design')]
+gguf res: (('ok', 'pass'), 24.52)
