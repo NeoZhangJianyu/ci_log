@@ -1,0 +1,4 @@
+Parameters:
+  log_file=ci_log/llama.cpp//log/a5735e4426b19a3ebd0c653ad8ac01420458ee95/gguf_raw.log
+[('ok', 'pass'), ('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>out=Step 7: Make the site responsive'), ('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>out=Step 1: Get to know the basics of web design')]
+gguf res: (('ok', 'pass'), 37.23)
