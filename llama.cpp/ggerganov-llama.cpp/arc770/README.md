@@ -4,7 +4,7 @@
 
 Figure
 
-![Performance](ci_log/llama.cpp/ggerganov-llama.cpp/arc770/perf.png)
+![Performance](./perf.png)
 ## Detail
 
 **GGUF res** is verified by script ./example/sycl/run.sh with llama2-7b-Q4 for correction
