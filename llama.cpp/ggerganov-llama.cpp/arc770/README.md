@@ -1,8 +1,11 @@
-# llama.cpp CI for SYCL Backend
+# [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) CI for arc770 by SYCL Backend
 
-## Repo
+## Summary
 
-[ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) with arc770 GPU
+Figure
+
+![Performance](ci_log/llama.cpp/ggerganov-llama.cpp/arc770/perf.png)
+## Detail
 
 **GGUF res** is verified by script ./example/sycl/run.sh with llama2-7b-Q4 for correction
 
