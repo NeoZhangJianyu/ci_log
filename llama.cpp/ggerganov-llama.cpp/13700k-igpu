@@ -1,3 +1,535 @@
+commit 278d0e18469aacf505be18ce790a63c7cc31be26
+Author: Clint Herron <hanclinto@gmail.com>
+Date:   Wed Jul 10 20:08:17 2024 -0400
+
+    Initialize default slot sampling parameters from the global context. (#8418)
+
+examples/server/server.cpp
+
+commit dd07a123b79f9bd9e8a4ba0447427b3083e9347a
+Author: Clint Herron <hanclinto@gmail.com>
+Date:   Wed Jul 10 12:35:18 2024 -0400
+
+    Name Migration: Build the deprecation-warning 'main' binary every time (#8404)
+    
+    * Modify the deprecation-warning 'main' binary to build every time, instead of only when a legacy binary is present. This is to help users of tutorials and other instruction sets from knowing what to do when the 'main' binary is missing and they are trying to follow instructions.
+    
+    * Adjusting 'server' name-deprecation binary to build all the time, similar to the 'main' legacy name binary.
+
+Makefile
+
+commit f4444d992c16b6b9442f4770c7c3a10b19a08343
+Author: AidanBeltonS <aidan.belton@codeplay.com>
+Date:   Wed Jul 10 16:10:49 2024 +0100
+
+    [SYCL] Use multi_ptr to clean up deprecated warnings (#8256)
+
+ggml/src/ggml-sycl/common.hpp
+ggml/src/ggml-sycl/convert.cpp
+ggml/src/ggml-sycl/mmq.cpp
+ggml/src/ggml-sycl/norm.cpp
+ggml/src/ggml-sycl/softmax.cpp
+
+commit 6b2a849d1f43d46b82d2f9c08c3275137b528784
+Author: Georgi Gerganov <ggerganov@gmail.com>
+Date:   Wed Jul 10 15:23:29 2024 +0300
+
+    ggml : move sgemm sources to llamafile subfolder (#8394)
+    
+    ggml-ci
+
+Makefile
+ggml/CMakeLists.txt
+ggml/src/CMakeLists.txt
+ggml/src/ggml.c
+ggml/src/llamafile/sgemm.cpp
+ggml/src/llamafile/sgemm.h
+
+commit 0f1a39f3439825acf7e3a1663566d410be152170
+Author: Dibakar Gope <dibakar.gope@arm.com>
+Date:   Wed Jul 10 07:14:51 2024 -0500
+
+    ggml : add AArch64 optimized GEMV and GEMM Q4 kernels (#5780)
+    
+    * Arm AArch64: optimized GEMV and GEMM kernels for q4_0_q8_0, and q8_0_q8_0 quantization
+    
+    * Arm AArch64: add optimized GEMV and GEMM asm kernels for q4_0_q8_0 quantization and refactor code to address llama.cpp pr#5780 suggestions
+    
+    * Arm AArch64: add optimized GEMV and GEMM asm kernels for q4_0_q8_0 quantization and refactor code to address llama.cpp pr#5780 suggestions
+    
+    * Arm AArch64: add optimized GEMV and GEMM asm kernels for q4_0_q8_0 quantization and refactor code to address llama.cpp pr#5780 suggestions
+    
+    * Arm AArch64: add optimized GEMV and GEMM asm kernels for q4_0_q8_0 quantization and refactor code to address llama.cpp pr#5780 suggestions
+    
+    * Arm AArch64: add copyright claim only to ggml-aarch64.cpp and ggml-aarch64.h files
+    
+    * Arm AArch64: minor code refactoring for rebase
+    
+    * Arm AArch64: minor code refactoring for resolving a build issue with cmake
+    
+    * Arm AArch64: minor code refactoring to split the Q4_0_AARC64 type into three separate types: Q4_0_4_4, Q4_0_4_8, and Q4_0_8_8
+    
+    * Arm AArch64: minor code change for resolving a build issue with server-windows
+    
+    * retrigger checks
+    
+    * Arm AArch64: minor code changes for rebase
+    
+    * Arm AArch64: minor changes to skip the pr#7433 vec_dot code for arm cpus with SVE VL not equal to 256 bits
+    
+    * Arm AArch64: remove stale LLAMA_QKK_64 from CMakeLists.txt and delete build.zig
+    
+    * Arm AArch64: add reference scalar gemm and gemv, and avoid dynamic memory allocations during quantization for Q4_0_4_4, Q4_0_4_8, and Q4_0_8_8
+    
+    * Arm AArch64: add multithreaded quantization support for the new types: Q4_0_4_4, Q4_0_4_8, and Q4_0_8_8
+    
+    * Arm AArch64: minor code refactoring
+    
+    * Arm AArch64: simplify logic for calling gemm and gemv functions in ggml_compute_forward_mul_mat
+    
+    * Arm AArch64: minimize changes in ggml_compute_forward_mul_mat
+    
+    * Arm AArch64: minor code refactoring, and add reference scalar code to quantize routines for new quant types
+    
+    * Arm AArch64: minor code refactoring
+    
+    * Arm AArch64: minor code refactoring
+    
+    * Arm AArch64: minor code refactoring
+    
+    * rebase on the latest master commit 3fd62a6 and adapt to the new directory structure
+    
+    * Arm AArch64: remove a redundant comment
+    
+    * Arm AArch64: add pragma in ggml-aarch64.c to turn -Woverlength-strings warning off
+    
+    * Arm AArch64: use __aarch64__ check to guard 64-bit neon kernels
+    
+    * Arm AArch64: update docs/build.md README to include compile time flags for buiilding the Q4_0_4_4 quant type
+
+Makefile
+Package.swift
+docs/build.md
+examples/quantize/quantize.cpp
+ggml/include/ggml.h
+ggml/src/CMakeLists.txt
+ggml/src/ggml-aarch64.c
+ggml/src/ggml-aarch64.h
+ggml/src/ggml-common.h
+ggml/src/ggml-impl.h
+ggml/src/ggml-quants.c
+ggml/src/ggml.c
+include/llama.h
+src/llama.cpp
+
+commit 83321c6958acf20747d288031174cc1bf8816e33
+Author: M. Yusuf Sarıgöz <yusufsarigoz@gmail.com>
+Date:   Wed Jul 10 15:12:35 2024 +0300
+
+    gguf-py rel pipeline (#8410)
+    
+    * Upd gguf-py/readme
+    
+    * Bump patch version for release
+
+gguf-py/README.md
+gguf-py/pyproject.toml
+
+commit cc61948b1f97165b46990f4c2d9699bf9bb64443
+Author: Borislav Stanimirov <b.stanimirov@abv.bg>
+Date:   Wed Jul 10 14:45:44 2024 +0300
+
+    llama : C++20 compatibility for u8 strings (#8408)
+
+src/llama.cpp
+
+commit 7a80710d93ee0f4e0d335d65984ae747e62c0337
+Author: Borislav Stanimirov <b.stanimirov@abv.bg>
+Date:   Wed Jul 10 14:40:53 2024 +0300
+
+    msvc : silence codecvt c++17 deprecation warnings (#8395)
+
+common/common.cpp
+src/unicode.cpp
+
+commit a8be1e6f5995bec3b1d8474d48ce3a139553a8e1
+Author: fairydreaming <166155368+fairydreaming@users.noreply.github.com>
+Date:   Wed Jul 10 13:38:58 2024 +0200
+
+    llama : add assert about missing llama_encode() call (#8400)
+    
+    Co-authored-by: Stanisław Szymczyk <sszymczy@gmail.com>
+
+src/llama.cpp
+
+commit e4dd31ff892627665d3c53c5d1a03c0d282d9d45
+Author: RunningLeon <maningsheng@sensetime.com>
+Date:   Wed Jul 10 19:26:40 2024 +0800
+
+    py : fix converter for internlm2 (#8321)
+    
+    * update internlm2
+    
+    * remove unused file
+    
+    * fix lint
+
+convert_hf_to_gguf.py
+
+commit 8f0fad42b9589f9b11362c74ea5338c51e4c7e61
+Author: laik <laik.lj@me.com>
+Date:   Wed Jul 10 19:19:10 2024 +0800
+
+    py : fix extra space in convert_hf_to_gguf.py (#8407)
+
+convert_hf_to_gguf.py
+
+commit a59f8fdc85e1119d470d8766e29617962549d993
+Author: Clint Herron <hanclinto@gmail.com>
+Date:   Tue Jul 9 18:26:40 2024 -0400
+
+    Server: Enable setting default sampling parameters via command-line (#8402)
+    
+    * Load server sampling parameters from the server context by default.
+    
+    * Wordsmithing comment
+
+examples/server/server.cpp
+
+commit fd560fe680c72fd0a0af2bc8881add20ad919071
+Author: Andy Salerno <andysalerno@gmail.com>
+Date:   Tue Jul 9 11:58:44 2024 -0700
+
+    Update README.md to fix broken link to docs (#8399)
+    
+    Update the "Performance troubleshooting" doc link to be correct - the file was moved into a dir called 'development'
+
+README.md
+
+commit e500d6135ac42c4a23baf6a9a1a934dc023e5c7d
+Author: Clint Herron <hanclinto@gmail.com>
+Date:   Tue Jul 9 11:54:43 2024 -0400
+
+    Deprecation warning to assist with migration to new binary names (#8283)
+    
+    * Adding a simple program to provide a deprecation warning that can exist to help people notice the binary name change from #7809 and migrate to the new filenames.
+    
+    * Build legacy replacement binaries only if they already exist. Check for their existence every time so that they are not ignored.
+
+Makefile
+examples/deprecation-warning/README.md
+examples/deprecation-warning/deprecation-warning.cpp
+
+commit a03e8dd99d3954e7547137936c5a2a3b348bdb7f
+Author: Johannes Gäßler <johannesg@5d6.de>
+Date:   Tue Jul 9 17:11:07 2024 +0200
+
+    make/cmake: LLAMA_NO_CCACHE -> GGML_NO_CCACHE (#8392)
+
+CMakeLists.txt
+Makefile
+
+commit 5b0b8d8cfb5ddf2118f686ba6c30fab3f71b384b
+Author: Alberto Cabrera Pérez <alberto.cabrera@codeplay.com>
+Date:   Tue Jul 9 15:03:15 2024 +0100
+
+    sycl : Reenabled mmvq path for the SYCL Nvidia Backend (#8372)
+    
+    * SYCL : Reenabled mmvq path for the SYCL Nvidia Backend
+    
+    * Reduced verbosity of comment
+
+ggml/src/ggml-sycl.cpp
+
+commit 9925ca4087a34ab973b07bf06c0b770cb586830b
+Author: Borislav Stanimirov <b.stanimirov@abv.bg>
+Date:   Tue Jul 9 11:38:00 2024 +0300
+
+    cmake : allow external ggml (#8370)
+
+CMakeLists.txt
+
+commit 9beb2dda038e2107a39a95def94a4cf971e048ea
+Author: daghanerdonmez <44506702+daghanerdonmez@users.noreply.github.com>
+Date:   Tue Jul 9 09:16:00 2024 +0300
+
+    readme : fix typo [no ci] (#8389)
+    
+    Bakus-Naur --> Backus-Naur
+
+grammars/README.md
+
+commit 7d0e23d72ef4540d0d4409cb63ae682c17d53926
+Author: compilade <git@compilade.net>
+Date:   Tue Jul 9 01:04:49 2024 -0400
+
+    gguf-py : do not use internal numpy types (#7472)
+
+gguf-py/gguf/lazy.py
+
+commit 7fdb6f73e35605c8dbc39e9f19cd9ed84dbc87f2
+Author: Georgi Gerganov <ggerganov@gmail.com>
+Date:   Tue Jul 9 01:36:38 2024 +0300
+
+    flake.lock: Update (#8342)
+    
+    Flake lock file updates:
+    
+    • Updated input 'flake-parts':
+        'github:hercules-ci/flake-parts/2a55567fcf15b1b1c7ed712a2c6fadaec7412ea8?narHash=sha256-iKzJcpdXih14qYVcZ9QC9XuZYnPc6T8YImb6dX166kw%3D' (2024-06-01)
+      → 'github:hercules-ci/flake-parts/9227223f6d922fee3c7b190b2cc238a99527bbb7?narHash=sha256-pQMhCCHyQGRzdfAkdJ4cIWiw%2BJNuWsTX7f0ZYSyz0VY%3D' (2024-07-03)
+    • Updated input 'flake-parts/nixpkgs-lib':
+        'https://github.com/NixOS/nixpkgs/archive/eb9ceca17df2ea50a250b6b27f7bf6ab0186f198.tar.gz?narHash=sha256-lIbdfCsf8LMFloheeE6N31%2BBMIeixqyQWbSr2vk79EQ%3D' (2024-06-01)
+      → 'https://github.com/NixOS/nixpkgs/archive/5daf0514482af3f97abaefc78a6606365c9108e2.tar.gz?narHash=sha256-Fm2rDDs86sHy0/1jxTOKB1118Q0O3Uc7EC0iXvXKpbI%3D' (2024-07-01)
+    • Updated input 'nixpkgs':
+        'github:NixOS/nixpkgs/b2852eb9365c6de48ffb0dc2c9562591f652242a?narHash=sha256-C8e9S7RzshSdHB7L%2Bv9I51af1gDM5unhJ2xO1ywxNH8%3D' (2024-06-27)
+      → 'github:NixOS/nixpkgs/9f4128e00b0ae8ec65918efeba59db998750ead6?narHash=sha256-rwz8NJZV%2B387rnWpTYcXaRNvzUSnnF9aHONoJIYmiUQ%3D' (2024-07-03)
+    
+    Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+
+flake.lock
+
+commit a130eccef42b75a84da270411cefeed45c153e30
+Author: Alberto Cabrera Pérez <alberto.cabrera@codeplay.com>
+Date:   Mon Jul 8 21:35:17 2024 +0100
+
+    labeler : updated sycl to match docs and code refactor (#8373)
+
+.github/labeler.yml
+
+commit c4dd11d1d3903e1922c06242e189f6310fc4d8c3
+Author: b4b4o <zwbao@foxmail.com>
+Date:   Mon Jul 8 22:19:24 2024 +0800
+
+    readme : fix web link error [no ci] (#8347)
+
+README.md
+
+commit 2ec846d558f6385ea647f7b8e665eb249c1ebce7
+Author: Alberto Cabrera Pérez <alberto.cabrera@intel.com>
+Date:   Mon Jul 8 14:22:41 2024 +0100
+
+    sycl : fix powf call in device code (#8368)
+
+ggml/src/ggml-sycl/rope.cpp
+
+commit 3f2d538b817112ad8429341c7e8657dcd660f4d3
+Author: Georgi Gerganov <ggerganov@gmail.com>
+Date:   Mon Jul 8 13:51:31 2024 +0300
+
+    scripts : fix sync for sycl
+
+scripts/sync-ggml-am.sh
+scripts/sync-ggml.sh
+
+commit 2ee44c9a1865a928ccbbc16a2d7841d7513f31c1
+Author: Georgi Gerganov <ggerganov@gmail.com>
+Date:   Mon Jul 8 10:39:50 2024 +0300
+
+    sync : ggml
+    
+    ggml-ci
+
+scripts/sync-ggml.last
+
+commit 6847d54c4f72f8bf6767b6feae7a95394654335e
+Author: Georgi Gerganov <ggerganov@gmail.com>
+Date:   Mon Jul 8 10:39:36 2024 +0300
+
+    tests : fix whitespace (#0)
+
+tests/test-backend-ops.cpp
+
+commit fde13b3bb9f569f07fd8af74696ee48a43d05131
+Author: John Balis <phobossystems@gmail.com>
+Date:   Tue Jul 2 11:09:52 2024 -0500
+
+    feat: cuda implementation for `ggml_conv_transpose_1d` (ggml/854)
+    
+    * conv transpose 1d passing test for 1d input and kernel
+    
+    * working for different input and output channel counts, added test for variable stride
+    
+    * initial draft appears to work with stride other than 1
+    
+    * working with all old and new conv1d  tests
+    
+    * added a test for large tensors
+    
+    * removed use cuda hardcoding
+    
+    * restored test-conv-transpose.c
+    
+    * removed unused arugments, and fixed bug where test failure would cause subsequent tests to fail
+    
+    * fixed accumulator bug
+    
+    * added test to test-backend-ops
+    
+    * fixed mistake
+    
+    * addressed review
+    
+    * fixed includes
+    
+    * removed blank lines
+    
+    * style and warning fixes
+    
+    * return failure when test fails
+    
+    * fix supports_op
+    
+    ---------
+    
+    Co-authored-by: slaren <slarengh@gmail.com>
+
+ggml/src/ggml-cuda.cu
+ggml/src/ggml-cuda/conv-transpose-1d.cu
+ggml/src/ggml-cuda/conv-transpose-1d.cuh
+tests/test-backend-ops.cpp
+
+commit 470939d483d1c89b7292f78bac1fd27c42c171ce
+Author: Kevin Wang <kevmo314@gmail.com>
+Date:   Mon Jul 8 03:26:53 2024 -0400
+
+    common : preallocate sampling token data vector (#8363)
+    
+    `emplace_back` repeatedly-called is slower than preallocating the vector to the vocab size and directly inserting the data. Some rudimentary profiling with `chrono` improves the performance of this block of code from ~500us/op to ~40us/op.
+    
+    Overall, this slightly improves the sampling performance which has a more substantial impact for the `examples/lookahead` implementation -- I am able to see a ~10% performance boost in lookahead inference.
+
+common/sampling.cpp
+
+commit 6f0dbf6ab087bcd286fb78560099ca0458316735
+Author: Georgi Gerganov <ggerganov@gmail.com>
+Date:   Mon Jul 8 09:34:35 2024 +0300
+
+    infill : assert prefix/suffix tokens + remove old space logic (#8351)
+
+common/log.h
+examples/infill/infill.cpp
+
+commit ffd00797d81ef7db1528b9e10adbdc333ade6495
+Author: Kevin Wang <kevmo314@gmail.com>
+Date:   Mon Jul 8 02:31:55 2024 -0400
+
+    common : avoid unnecessary logits fetch (#8358)
+
+common/sampling.cpp
+
+commit 04ce3a8b19256a155aea4d14eaa87edf274c93c3
+Author: toyer <2042519524@qq.com>
+Date:   Mon Jul 8 13:57:19 2024 +0800
+
+    readme : add supported glm models (#8360)
+
+README.md
+
+commit 3fd62a6b1c9ca7b7c0093e984cc9c133c6f2726d
+Author: compilade <git@compilade.net>
+Date:   Sun Jul 7 15:04:39 2024 -0400
+
+    py : type-check all Python scripts with Pyright (#8341)
+    
+    * py : type-check all Python scripts with Pyright
+    
+    * server-tests : use trailing slash in openai base_url
+    
+    * server-tests : add more type annotations
+    
+    * server-tests : strip "chat" from base_url in oai_chat_completions
+    
+    * server-tests : model metadata is a dict
+    
+    * ci : disable pip cache in type-check workflow
+    
+    The cache is not shared between branches, and it's 250MB in size,
+    so it would become quite a big part of the 10GB cache limit of the repo.
+    
+    * py : fix new type errors from master branch
+    
+    * tests : fix test-tokenizer-random.py
+    
+    Apparently, gcc applies optimisations even when pre-processing,
+    which confuses pycparser.
+    
+    * ci : only show warnings and errors in python type-check
+    
+    The "information" level otherwise has entries
+    from 'examples/pydantic_models_to_grammar.py',
+    which could be confusing for someone trying to figure out what failed,
+    considering that these messages can safely be ignored
+    even though they look like errors.
+
+.devops/nix/package.nix
+.github/workflows/python-type-check.yml
+convert_hf_to_gguf.py
+convert_llama_ggml_to_gguf.py
+examples/convert_legacy_llama.py
+examples/finetune/convert_finetune_checkpoint_to_gguf.py
+examples/json_schema_pydantic_example.py
+examples/json_schema_to_grammar.py
+examples/llava/convert_image_encoder_to_gguf.py
+examples/llava/llava_surgery_v2.py
+examples/pydantic_models_to_grammar.py
+examples/pydantic_models_to_grammar_examples.py
+examples/server/bench/bench.py
+examples/server/tests/features/steps/steps.py
+examples/server/tests/requirements.txt
+examples/server_embd.py
+examples/train-text-from-scratch/convert_train_checkpoint_to_gguf.py
+ggml/ggml_vk_generate_shaders.py
+gguf-py/gguf/gguf_reader.py
+gguf-py/gguf/lazy.py
+gguf-py/scripts/__init__.py
+gguf-py/scripts/gguf_hash.py
+gguf-py/scripts/gguf_new_metadata.py
+gguf-py/tests/test_gguf.py
+pyrightconfig.json
+requirements/requirements-all.txt
+requirements/requirements-compare-llama-bench.txt
+requirements/requirements-pydantic.txt
+requirements/requirements-test-tokenizer-random.txt
+scripts/check-requirements.sh
+scripts/compare-llama-bench.py
+scripts/gen-unicode-data.py
+tests/test-tokenizer-random.py
+
+commit a8db2a9ce64cd4417f6a312ab61858f17f0f8584
+Author: Denis Spasyuk <34203011+dspasyuk@users.noreply.github.com>
+Date:   Sun Jul 7 09:08:28 2024 -0600
+
+    Update llama-cli documentation (#8315)
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    fixed llama-cli/main, templates on some cmds added chat template sections and fixed typos in some areas
+    
+    * Update README.md
+    
+    * Update README.md
+    
+    * Update README.md
+
+examples/main/README.md
+
+commit 4090ea5501c702cd858095c394ba068919c56cc8
+Author: Alex Tuddenham <61622354+AlexsCode@users.noreply.github.com>
+Date:   Sun Jul 7 15:59:14 2024 +0100
+
+    ci : add checks for cmake,make and ctest in ci/run.sh (#8200)
+    
+    * Added checks for cmake,make and ctest
+    
+    * Removed erroneous whitespace
+
+ci/run.sh
+
 commit f1948f1e108157d5e7eb60fc8f24a10412e5d4ff
 Author: Andy Tai <andy-tai@users.noreply.github.com>
 Date:   Sun Jul 7 06:21:37 2024 -0700
