@@ -11,7 +11,7 @@ Figure
 
 **Perf** is the performance data by script ./example/sycl/run.sh with llama2-7b-Q4
 
-|Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf|Warn/Err|
+|Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
 |[fdef7d606ef4864ceb5f51a576c0ecddec2cce2a](https://github.com/arthw/llama.cpp/commit/fdef7d606ef4864ceb5f51a576c0ecddec2cce2a)<br>2024-07-04 11:55:23<br>replace get_work_group_size<br>Neo Zhang  Log: [log](./log/fdef7d606ef4864ceb5f51a576c0ecddec2cce2a)|91.0%|NA|('ok', 'pass')|40.12|0/0|
 |[249347995825713ad03b9cda3a036851f2e95033](https://github.com/arthw/llama.cpp/commit/249347995825713ad03b9cda3a036851f2e95033)<br>2024-07-04 08:28:58<br>skip UT for BF16<br>Neo Zhang  Log: [log](./log/249347995825713ad03b9cda3a036851f2e95033)|91.0%|NA|('ok', 'pass')|40.05|0/0|
