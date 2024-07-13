@@ -96,17 +96,12 @@ llm_load_print_meta: LF token         = 13 '<0x0A>'
 [SYCL] call ggml_init_sycl
 ggml_init_sycl: GGML_SYCL_DEBUG: 0
 ggml_init_sycl: GGML_SYCL_F16: no
-found 6 SYCL devices:
+found 1 SYCL devices:
 |  |                   |                                       |       |Max    |        |Max  |Global |                     |
 |  |                   |                                       |       |compute|Max work|sub  |mem    |                     |
 |ID|        Device Type|                                   Name|Version|units  |group   |group|size   |       Driver version|
 |--|-------------------|---------------------------------------|-------|-------|--------|-----|-------|---------------------|
 | 0| [level_zero:gpu:0]|                Intel Arc A770 Graphics|    1.3|    512|    1024|   32| 16225M|            1.3.28202|
-| 1| [level_zero:gpu:1]|                 Intel UHD Graphics 770|    1.3|     32|     512|   32| 62568M|            1.3.28202|
-| 2|     [opencl:gpu:0]|                Intel Arc A770 Graphics|    3.0|    512|    1024|   32| 16225M|       23.52.28202.51|
-| 3|     [opencl:gpu:1]|                 Intel UHD Graphics 770|    3.0|     32|     512|   32| 62568M|       23.52.28202.51|
-| 4|     [opencl:cpu:0]|          13th Gen Intel Core i7-13700K|    3.0|     24|    8192|   64| 67064M|2024.17.3.0.08_160000|
-| 5|     [opencl:acc:0]|            Intel FPGA Emulation Device|    1.2|     24|67108864|   64| 67064M|2024.17.3.0.08_160000|
 ggml_backend_sycl_set_mul_device_mode: true
 detect 1 SYCL GPUs: [0] with top Max compute units:512
 llm_load_tensors: ggml ctx size =    0.30 MiB
@@ -147,10 +142,11 @@ Step 3: Download a free website builder
 Step 4: Set up a domain name
 Step 5: Design your website
 Step 6: Add content to your site
-Step 7: Make report (v has have has got (pay( Big and (c gu in to The(Col U2 R,2ClGr inC spe speassdeobspeup[deekbiupneeecov covspensa aequekcov1upassiseeen фев округу Hinweis округуiellement фев серпня kwiet nobody февiellement paździer paździerϊ Unterscheidung∅ sierp paździer фев geprüft фев Unterscheidung Википеди paździer фев styczleitung kwiet kwiet Unterscheidung sierp kwiet жовтня paździer paździer kwiet kwietϊ paździer Unterscheidung geprüft kwiet paździer фев вересня Außerdem kwiet sierp kwietℓ settembreала paździer kwiet жовтня paździer geprüft kwiet paździer kwiet kwietℓbildungog,,,,,, where T, and that, to and that to high, over , to to to high to  un on to wealth very you ( un pre/ on when cl with cl to if on on back your pre on to on on on the to on on back on a on back onkel,, Pl, Mult, Dr, Lig, J [ C was Mult by C Mot by Ag by by J C by by by by by by by by inform by by by Am A Am by by List Ag Am by de A and by preparedison u inny in by, by, by, by inow-iairyiaowiaowewillia원yyown—owendeweyApullow-owAXowyAXow-RowB-byrangebyMAAby-bywe-Pwe/pineA4AAX-C_N-AXbyNA--matellomat playsmatineigsmatстя™irsorgenmat™joumat
-llama_print_timings:        load time =    4725.77 ms
-llama_print_timings:      sample time =       7.45 ms /   400 runs   (    0.02 ms per token, 53720.12 tokens per second)
-llama_print_timings: prompt eval time =     253.99 ms /    19 tokens (   13.37 ms per token,    74.81 tokens per second)
-llama_print_timings:        eval time =   10745.61 ms /   399 runs   (   26.93 ms per token,    37.13 tokens per second)
-llama_print_timings:       total time =   11029.63 ms /   418 tokens
+Step 7: Make report (every ra,accept, like,5 was(d –(a, the,
+,( 0(Kaad with,jhotjspe afterka inengacov(ascredleaassaCenteranoacc1a 1a1engequeeavek paździerleitung Hinweisleitung geprüft Unterscheidung живело kwietiellement фев Hinweis paździer paździer живело sierp Hinweis Unterscheidung paździer фев geprüft Unterscheidung Unterscheidung hopefully paździer февiellement Einzeln kwiet kwiet paździer sierp kwietϊ paździer kwiet kwiet kwiet Begriffe paździer Unterscheidung фев kwiet paździer февleitung settembre kwiet geprüft kwietℓ🌍 paździer kwiet kwiet🌍 paździer Unterscheidung kwiet paździer kwiet kwietleitungemia ottobre,, from, from,, in, from to, in when att do, un on all un to high on to high ( high on un un as sp high on straight on on high un un high on only high for if, for high high high on on back on for high for and as for as on C the Le By, a was Ent, N, Pl, Lig, A, Ret by Cla C A By ( by List List C List Am List in Part Spec List Spec Rich Mer Compos List Am Ron A in Am Ag Spec Active by off Cook r Dist Qual under by with Diet, A with by Walter,oweowoweowowowowoweOWowownowoweow-owOWinowe ofbyoweowowe-owby-byby/ow,ow-(-priceowe of-Pow-AX/( ofP p-A ofPpineP--PA----emberg®舞®ital舞®™citomatariunalirs¶unal®
+llama_print_timings:        load time =    5437.74 ms
+llama_print_timings:      sample time =       7.81 ms /   400 runs   (    0.02 ms per token, 51203.28 tokens per second)
+llama_print_timings: prompt eval time =     422.50 ms /    19 tokens (   22.24 ms per token,    44.97 tokens per second)
+llama_print_timings:        eval time =   13015.06 ms /   399 runs   (   32.62 ms per token,    30.66 tokens per second)
+llama_print_timings:       total time =   13462.89 ms /   418 tokens
 Log end

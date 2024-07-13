@@ -178,9 +178,9 @@ Step 10: Advertise your website
 Website building is a process that requires both technical and creative skills. While some people may be more naturally inclined to one or the other, it is important to understand both sides of the process to be successful.
 The first step in building a website is to get to know the basics of web design. This includes understanding things like HTML, CSS, and JavaScript. It is also important to have a good understanding of web design fundamentals, such as layout and typography.
 Once you have a good understanding of the basics, the next step is to set up a web hosting account. This will give you a place to store your website files and make them accessible to the public.
-llama_print_timings:        load time =    2965.45 ms
-llama_print_timings:      sample time =       7.62 ms /   400 runs   (    0.02 ms per token, 52514.11 tokens per second)
-llama_print_timings: prompt eval time =     202.94 ms /    19 tokens (   10.68 ms per token,    93.62 tokens per second)
-llama_print_timings:        eval time =    9961.97 ms /   399 runs   (   24.97 ms per token,    40.05 tokens per second)
-llama_print_timings:       total time =   10192.17 ms /   418 tokens
+llama_print_timings:        load time =    3075.93 ms
+llama_print_timings:      sample time =       8.24 ms /   400 runs   (    0.02 ms per token, 48549.58 tokens per second)
+llama_print_timings: prompt eval time =     194.16 ms /    19 tokens (   10.22 ms per token,    97.86 tokens per second)
+llama_print_timings:        eval time =    9701.65 ms /   399 runs   (   24.31 ms per token,    41.13 tokens per second)
+llama_print_timings:       total time =    9919.93 ms /   418 tokens
 Log end

@@ -96,17 +96,12 @@ llm_load_print_meta: LF token         = 13 '<0x0A>'
 [SYCL] call ggml_init_sycl
 ggml_init_sycl: GGML_SYCL_DEBUG: 0
 ggml_init_sycl: GGML_SYCL_F16: no
-found 6 SYCL devices:
+found 1 SYCL devices:
 |  |                   |                                       |       |Max    |        |Max  |Global |                     |
 |  |                   |                                       |       |compute|Max work|sub  |mem    |                     |
 |ID|        Device Type|                                   Name|Version|units  |group   |group|size   |       Driver version|
 |--|-------------------|---------------------------------------|-------|-------|--------|-----|-------|---------------------|
 | 0| [level_zero:gpu:0]|                Intel Arc A770 Graphics|    1.3|    512|    1024|   32| 16225M|            1.3.28202|
-| 1| [level_zero:gpu:1]|                 Intel UHD Graphics 770|    1.3|     32|     512|   32| 62568M|            1.3.28202|
-| 2|     [opencl:gpu:0]|                Intel Arc A770 Graphics|    3.0|    512|    1024|   32| 16225M|       23.52.28202.51|
-| 3|     [opencl:gpu:1]|                 Intel UHD Graphics 770|    3.0|     32|     512|   32| 62568M|       23.52.28202.51|
-| 4|     [opencl:cpu:0]|          13th Gen Intel Core i7-13700K|    3.0|     24|    8192|   64| 67064M|2024.17.3.0.08_160000|
-| 5|     [opencl:acc:0]|            Intel FPGA Emulation Device|    1.2|     24|67108864|   64| 67064M|2024.17.3.0.08_160000|
 ggml_backend_sycl_set_mul_device_mode: true
 detect 1 SYCL GPUs: [0] with top Max compute units:512
 llm_load_tensors: ggml ctx size =    0.30 MiB
@@ -147,15 +142,11 @@ Step 3: Download a free website builder
 Step 4: Set up a domain name
 Step 5: Design your website
 Step 6: Add content to your site
-Step 7: Make,orsz onседа atir Byett, 1./doV’3ar/F(, knowledgejyl onop5all
- sierp., the, one-s---T, you!One---3. geprüft and–bro!–I. beskre. prü on-0. retain, it all, thatK8 you b’CCl1: by no. hopefully
-’Ps of the “WellGu1
-itel (press Outdo3 Imedge, the1: 1g going2n:
- in06.✿, 1.’You $ this2F1 and theT.ill mechan 15G F (D14anCsc (C.ary:
-oper c9 the b (b (fromag16 theWork their L (o.arT andR 11111: 1 (1asc. geprüftaret Anads Astwood with puttingema,ana ( Race has backwards onach,CAF at Rog -ana andorszasztmaanyab and Elli overorszucha,ale,alabsio’MA. nobody is taken/ Spr., Ed asendes:ah may it has thishasbar3ves,apuro reviewenciidabund1oh journey emer losingema ElStorage previewugaComponents heldossa attractija was eggornarna andal h seizoab shedshow Policebum isare Policearg Baduroberelearm Pod.alizon reallybumnoamos surrender’ collision beginsropolpida/ Doublearing isaretcon-----ofman & make-------
-llama_print_timings:        load time =    4707.40 ms
-llama_print_timings:      sample time =       7.51 ms /   400 runs   (    0.02 ms per token, 53269.41 tokens per second)
-llama_print_timings: prompt eval time =     254.62 ms /    19 tokens (   13.40 ms per token,    74.62 tokens per second)
-llama_print_timings:        eval time =   10841.98 ms /   399 runs   (   27.17 ms per token,    36.80 tokens per second)
-llama_print_timings:       total time =   11122.36 ms /   418 tokens
+Step 7: Make,orszomen, he jump -major30 atau, OldC and 2 in.O(men, Int 1unker, but,ik, 2—or, the course, the no.-1nen 2. beskrepl., not(C-1ufen/s-1竹/N54d2 E, out so (shi1 b---1 multipyNotEsc. geprüft. paździerVP or when in"doesG
+over and out or 2"DoWsa .i in bothG: the 2 the. kwiet. вересня1ens. nobody b (which N.ale’OAnz (thatnear1 andPs, a onP and they an: b1, 1 2.al, 2sB4Public2.ik,The Ch111111111/You3444444scheid anable ones.ad for attire has decundin and yourone.ail-es toгов inorszoney RZ -es toantee a female.are,an/inetE1wolA+ has-----------------aleemeranaroloomo4ethemaunsalet embaleturooloArray surrender graspbum mirror scarcEariba wasarsidan presentationiendeargock Wik8areturoundemaazWhataletemaalesversolobundminalova Force-alesFierno exponent wasalepod breakingmajor,id/ reflectema to make--------------
+llama_print_timings:        load time =    5384.93 ms
+llama_print_timings:      sample time =       7.84 ms /   400 runs   (    0.02 ms per token, 51033.43 tokens per second)
+llama_print_timings: prompt eval time =     421.34 ms /    19 tokens (   22.18 ms per token,    45.09 tokens per second)
+llama_print_timings:        eval time =   13136.89 ms /   399 runs   (   32.92 ms per token,    30.37 tokens per second)
+llama_print_timings:       total time =   13584.21 ms /   418 tokens
 Log end

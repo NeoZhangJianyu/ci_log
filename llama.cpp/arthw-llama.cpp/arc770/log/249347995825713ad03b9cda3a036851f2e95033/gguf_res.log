@@ -1,4 +1,2 @@
 Parameters:
-  log_file=ci_log/arthw-llama.cpp/arc770/log/249347995825713ad03b9cda3a036851f2e95033/gguf_raw.log
-[('ok', 'pass'), ('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>out=Step 7: Make the site responsive'), ('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>out=Step 1: Get to know the basics of web design')]
-gguf res: (('ok', 'pass'), 40.05)
+  log_file=ci_log/llama.cpp/arthw-llama.cpp/arc770/log/249347995825713ad03b9cda3a036851f2e95033/gguf_raw.log

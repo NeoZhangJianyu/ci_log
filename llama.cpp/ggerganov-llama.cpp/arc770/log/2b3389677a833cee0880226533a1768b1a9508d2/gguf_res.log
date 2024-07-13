@@ -1,4 +1,2 @@
 Parameters:
-  log_file=ci_log/llama.cpp//log/2b3389677a833cee0880226533a1768b1a9508d2/gguf_raw.log
-[('err', 'diff in line 6:<br>exp=Step 7: Make the site responsive<br>out=Step 7: Make,orsz onседа atir Byett, 1./doV’3ar/F(, knowledgejyl onop5all'), ('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>out=Step 7: Make,orsz onседа atir Byett, 1./doV’3ar/F(, knowledgejyl onop5all'), ('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>out=Step 1: Get to know the basics of web design')]
-gguf res: (('err', 'diff in line 6:<br>exp=Step 7: Make the site responsive<br>out=Step 7: Make,orsz onседа atir Byett, 1./doV’3ar/F(, knowledgejyl onop5all'), 36.76)
+  log_file=ci_log/llama.cpp/ggerganov-llama.cpp/arc770/log/2b3389677a833cee0880226533a1768b1a9508d2/gguf_raw.log
