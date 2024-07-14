@@ -13,6 +13,8 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[74e3185cfd51d39a4738b631db5ced23eea7f1c6](https://github.com/arthw/llama.cpp/commit/74e3185cfd51d39a4738b631db5ced23eea7f1c6)<br>2024-07-13 16:02:15<br>fix editorconfig check format issue<br>arthw  Log: [log](./log/74e3185cfd51d39a4738b631db5ced23eea7f1c6)|91.0%|NA|('ok', 'pass')|42.75|686/0|
+|[4cd9e48670c7009099f4d900a5f3461cfb802755](https://github.com/arthw/llama.cpp/commit/4cd9e48670c7009099f4d900a5f3461cfb802755)<br>2024-07-13 14:43:57<br>cherry-pick b549a1bbefb2f1fbb8b558bac1f2<br>ae7967e60964,<br>arthw  Log: [log](./log/4cd9e48670c7009099f4d900a5f3461cfb802755)|91.0%|NA|('ok', 'pass')|42.72|686/0|
 |[fdef7d606ef4864ceb5f51a576c0ecddec2cce2a](https://github.com/arthw/llama.cpp/commit/fdef7d606ef4864ceb5f51a576c0ecddec2cce2a)<br>2024-07-04 11:55:23<br>replace get_work_group_size<br>Neo Zhang  Log: [log](./log/fdef7d606ef4864ceb5f51a576c0ecddec2cce2a)|91.0%|NA|('ok', 'pass')|41.14|556/0|
 |[249347995825713ad03b9cda3a036851f2e95033](https://github.com/arthw/llama.cpp/commit/249347995825713ad03b9cda3a036851f2e95033)<br>2024-07-04 08:28:58<br>skip UT for BF16<br>Neo Zhang  Log: [log](./log/249347995825713ad03b9cda3a036851f2e95033)|91.0%|NA|('ok', 'pass')|41.13|564/0|
 |[51be86243892833c9779ae903d5b54241ec2507a](https://github.com/arthw/llama.cpp/commit/51be86243892833c9779ae903d5b54241ec2507a)<br>2024-07-03 02:55:34<br>Dequant improvements rebase<br>AidanBeltonS  Log: [log](./log/51be86243892833c9779ae903d5b54241ec2507a)|91.0%|NA|('ok', 'pass')|40.06|577/0|
