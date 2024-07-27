@@ -1,0 +1,106 @@
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+Log start
+main: build = 3310 (4cd9e486)
+main: built with cc (Ubuntu 12.3.0-1ubuntu1~23.04) 12.3.0 for x86_64-linux-gnu
+main: seed  = 0
+llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from models/llama-2-7b.Q4_0.gguf (version GGUF V2)
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = LLaMA v2
+llama_model_loader: - kv   2:                       llama.context_length u32              = 4096
+llama_model_loader: - kv   3:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   4:                          llama.block_count u32              = 32
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 11008
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 32
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  12:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv  13:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  14:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv  15:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  16:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  17:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  18:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_0:  225 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens cache size = 259
+llm_load_vocab: token to piece cache size = 0.1684 MB
+llm_load_print_meta: format           = GGUF V2
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = SPM
+llm_load_print_meta: n_vocab          = 32000
+llm_load_print_meta: n_merges         = 0
+llm_load_print_meta: vocab_only       = 0
+llm_load_print_meta: n_ctx_train      = 4096
+llm_load_print_meta: n_embd           = 4096
+llm_load_print_meta: n_layer          = 32
+llm_load_print_meta: n_head           = 32
+llm_load_print_meta: n_head_kv        = 32
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_swa            = 0
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 1
+llm_load_print_meta: n_embd_k_gqa     = 4096
+llm_load_print_meta: n_embd_v_gqa     = 4096
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 11008
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 10000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_ctx_orig_yarn  = 4096
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: model type       = 7B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 6.74 B
+llm_load_print_meta: model size       = 3.56 GiB (4.54 BPW) 
+llm_load_print_meta: general.name     = LLaMA v2
+llm_load_print_meta: BOS token        = 1 '<s>'
+llm_load_print_meta: EOS token        = 2 '</s>'
+llm_load_print_meta: UNK token        = 0 '<unk>'
+llm_load_print_meta: LF token         = 13 '<0x0A>'
+llm_load_print_meta: max token length = 48
+[SYCL] call ggml_init_sycl
+ggml_sycl_init: GGML_SYCL_DEBUG: 0
+ggml_sycl_init: GGML_SYCL_F16: no
+ggml_sycl_init: GGML_SYCL_FORCE_MMQ:   no
+ggml_sycl_init: SYCL_USE_XMX: yes
+No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (PI_ERROR_DEVICE_NOT_FOUND)
+Exception caught at file:/home/zjy/ws/jenkins-home/workspace/iGPU/llama.cpp_ci/arthw-llama.cpp/ggml/src/ggml-sycl/common.cpp, line:186, func:operator()
+./examples/sycl/run-llama2.sh: line 30: 19532 Segmentation fault      (core dumped) ZES_ENABLE_SYSMAN=1 ./build/bin/llama-cli -m models/llama-2-7b.Q4_0.gguf -p "${INPUT2}" -n 400 -e -ngl 33 -s 0
