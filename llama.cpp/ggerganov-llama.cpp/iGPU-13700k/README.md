@@ -13,6 +13,8 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[0832de723695ab400316a6c49b9f712380e3a731](https://github.com/ggerganov/llama.cpp/commit/0832de723695ab400316a6c49b9f712380e3a731)<br>2024-07-29 10:50:27<br>[SYCL] add conv support<br>Meng, Hengyu  Log: [log](./log/0832de723695ab400316a6c49b9f712380e3a731)|92.0%|1332/1334|('ok', 'pass', 0)|2.6|464/0|
+|[2b1f616b208a4a21c4ee7a7eb85d822ff1d787af](https://github.com/ggerganov/llama.cpp/commit/2b1f616b208a4a21c4ee7a7eb85d822ff1d787af)<br>2024-07-27 04:41:55<br>ggml : reduce hash table reset cost<br>slaren  Log: [log](./log/2b1f616b208a4a21c4ee7a7eb85d822ff1d787af)|92.0%|1332/1334|('ok', 'pass', 0)|2.6|450/0|
 |[ed67bcb24f2d6ac0072cae72620b2bd971741b98](https://github.com/ggerganov/llama.cpp/commit/ed67bcb24f2d6ac0072cae72620b2bd971741b98)<br>2024-07-25 11:45:18<br>[SYCL] fix multi-gpu issue on sycl<br>Chen Xi  Log: [log](./log/ed67bcb24f2d6ac0072cae72620b2bd971741b98)|92.0%|1332/1334|('ok', 'pass', 0)|2.6|454/0|
 |[f19bf99c015d3d745143e8bb4f056e0ea015ad40](https://github.com/ggerganov/llama.cpp/commit/f19bf99c015d3d745143e8bb4f056e0ea015ad40)<br>2024-07-24 14:36:00<br>Build Llama SYCL Intel with static libs<br>Joe Todd  Log: [log](./log/f19bf99c015d3d745143e8bb4f056e0ea015ad40)|92.0%|1332/1334|('ok', 'pass', 0)|2.6|474/0|
 |[79167d9e49aef9caa98e13ee7ca067ec9f88b4b5](https://github.com/ggerganov/llama.cpp/commit/79167d9e49aef9caa98e13ee7ca067ec9f88b4b5)<br>2024-07-24 11:55:26<br>Re-add erroneously removed -fsycl from G<br>GML_EXTRA_LIBS<br>Joe Todd  Log: [log](./log/79167d9e49aef9caa98e13ee7ca067ec9f88b4b5)|92.0%|1332/1334|('ok', 'pass', 0)|2.6|472/0|
