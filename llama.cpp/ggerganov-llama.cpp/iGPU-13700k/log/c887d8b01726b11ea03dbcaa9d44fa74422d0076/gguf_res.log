@@ -1,0 +1,3 @@
+Parameters:
+  log_file=ci_log/llama.cpp/ggerganov-llama.cpp/iGPU-13700k/log/c887d8b01726b11ea03dbcaa9d44fa74422d0076/gguf_raw.log
+(('ok', 'pass', 0), 2.6)
