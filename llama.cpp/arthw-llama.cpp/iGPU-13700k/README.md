@@ -13,6 +13,9 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[11c713b84415b93542dcb388cdc2b353c21c499c](https://github.com/arthw/llama.cpp/commit/11c713b84415b93542dcb388cdc2b353c21c499c)<br>2024-08-02 01:55:17<br>[SYCL] Fixing wrong VDR iq4nl value<br>Ouadie EL FAROUKI  Log: [log](./log/11c713b84415b93542dcb388cdc2b353c21c499c)|92.0%|1347/1351|('ok', 'pass', 0)|3.29|504/0|
+|[e1256c69e3d63d539b8a31c2d0f83ba24aad2a95](https://github.com/arthw/llama.cpp/commit/e1256c69e3d63d539b8a31c2d0f83ba24aad2a95)<br>2024-07-30 14:56:51<br>[SYCL] Add `TIMESTEP_EMBEDDING` OP<br>zhentaoyu  Log: [log](./log/e1256c69e3d63d539b8a31c2d0f83ba24aad2a95)|92.0%|1332/1334|('ok', 'pass', 0)|3.29|504/0|
+|[faaebf16a14e7417b2a76342ddd1ebb1e3e52f50](https://github.com/arthw/llama.cpp/commit/faaebf16a14e7417b2a76342ddd1ebb1e3e52f50)<br>2024-07-29 10:50:27<br>[SYCL] add conv support<br>Meng, Hengyu  Log: [log](./log/faaebf16a14e7417b2a76342ddd1ebb1e3e52f50)|92.0%|1332/1334|('ok', 'pass', 0)|3.29|488/0|
 |[345606c4b9f21678d0d2875b64d76c204ffb35c3](https://github.com/arthw/llama.cpp/commit/345606c4b9f21678d0d2875b64d76c204ffb35c3)<br>2024-08-01 14:43:08<br>fix link<br>arthw  Log: [log](./log/345606c4b9f21678d0d2875b64d76c204ffb35c3)|92.0%|1332/1334|('ok', 'pass', 0)|3.29|474/0|
 |[7e63e58ab1acd81dc31d4b938529b40a366cbe6d](https://github.com/arthw/llama.cpp/commit/7e63e58ab1acd81dc31d4b938529b40a366cbe6d)<br>2024-08-01 14:20:41<br>update guide<br>arthw  Log: [log](./log/7e63e58ab1acd81dc31d4b938529b40a366cbe6d)|92.0%|1332/1334|('ok', 'pass', 0)|3.29|474/0|
 |[f1bc5ad852d3007864bfca5c8898554a970fc1e6](https://github.com/arthw/llama.cpp/commit/f1bc5ad852d3007864bfca5c8898554a970fc1e6)<br>2024-08-01 13:14:58<br>add final newline<br>arthw  Log: [log](./log/f1bc5ad852d3007864bfca5c8898554a970fc1e6)|92.0%|1332/1334|('ok', 'pass', 0)|3.29|474/0|
