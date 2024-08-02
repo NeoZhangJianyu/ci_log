@@ -13,6 +13,7 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[0fbbd884589d585c3b43cae8c16938ffffb863b9](https://github.com/ggerganov/llama.cpp/commit/0fbbd884589d585c3b43cae8c16938ffffb863b9)<br>2024-08-02 01:55:17<br>[SYCL] Fixing wrong VDR iq4nl value<br>Ouadie EL FAROUKI  Log: [log](./log/0fbbd884589d585c3b43cae8c16938ffffb863b9)|96.0%|1347/1351|('ok', 'pass', 0)|4.95|491/0|
 |[c887d8b01726b11ea03dbcaa9d44fa74422d0076](https://github.com/ggerganov/llama.cpp/commit/c887d8b01726b11ea03dbcaa9d44fa74422d0076)<br>2024-07-30 14:56:51<br>[SYCL] Add `TIMESTEP_EMBEDDING` OP<br>zhentaoyu  Log: [log](./log/c887d8b01726b11ea03dbcaa9d44fa74422d0076)|96.0%|1332/1334|('ok', 'pass', 0)|4.95|491/0|
 |[0832de723695ab400316a6c49b9f712380e3a731](https://github.com/ggerganov/llama.cpp/commit/0832de723695ab400316a6c49b9f712380e3a731)<br>2024-07-29 10:50:27<br>[SYCL] add conv support<br>Meng, Hengyu  Log: [log](./log/0832de723695ab400316a6c49b9f712380e3a731)|96.0%|1332/1334|('ok', 'pass', 0)|4.95|475/0|
 |[2b1f616b208a4a21c4ee7a7eb85d822ff1d787af](https://github.com/ggerganov/llama.cpp/commit/2b1f616b208a4a21c4ee7a7eb85d822ff1d787af)<br>2024-07-27 04:41:55<br>ggml : reduce hash table reset cost<br>slaren  Log: [log](./log/2b1f616b208a4a21c4ee7a7eb85d822ff1d787af)|96.0%|1332/1334|('ok', 'pass', 0)|4.95|461/0|
