@@ -1,0 +1,3 @@
+Parameters:
+  log_file=ci_log/llama.cpp/ggerganov-llama.cpp/master/arc770/log/d13edb17ed1ce3b961016cbdb616b1c8d161c026/gguf_raw.log
+(('ok', 'pass', 0), 41.06)

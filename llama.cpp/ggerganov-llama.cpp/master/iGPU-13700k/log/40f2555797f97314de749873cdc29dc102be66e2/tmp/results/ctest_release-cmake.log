@@ -1,0 +1,62 @@
++ cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON ..
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/jianyuzh/ws/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
+
+
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is IntelLLVM 2025.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2025.0/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+CMake Warning at CMakeLists.txt:102 (message):
+  LLAMA_SYCL is deprecated and will be removed in the future.
+
+  Use GGML_SYCL instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:114 (llama_option_depr)
+
+
+CMake Warning at CMakeLists.txt:102 (message):
+  LLAMA_SYCL_F16 is deprecated and will be removed in the future.
+
+  Use GGML_SYCL_F16 instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:115 (llama_option_depr)
+
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fiopenmp  
+-- Found OpenMP: TRUE (found version "4.5")  
+-- OpenMP found
+-- Using llamafile
+-- Using AMX
+-- Performing Test SUPPORTS_SYCL
+-- Performing Test SUPPORTS_SYCL - Success
+-- Using oneAPI Release SYCL compiler (icpx).
+-- SYCL found
+-- DNNL found:1
+-- ccache found, compilation results will be cached. Disable with GGML_CCACHE=OFF.
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- x86 detected
+-- Configuring done (1.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/jianyuzh/ws/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release
+
+real	0m1.166s
+user	0m0.693s
+sys	0m0.476s
