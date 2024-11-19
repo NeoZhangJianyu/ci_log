@@ -9,6 +9,8 @@ This CI system is developed and maintained by NeoZhangJianyu. If you have any is
 |ggerganov/llama.cpp|master|iGPU-i5-1250P|[CI Log](./ggerganov-llama.cpp/master/iGPU-i5-1250P/README.md)|![Performance](./ggerganov-llama.cpp/master/iGPU-i5-1250P/perf.png)|
 |ggerganov/llama.cpp|master|iGPU-13700k|[CI Log](./ggerganov-llama.cpp/master/iGPU-13700k/README.md)|![Performance](./ggerganov-llama.cpp/master/iGPU-13700k/perf.png)|
 |ggerganov/llama.cpp|master|arc770|[CI Log](./ggerganov-llama.cpp/master/arc770/README.md)|![Performance](./ggerganov-llama.cpp/master/arc770/perf.png)|
+|arthw/llama.cpp|cherry-1118|iGPU-13700k|[CI Log](./arthw-llama.cpp/cherry-1118/iGPU-13700k/README.md)|![Performance](./arthw-llama.cpp/cherry-1118/iGPU-13700k/perf.png)|
+|arthw/llama.cpp|cherry-1118|arc770|[CI Log](./arthw-llama.cpp/cherry-1118/arc770/README.md)|![Performance](./arthw-llama.cpp/cherry-1118/arc770/perf.png)|
 |arthw/llama.cpp|master|iGPU-i5-1250P|[CI Log](./arthw-llama.cpp/master/iGPU-i5-1250P/README.md)|![Performance](./arthw-llama.cpp/master/iGPU-i5-1250P/perf.png)|
 |arthw/llama.cpp|master|iGPU-13700k|[CI Log](./arthw-llama.cpp/master/iGPU-13700k/README.md)|![Performance](./arthw-llama.cpp/master/iGPU-13700k/perf.png)|
 |arthw/llama.cpp|master|arc770|[CI Log](./arthw-llama.cpp/master/arc770/README.md)|![Performance](./arthw-llama.cpp/master/arc770/perf.png)|

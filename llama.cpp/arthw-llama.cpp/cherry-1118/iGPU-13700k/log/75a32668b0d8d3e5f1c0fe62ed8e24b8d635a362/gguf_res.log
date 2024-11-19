@@ -1,0 +1,3 @@
+Parameters:
+  log_file=ci_log/llama.cpp/arthw-llama.cpp/cherry-1118/iGPU-13700k/log/75a32668b0d8d3e5f1c0fe62ed8e24b8d635a362/gguf_raw.log
+(('ok', 'pass', 0), 3.28)
