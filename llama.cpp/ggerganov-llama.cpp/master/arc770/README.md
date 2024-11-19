@@ -13,6 +13,7 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[557924f22237c76387a39c4db5abae154d57e754](https://github.com/ggerganov/llama.cpp/commit/557924f22237c76387a39c4db5abae154d57e754)<br>2024-11-19 00:50:04<br>sycl: Revert MUL_MAT_OP support changes<br>Alberto Cabrera Pérez  Log: [log](./log/557924f22237c76387a39c4db5abae154d57e754)|93.0%|NA|('ok', 'pass', 0)|41.13|598/0|
 |[57f8355b29a8c7dfcd1fb6094758ad85644f8535](https://github.com/ggerganov/llama.cpp/commit/57f8355b29a8c7dfcd1fb6094758ad85644f8535)<br>2024-11-15 12:10:45<br>sycl: Update Intel docker images to use <br>DPC++ 2025.0<br>Romain Biessy  Log: [log](./log/57f8355b29a8c7dfcd1fb6094758ad85644f8535)|96.0%|NA|('ok', 'pass', 0)|21.47|598/0|
 |[5a54af4d4f588f109f31e456483fdf77096399d9](https://github.com/ggerganov/llama.cpp/commit/5a54af4d4f588f109f31e456483fdf77096399d9)<br>2024-11-15 04:09:12<br>sycl: Use syclcompat::dp4a<br>Romain Biessy  Log: [log](./log/5a54af4d4f588f109f31e456483fdf77096399d9)|96.0%|NA|('ok', 'pass', 0)|21.58|598/0|
 |[ae8de6d50a09d49545e0afab2e50cc4acfb280e2](https://github.com/ggerganov/llama.cpp/commit/ae8de6d50a09d49545e0afab2e50cc4acfb280e2)<br>2024-11-14 18:04:35<br>ggml : build backends as libraries<br>Diego Devesa  Log: [log](./log/ae8de6d50a09d49545e0afab2e50cc4acfb280e2)|96.0%|NA|('ok', 'pass', 0)|21.93|614/0|
