@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-02-02 15:54:14", "title": "[SYCL] get MAX_MEM_ALLOC from device property", "pr_id": "5270", "files": ["ggml-sycl.cpp"]}

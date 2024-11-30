@@ -1,0 +1,1 @@
+{"author": "Johannes G\u00e4\u00dfler <johannesg@5d6.de>", "date": "2024-06-03 16:28:58", "title": "make: fix debug options not being applied to NVCC", "pr_id": "7714", "files": ["Makefile"]}

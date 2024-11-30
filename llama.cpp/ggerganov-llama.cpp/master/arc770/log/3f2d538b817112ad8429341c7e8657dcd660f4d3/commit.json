@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-07-08 13:51:31", "title": "scripts : fix sync for sycl", "pr_id": "NA", "files": ["scripts/sync-ggml-am.sh", "scripts/sync-ggml.sh"]}

@@ -1,0 +1,1 @@
+{"author": "Molly Sophia <mollysophia379@gmail.com>", "date": "2024-08-06 15:26:46", "title": "ggml : add epsilon as a parameter for group_norm", "pr_id": "8818", "files": ["ggml/include/ggml.h", "ggml/src/ggml-cann/aclnn_ops.cpp", "ggml/src/ggml-cuda/norm.cu", "ggml/src/ggml-metal.m", "ggml/src/ggml-sycl/norm.cpp", "ggml/src/ggml.c", "tests/test-backend-ops.cpp"]}

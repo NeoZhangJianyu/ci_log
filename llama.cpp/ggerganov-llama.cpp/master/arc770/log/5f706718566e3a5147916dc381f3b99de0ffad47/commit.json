@@ -1,0 +1,1 @@
+{"author": "UEXTM.com <84163508+uextm@users.noreply.github.com>", "date": "2024-02-24 11:27:36", "title": "Introduce backend GUIDs", "pr_id": "gml/743", "files": ["ggml-backend-impl.h", "ggml-backend.c", "ggml-backend.h", "ggml-cuda.cu", "ggml-kompute.cpp", "ggml-metal.m", "ggml-sycl.cpp", "ggml-vulkan.cpp", "ggml.c", "ggml.h"]}

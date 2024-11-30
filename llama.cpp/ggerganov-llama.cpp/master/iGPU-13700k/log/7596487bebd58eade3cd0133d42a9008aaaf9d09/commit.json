@@ -1,0 +1,1 @@
+{"author": "Michael Podvitskiy <podvitskiymichael@gmail.com>", "date": "2024-09-15 09:06:38", "title": "cmake : try to fix sycl+intel build", "pr_id": "9487", "files": ["ggml/src/CMakeLists.txt"]}

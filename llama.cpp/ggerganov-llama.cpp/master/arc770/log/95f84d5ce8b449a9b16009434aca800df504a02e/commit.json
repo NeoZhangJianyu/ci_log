@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-05-27 17:34:51", "title": "Fix q_xxs using mul_mat_q", "pr_id": "7459", "files": ["ggml-sycl.cpp"]}

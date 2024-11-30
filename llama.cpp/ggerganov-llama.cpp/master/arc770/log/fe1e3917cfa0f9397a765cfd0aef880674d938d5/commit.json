@@ -1,0 +1,1 @@
+{"author": "slaren <slarengh@gmail.com>", "date": "2024-06-09 01:43:39", "title": "Revert \"[SYCL] Update rpc-server.cpp to include SYCL backend", "pr_id": "7682)", "files": ["examples/rpc/rpc-server.cpp"]}

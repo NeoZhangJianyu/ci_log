@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-25 15:52:41", "title": "[SYCL] fix SYCL backend build on windows is break by LOG", "pr_id": "erro", "files": ["common/log.h", "examples/sycl/win-build-sycl.bat"]}

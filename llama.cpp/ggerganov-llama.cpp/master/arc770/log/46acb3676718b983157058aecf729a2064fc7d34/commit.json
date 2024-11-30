@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-15 18:53:53", "title": "fix set main gpu error", "pr_id": "6073", "files": ["examples/sycl/build.sh", "examples/sycl/run-llama2.sh", "ggml-sycl.cpp", "ggml-sycl.h", "llama.cpp"]}

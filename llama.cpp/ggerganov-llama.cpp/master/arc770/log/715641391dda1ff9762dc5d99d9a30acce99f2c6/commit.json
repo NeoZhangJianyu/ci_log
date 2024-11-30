@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-02 19:49:30", "title": "Support multiple GPUs", "pr_id": "plit mode) on SYCL backen", "files": ["README-sycl.md", "common/common.cpp", "examples/llama-bench/llama-bench.cpp", "examples/sycl/ls-sycl-device.cpp", "examples/sycl/run-llama2.sh", "ggml-sycl.cpp", "ggml-sycl.h", "llama.cpp"]}

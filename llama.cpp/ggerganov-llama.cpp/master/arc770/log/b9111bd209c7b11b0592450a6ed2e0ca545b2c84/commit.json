@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-02-20 07:01:25", "title": "Update ggml_sycl_op_mul_mat_vec_q", "pr_id": "5502", "files": ["ggml-sycl.cpp"]}

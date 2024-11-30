@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-07-05 13:23:25", "title": "Enabled more data types for oneMKL gemm_batch", "pr_id": "8236", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/dpct/helper.hpp"]}

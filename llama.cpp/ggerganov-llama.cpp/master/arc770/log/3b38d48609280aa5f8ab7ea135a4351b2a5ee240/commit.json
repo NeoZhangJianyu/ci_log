@@ -1,0 +1,1 @@
+{"author": "jaime-m-p <167997752+jaime-m-p@users.noreply.github.com>", "date": "2024-06-04 09:17:17", "title": "Per token attributes", "pr_id": "7685", "files": ["llama.cpp", "llama.h", "models/ggml-vocab-phi-3.gguf", "tests/test-tokenizer-random.py"]}

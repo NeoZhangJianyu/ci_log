@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2024-08-06 09:09:12", "title": "[SYCL] correct cmd name", "pr_id": "8877", "files": ["examples/sycl/win-run-llama2.bat"]}

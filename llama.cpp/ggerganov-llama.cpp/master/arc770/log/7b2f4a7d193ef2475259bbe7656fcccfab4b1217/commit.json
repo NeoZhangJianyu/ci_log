@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-06-15 14:05:10", "title": "[SYCL] remove global variables", "pr_id": "7710", "files": ["CMakeLists.txt", "ggml-sycl.cpp", "ggml-sycl.h", "ggml-sycl/backend.hpp", "ggml-sycl/common.cpp", "ggml-sycl/common.hpp", "ggml-sycl/dpct/helper.hpp", "ggml-sycl/presets.hpp", "llama.cpp"]}

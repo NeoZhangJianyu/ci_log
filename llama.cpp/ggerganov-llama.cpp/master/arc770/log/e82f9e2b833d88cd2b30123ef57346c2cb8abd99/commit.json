@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-03-27 08:16:40", "title": "[SYCL] Fix batched impl for NVidia GPU", "pr_id": "6164", "files": ["ggml-sycl.cpp"]}

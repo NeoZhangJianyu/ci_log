@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-03-12 14:27:20", "title": "ggml : reuse quantum structs across backends", "pr_id": "5943", "files": ["ggml-common.h", "ggml-cuda.cu", "ggml-metal.m", "ggml-metal.metal", "ggml-quants.c", "ggml-quants.h", "ggml-sycl.cpp"]}

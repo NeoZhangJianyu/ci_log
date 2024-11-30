@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-05-29 07:00:24", "title": "[SYCL] Align GEMM dispatch", "pr_id": "7566", "files": ["CMakeLists.txt", "README.md", "ggml-sycl.cpp"]}

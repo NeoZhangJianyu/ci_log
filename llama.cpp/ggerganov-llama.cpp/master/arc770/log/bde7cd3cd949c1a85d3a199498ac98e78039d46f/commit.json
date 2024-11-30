@@ -1,0 +1,1 @@
+{"author": "Radoslav Gerganov <rgerganov@gmail.com>", "date": "2024-06-03 20:03:26", "title": "llama : offload to RPC in addition to other backends", "pr_id": "7640", "files": ["Makefile", "ggml-alloc.c", "ggml-backend.c", "ggml-backend.h", "ggml-rpc.cpp", "llama.cpp"]}

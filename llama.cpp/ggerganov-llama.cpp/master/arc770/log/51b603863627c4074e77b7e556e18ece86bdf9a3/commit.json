@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2024-09-11 01:53:42", "title": "sycl : update support conditions", "pr_id": "9394", "files": ["ggml/src/ggml-sycl.cpp"]}

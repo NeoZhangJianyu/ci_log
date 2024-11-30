@@ -1,0 +1,1 @@
+{"author": "Anas Ahouzi <112881240+aahouzi@users.noreply.github.com>", "date": "2024-04-23 02:53:18", "title": "[SYCL] Windows default build instructions without -DLLAMA_SYCL_F16 flag activated", "pr_id": "6767", "files": ["README-sycl.md"]}

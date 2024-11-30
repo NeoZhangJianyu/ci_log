@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-28 08:55:24", "title": "[SYCL] fix set main gpu crash", "pr_id": "6339", "files": ["ggml-sycl.cpp"]}

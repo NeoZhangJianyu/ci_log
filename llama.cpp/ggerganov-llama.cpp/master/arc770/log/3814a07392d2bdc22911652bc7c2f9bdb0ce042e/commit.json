@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-03-11 01:13:57", "title": "[SYCL] Add support for SYCL Nvidia target", "pr_id": "5738", "files": ["CMakeLists.txt", "README-sycl.md"]}

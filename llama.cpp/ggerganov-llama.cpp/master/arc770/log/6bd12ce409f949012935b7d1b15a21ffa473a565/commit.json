@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-05-28 22:22:50", "title": "sycl : fix assert", "pr_id": "7563", "files": ["ggml-sycl.cpp"]}

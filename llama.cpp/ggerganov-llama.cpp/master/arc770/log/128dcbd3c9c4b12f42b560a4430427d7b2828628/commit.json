@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-02-02 03:48:53", "title": "add --no-mmap in llama-bench", "pr_id": "5257", "files": ["README-sycl.md", "examples/llama-bench/llama-bench.cpp", "ggml-sycl.cpp", "ggml-sycl.h"]}

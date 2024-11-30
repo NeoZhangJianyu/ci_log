@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-06 12:08:32", "title": "add wait", "pr_id": "to make code stabl", "files": ["ci/run.sh", "ggml-sycl.cpp"]}

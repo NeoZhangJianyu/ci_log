@@ -1,0 +1,1 @@
+{"author": "Michael Podvitskiy <podvitskiymichael@gmail.com>", "date": "2024-03-04 10:05:42", "title": "ggml : introduce ggml_status", "pr_id": "gml/750", "files": ["ggml-backend-impl.h", "ggml-backend.c", "ggml-backend.h", "ggml-cuda.cu", "ggml-kompute.cpp", "ggml-metal.m", "ggml-opencl.cpp", "ggml-sycl.cpp", "ggml-vulkan.cpp", "ggml.c", "ggml.h"]}

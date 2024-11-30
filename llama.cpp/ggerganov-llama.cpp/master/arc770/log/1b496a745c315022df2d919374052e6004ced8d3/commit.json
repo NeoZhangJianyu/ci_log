@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-04-05 14:35:06", "title": "[SYCL] Fixed minor bug when enabling FP16 for non intel targets", "pr_id": "6464", "files": ["ggml-sycl.cpp"]}

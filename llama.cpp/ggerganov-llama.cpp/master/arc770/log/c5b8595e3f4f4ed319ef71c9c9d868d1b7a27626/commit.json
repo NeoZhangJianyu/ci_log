@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-03-21 06:10:52", "title": "Add nvidia and amd backends", "pr_id": "6157", "files": ["ggml-sycl.cpp"]}

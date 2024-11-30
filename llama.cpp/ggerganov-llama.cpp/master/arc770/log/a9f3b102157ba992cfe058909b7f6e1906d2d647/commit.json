@@ -1,0 +1,1 @@
+{"author": "luoyu-intel <yu.luo@intel.com>", "date": "2024-07-02 04:50:07", "title": "[SYCL] Fix win build conflict of math library", "pr_id": "8230", "files": ["CMakePresets.json", "ggml/src/CMakeLists.txt"]}

@@ -1,0 +1,1 @@
+{"author": "Chen Xi <xixichen08@foxmail.com>", "date": "2024-07-12 00:52:04", "title": "[SYCL] fix the mul_mat_id ut issues", "pr_id": "8427", "files": ["ggml/src/ggml-backend.c", "ggml/src/ggml-sycl.cpp", "src/llama.cpp"]}

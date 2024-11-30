@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <14088817+arthw@users.noreply.github.com>", "date": "2024-05-28 17:53:37", "title": "[SYCL]fix ggml_sycl_mul_mat_id", "pr_id": "to match the change of ap", "files": ["ggml-sycl.cpp"]}

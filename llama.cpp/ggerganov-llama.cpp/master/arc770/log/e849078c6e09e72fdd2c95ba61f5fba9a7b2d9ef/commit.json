@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-02-26 14:02:11", "title": "[SYCL] Add support for soft_max ALiBi", "pr_id": "5639", "files": ["ggml-sycl.cpp", "llama.cpp"]}

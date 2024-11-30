@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-20 11:21:41", "title": "update readme sycl for new update", "pr_id": "6151", "files": ["README-sycl.md", "examples/sycl/win-run-llama2.bat"]}

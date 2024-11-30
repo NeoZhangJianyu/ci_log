@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-03-07 19:14:49", "title": "Revert \"[SYCL] fix error when set main gpu to non-zero", "pr_id": "5901)", "files": ["ggml-sycl.cpp", "ggml-sycl.h", "llama.cpp"]}

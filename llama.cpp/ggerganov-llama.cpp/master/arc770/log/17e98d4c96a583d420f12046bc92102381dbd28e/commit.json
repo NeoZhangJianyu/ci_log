@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-04-15 17:12:26", "title": "fix mul_mat_id", "pr_id": "for new input, make the ut pas", "files": ["ggml-sycl.cpp"]}

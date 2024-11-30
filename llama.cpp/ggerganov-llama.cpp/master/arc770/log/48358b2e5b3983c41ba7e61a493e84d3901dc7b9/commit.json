@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-03-12 11:15:05", "title": "sycl : update IQ1_S kernels", "pr_id": "IP - not working!", "files": ["ggml-sycl.cpp"]}

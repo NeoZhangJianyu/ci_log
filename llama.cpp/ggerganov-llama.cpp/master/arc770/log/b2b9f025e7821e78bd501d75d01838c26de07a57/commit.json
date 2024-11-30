@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-01-31 21:04:46", "title": "format license text, restore apache license by legal suggestion", "pr_id": "5233", "files": ["examples/sycl/ls-sycl-device.cpp", "ggml-sycl.cpp", "ggml-sycl.h"]}

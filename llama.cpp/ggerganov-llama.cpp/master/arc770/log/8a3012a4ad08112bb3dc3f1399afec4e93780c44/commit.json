@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-03-09 12:47:57", "title": "ggml : add ggml-common.h to deduplicate shared code", "pr_id": "5940", "files": ["CMakeLists.txt", "Makefile", "ggml-common.h", "ggml-cuda.cu", "ggml-metal.metal", "ggml-quants.c", "ggml-quants.h", "ggml-sycl.cpp", "scripts/sync-ggml-am.sh", "scripts/sync-ggml.sh"]}

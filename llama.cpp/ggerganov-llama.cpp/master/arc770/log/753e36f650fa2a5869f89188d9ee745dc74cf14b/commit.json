@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <87009434+AidanBeltonS@users.noreply.github.com>", "date": "2024-03-15 09:26:20", "title": "[SYCL] Fix non-intel device selection", "pr_id": "6042", "files": ["ggml-sycl.cpp"]}

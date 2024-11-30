@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-09-04 16:26:33", "title": "[SYCL] Fix DMMV dequantization", "pr_id": "9279", "files": ["ggml/src/ggml-sycl/dmmv.cpp"]}

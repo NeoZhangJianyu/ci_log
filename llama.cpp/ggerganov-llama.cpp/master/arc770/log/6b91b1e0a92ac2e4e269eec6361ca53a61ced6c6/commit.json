@@ -1,0 +1,1 @@
+{"author": "Xuan Son Nguyen <thichthat@gmail.com>", "date": "2024-02-02 08:56:31", "title": "docker : add build for SYCL, Vulkan + update readme", "pr_id": "5228", "files": [".devops/main-intel.Dockerfile", ".devops/main-vulkan.Dockerfile", ".devops/server-intel.Dockerfile", ".devops/server-vulkan.Dockerfile", "README-sycl.md", "README.md"]}

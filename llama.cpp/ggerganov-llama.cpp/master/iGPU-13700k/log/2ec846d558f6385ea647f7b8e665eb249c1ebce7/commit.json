@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@intel.com>", "date": "2024-07-08 14:22:41", "title": "sycl : fix powf call in device code", "pr_id": "8368", "files": ["ggml/src/ggml-sycl/rope.cpp"]}

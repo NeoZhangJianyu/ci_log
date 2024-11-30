@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-09-12 17:44:17", "title": "enhance run script to be easy to change the parameters", "pr_id": "9448", "files": ["examples/sycl/run-llama2.sh"]}

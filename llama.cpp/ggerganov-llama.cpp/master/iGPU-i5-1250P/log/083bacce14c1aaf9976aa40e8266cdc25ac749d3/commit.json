@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-06-25 10:19:20", "title": "[SYCL] Re-enabled mul_mat_batched_sycl", "pr_id": "8095", "files": ["ggml-sycl.cpp"]}

@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-05-10 01:32:15", "title": "Minor arithmetic improvement to mmvq wrapper kernel", "pr_id": "7172", "files": ["ggml-sycl.cpp"]}

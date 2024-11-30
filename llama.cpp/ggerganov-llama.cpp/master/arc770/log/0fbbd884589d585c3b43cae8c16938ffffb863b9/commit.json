@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-08-02 01:55:17", "title": "[SYCL] Fixing wrong VDR iq4nl value", "pr_id": "8812", "files": ["ggml/src/ggml-sycl/mmvq.cpp"]}

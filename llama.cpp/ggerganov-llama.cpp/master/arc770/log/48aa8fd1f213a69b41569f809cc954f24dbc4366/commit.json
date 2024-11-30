@@ -1,0 +1,1 @@
+{"author": "John Balis <phobossystems@gmail.com>", "date": "2024-05-15 03:52:33", "title": "ggml : add `ggml_upscale_ext`", "pr_id": "gml/814", "files": ["ggml-cuda/upscale.cu", "ggml-metal.m", "ggml-metal.metal", "ggml-sycl.cpp", "ggml.c", "ggml.h", "tests/test-backend-ops.cpp"]}

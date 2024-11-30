@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-03-24 12:04:25", "title": "[SYCL] offload op", "pr_id": "6217", "files": ["ggml-sycl.cpp", "ggml-sycl.h", "ggml.c", "llama.cpp"]}

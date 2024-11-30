@@ -1,0 +1,1 @@
+{"author": "zhentaoyu <zhentao.yu@intel.com>", "date": "2024-07-01 19:39:06", "title": "[SYCL] Update SYCL-Rope op and Refactor", "pr_id": "8157", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/rope.cpp", "ggml/src/ggml-sycl/rope.hpp"]}

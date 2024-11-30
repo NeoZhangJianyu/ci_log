@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <14088817+arthw@users.noreply.github.com>", "date": "2024-05-24 10:06:56", "title": "add build shared lib in win release package", "pr_id": "7438", "files": ["examples/sycl/win-build-sycl.bat"]}

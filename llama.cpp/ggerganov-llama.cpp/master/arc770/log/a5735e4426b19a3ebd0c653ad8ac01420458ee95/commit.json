@@ -1,0 +1,1 @@
+{"author": "Masaya, Kato <62578291+msy-kato@users.noreply.github.com>", "date": "2024-06-04 00:14:15", "title": "ggml : use OpenMP as a thread pool", "pr_id": "7606", "files": [".github/workflows/build.yml", "CMakeLists.txt", "Makefile", "ggml.c"]}

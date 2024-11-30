@@ -1,0 +1,118 @@
++ gg_run_ctest_release
++ cd /home/zjy/ws/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp
++ tee /home/zjy/ws/llama.cpp/llama.cpp_ci/ci_log/llama.cpp/ggerganov-llama.cpp/master/arc770/log/266b8519ee6d21e7ba2bf56f5629e20a181fee8b/tmp/results/ctest_release.log
++ rm -rf build-ci-release
++ mkdir build-ci-release
++ cd build-ci-release
++ set -e
++ tee -a /home/zjy/ws/llama.cpp/llama.cpp_ci/ci_log/llama.cpp/ggerganov-llama.cpp/master/arc770/log/266b8519ee6d21e7ba2bf56f5629e20a181fee8b/tmp/results/ctest_release-cmake.log
++ cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON ..
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/zjy/ws/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is IntelLLVM 2025.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2025.0/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+CMake Warning at CMakeLists.txt:110 (message):
+  LLAMA_SYCL is deprecated and will be removed in the future.
+
+  Use GGML_SYCL instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:122 (llama_option_depr)
+
+
+CMake Warning at CMakeLists.txt:110 (message):
+  LLAMA_SYCL_F16 is deprecated and will be removed in the future.
+
+  Use GGML_SYCL_F16 instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:123 (llama_option_depr)
+
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fiopenmp (found version "5.1") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- OpenMP found
+-- Using llamafile
+-- x86 detected
+-- Using runtime weight conversion of Q4_0 to Q4_0_x_x to enable optimized GEMM/GEMV kernels
+-- Including CPU backend
+-- Using AMX
+-- Including AMX backend
+-- Performing Test SUPPORTS_SYCL
+-- Performing Test SUPPORTS_SYCL - Success
+-- Using oneAPI Release SYCL compiler (icpx).
+-- SYCL found
+-- DNNL found:1
+-- Including SYCL backend
+-- Configuring done (1.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/zjy/ws/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release
+
+real	0m1.460s
+user	0m0.825s
+sys	0m0.639s
++ tee -a /home/zjy/ws/llama.cpp/llama.cpp_ci/ci_log/llama.cpp/ggerganov-llama.cpp/master/arc770/log/266b8519ee6d21e7ba2bf56f5629e20a181fee8b/tmp/results/ctest_release-make.log
++ make -j
+[  0%] Generating build details from Git
+[  2%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  2%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  2%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  2%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  2%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  3%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-aarch64.c.o
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  6%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+[  6%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  6%] Built target build_info
+[  6%] Built target sha256
+[  6%] Built target sha1
+[  6%] Built target xxhash
+[  6%] Linking CXX shared library libggml-base.so
+[  6%] Built target ggml-base
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[  7%] Building CXX object ggml/src/ggml-amx/CMakeFiles/ggml-amx.dir/ggml-amx.cpp.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[  8%] Building CXX object ggml/src/ggml-amx/CMakeFiles/ggml-amx.dir/mmq.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+[ 14%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+[ 16%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o
+[ 16%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o
+[ 17%] Building CXX object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o
