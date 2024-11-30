@@ -1,0 +1,1 @@
+{"author": "arthw <14088817+arthw@users.noreply.github.com>", "date": "2024-07-14 11:07:56", "title": "fix UT of concat", "pr_id": "NA", "files": ["ggml/src/ggml-sycl.cpp"]}

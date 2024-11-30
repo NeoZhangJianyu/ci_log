@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-10-03 07:50:44", "title": "Fixed dequant precision issues in Q4_1 and Q5_1", "pr_id": "9711", "files": ["ggml/src/ggml-sycl/dequantize.hpp"]}

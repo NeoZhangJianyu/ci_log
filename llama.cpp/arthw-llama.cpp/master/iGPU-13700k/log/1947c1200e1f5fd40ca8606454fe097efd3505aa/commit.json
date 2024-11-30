@@ -1,0 +1,1 @@
+{"author": "arthw <14088817+arthw@users.noreply.github.com>", "date": "2024-08-01 11:21:16", "title": "support set main gpu", "pr_id": "NA", "files": ["ggml/include/ggml-sycl.h", "ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/common.cpp", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/sycl_device.cpp", "ggml/src/ggml-sycl/sycl_device.hpp", "src/llama.cpp"]}

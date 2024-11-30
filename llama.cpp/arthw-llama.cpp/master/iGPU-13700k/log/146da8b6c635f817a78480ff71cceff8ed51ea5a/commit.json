@@ -1,0 +1,1 @@
+{"author": "Joe Todd <joe.todd@codeplay.com>", "date": "2024-07-24 11:55:26", "title": "Re-add erroneously removed -fsycl from GGML_EXTRA_LIBS", "pr_id": "8667", "files": ["ggml/src/CMakeLists.txt"]}

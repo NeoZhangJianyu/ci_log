@@ -1,0 +1,1 @@
+{"author": "luoyu-intel <yu.luo@intel.com>", "date": "2024-08-22 12:50:10", "title": "[SYCL] Add oneDNN primitive support", "pr_id": "9091", "files": ["CMakePresets.json", "docs/backend/SYCL.md", "ggml/src/CMakeLists.txt", "ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/gemm.hpp"]}

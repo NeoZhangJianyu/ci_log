@@ -1,0 +1,2 @@
+../check_gguf_res.py Parameters:
+  log_file=../ci_log/llama.cpp/ggerganov-llama.cpp/master/arc770/log/5a8987793f3e7c1fbfa6806bfcd17d578071b6c9/gguf_raw.log

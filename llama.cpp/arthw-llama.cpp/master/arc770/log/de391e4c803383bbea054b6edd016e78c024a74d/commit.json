@@ -1,0 +1,1 @@
+{"author": "luoyu-intel <yu.luo@intel.com>", "date": "2024-06-20 13:19:05", "title": "[SYCL] Fix windows build and inference", "pr_id": "8003", "files": ["CMakeLists.txt", "CMakePresets.json", "README-sycl.md", "examples/sycl/win-build-sycl.bat", "ggml-sycl.cpp", "ggml-sycl/dpct/helper.hpp", "ggml.h"]}

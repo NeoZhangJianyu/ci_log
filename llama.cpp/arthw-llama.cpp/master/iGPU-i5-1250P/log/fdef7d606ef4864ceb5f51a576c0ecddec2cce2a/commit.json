@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <NA>", "date": "2024-07-04 11:55:23", "title": "replace get_work_group_size", "pr_id": "by local bu", "files": ["examples/sycl/build.sh", "ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/norm.cpp"]}

@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <NA>", "date": "2024-07-04 08:28:58", "title": "skip UT for BF16", "pr_id": "NA", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/convert.cpp"]}

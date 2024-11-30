@@ -1,0 +1,1 @@
+{"author": "pengxin99 <pengxin.yuan@intel.com>", "date": "2024-06-07 14:28:26", "title": "[SYCL] fix softmax r2r result wrong issue", "pr_id": "7811", "files": ["ggml-sycl.cpp"]}

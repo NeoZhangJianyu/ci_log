@@ -1,0 +1,1 @@
+{"author": "arthw <14088817+arthw@users.noreply.github.com>", "date": "2024-07-13 16:02:15", "title": "fix editorconfig check format issue", "pr_id": "NA", "files": ["ggml/src/ggml-sycl/sycl_hw.cpp", "ggml/src/ggml-sycl/sycl_hw.hpp"]}

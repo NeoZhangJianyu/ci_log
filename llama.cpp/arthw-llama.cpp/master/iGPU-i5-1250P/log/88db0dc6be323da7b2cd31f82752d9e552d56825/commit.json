@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-07-15 19:32:15", "title": "[SYCL] add concat through dim 1/2", "pr_id": "8483", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/concat.cpp", "ggml/src/ggml-sycl/concat.hpp"]}

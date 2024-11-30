@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <NA>", "date": "2024-07-14 01:02:58", "title": "mv softmax to separated file", "pr_id": "NA", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/softmax.cpp", "ggml/src/ggml-sycl/softmax.hpp"]}

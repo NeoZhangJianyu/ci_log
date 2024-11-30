@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-08-07 11:25:36", "title": "[SYCL] Updated SYCL device filtering", "pr_id": "8901", "files": ["examples/sycl/README.md", "ggml/src/ggml-sycl/dpct.hpp"]}
