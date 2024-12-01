@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-07-05 10:32:29", "title": "rm get_work_group_size", "pr_id": "by local cache for performanc", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/norm.cpp"]}

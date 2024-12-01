@@ -1,0 +1,1 @@
+{"author": "Joe Todd <joe.todd@codeplay.com>", "date": "2024-07-24 14:36:00", "title": "Build Llama SYCL Intel with static libs", "pr_id": "8668", "files": [".devops/llama-cli-intel.Dockerfile", ".devops/llama-server-intel.Dockerfile"]}

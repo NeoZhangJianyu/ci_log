@@ -1,0 +1,1 @@
+{"author": "AidanBeltonS <aidan.belton@codeplay.com>", "date": "2024-07-10 16:10:49", "title": "[SYCL] Use multi_ptr to clean up deprecated warnings", "pr_id": "8256", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/convert.cpp", "ggml/src/ggml-sycl/mmq.cpp", "ggml/src/ggml-sycl/norm.cpp", "ggml/src/ggml-sycl/softmax.cpp"]}

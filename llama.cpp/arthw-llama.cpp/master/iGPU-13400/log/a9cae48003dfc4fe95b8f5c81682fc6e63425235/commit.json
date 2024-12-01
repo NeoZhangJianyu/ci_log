@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-06-12 16:00:22", "title": "tests : add non-cont unary tests", "pr_id": "7857", "files": ["ggml-cuda.cu", "ggml-cuda/unary.cu", "ggml-kompute.cpp", "ggml-metal.m", "ggml-sycl.cpp", "ggml-vulkan.cpp", "ggml.c", "tests/test-backend-ops.cpp"]}

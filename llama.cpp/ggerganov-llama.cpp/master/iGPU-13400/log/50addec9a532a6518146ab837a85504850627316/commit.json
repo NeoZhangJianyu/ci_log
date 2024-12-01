@@ -1,0 +1,1 @@
+{"author": "Meng, Hengyu <hengyu.meng@intel.com>", "date": "2024-08-20 23:50:17", "title": "[SYCL] fallback mmvq", "pr_id": "9088", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/common.hpp"]}

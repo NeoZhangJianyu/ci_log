@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshanbiswas@fedoraproject.org>", "date": "2024-09-23 08:58:06", "title": "Revert \"[SYCL] fallback mmvq", "pr_id": "9088)", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/common.hpp"]}

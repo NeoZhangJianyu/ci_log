@@ -1,0 +1,1 @@
+{"author": "Ouadie EL FAROUKI <ouadie.elfarouki@codeplay.com>", "date": "2024-10-18 06:46:16", "title": "[SYCL] Add SYCL Backend registry, device and Event Interfaces", "pr_id": "9705", "files": ["examples/llama-bench/llama-bench.cpp", "ggml/include/ggml-sycl.h", "ggml/src/ggml-backend.cpp", "ggml/src/ggml-sycl.cpp", "src/llama.cpp"]}

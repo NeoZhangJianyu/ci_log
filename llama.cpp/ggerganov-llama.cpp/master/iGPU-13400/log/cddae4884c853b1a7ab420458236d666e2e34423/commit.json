@@ -1,0 +1,1 @@
+{"author": "\u856d\u6fa7\u90a6 <45505768+shou692199@users.noreply.github.com>", "date": "2024-08-30 20:10:01", "title": "Correct typo run_llama2.sh > run-llama2.sh", "pr_id": "9149", "files": ["docs/backend/SYCL.md"]}

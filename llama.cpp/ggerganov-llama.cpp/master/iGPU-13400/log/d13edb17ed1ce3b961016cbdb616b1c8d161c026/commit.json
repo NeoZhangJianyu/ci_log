@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-09-20 20:12:52", "title": "ggml : fix builds", "pr_id": "0", "files": ["ggml/src/ggml-cuda/out-prod.cu", "ggml/src/ggml-cuda/vendors/hip.h", "ggml/src/ggml-sycl.cpp"]}

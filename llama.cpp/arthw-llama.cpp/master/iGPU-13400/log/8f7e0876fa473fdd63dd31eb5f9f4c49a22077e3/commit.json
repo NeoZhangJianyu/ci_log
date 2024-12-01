@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2024-10-02 13:57:18", "title": "[SYCL] Initial cmake support of SYCL for AMD GPUs", "pr_id": "9658", "files": ["docs/backend/SYCL.md", "ggml/src/CMakeLists.txt"]}

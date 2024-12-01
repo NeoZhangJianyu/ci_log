@@ -1,0 +1,1 @@
+{"author": "Joe Todd <joe.todd@codeplay.com>", "date": "2024-07-23 14:58:37", "title": "sycl : Add support for non-release DPC++ & oneMKL", "pr_id": "8644", "files": ["ggml/src/CMakeLists.txt"]}

@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2024-11-29 09:49:43", "title": "sycl : Reroute permuted mul_mats through oneMKL", "pr_id": "10408", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}

@@ -1,0 +1,1 @@
+{"author": "arthw <14088817+arthw@users.noreply.github.com>", "date": "2024-11-19 08:20:52", "title": "fix for windows building", "pr_id": "NA", "files": ["ggml/include/ggml-sycl.h", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
