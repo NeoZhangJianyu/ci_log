@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan.biswas@gmail.com>", "date": "2024-12-02 12:34:11", "title": "SYCL: Fix and switch to GGML_LOG system instead of fprintf", "pr_id": "10579", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
