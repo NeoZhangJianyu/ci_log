@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2024-10-24 21:23:33", "title": "ci : fix cmake flags for SYCL", "pr_id": "NA", "files": ["ci/run.sh"]}

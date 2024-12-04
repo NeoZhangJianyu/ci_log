@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2024-11-15 12:10:45", "title": "sycl: Update Intel docker images to use DPC++ 2025.0", "pr_id": "10305", "files": [".devops/llama-cli-intel.Dockerfile", ".devops/llama-server-intel.Dockerfile"]}

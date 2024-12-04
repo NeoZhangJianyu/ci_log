@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2024-11-15 04:09:12", "title": "sycl: Use syclcompat::dp4a", "pr_id": "10267", "files": [".github/workflows/build.yml", "docs/backend/SYCL.md", "ggml/src/ggml-sycl/dpct/helper.hpp", "ggml/src/ggml-sycl/vecdotq.hpp"]}

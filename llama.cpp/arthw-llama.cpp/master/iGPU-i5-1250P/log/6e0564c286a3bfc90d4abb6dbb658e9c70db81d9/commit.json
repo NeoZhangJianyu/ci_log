@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2024-09-18 08:30:31", "title": "[SYCL]set context default value to avoid memory issue, update guide", "pr_id": "9476", "files": ["docs/backend/SYCL.md", "examples/sycl/run-llama2.sh"]}

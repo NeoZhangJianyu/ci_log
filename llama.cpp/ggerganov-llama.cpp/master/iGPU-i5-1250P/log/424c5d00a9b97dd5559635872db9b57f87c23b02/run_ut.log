@@ -1,0 +1,1948 @@
++ gg_run_ctest_release
++ cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp
++ tee /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/tmp/ci_log/424c5d00a9b97dd5559635872db9b57f87c23b02/tmp/results/ctest_release.log
++ rm -rf build-ci-release
++ mkdir build-ci-release
++ cd build-ci-release
++ set -e
++ tee -a /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/tmp/ci_log/424c5d00a9b97dd5559635872db9b57f87c23b02/tmp/results/ctest_release-cmake.log
++ cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON ..
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
+
+
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is IntelLLVM 2024.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2024.1/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+CMake Warning at CMakeLists.txt:95 (message):
+  LLAMA_SYCL is deprecated and will be removed in the future.
+
+  Use GGML_SYCL instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:107 (llama_option_depr)
+
+
+CMake Warning at CMakeLists.txt:95 (message):
+  LLAMA_SYCL_F16 is deprecated and will be removed in the future.
+
+  Use GGML_SYCL_F16 instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:108 (llama_option_depr)
+
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fiopenmp  
+-- Found OpenMP: TRUE (found version "4.5")  
+-- OpenMP found
+-- Using llamafile
+-- Performing Test SUPPORTS_SYCL
+-- Performing Test SUPPORTS_SYCL - Success
+-- Using oneAPI Release SYCL compiler (icpx).
+-- SYCL found
+-- DNNL found:1
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- x86 detected
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/build-ci-release
+
+real	0m0.912s
+user	0m0.614s
+sys	0m0.299s
++ tee -a /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/tmp/ci_log/424c5d00a9b97dd5559635872db9b57f87c23b02/tmp/results/ctest_release-make.log
++ make -j
+[  0%] Generating build details from Git
+[  1%] Building C object ggml/src/CMakeFiles/ggml.dir/ggml.c.o
+[  1%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  2%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+[  2%] Building C object ggml/src/CMakeFiles/ggml.dir/ggml-alloc.c.o
+[  2%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/convert.cpp.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml.dir/ggml-quants.c.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml.dir/ggml-backend.c.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/dmmv.cpp.o
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/common.cpp.o
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/mmvq.cpp.o
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/concat.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/mmq.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/conv.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/im2col.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/rope.cpp.o
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/norm.cpp.o
+[  9%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/softmax.cpp.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl/tsembd.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-sycl.cpp.o
+[ 12%] Building C object ggml/src/CMakeFiles/ggml.dir/ggml-aarch64.c.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml.dir/llamafile/sgemm.cpp.o
+[ 13%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[ 13%] Built target sha256
+In function ‘SHA1Update’,
+    inlined from ‘SHA1Final’ at /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:265:5:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: warning: ‘SHA1Transform’ reading 64 bytes from a region of size 0 [-Wstringop-overread]
+  219 |             SHA1Transform(context->state, &data[i]);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: note: referencing argument 2 of type ‘const unsigned char[64]’
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c: In function ‘SHA1Final’:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:54:6: note: in a call to function ‘SHA1Transform’
+   54 | void SHA1Transform(
+      |      ^~~~~~~~~~~~~
+In function ‘SHA1Update’,
+    inlined from ‘SHA1Final’ at /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:269:9:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: warning: ‘SHA1Transform’ reading 64 bytes from a region of size 0 [-Wstringop-overread]
+  219 |             SHA1Transform(context->state, &data[i]);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: note: referencing argument 2 of type ‘const unsigned char[64]’
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c: In function ‘SHA1Final’:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:54:6: note: in a call to function ‘SHA1Transform’
+   54 | void SHA1Transform(
+      |      ^~~~~~~~~~~~~
+[ 13%] Built target build_info
+[ 13%] Built target sha1
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:235:9: warning: TODO: add ggml_sycl_op_soft_max() F16 src1 support [-W#pragma-messages]
+  235 | #pragma message("TODO: add ggml_sycl_op_soft_max() F16 src1 support")
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:236:9: warning: ref:  https://github.com/ggerganov/llama.cpp/pull/5021 [-W#pragma-messages]
+  236 | #pragma message("ref:  https://github.com/ggerganov/llama.cpp/pull/5021")
+      |         ^
+2 warnings generated.
+[ 13%] Built target xxhash
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:50:29: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+   50 |   if (item_ct1.get_group(1) < ne01) { // src0
+      |       ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:73:29: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+   73 |   if (item_ct1.get_group(0) < ne02) { // src0
+      |       ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.hIn file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         :196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9:/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+ warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+|         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:2:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:971:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  971 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:972:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  972 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1012:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1012 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1013:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1013 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cppIn file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:39:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/backend.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+:427:33: warning: cast from 'const void *__restrict' to 'type-parameter-0-0 *' drops const qualifier [-Wcast-qual]
+  427 |     const src_t * x = (src_t *) vx;
+      |                                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:756:18: warning: unused variable 'iq2xs_grid_ptr_ct1' [-Wunused-variable]
+  756 |             auto iq2xs_grid_ptr_ct1 = &iq2xs_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:757:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  757 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:781:18: warning: unused variable 'iq2xs_grid_ptr_ct1' [-Wunused-variable]
+  781 |             auto iq2xs_grid_ptr_ct1 = &iq2xs_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:782:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  782 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:806:18: warning: unused variable 'iq3xxs_grid_ptr_ct1' [-Wunused-variable]
+  806 |             auto iq3xxs_grid_ptr_ct1 = &iq3xxs_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:807:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  807 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:831:18: warning: unused variable 'iq3s_grid_ptr_ct1' [-Wunused-variable]
+  831 |             auto iq3s_grid_ptr_ct1 = &iq3s_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:855:18: warning: unused variable 'iq1s_grid_ptr_ct1' [-Wunused-variable]
+  855 |             auto iq1s_grid_ptr_ct1 = &iq1s_grid_gpu[0];
+      |                  ^~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:856:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  856 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:955:19: warning: unused variable 'nrows_dst' [-Wunused-variable]
+  955 |     const int64_t nrows_dst = id == ctx.device ? ne00 : row_diff;
+      |                   ^~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.cpp:196:33: warning: unused parameter 'ctx' [-Wunused-parameter]
+  196 |     ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1, ggml_tensor *dst,
+      |                                 ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:39:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/backend.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:41:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/gemm.hpp:54:56: warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+   54 |         auto a_mem = dnnl::memory(a_in_md, eng, (void*)a);
+      |                                                        ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/gemm.hpp:55:56: warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+   55 |         auto b_mem = dnnl::memory(b_in_md, eng, (void*)b);
+      |                                                        ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/gemm.hpp:82:56: warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+   82 |         auto a_mem = dnnl::memory(a_in_md, eng, (void*)a);
+      |                                                        ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/gemm.hpp:83:56: warning: cast from 'const void *' to 'void *' drops const qualifier [-Wcast-qual]
+   83 |         auto b_mem = dnnl::memory(b_in_md, eng, (void*)b);
+      |                                                        ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:315:37: warning: cast from 'const float *' to 'char *' drops const qualifier [-Wcast-qual]
+  315 |     dst[index] = *(float *)((char *)x + i03 * nb03 + i02 * nb02 + i01 * nb01 + i00 * nb00);
+      |                                     ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:330:31: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+  330 |         item_ct1.get_group(0) < ne02) {
+      |         ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:329:46: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+  329 |     if (nidx < ne00 && item_ct1.get_group(1) < ne01 &&
+      |                        ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:368:36: warning: cast from 'const float *' to 'vec<float, QUANT_BLOCK_TILE> *' drops const qualifier [-Wcast-qual]
+  368 |     const TC xi = ix < kx ? *(TC *)&x[iy * kx + ix] : zeros;
+      |                                    ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:926:17: warning: enumeration value 'GGML_OP_POOL_COUNT' not handled in switch [-Wswitch]
+  926 |         switch (op) {
+      |                 ^~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:944:25: warning: enumeration value 'GGML_OP_POOL_COUNT' not handled in switch [-Wswitch]
+  944 |                 switch (op) {
+      |                         ^~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:954:55: warning: unused parameter 'ctx' [-Wunused-parameter]
+  954 | static void get_rows_sycl(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:989:61: warning: unused parameter 'ctx' [-Wunused-parameter]
+  989 | static void get_rows_sycl_float(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:1029:49: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 1029 |     void operator()(ggml_backend_sycIn file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+l_context & ctx,
+      |                                                 ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:1750:23: warning: unused variable 'backend' [-Wunused-variable]
+ 1750 |         sycl::backend backend = device.get_backend();
+      |                       ^~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:1819:72: warning: more '%' conversions than data arguments [-Wformat-insufficient-args]
+ 1819 |         fprintf(stderr, "%s: failed to initialize " GGML_SYCL_NAME ": %s\n", __func__);
+      |                                                                       ~^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:1898:9: warning: field 'qptr' will be initialized after field 'device' [-Wreorder-ctor]
+ 1898 |         qptr(qptr_),
+      |         ^~~~~~~~~~~
+      |         device(device_)
+ 1899 |         device(device_) {
+      |         ~~~~~~~~~~~~~~~
+      |         qptr(qptr_)
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2007:14: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2007 |     if (src->backend == GGML_BACKEND_TYPE_CPU) {
+      |              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2011:21: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2011 |     } else if (src->backend == GGML_BACKEND_TYPE_GPU || src->backend == GGML_BACKEND_TYPE_GPU_SPLIT) {
+      |                     ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2011:62: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2011 |     } else if (src->backend == GGML_BACKEND_TYPE_GPU || src->backend == GGML_BACKEND_TYPE_GPU_SPLIT) {
+      |                                                              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2012:26: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2012 |         GGML_ASSERT(src->backend != GGML_BACKEND_TYPE_GPU_SPLIT || (i1_low == 0 && i1_high == src->ne[1]));
+      |                          ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         G/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:36:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   GML_DEPRECATED(enum ggml_bac36 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+kend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGM/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:91:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   91 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cppL_DEPRECATED(func, hint) func __attrib:126:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  126 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+ute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:171:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  171 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2162:58: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2162 | inline void ggml_sycl_op_acc(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                          ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2198:59: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2198 | inline void ggml_sycl_op_gelu(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                           ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2213:59: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2213 | inline void ggml_sycl_op_silu(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                           ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2228:65: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2228 | inline void ggml_sycl_op_gelu_quick(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2244:59: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2244 | inline void ggml_sycl_op_tanh(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                           ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2258:59: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2258 | inline void ggml_sycl_op_relu(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                           ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2273:66: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2273 | static void ggml_sycl_op_hardsigmoid(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                                  ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:In file included from 2289:64: warning: unused parameter 'ctx' [-Wunused-parameter]
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types] 
+  154 |         struct {
+      |         ^
+2289 | static void ggm/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175l:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |    _     sstruct {
+      y|         ^
+cl_op_hards/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.hwish(ggml_back:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+e  196 |   n      dstr_uct {
+      s|         ^
+ycl_context & ctx, const/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+ ggml_tens/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+or *src/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+0,
+      |                                                                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2304:65: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2304 | inline void ggml_sycl_op_leaky_relu(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2323:58: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2323 | inline void ggml_sycl_op_sqr(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                          ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2338:62: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2338 | inline void ggml_sycl_op_upscale(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2361:58: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2361 | inline void ggml_sycl_op_pad(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                          ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:2489:1326:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+: warning: unused variable 'alpha_f16' [-Wunused-variable]
+ 2489 |         const sycl::ha/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+lf alpha_f16 = 1.0f;
+      |                          ^~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2490:26: warning: unused variable 'beta_f16' [-Wunused-variable]:
+196 :24909 | :   warning:  anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]     const sycl::h
+alf b  eta_f16 = 1960 | .0 f; 
+        |                           ^~~~~~~~
+   struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2528:21: warning: unused variable 'alpha' [-Wunused-variable]
+:288:9:  warning: 2528anonymous types declared in an anonymous union are an extension [-Wnested-anon-types] | 
+          cons288t |          struct {
+      |         ^
+float alpha = 1.0f;/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h
+      |                     ^~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2529:21: warning: unused variable 'beta' [-Wunused-variable]
+:305 2529: | 9 :   warning:  anonymous types declared in an anonymous union are an extension [-Wnested-anon-types] 
+   305 |         struct {
+      |         ^
+  const float beta = 0.0f;
+      |                     ^~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2452:9: warning: unused variable 'ldc' [-Wunused-variable]
+ 2452 |     int ldc = id == ctx.device ? ne0 : row_diff;
+      |         ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2553:61: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2553 | static void ggml_sycl_op_pool2d(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2595:63: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2595 | inline void ggml_sycl_op_sum_rows(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2614:62: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2614 | inline void ggml_sycl_op_argsort(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2635:68: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2635 | inline void ggml_sycl_op_diag_mask_inf(ggml_backend_sycl_context & ctx, const ggml_tensor *src0,
+      |                                                                    ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2657:60: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 2657 | inline void ggml_sycl_op_scale(ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2680:60: warning: unused parameter 'ctx' [-Wunused-parameter]
+ /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   2680 | inline void ggml_sy56cl_op_ |      c       for (lsize_t i a= 1; i < mnreduce; pi += 1()
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cppggml:66:30: _warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66b |         faor (size_tc i = 1k; i < nereducen; i +=d 1)
+      | _                           ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cppsycl_con:92:t34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |    e         foxr (size_t ti = 1;  i < n&reduce;  i += 1)
+c      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cppt:103:30: xwarning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |   ,      for  (size_t i c= 1; i < onreducne; i +s= 1)
+      |                            ~ ^ ~~~~~~~
+t ggml_tensor *src0, const ggml_tensor *src1,
+      |                                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2713:36: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2713 |     GGML_ASSERT(!use_src1 || src1->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                                    ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp|         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+:235:9: warning: TODO: add ggml_sycl_op_soft_max() F16 src1 support [-W#pragma-messages]
+    235 | #pragm202 | # a mes sage("TODO:  add gg ml_sycl_op_sdoft_max()e F16 src1f support")
+      i|         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cppne GG:236:9: warning: ref:  https://github.com/ggerganov/llama.cpp/pull/5021 [-W#pragma-messages]
+  236 | #pMragma messagLe("ref:  h_ttps:/D/githuEb.com/ggerganPov/llama.Rcpp/puEll/C5021")A
+      |         ^
+TED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2714:36: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2714 |     GGML_ASSERT(              dst->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                                    ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2708:19: warning: unused variable 'nrows0' [-Wunused-variable]
+ 2708 |     const int64_t nrows0 = ggml_nrows(src0);
+      |                   ^~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2711:19: warning: unused variable 'nrows1' [-Wunused-variable]
+ 2711 |     const int64_t nrows1 = use_src1 ? ggml_nrows(src1) : 1;
+      |                   ^~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2716:29: warning: unused variable 'src0_extra' [-Wunused-variable]
+ 2716 |     ggml_tensor_extra_gpu * src0_extra =            (ggml_tensor_extra_gpu *) src0->extra;
+      |                             ^~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2717:29: warning: unused variable 'src1_extra' [-Wunused-variable]
+ 2717 |     ggml_tensor_extra_gpu * src1_extra = use_src1 ? (ggml_tensor_extra_gpu *) src1->extra : nullptr;
+      |                             ^~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2718:29: warning: unused variable 'dst_extra' [-Wunused-variable]
+ 2718 |     ggml_tensor_extra_gpu * dst_extra  =            (ggml_tensor_extra_gpu *)  dst->extra;
+      |                             ^~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2808:22: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2808 |     GGML_ASSERT(dst->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                      ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2809:23: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2809 |     GGML_ASSERT(src1->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2830:30: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 2830 |     const bool split = src0->backend == GGML_BACKEND_TYPE_GPU_SPLIT;
+      |                              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2823:30:/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp warning: unused variable 'dst_extra' [-Wunused-variable]
+ 2823 |    :86:37: warning: unused parameter 'ctx' [-Wunused-parameter]
+    g86gml_ | t en s or _ext ra _ g gpu *  dst_extra = gm(ggml_tensor_extl_ra_gpu *)  dst->beacxtra;
+      |                              ^~~~~~~~~
+kend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                     ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3241:23: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 3241 |     GGML_ASSERT(src0->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3274:23: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 3274 |     GGML_ASSERT(src0->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3336:23: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 3336 |     GGML_ASSERT(src0->backend != GGML_BACKEND_TYPE_GPU_SPLIT);
+      |                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3341:19: warning: unused variable 'ne_dst' [-Wunused-variable]
+ 3341 |     const int64_t ne_dst = ggml_nelements(dst);
+      |                   ^~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3447:51: warning: unused parameter 'type' [-Wunused-parameter]
+ 3447 | inline bool ggml_sycl_supports_mmq(enum ggml_type type) {
+      |                                                   ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:35:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml-sycl.h:9:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:584:12: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+  584 |     struct ggml_tensor {
+      |            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3622:28: note: in implicit copy constructor for 'ggml_tensor' first required here
+ 3622 |     ggml_tensor src0_row = *src0;
+      |                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attrib9ute__ warning((deprecated(hsin generatedt).
+))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3863:55: warning: unused parameter 'ctx' [-Wunused-parameter]
+ 3863 | static void ggml_sycl_nop(ggml_backend_sycl_context & ctx, const ggml_tensor * src0, const ggml_tensor * src1, ggml_tensor * dst) {
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:3876:39: warning: comparison of integers of different signs: 'unsigned int' and 'const int' [-Wsign-compare]
+ 3876 |     if (dpct::get_current_device_id() == main_device) return;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4173:17: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 4173 |         tensor->backend = tensor->view_src->backend;
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4173:45: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 4173 |         tensor->backend = tensor->view_src->backend;
+      |                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4242:59: warning: unused parameter 'buffer' [-Wunused-parameter]
+ 4242 | ggml_backend_sycl_buffer_cpy_tensor(ggml_backend_buffer_t buffer,
+      |                                                           ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4613:13: warning: 'backend' is deprecated: use the buffer type to find the storage location of the tensor [-Wdeprecated-declarations]
+ 4613 |     tensor->backend = GGML_BACKEND_TYPE_GPU_SPLIT;
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:587:9: note: 'backend' has been explicitly marked deprecated here
+  587 |         GGML_DEPRECATED(enum ggml_backend_type backend, "use the buffer type to find the storage location of the tensor");
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/../include/ggml.h:202:61: note: expanded from macro 'GGML_DEPRECATED'
+  202 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprIn file included from ecated(hint)))
+      |                                                             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4738:30: error: cannot initialize a member subobject of type 'void (*)(ggml_backend_buffer_t, struct ggml_tensor *, uint8_t, size_t, size_t)' (aka 'void (*)(ggml_backend_buffer *, ggml_tensor *, unsigned char, unsigned long, unsigned long)') with an lvalue of type 'void (ggml_backend_buffer_t, ggml_tensor *, const void *, size_t, size_t)' (aka 'void (ggml_backend_buffer *, ggml_tensor *, const void *, unsigned long, unsigned long)'): type mismatch at 3rd parameter ('uint8_t' (aka 'unsigned char') vs 'const void *')
+ 4738 |     /* .set_tensor      = */ ggml_backend_sycl_split_buffer_set_tensor,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4739:30: error: cannot initialize a member subobject of type 'void (*)(ggml_backend_buffer_t, struct ggml_tensor *, const void *, size_t, size_t)' (aka 'void (*)(ggml_backend_buffer *, ggml_tensor *, const void *, unsigned long, unsigned long)') with an lvalue of type 'void (ggml_backend_buffer_t, const ggml_tensor *, void *, size_t, size_t)' (aka 'void (ggml_backend_buffer *, const ggml_tensor *, void *, unsigned long, unsigned long)'): type mismatch at 2nd parameter ('struct ggml_tensor *' vs 'const ggml_tensor *')
+ 4739 |     /* .get_tensor      = */ ggml_backend_sycl_split_buffer_get_tensor,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4741:30: error: cannot initialize a member subobject of type 'bool (*)(ggml_backend_buffer_t, const struct ggml_tensor *, struct ggml_tensor *)' (aka 'bool (*)(ggml_backend_buffer *, const ggml_tensor *, ggml_tensor *)') with an lvalue of type 'void (ggml_backend_buffer_t, uint8_t)' (aka 'void (ggml_backend_buffer *, unsigned char)'): different number of parameters (3 vs 2)
+ 4741 |     /* .clear           = */ ggml_backend_sycl_split_buffer_clear,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:4743:1: warning: missing field 'reset' initializer [-Wmissing-field-initializers]
+ 4743 | };
+      | ^
+7 warnings generated.
+7 warnings generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:59:24: warning: unused parameter 'src1' [-Wunused-parameter]
+   59 |     const ggml_tensor *src1, ggml_tensor * dst) {
+      |                        ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:14:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:971:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  971 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:972:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  972 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1012:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1012 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1013:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1013 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:817:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  817 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:821:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  821 |         int i = (i0 + i_offset * QI4_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:965:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  965 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:969:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  969 |         int i = (i0 + i_offset * QI5_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1113:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+ 1113 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1118:44: warning: division by zero is undefined [-Wdivision-by-zero]
+ 1118 |         int i = (i0 + i_offset * QI6_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 0, 0>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:167:13: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 0, 0>' requested here
+  167 |             soft_max_f32_submitter<true, 0, 0>(x, mask, dst, ncols_x, nrows_y, scale,
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 32, 32>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, nc8ols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:174:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 32, 32>' requested here
+  174 |                 soft_max_f32_submitter<true, 32, 32>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+ warning/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   s generated.
+66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 64, 64>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:179:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 64, 64>' requested here
+  179 |                 soft_max_f32_submitter<true, 64, 64>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 128, 128>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:184:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 128, 128>' requested here
+  184 |                 soft_max_f32_submitter<true, 128, 128>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 256, 256>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:189:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 256, 256>' requested here
+  189 |                 soft_max_f32_submitter<true, 256, 256>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 512, 512>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:194:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 512, 512>' requested here
+  194 |                 soft_max_f32_submitter<true, 512, 512>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 1024, 1024>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:199:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 1024, 1024>' requested here
+  199 |                 soft_max_f32_submitter<true, 1024, 1024>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 2048, 1024>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:204:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 2048, 1024>' requested here
+  204 |                 soft_max_f32_submitter<true, 2048, 1024>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 4096, 1024>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:209:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 4096, 1024>' requested here
+  209 |                 soft_max_f32_submitter<true, 4096, 1024>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<false, 0, 0>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:220:9: note: in instantiation of function template specialization 'soft_max_f32_submitter<false, 0, 0>' requested here
+  220 |         soft_max_f32_submitter<false, 0, 0>(x, mask, dst, ncols_x, nrows_y, scale,
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:427:33: warning: cast from 'const void *' to 'float *' drops const qualifier [-Wcast-qual]
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:450:17: note: in instantiation of function template specialization 'convert_unary<float, sycl::detail::half_impl::half>' requested here
+  450 |                 convert_unary<src_t>(vx, y, k, item_ct1);
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:496:20: note: in instantiation of function template specialization 'convert_unary_sycl<float, sycl::detail::half_impl::half>' requested here
+  496 |             return convert_unary_sycl<float>;
+      |                    ^
+21 warnings generated.
+53 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:427:33: warning: cast from 'const void *' to 'sycl::detail::half_impl::half *' drops const qualifier [-Wcast-qual]
+  427 |     const src_t * x = (src_t *) vx;
+      |                                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:450:17: note: in instantiation of function template specialization 'convert_unary<sycl::detail::half_impl::half, float>' requested here
+  450 |                 convert_unary<src_t>(vx, y, k, item_ct1);
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:543:20: note: in instantiation of function template specialization 'convert_unary_sycl<sycl::detail::half_impl::half, float>' requested here
+  543 |             return convert_unary_sycl<sycl::half>;
+      |                    ^
+11 warnings generated.
+8 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:368:36: warning: cast from 'const float *' to 'sycl::vec<float, 2> *' drops const qualifier [-Wcast-qual]
+  368 |     const TC xi = ix < kx ? *(TC *)&x[iy * kx + ix] : zeros;
+      |                                    ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:1333:17: note: in instantiation of function template specialization 'quantize_q8_1<2>' requested here
+ 1333 |                 quantize_q8_1<QUANT_BLOCK_TILE>(x, vy, kx, kx_padded, item_ct1);
+      |                 ^
+7 warnings generated.
+8 warnings generated.
+10 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:817:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  817 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1680:15: note: in instantiation of function template specialization 'load_tiles_q4_K<32, 4, false>' requested here
+ 1680 |               load_tiles_q4_K<mmq_y, nwarps, need_check>, VDR_Q4_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2663:25: note: in instantiation of function template specialization 'mul_mat_q4_K<false>' requested here
+ 2663 |                         mul_mat_q4_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:821:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  821 |         int i = (i0 + i_offset * QI4_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:817:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  817 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1680:15: note: in instantiation of function template specialization 'load_tiles_q4_K<32, 4, true>' requested here
+ 1680 |               load_tiles_q4_K<mmq_y, nwarps, need_check>, VDR_Q4_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2701:25: note: in instantiation of function template specialization 'mul_mat_q4_K<true>' requested here
+ 2701 |                         mul_mat_q4_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:821:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  821 |         int i = (i0 + i_offset * QI4_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:965:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  965 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1724:15: note: in instantiation of function template specialization 'load_tiles_q5_K<32, 4, false>' requested here
+ 1724 |               load_tiles_q5_K<mmq_y, nwarps, need_check>, VDR_Q5_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2784:25: note: in instantiation of function template specialization 'mul_mat_q5_K<false>' requested here
+ 2784 |                         mul_mat_q5_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:969:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  969 |         int i = (i0 + i_offset * QI5_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:965:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  965 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1724:15: note: in instantiation of function template specialization 'load_tiles_q5_K<32, 4, true>' requested here
+ 1724 |               load_tiles_q5_K<mmq_y, nwarps, need_check>, VDR_Q5_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2822:25: note: in instantiation of function template specialization 'mul_mat_q5_K<true>' requested here
+ 2822 |                         mul_mat_q5_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:969:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  969 |         int i = (i0 + i_offset * QI5_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1113:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+ 1113 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1767:15: note: in instantiation of function template specialization 'load_tiles_q6_K<32, 4, false>' requested here
+ 1767 |               load_tiles_q6_K<mmq_y, nwarps, need_check>, VDR_Q6_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2905:25: note: in instantiation of function template specialization 'mul_mat_q6_K<false>' requested here
+ 2905 |                         mul_mat_q6_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1118:44: warning: division by zero is undefined [-Wdivision-by-zero]
+ 1118 |         int i = (i0 + i_offset * QI6_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1113:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+ 1113 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1767:15: note: in instantiation of function template specialization 'load_tiles_q6_K<32, 4, true>' requested here
+ 1767 |               load_tiles_q6_K<mmq_y, nwarps, need_check>, VDR_Q6_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2943:25: note: in instantiation of function template specialization 'mul_mat_q6_K<true>' requested here
+ 2943 |                         mul_mat_q6_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1118:44: warning: division by zero is undefined [-Wdivision-by-zero]
+ 1118 |         int i = (i0 + i_offset * QI6_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:926:17: warning: enumeration value 'GGML_OP_POOL_COUNT' not handled in switch [-Wswitch]
+  926 |         switch (op) {
+      |                 ^~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:2586:13: note: in instantiation of function template specialization 'pool2d_nchw_kernel<float, float>' requested here
+ 2586 |             pool2d_nchw_kernel(IH, IW, OH, OW, k1, k0, s1, s0, p1, p0,
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl.cpp:944:25: warning: enumeration value 'GGML_OP_POOL_COUNT' not handled in switch [-Wswitch]
+  944 |                 switch (op) {
+      |                         ^~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+77 warnings and 3 errors generated.
+make[2]: *** [ggml/src/CMakeFiles/ggml.dir/build.make:300: ggml/src/CMakeFiles/ggml.dir/ggml-sycl.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+29 warnings generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/rope.cpp:196:33: warning: unused parameter 'ctx' [-Wunused-parameter]
+  196 |     ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1, ggml_tensor *dst,
+      |                                 ^
+7 warnings generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:50:29: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+   50 |   if (item_ct1.get_group(1) < ne01) { // src0
+      |       ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/concat.cpp:73:29: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'const int' [-Wsign-compare]
+   73 |   if (item_ct1.get_group(0) < ne02) { // src0
+      |       ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:2:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:971:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  971 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:972:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  972 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1012:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1012 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1013:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1013 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:756:18: warning: unused variable 'iq2xs_grid_ptr_ct1' [-Wunused-variable]
+  756 |             auto iq2xs_grid_ptr_ct1 = &iq2xs_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:757:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  757 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:781:18: warning: unused variable 'iq2xs_grid_ptr_ct1' [-Wunused-variable]
+  781 |             auto iq2xs_grid_ptr_ct1 = &iq2xs_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:782:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  782 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:806:18: warning: unused variable 'iq3xxs_grid_ptr_ct1' [-Wunused-variable]
+  806 |             auto iq3xxs_grid_ptr_ct1 = &iq3xxs_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:807:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  807 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:831:18: warning: unused variable 'iq3s_grid_ptr_ct1' [-Wunused-variable]
+  831 |             auto iq3s_grid_ptr_ct1 = &iq3s_grid[0];
+      |                  ^~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:855:18: warning: unused variable 'iq1s_grid_ptr_ct1' [-Wunused-variable]
+  855 |             auto iq1s_grid_ptr_ct1 = &iq1s_grid_gpu[0];
+      |                  ^~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:856:18: warning: unused variable 'ksigns64_ptr_ct1' [-Wunused-variable]
+  856 |             auto ksigns64_ptr_ct1 = &ksigns64[0];
+      |                  ^~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:955:19: warning: unused variable 'nrows_dst' [-Wunused-variable]
+  955 |     const int64_t nrows_dst = id == ctx.device ? ne00 : row_diff;
+      |                   ^~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:86:37: warning: unused parameter 'ctx' [-Wunused-parameter]
+   86 |         ggml_backend_sycl_context & ctx, const ggml_tensor *src0, const ggml_tensor *src1,
+      |                                     ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:235:9: warning: TODO: add ggml_sycl_op_soft_max() F16 src1 support [-W#pragma-messages]
+  235 | #pragma message("TODO: add ggml_sycl_op_soft_max() F16 src1 support")
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:236:9: warning: ref:  https://github.com/ggerganov/llama.cpp/pull/5021 [-W#pragma-messages]
+  236 | #pragma message("ref:  https://github.com/ggerganov/llama.cpp/pull/5021")
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:36:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   36 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:91:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   91 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:126:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  126 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/norm.cpp:171:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  171 |         for (size_t i = 0; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:59:24: warning: unused parameter 'src1' [-Wunused-parameter]
+   59 |     const ggml_tensor *src1, ggml_tensor * dst) {
+      |                        ^
+8 warnings generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:427:33: warning: cast from 'const void *__restrict' to 'type-parameter-0-0 *' drops const qualifier [-Wcast-qual]
+  427 |     const src_t * x = (src_t *) vx;
+      |                                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 0, 0>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:167:13: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 0, 0>' requested here
+  167 |             soft_max_f32_submitter<true, 0, 0>(x, mask, dst, ncols_x, nrows_y, scale,
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 32, 32>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:174:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 32, 32>' requested here
+  174 |                 soft_max_f32_submitter<true, 32, 32>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 64, 64>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:179:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 64, 64>' requested here
+  179 |                 soft_max_f32_submitter<true, 64, 64>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+7 warnings generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:19:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/dpct/helper.hpp:1239:55: warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+ 1239 |                 auto it = m_map.upper_bound((byte_t *)ptr);
+      |                                                       ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 128, 128>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:184:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 128, 128>' requested here
+  184 |                 soft_max_f32_submitter<true, 128, 128>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 256, 256>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:189:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 256, 256>' requested here
+  189 |                 soft_max_f32_submitter<true, 256, 256>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 512, 512>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:194:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 512, 512>' requested here
+  194 |                 soft_max_f32_submitter<true, 512, 512>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+8 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 1024, 1024>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:199:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 1024, 1024>' requested here
+  199 |                 soft_max_f32_submitter<true, 1024, 1024>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 2048, 1024>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:204:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 2048, 1024>' requested here
+  204 |                 soft_max_f32_submitter<true, 2048, 1024>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<true, 4096, 1024>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:209:17: note: in instantiation of function template specialization 'soft_max_f32_submitter<true, 4096, 1024>' requested here
+  209 |                 soft_max_f32_submitter<true, 4096, 1024>(x, mask, dst, ncols_x, nrows_y, scale,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/common.hpp:29:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:154:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  154 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:175:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  175 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:196:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  196 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:261:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  261 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:288:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  288 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/./ggml-common.h:305:9: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+  305 |         struct {
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:56:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   56 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:136:17: note: in instantiation of function template specialization 'soft_max_f32<false, 0, 0>' requested here
+  136 |                 soft_max_f32<vals_smem, ncols_template, block_size_template>(x, mask, dst, ncols_par,
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:220:9: note: in instantiation of function template specialization 'soft_max_f32_submitter<false, 0, 0>' requested here
+  220 |         soft_max_f32_submitter<false, 0, 0>(x, mask, dst, ncols_x, nrows_y, scale,
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:66:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   66 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:92:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   92 |             for (size_t i = 1; i < nreduce; i += 1)
+      |                                ~ ^ ~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:103:30: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+  103 |         for (size_t i = 1; i < nreduce; i += 1)
+      |                            ~ ^ ~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:14:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:971:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  971 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:972:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+  972 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1012:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1012 |         sumi = dpct::dp4a(grid_l, *((int *)q8 + 0), sumi);
+      |                                            ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/vecdotq.hpp:1013:44: warning: cast from 'const signed char *' to 'int *' drops const qualifier [-Wcast-qual]
+ 1013 |         sumi = dpct::dp4a(grid_h, *((int *)q8 + 1), sumi);
+      |                                            ^
+7 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:817:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  817 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:821:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  821 |         int i = (i0 + i_offset * QI4_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:965:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  965 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:969:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  969 |         int i = (i0 + i_offset * QI5_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1113:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+ 1113 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1118:44: warning: division by zero is undefined [-Wdivision-by-zero]
+ 1118 |         int i = (i0 + i_offset * QI6_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+11 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:817:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  817 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1680:15: note: in instantiation of function template specialization 'load_tiles_q4_K<32, 4, false>' requested here
+ 1680 |               load_tiles_q4_K<mmq_y, nwarps, need_check>, VDR_Q4_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2663:25: note: in instantiation of function template specialization 'mul_mat_q4_K<false>' requested here
+ 2663 |                         mul_mat_q4_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:821:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  821 |         int i = (i0 + i_offset * QI4_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:817:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  817 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1680:15: note: in instantiation of function template specialization 'load_tiles_q4_K<32, 4, true>' requested here
+ 1680 |               load_tiles_q4_K<mmq_y, nwarps, need_check>, VDR_Q4_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2701:25: note: in instantiation of function template specialization 'mul_mat_q4_K<true>' requested here
+ 2701 |                         mul_mat_q4_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:821:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  821 |         int i = (i0 + i_offset * QI4_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:965:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  965 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1724:15: note: in instantiation of function template specialization 'load_tiles_q5_K<32, 4, false>' requested here
+ 1724 |               load_tiles_q5_K<mmq_y, nwarps, need_check>, VDR_Q5_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2784:25: note: in instantiation of function template specialization 'mul_mat_q5_K<false>' requested here
+ 2784 |                         mul_mat_q5_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:969:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  969 |         int i = (i0 + i_offset * QI5_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:965:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+  965 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1724:15: note: in instantiation of function template specialization 'load_tiles_q5_K<32, 4, true>' requested here
+ 1724 |               load_tiles_q5_K<mmq_y, nwarps, need_check>, VDR_Q5_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2822:25: note: in instantiation of function template specialization 'mul_mat_q5_K<true>' requested here
+ 2822 |                         mul_mat_q5_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:969:44: warning: division by zero is undefined [-Wdivision-by-zero]
+  969 |         int i = (i0 + i_offset * QI5_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1113:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+ 1113 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1767:15: note: in instantiation of function template specialization 'load_tiles_q6_K<32, 4, false>' requested here
+ 1767 |               load_tiles_q6_K<mmq_y, nwarps, need_check>, VDR_Q6_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2905:25: note: in instantiation of function template specialization 'mul_mat_q6_K<false>' requested here
+ 2905 |                         mul_mat_q6_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1118:44: warning: division by zero is undefined [-Wdivision-by-zero]
+ 1118 |         int i = (i0 + i_offset * QI6_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1113:24: warning: remainder by zero is undefined [-Wdivision-by-zero]
+ 1113 |     const int kbxd = k % blocks_per_tile_x_row;          // == 0 if QK_K == 256
+      |                        ^ ~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1767:15: note: in instantiation of function template specialization 'load_tiles_q6_K<32, 4, true>' requested here
+ 1767 |               load_tiles_q6_K<mmq_y, nwarps, need_check>, VDR_Q6_K_Q8_1_MMQ,
+      |               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:2943:25: note: in instantiation of function template specialization 'mul_mat_q6_K<true>' requested here
+ 2943 |                         mul_mat_q6_K<need_check>(
+      |                         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:1118:44: warning: division by zero is undefined [-Wdivision-by-zero]
+ 1118 |         int i = (i0 + i_offset * QI6_K + k / blocks_per_tile_x_row) % mmq_y;
+      |                                            ^ ~~~~~~~~~~~~~~~~~~~~~
+9 warnings generated.
+21 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:427:33: warning: cast from 'const void *' to 'float *' drops const qualifier [-Wcast-qual]
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:450:17: note: in instantiation of function template specialization 'convert_unary<float, sycl::detail::half_impl::half>' requested here
+  450 |                 convert_unary<src_t>(vx, y, k, item_ct1);
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:496:20: note: in instantiation of function template specialization 'convert_unary_sycl<float, sycl::detail::half_impl::half>' requested here
+  496 |             return convert_unary_sycl<float>;
+      |                    ^
+8 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:427:33: warning: cast from 'const void *' to 'sycl::detail::half_impl::half *' drops const qualifier [-Wcast-qual]
+  427 |     const src_t * x = (src_t *) vx;
+      |                                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:450:17: note: in instantiation of function template specialization 'convert_unary<sycl::detail::half_impl::half, float>' requested here
+  450 |                 convert_unary<src_t>(vx, y, k, item_ct1);
+      |                 ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/ggml/src/ggml-sycl/convert.cpp:543:20: note: in instantiation of function template specialization 'convert_unary_sycl<sycl::detail::half_impl::half, float>' requested here
+  543 |             return convert_unary_sycl<sycl::half>;
+      |                    ^
+53 warnings generated.
+10 warnings generated.
+29 warnings generated.
+make[1]: *** [CMakeFiles/Makefile2:1627: ggml/src/CMakeFiles/ggml.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+real	0m22.541s
+user	3m54.512s
+sys	0m9.824s
++ cur=2
++ echo 2
++ set +x
+cat: /home/zjy/ws/jenkins-home/workspace/ci-1250@2/ggerganov-llama.cpp/tmp/ci_log/424c5d00a9b97dd5559635872db9b57f87c23b02/tmp/results/ctest_release-ctest.log: No such file or directory

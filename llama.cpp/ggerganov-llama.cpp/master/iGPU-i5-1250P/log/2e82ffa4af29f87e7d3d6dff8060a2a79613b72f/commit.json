@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2024-11-13 09:40:57", "title": "sycl : Fixes to broken builds and test-backend-ops", "pr_id": "10257", "files": ["ggml/src/ggml-sycl.cpp", "ggml/src/ggml-sycl/norm.cpp", "ggml/src/ggml-sycl/outprod.cpp"]}

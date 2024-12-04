@@ -1,0 +1,1 @@
+{"author": "Michael Podvitskiy <podvitskiymichael@gmail.com>", "date": "2024-09-15 18:55:52", "title": "cmake : correct order of sycl flags", "pr_id": "9497", "files": ["ggml/src/CMakeLists.txt"]}
