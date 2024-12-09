@@ -13,6 +13,7 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[19d8762ab61df8286367588a80b9c7db4cb568db](https://github.com//commit/19d8762ab61df8286367588a80b9c7db4cb568db)<br>2024-12-07 13:37:50<br>ggml : refactor online repacking<br>Djip007  Log: [log](./log/19d8762ab61df8286367588a80b9c7db4cb568db)|100.0%|NA|('ok', 'pass', 0)|2.66|598/0|
 |[01e6d9bb71eb71fe1f811f2fdef15753232cd0f2](https://github.com//commit/01e6d9bb71eb71fe1f811f2fdef15753232cd0f2)<br>2024-12-04 08:26:37<br>clip : add sycl support<br>piDack  Log: [log](./log/01e6d9bb71eb71fe1f811f2fdef15753232cd0f2)|100.0%|NA|('ok', 'pass', 0)|41.14|598/0|
 |[40c6d79fb52f995f47507fedfeaae2ac05d9b35c](https://github.com//commit/40c6d79fb52f995f47507fedfeaae2ac05d9b35c)<br>2024-12-04 02:29:20<br>SYCL : Move to compile time oneMKL inter<br>face backend selection for NVIDIA backen<br>d<br>Nicolò Scipione  Log: [log](./log/40c6d79fb52f995f47507fedfeaae2ac05d9b35c)|100.0%|NA|('ok', 'pass', 0)|41.15|598/0|
 |[991f8aabeec89d801300bb179e52013fb0eb0584](https://github.com//commit/991f8aabeec89d801300bb179e52013fb0eb0584)<br>2024-12-02 12:34:11<br>SYCL: Fix and switch to GGML_LOG system <br>instead of fprintf<br>Akarshan Biswas  Log: [log](./log/991f8aabeec89d801300bb179e52013fb0eb0584)|100.0%|NA|('ok', 'pass', 0)|41.18|586/0|
