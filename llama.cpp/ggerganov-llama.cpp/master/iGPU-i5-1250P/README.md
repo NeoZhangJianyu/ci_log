@@ -13,6 +13,7 @@ Figure
 
 |Commit Info|UT PassRate|Fault Detail|<div style="width:100px">GGUF res</div>|Perf(token/s)|Warn/Err|
 |-|-|-|-|-|-|
+|[ba1cb19cdd0d92e012e0f6e009e0620f854b6afd](https://github.com//commit/ba1cb19cdd0d92e012e0f6e009e0620f854b6afd)<br>2024-12-14 20:43:46<br>llama : add Qwen2VL support + multimodal<br> RoPE<br>HimariO  Log: [log](./log/ba1cb19cdd0d92e012e0f6e009e0620f854b6afd)|Execute_Err|NA|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)|NA|0/0|
 |[83ed24a97b500ccdb32b90b94e6f9621ad8db79e](https://github.com//commit/83ed24a97b500ccdb32b90b94e6f9621ad8db79e)<br>2024-12-13 12:12:15<br>SYCL: Reduce most of the compiler warnin<br>gs<br>Akarshan Biswas  Log: [log](./log/83ed24a97b500ccdb32b90b94e6f9621ad8db79e)|Execute_Err|NA|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)|NA|0/0|
 |[19d8762ab61df8286367588a80b9c7db4cb568db](https://github.com//commit/19d8762ab61df8286367588a80b9c7db4cb568db)<br>2024-12-07 13:37:50<br>ggml : refactor online repacking<br>Djip007  Log: [log](./log/19d8762ab61df8286367588a80b9c7db4cb568db)|Execute_Err|NA|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)|NA|0/0|
 |[01e6d9bb71eb71fe1f811f2fdef15753232cd0f2](https://github.com//commit/01e6d9bb71eb71fe1f811f2fdef15753232cd0f2)<br>2024-12-04 08:26:37<br>clip : add sycl support<br>piDack  Log: [log](./log/01e6d9bb71eb71fe1f811f2fdef15753232cd0f2)|Execute_Err|NA|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)|NA|0/0|
