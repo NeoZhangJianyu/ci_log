@@ -1,0 +1,336 @@
+TERM environment variable not set.
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+-- The C compiler identification is IntelLLVM 2024.1.0
+-- The CXX compiler identification is IntelLLVM 2024.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/intel/oneapi/compiler/2024.1/bin/icx - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2024.1/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- Found OpenMP_C: -fiopenmp  
+-- Found OpenMP_CXX: -fiopenmp  
+-- Found OpenMP: TRUE   
+-- OpenMP found
+-- Using llamafile
+-- x86 detected
+-- Using runtime weight conversion of Q4_0 to Q4_0_x_x to enable optimized GEMM/GEMV kernels
+-- Including CPU backend
+CMake Warning at ggml/src/ggml-amx/CMakeLists.txt:106 (message):
+  AMX requires x86 and gcc version > 11.0.  Turning off GGML_AMX.
+
+
+-- Performing Test SUPPORTS_SYCL
+-- Performing Test SUPPORTS_SYCL - Success
+-- Using oneAPI Release SYCL compiler (icpx).
+-- SYCL found
+-- DNNL found:1
+-- Including SYCL backend
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build
+/usr/bin/cmake -S/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp -B/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/CMakeFiles /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+/usr/bin/gmake  -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/depend
+/usr/bin/gmake  -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/depend
+/usr/bin/gmake  -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/depend
+/usr/bin/gmake  -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/depend
+/usr/bin/gmake  -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/depend
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/CMakeFiles/ggml-base.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/common /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/common /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/common/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash/CMakeFiles/sha256.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash/CMakeFiles/xxhash.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash/CMakeFiles/sha1.dir/DependInfo.cmake --color=
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+/usr/bin/gmake  -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/build
+/usr/bin/gmake  -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+/usr/bin/gmake  -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/build
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+/usr/bin/gmake  -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/build
+/usr/bin/gmake  -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/build
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  2%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  2%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-opt.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-opt.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/common && /opt/intel/oneapi/compiler/2024.1/bin/icpx   -O3 -DNDEBUG -fPIC -MD -MT common/CMakeFiles/build_info.dir/build-info.cpp.o -MF CMakeFiles/build_info.dir/build-info.cpp.o.d -o CMakeFiles/build_info.dir/build-info.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/common/build-info.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu11 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o -MF CMakeFiles/ggml-base.dir/ggml.c.o.d -o CMakeFiles/ggml-base.dir/ggml.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml.c
+[  2%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  3%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-backend.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-backend.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu11 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o -MF CMakeFiles/ggml-base.dir/ggml-alloc.c.o.d -o CMakeFiles/ggml-base.dir/ggml-alloc.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-alloc.c
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-aarch64.c.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash && /opt/intel/oneapi/compiler/2024.1/bin/icx  -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps -O3 -DNDEBUG -MD -MT examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o -MF CMakeFiles/sha1.dir/deps/sha1/sha1.c.o.d -o CMakeFiles/sha1.dir/deps/sha1/sha1.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-threading.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-threading.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu11 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml-aarch64.c.o -MF CMakeFiles/ggml-base.dir/ggml-aarch64.c.o.d -o CMakeFiles/ggml-base.dir/ggml-aarch64.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BUILD -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu11 -MD -MT ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o -MF CMakeFiles/ggml-base.dir/ggml-quants.c.o.d -o CMakeFiles/ggml-base.dir/ggml-quants.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-quants.c
+[  5%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  6%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash && /opt/intel/oneapi/compiler/2024.1/bin/icx  -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps -O3 -DNDEBUG -MD -MT examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o -MF CMakeFiles/sha256.dir/deps/sha256/sha256.c.o.d -o CMakeFiles/sha256.dir/deps/sha256/sha256.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha256/sha256.c
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/examples/gguf-hash && /opt/intel/oneapi/compiler/2024.1/bin/icx  -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps -O3 -DNDEBUG -MD -MT examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o -MF CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o.d -o CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/xxhash/xxhash.c
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  6%] Built target build_info
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  6%] Built target sha1
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  6%] Built target sha256
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  6%] Built target xxhash
+[  7%] Linking CXX shared library libggml-base.so
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/ggml-base.dir/link.txt --verbose=1
+/opt/intel/oneapi/compiler/2024.1/bin/icpx -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libggml-base.so -o libggml-base.so "CMakeFiles/ggml-base.dir/ggml.c.o" "CMakeFiles/ggml-base.dir/ggml-alloc.c.o" "CMakeFiles/ggml-base.dir/ggml-backend.cpp.o" "CMakeFiles/ggml-base.dir/ggml-opt.cpp.o" "CMakeFiles/ggml-base.dir/ggml-threading.cpp.o" "CMakeFiles/ggml-base.dir/ggml-quants.c.o" "CMakeFiles/ggml-base.dir/ggml-aarch64.c.o"  -lm 
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  7%] Built target ggml-base
+/usr/bin/gmake  -f ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/depend
+/usr/bin/gmake  -f ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/build.make ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/depend
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/DependInfo.cmake --color=
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+/usr/bin/gmake  -f ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/build.make ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/build
+/usr/bin/gmake  -f ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[2]: Entering directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[  9%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o
+[  9%] Building CXX object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -fiopenmp -std=gnu11 -MD -MT ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o -MF CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o.d -o CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -fiopenmp -std=gnu++17 -MD -MT ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o -MF CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o.d -o CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.cpp
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[ 10%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 12%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -fiopenmp -std=gnu11 -MD -MT ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o -MF CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o.d -o CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.c
+[ 13%] Building CXX object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o -MF CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o.d -o CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/ggml-sycl.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o -MF CMakeFiles/ggml-sycl.dir/common.cpp.o.d -o CMakeFiles/ggml-sycl.dir/common.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu && /opt/intel/oneapi/compiler/2024.1/bin/icx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -fiopenmp -std=gnu11 -MD -MT ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o -MF CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o.d -o CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-quants.c
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o -MF CMakeFiles/ggml-sycl.dir/concat.cpp.o.d -o CMakeFiles/ggml-sycl.dir/concat.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o -MF CMakeFiles/ggml-sycl.dir/conv.cpp.o.d -o CMakeFiles/ggml-sycl.dir/conv.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_CPU_AARCH64 -DGGML_USE_LLAMAFILE -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -march=native -fiopenmp -std=gnu++17 -MD -MT ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o -MF CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o.d -o CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/llamafile/sgemm.cpp
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o -MF CMakeFiles/ggml-sycl.dir/convert.cpp.o.d -o CMakeFiles/ggml-sycl.dir/convert.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.cpp
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o -MF CMakeFiles/ggml-sycl.dir/dmmv.cpp.o.d -o CMakeFiles/ggml-sycl.dir/dmmv.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o -MF CMakeFiles/ggml-sycl.dir/element_wise.cpp.o.d -o CMakeFiles/ggml-sycl.dir/element_wise.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/element_wise.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o -MF CMakeFiles/ggml-sycl.dir/im2col.cpp.o.d -o CMakeFiles/ggml-sycl.dir/im2col.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o -MF CMakeFiles/ggml-sycl.dir/mmq.cpp.o.d -o CMakeFiles/ggml-sycl.dir/mmq.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.cpp
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o -MF CMakeFiles/ggml-sycl.dir/mmvq.cpp.o.d -o CMakeFiles/ggml-sycl.dir/mmvq.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o -MF CMakeFiles/ggml-sycl.dir/norm.cpp.o.d -o CMakeFiles/ggml-sycl.dir/norm.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o -MF CMakeFiles/ggml-sycl.dir/outprod.cpp.o.d -o CMakeFiles/ggml-sycl.dir/outprod.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o -MF CMakeFiles/ggml-sycl.dir/rope.cpp.o.d -o CMakeFiles/ggml-sycl.dir/rope.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o -MF CMakeFiles/ggml-sycl.dir/softmax.cpp.o.d -o CMakeFiles/ggml-sycl.dir/softmax.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/softmax.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o -MF CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o.d -o CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o -MF CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o.d -o CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_hw.cpp
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o -MF CMakeFiles/ggml-sycl.dir/tsembd.cpp.o.d -o CMakeFiles/ggml-sycl.dir/tsembd.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-sycl && /opt/intel/oneapi/compiler/2024.1/bin/icpx -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_SYCL_DNNL=1 -DGGML_SYCL_WARP_SIZE=16 -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_sycl_EXPORTS -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/.. -I/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/../include -isystem /opt/intel/oneapi/dnnl/2024.1/include -isystem /opt/intel/oneapi/tbb/2021.12/include -Wno-narrowing -fsycl -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -std=gnu++17 -MD -MT ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o -MF CMakeFiles/ggml-sycl.dir/wkv6.cpp.o.d -o CMakeFiles/ggml-sycl.dir/wkv6.cpp.o -c /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.cpp
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/ggml-sycl.cpp:39:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/backend.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:90: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/element_wise.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:118: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:76: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:202: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o] Error 1
+1 error generated.
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:188: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o] Error 1
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:174: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.cpp:2:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.hpp:4:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.hpp:10:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:146: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.cpp:2:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.hpp:4:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:216: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o] Error 1
+1 error generated.
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:104: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o] Error 1
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:160: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:132: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:230: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:300: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:272: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:244: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:258: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o] Error 1
+1 error generated.
+gmake[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:314: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o] Error 1
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c:10716:20: warning: explicit comparison with infinity in fast floating point mode [-Wtautological-constant-compare]
+ 10716 |             if (mv == -INFINITY) {
+       |                 ~~ ^  ~~~~~~~~~
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake[1]: *** [CMakeFiles/Makefile2:1742: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+1 warning generated.
+[ 19%] Linking CXX shared library libggml-cpu.so
+cd /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src/ggml-cpu && /usr/bin/cmake -E cmake_link_script CMakeFiles/ggml-cpu.dir/link.txt --verbose=1
+/opt/intel/oneapi/compiler/2024.1/bin/icpx -fPIC -O3 -DNDEBUG -fiopenmp -shared -Wl,-soname,libggml-cpu.so -o libggml-cpu.so "CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o" "CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o" "CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o" "CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o" "CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o"  -Wl,-rpath,/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build/ggml/src: ../libggml-base.so /opt/intel/oneapi/compiler/2024.1/lib/libiomp5.so /lib/x86_64-linux-gnu/libpthread.a 
+gmake[2]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+[ 19%] Built target ggml-cpu
+gmake[1]: Leaving directory '/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build'
+gmake: *** [Makefile:146: all] Error 2

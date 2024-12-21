@@ -1,0 +1,61 @@
++ cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON ..
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
+
+
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is IntelLLVM 2024.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2024.1/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+CMake Warning at CMakeLists.txt:104 (message):
+  LLAMA_SYCL is deprecated and will be removed in the future.
+
+  Use GGML_SYCL instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:116 (llama_option_depr)
+
+
+CMake Warning at CMakeLists.txt:104 (message):
+  LLAMA_SYCL_F16 is deprecated and will be removed in the future.
+
+  Use GGML_SYCL_F16 instead
+
+Call Stack (most recent call first):
+  CMakeLists.txt:117 (llama_option_depr)
+
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- Including CPU backend
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fiopenmp  
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Adding CPU backend variant ggml-cpu: -march=native 
+-- Performing Test SUPPORTS_SYCL
+-- Performing Test SUPPORTS_SYCL - Success
+-- Using oneAPI Release SYCL compiler (icpx).
+-- SYCL found
+-- DNNL found:1
+-- Including SYCL backend
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/build-ci-release
+
+real	0m0.930s
+user	0m0.612s
+sys	0m0.319s

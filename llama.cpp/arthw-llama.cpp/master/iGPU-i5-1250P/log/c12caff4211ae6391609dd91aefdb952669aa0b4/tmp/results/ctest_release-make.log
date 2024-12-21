@@ -1,0 +1,190 @@
++ make -j
+[  0%] Generating build details from Git
+[  2%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  2%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  2%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  5%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  5%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+[  5%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  5%] Built target build_info
+[  5%] Built target sha256
+[  5%] Built target sha1
+[  5%] Built target xxhash
+[  5%] Linking CXX shared library libggml-base.so
+[  5%] Built target ggml-base
+[  6%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+[  8%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[  8%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+[ 15%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/ggml-sycl.cpp:39:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/backend.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hppIn file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   :18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/element_wise.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+1make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:76: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+ error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:132: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:104: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:90: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:188: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:160: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:174: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.hpp:10:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:202: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o] Error 1
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:146: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.cpp:2:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.hpp:4:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.cpp:2:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.hpp:4:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:118: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:216: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:300: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:272: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:314: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:230: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:244: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:258: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1782: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 19%] Linking CXX shared library libggml-cpu.so
+[ 19%] Built target ggml-cpu
+make: *** [Makefile:146: all] Error 2
+
+real	0m8.141s
+user	0m26.753s
+sys	0m2.144s

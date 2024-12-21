@@ -1,0 +1,267 @@
++ make -j
+[  0%] Generating build details from Git
+[  2%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  2%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  2%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  5%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+[  5%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  5%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  6%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-aarch64.c.o
+[  6%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  6%] Built target build_info
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c: In function ‘quantize_q4_0_nr_bl.constprop’:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 16 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset 72 into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 16 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset 88 into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 16 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset 104 into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 16 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset 120 into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 8 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset 72 into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 8 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset [80, 112] into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:31:13: warning: writing 8 bytes into a region of size 0 [-Wstringop-overflow=]
+   31 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-aarch64.c:12:18: note: at offset [88, 120] into destination object ‘out’ of size 72
+   12 |     block_q4_0x4 out;
+      |                  ^~~
+[  6%] Built target sha256
+In function ‘SHA1Update’,
+    inlined from ‘SHA1Final’ at /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:265:5:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: warning: ‘SHA1Transform’ reading 64 bytes from a region of size 0 [-Wstringop-overread]
+  219 |             SHA1Transform(context->state, &data[i]);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: note: referencing argument 2 of type ‘const unsigned char[64]’
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c: In function ‘SHA1Final’:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:54:6: note: in a call to function ‘SHA1Transform’
+   54 | void SHA1Transform(
+      |      ^~~~~~~~~~~~~
+In function ‘SHA1Update’,
+    inlined from ‘SHA1Final’ at /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:269:9:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: warning: ‘SHA1Transform’ reading 64 bytes from a region of size 0 [-Wstringop-overread]
+  219 |             SHA1Transform(context->state, &data[i]);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:219:13: note: referencing argument 2 of type ‘const unsigned char[64]’
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c: In function ‘SHA1Final’:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/examples/gguf-hash/deps/sha1/sha1.c:54:6: note: in a call to function ‘SHA1Transform’
+   54 | void SHA1Transform(
+      |      ^~~~~~~~~~~~~
+[  6%] Built target sha1
+[  6%] Built target xxhash
+[  6%] Linking CXX shared library libggml-base.so
+[  6%] Built target ggml-base
+[  7%] Building CXX object ggml/src/ggml-amx/CMakeFiles/ggml-amx.dir/mmq.cpp.o
+[  8%] Building CXX object ggml/src/ggml-amx/CMakeFiles/ggml-amx.dir/ggml-amx.cpp.o
+[  8%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[  9%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.c.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[ 11%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-aarch64.c.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/llamafile/sgemm.cpp.o
+[ 15%] Building C object ggml/src/ggml-cpu/CMakeFiles/ggml-cpu.dir/ggml-cpu-quants.c.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/conv.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/im2col.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+20   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/ggml-sycl.cpp:39:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/backend.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/../ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/softmax.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/convert.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+In file included from make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:118: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/rope.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/element_wise.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/mmvq.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/concat.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:90: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o] Error 1
+1 error generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.cpp:2:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/outprod.hpp:4:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:188: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/norm.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:1:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.hpp:10:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:146: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o] Error 1
+1In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.cpp:13:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/tsembd.hpp:16:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from  error generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.cpp:2:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/wkv6.hpp:4:
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/common.hpp:20:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-sycl/dpct.hpp:18:10: fatal error: 'syclcompat/math.hpp' file not found
+   18 | #include <syclcompat/math.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:174: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:76: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:104: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:132: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:216: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:258: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o] Error 1
+1 error generated.
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:244: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:160: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:202: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:272: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:230: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:300: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:314: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv6.cpp.o] Error 1
+[ 19%] Linking CXX shared library libggml-amx.so
+[ 19%] Built target ggml-amx
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.c: In function ‘repack_q4_0_to_q4_0_4_bl.isra’:
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.c:3410:13: warning: writing 32 bytes into a region of size 0 [-Wstringop-overflow=]
+ 3410 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.c:3391:18: note: at offset 72 into destination object ‘out’ of size 72
+ 3391 |     block_q4_0x4 out;
+      |                  ^~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.c:3410:13: warning: writing 32 bytes into a region of size 0 [-Wstringop-overflow=]
+ 3410 |             memcpy(&out.qs[dst_offset], &elems, sizeof(uint64_t));
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250@2/arthw-llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.c:3391:18: note: at offset 104 into destination object ‘out’ of size 72
+ 3391 |     block_q4_0x4 out;
+      |                  ^~~
+make[1]: *** [CMakeFiles/Makefile2:1787: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 19%] Linking CXX shared library libggml-cpu.so
+[ 19%] Built target ggml-cpu
+make: *** [Makefile:146: all] Error 2
+
+real	0m7.950s
+user	0m25.044s
+sys	0m2.000s

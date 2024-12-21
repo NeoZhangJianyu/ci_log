@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2024-11-19 09:02:23", "title": "sycl : Add option to set the SYCL architecture for all targets", "pr_id": "10266", "files": ["docs/backend/SYCL.md", "ggml/CMakeLists.txt", "ggml/src/ggml-sycl/CMakeLists.txt"]}
