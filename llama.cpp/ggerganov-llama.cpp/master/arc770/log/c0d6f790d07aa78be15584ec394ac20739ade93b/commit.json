@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan.biswas@gmail.com>", "date": "2025-01-07 11:56:07", "title": "SYCL: Use get_multi_ptr instead of deprecated get_pointer in wkv6", "pr_id": "11087", "files": ["ggml/src/ggml-sycl/wkv6.cpp"]}
