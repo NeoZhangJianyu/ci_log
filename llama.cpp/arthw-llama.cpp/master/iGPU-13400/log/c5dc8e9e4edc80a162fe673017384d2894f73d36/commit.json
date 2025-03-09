@@ -1,0 +1,1 @@
+{"author": "arthw <14088817+arthw@users.noreply.github.com>", "date": "2025-02-27 09:21:51", "title": "fix ut fault of Q4_1, Q5..", "pr_id": "NA", "files": ["ggml/src/ggml-sycl/common.cpp", "ggml/src/ggml-sycl/dmmv.cpp"]}

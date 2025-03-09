@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan.biswas@gmail.com>", "date": "2025-02-06 17:12:35", "title": "SYCL: Adjust support condition for norm operators", "pr_id": "11674", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}

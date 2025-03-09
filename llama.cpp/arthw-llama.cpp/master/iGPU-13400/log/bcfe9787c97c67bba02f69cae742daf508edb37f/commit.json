@@ -1,0 +1,1 @@
+{"author": "arthw <14088817+arthw@users.noreply.github.com>", "date": "2024-12-20 22:05:39", "title": "correct the device info format", "pr_id": "NA", "files": ["ggml/src/ggml-sycl/common.cpp"]}

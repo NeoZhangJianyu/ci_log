@@ -1,0 +1,1 @@
+{"author": "Radoslav Gerganov <rgerganov@gmail.com>", "date": "2024-12-23 10:39:30", "title": "rpc-server : add support for the SYCL backend", "pr_id": "10934", "files": ["examples/rpc/rpc-server.cpp"]}

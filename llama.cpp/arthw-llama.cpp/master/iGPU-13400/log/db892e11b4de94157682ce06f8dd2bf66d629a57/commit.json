@@ -1,0 +1,1 @@
+{"author": "Nicol\u00f2 Scipione <nicolo.scipione@codeplay.com>", "date": "2024-12-04 02:29:20", "title": "SYCL : Move to compile time oneMKL interface backend selection for NVIDIA backend", "pr_id": "10584", "files": ["ggml/src/ggml-sycl/CMakeLists.txt", "ggml/src/ggml-sycl/dpct.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}

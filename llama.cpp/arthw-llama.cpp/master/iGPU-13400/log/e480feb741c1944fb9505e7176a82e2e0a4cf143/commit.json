@@ -1,0 +1,1 @@
+{"author": "piDack <104877312+piDack@users.noreply.github.com>", "date": "2024-12-04 08:26:37", "title": "clip : add sycl support", "pr_id": "10574", "files": ["examples/llava/clip.cpp"]}

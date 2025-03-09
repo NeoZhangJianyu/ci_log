@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan.biswas@gmail.com>", "date": "2024-12-20 21:01:28", "title": "SYCL: Migrate away from deprecated ggml_tensor->backend", "pr_id": "10840", "files": ["ggml/src/ggml-sycl/common.cpp", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}

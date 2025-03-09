@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2024-11-29 12:38:45", "title": "sycl : offload of get_rows set to 0", "pr_id": "10432", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
