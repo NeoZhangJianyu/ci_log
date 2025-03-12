@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan.biswas@gmail.com>", "date": "2025-02-24 15:48:25", "title": "SYCL: Fix GGML_SYCL_DEBUG macro", "pr_id": "11995", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/softmax.cpp"]}

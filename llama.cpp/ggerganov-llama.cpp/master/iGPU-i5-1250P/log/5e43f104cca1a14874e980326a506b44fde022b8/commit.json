@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-03-05 21:28:23", "title": "SYCL: Disable f16 Unary OPs as not supported by the kernels", "pr_id": "12201", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}

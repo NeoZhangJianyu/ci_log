@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan.biswas@gmail.com>", "date": "2025-02-07 14:57:53", "title": "SYCL: remove XMX info from print devices", "pr_id": "11712", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}

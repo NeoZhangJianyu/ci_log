@@ -1,0 +1,1 @@
+{"author": "Jafar Uru\u00e7 <jafar.uruc@gmail.com>", "date": "2025-01-24 13:30:13", "title": "docs : Update readme to build targets for local docker build", "pr_id": "11368", "files": ["docs/backend/SYCL.md", "docs/build.md", "docs/docker.md"]}
