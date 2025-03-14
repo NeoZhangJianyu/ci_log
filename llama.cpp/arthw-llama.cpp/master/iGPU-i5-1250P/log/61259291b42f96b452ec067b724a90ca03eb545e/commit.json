@@ -1,0 +1,1 @@
+{"author": "Nicol\u00f2 Scipione <nicolo.scipione@codeplay.com>", "date": "2025-01-19 14:33:34", "title": "SYCL: Introducing memory host pool", "pr_id": "11251", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/dpct.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
