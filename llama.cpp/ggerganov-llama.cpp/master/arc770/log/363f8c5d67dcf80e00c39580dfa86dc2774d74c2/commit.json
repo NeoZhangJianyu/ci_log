@@ -1,1 +1,0 @@
-{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2025-03-12 09:57:32", "title": "sycl : variable sg_size support for mmvq kernels", "pr_id": "12336", "files": ["ggml/src/ggml-sycl/mmvq.cpp"]}

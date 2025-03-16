@@ -1,1 +1,0 @@
-{"author": "aubreyli <aubreylee@gmail.com>", "date": "2025-03-15 22:49:03", "title": "SYCL: Delete redundant plus sign and space", "pr_id": "12391", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
