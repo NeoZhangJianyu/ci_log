@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[b3c9a65673a63a6c9a75da24ee00d13499494e0c](https://github.com//commit/b3c9a65673a63a6c9a75da24ee00d13499494e0c)<br>2025-03-17 07:15:12<br>SYCL: set extras only on GGML_TYPE_Q4_0<br>Akarshan Biswas  Log: [log](./log/b3c9a65673a63a6c9a75da24ee00d13499494e0c)|100.0%|NA|('ok', 'pass', 0)|4.0|tg=4.15<br>pp=77.52|0/0|2025.0.4|
 |[3d35d87b4113648e224b837bb88e6b2c4c7f29e5](https://github.com//commit/3d35d87b4113648e224b837bb88e6b2c4c7f29e5)<br>2025-03-15 22:49:03<br>SYCL: Delete redundant plus sign and spa<br>ce<br>aubreyli  Log: [log](./log/3d35d87b4113648e224b837bb88e6b2c4c7f29e5)|100.0%|NA|('ok', 'pass', 0)|3.95|tg=4.17<br>pp=77.33|0/0|2025.0.4|
 |[b19bd064c09822cb81efe4a38abafab3e979c9ce](https://github.com//commit/b19bd064c09822cb81efe4a38abafab3e979c9ce)<br>2025-03-15 15:19:30<br>SYCL : support non-contiguous tensors in<br> binary ops<br>fairydreaming  Log: [log](./log/b19bd064c09822cb81efe4a38abafab3e979c9ce)|100.0%|NA|('ok', 'pass', 0)|3.96|tg=4.17<br>pp=77.58|0/0|2025.0.4|
 |[363f8c5d67dcf80e00c39580dfa86dc2774d74c2](https://github.com//commit/363f8c5d67dcf80e00c39580dfa86dc2774d74c2)<br>2025-03-12 09:57:32<br>sycl : variable sg_size support for mmvq<br> kernels<br>Alberto Cabrera Pérez  Log: [log](./log/363f8c5d67dcf80e00c39580dfa86dc2774d74c2)|100.0%|NA|('ok', 'pass', 0)|3.96|tg=4.11<br>pp=76.64|0/0|2025.0.4|
