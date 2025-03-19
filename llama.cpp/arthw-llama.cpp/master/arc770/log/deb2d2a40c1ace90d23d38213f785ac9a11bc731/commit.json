@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-03-03 15:37:22", "title": "SYCL: Move CPY kernels to a separate file and add few missing kernels", "pr_id": "12133", "files": ["ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/cpy.cpp", "ggml/src/ggml-sycl/cpy.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
