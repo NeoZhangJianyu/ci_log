@@ -1,0 +1,1 @@
+{"author": "\u856d\u6fa7\u90a6 <45505768+shou692199@users.noreply.github.com>", "date": "2025-03-21 14:58:47", "title": "[SYCL] Fix build on Windows when ccache enabled", "pr_id": "9954", "files": ["ggml/src/CMakeLists.txt"]}
