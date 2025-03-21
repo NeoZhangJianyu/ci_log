@@ -1,0 +1,1 @@
+{"author": "Svetlozar Georgiev <55534064+sgeor255@users.noreply.github.com>", "date": "2025-03-21 02:15:56", "title": "sycl: cleanup oneDNN related code", "pr_id": "12097", "files": ["docs/backend/SYCL.md", "ggml/src/ggml-sycl/CMakeLists.txt", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/gemm.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
