@@ -1,4 +1,4 @@
-# [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp/master) CI for iGPU-13700k by SYCL Backend
+# [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp/tree/master) CI for iGPU-13700k by SYCL Backend
 
 ## Summary
 

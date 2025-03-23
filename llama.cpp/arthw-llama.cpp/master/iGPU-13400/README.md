@@ -1,4 +1,4 @@
-# [arthw/llama.cpp](https://github.com/arthw/llama.cpp/master) CI for iGPU-13400 by SYCL Backend
+# [arthw/llama.cpp](https://github.com/arthw/llama.cpp/tree/master) CI for iGPU-13400 by SYCL Backend
 
 ## Summary
 
