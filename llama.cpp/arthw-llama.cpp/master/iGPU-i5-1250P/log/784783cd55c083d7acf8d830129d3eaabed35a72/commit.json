@@ -1,0 +1,1 @@
+{"author": "Zhang Jianyu <zhang.jianyu@outlook.com>", "date": "2025-03-19 10:19:27", "title": "rm other backend ci, keep cpu, rpc, sycl", "pr_id": "NA", "files": [".github/workflows/build.yml"]}

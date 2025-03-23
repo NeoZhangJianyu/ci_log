@@ -1,0 +1,160 @@
++ make -j
+[  0%] Generating build details from Git
+[  0%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  0%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  1%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  2%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  3%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  3%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+[  5%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  5%] Built target build_info
+[  5%] Built target sha1
+[  5%] Built target sha256
+[  5%] Built target xxhash
+[  5%] Linking CXX shared library ../../bin/libggml-base.so
+[  5%] Built target ggml-base
+[  6%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/gla.cpp.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+[  8%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+[ 10%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/cpy.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/getrows.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 15%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 15%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o
+[ 15%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_device.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv.cpp.o
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:41:28: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+   41 |     GGML_ASSERT(main_gpu_id<dpct::dev_mgr::instance().device_count());
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/../include/ggml.h:267:30: note: expanded from macro 'GGML_ASSERT'
+  267 | #define GGML_ASSERT(x) if (!(x)) GGML_ABORT("GGML_ASSERT(%s) failed", #x)
+      |                              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:85:23: warning: comparison of integers of different signs: 'int' and 'size_type' (aka 'unsigned long') [-Wsign-compare]
+   85 |     for (int i = 0; i < ids.size(); i++) {
+      |                     ~ ^ ~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:243:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  243 |         hint = "detect %d SYCL devices:[%s] by ONEAPI_DEVICE_SELECTOR=%s and "
+      |                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:249:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  249 |         hint = "detect %d SYCL devices:[%s] by ONEAPI_DEVICE_SELECTOR=%s\n";
+      |                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:253:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  253 |         hint = "detect %d SYCL devices:[%s] by GGML_SYCL_VISIBLE_DEVICES=%s\n";
+      |                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:257:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  257 |         hint = "detect %d SYCL level-zero GPUs:[%s] with top Max compute "
+      |                ^
+6 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:245:39: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+  245 |                         s_sum_acc_ct1.get_pointer(), WARP_SIZE);
+      |                                       ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/accessor.hpp:2574:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 2574 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:62:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   62 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:38: note: expanded from macro '__SYCL_DEPRECATED'
+   53 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:289:39: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+  289 |                         s_sum_acc_ct1.get_pointer(), WARP_SIZE);
+      |                                       ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/accessor.hpp:2574:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 2574 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:62:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   62 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:38: note: expanded from macro '__SYCL_DEPRECATED'
+   53 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:337:39: warning: 'get_pointer' is deprecated: local_accessor::get_pointer() is deprecated, please use get_multi_ptr() [-Wdeprecated-declarations]
+  337 |                         s_sum_acc_ct1.get_pointer(), WARP_SIZE);
+      |                                       ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/accessor.hpp:2574:3: note: 'get_pointer' has been explicitly marked deprecated here
+ 2574 |   __SYCL2020_DEPRECATED(
+      |   ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:62:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+   62 | #define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+      |                                        ^
+/opt/intel/oneapi/compiler/2025.0/bin/compiler/../../include/sycl/detail/defines_elementary.hpp:53:38: note: expanded from macro '__SYCL_DEPRECATED'
+   53 | #define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+      |                                      ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:383:54: error: no member named 'max_work_group_sizes' in 'ggml_sycl_device_info'; did you mean 'work_group_size'?
+  383 |         const int work_group_size = ggml_sycl_info().max_work_group_sizes[device];
+      |                                                      ^~~~~~~~~~~~~~~~~~~~
+      |                                                      work_group_size
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.hpp:72:9: note: 'work_group_size' declared here
+   72 |     int work_group_size(int device_id);
+      |         ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/norm.cpp:383:54: error: reference to non-static member function must be called
+  383 |         const int work_group_size = ggml_sycl_info().max_work_group_sizes[device];
+      |                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+3 warnings and 2 errors generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:258: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:41:28: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+   41 |     GGML_ASSERT(main_gpu_id<dpct::dev_mgr::instance().device_count());
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/../include/ggml.h:267:30: note: expanded from macro 'GGML_ASSERT'
+  267 | #define GGML_ASSERT(x) if (!(x)) GGML_ABORT("GGML_ASSERT(%s) failed", #x)
+      |                              ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:85:23: warning: comparison of integers of different signs: 'int' and 'size_type' (aka 'unsigned long') [-Wsign-compare]
+   85 |     for (int i = 0; i < ids.size(); i++) {
+      |                     ~ ^ ~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:243:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  243 |         hint = "detect %d SYCL devices:[%s] by ONEAPI_DEVICE_SELECTOR=%s and "
+      |                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:249:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  249 |         hint = "detect %d SYCL devices:[%s] by ONEAPI_DEVICE_SELECTOR=%s\n";
+      |                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:253:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  253 |         hint = "detect %d SYCL devices:[%s] by GGML_SYCL_VISIBLE_DEVICES=%s\n";
+      |                ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/sycl_device.cpp:257:16: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+  257 |         hint = "detect %d SYCL level-zero GPUs:[%s] with top Max compute "
+      |                ^
+[ 18%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 18%] Built target ggml-cpu
+6 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:23:13: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   23 | static void dequantize_mul_mat_vec(const void * __restrict__ vx, const dfloat * __restrict__ y, float * __restrict__ dst,
+      |             ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:23:13: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:23:13: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:23:13: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:23:13: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/home/zjy/ws/jenkins-home/workspace/ci-1250/arthw-llama.cpp/ggml/src/ggml-sycl/dmmv.cpp:23:13: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+6 warnings generated.
+make[1]: *** [CMakeFiles/Makefile2:1808: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+real	0m34.226s
+user	6m32.202s
+sys	0m17.297s
