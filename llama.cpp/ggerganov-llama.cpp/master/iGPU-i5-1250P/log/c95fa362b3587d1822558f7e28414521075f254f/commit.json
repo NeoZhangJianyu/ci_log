@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-03-24 23:05:38", "title": "ci: [SYCL] ggml-ci Use main GPU and enable sysman", "pr_id": "12547", "files": ["ci/run.sh"]}
