@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-03-25 16:10:18", "title": "SYCL: disable Q4_0 reorder optimization", "pr_id": "12560", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
