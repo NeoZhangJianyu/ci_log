@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[f17a3bb4e8b0aa24c0f86636d234aca7dc2cfa01](https://github.com/ggerganov/llama.cpp/commit/f17a3bb4e8b0aa24c0f86636d234aca7dc2cfa01)<br>2025-03-27 07:16:00<br>SYCL: implement memset ggml backend buff<br>er interface<br>Akarshan Biswas  Log: [log](./log/f17a3bb4e8b0aa24c0f86636d234aca7dc2cfa01)|100.0%|NA|('ok', 'pass', 0)|3.99|tg=4.13<br>pp=77.08|0/0|2025.0.4|
 |[e2f560175a195f63c3276972a3d1caec0bd13e05](https://github.com/ggerganov/llama.cpp/commit/e2f560175a195f63c3276972a3d1caec0bd13e05)<br>2025-03-25 16:10:18<br>SYCL: disable Q4_0 reorder optimization<br>Akarshan Biswas  Log: [log](./log/e2f560175a195f63c3276972a3d1caec0bd13e05)|100.0%|NA|('ok', 'pass', 0)|3.99|tg=4.13<br>pp=76.8|0/0|2025.0.4|
 |[c95fa362b3587d1822558f7e28414521075f254f](https://github.com/ggerganov/llama.cpp/commit/c95fa362b3587d1822558f7e28414521075f254f)<br>2025-03-24 23:05:38<br>ci: [SYCL] ggml-ci Use main GPU and enab<br>le sysman<br>Akarshan Biswas  Log: [log](./log/c95fa362b3587d1822558f7e28414521075f254f)|100.0%|NA|('ok', 'pass', 0)|4.0|tg=4.19<br>pp=76.87|0/0|2025.0.4|
 |[48d7021c61ceda6fcf1a7294d2115b8e1a53ae95](https://github.com/ggerganov/llama.cpp/commit/48d7021c61ceda6fcf1a7294d2115b8e1a53ae95)<br>2025-03-24 18:28:32<br>CI: fix SYCL build<br>Akarshan Biswas  Log: [log](./log/48d7021c61ceda6fcf1a7294d2115b8e1a53ae95)|100.0%|NA|('ok', 'pass', 0)|4.0|tg=4.19<br>pp=76.81|0/0|2025.0.4|
