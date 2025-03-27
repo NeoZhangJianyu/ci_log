@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-03-27 07:16:00", "title": "SYCL: implement memset ggml backend buffer interface", "pr_id": "12580", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
