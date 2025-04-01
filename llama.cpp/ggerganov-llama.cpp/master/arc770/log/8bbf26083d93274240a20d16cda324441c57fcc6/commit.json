@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-04-01 13:41:39", "title": "SYCL: switch to SYCL namespace", "pr_id": "12674", "files": ["ggml/src/ggml-sycl/norm.cpp"]}

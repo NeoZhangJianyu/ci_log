@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2025-04-01 10:24:29", "title": "SYCL: Rename oneMKL to oneMath", "pr_id": "12192", "files": ["docs/backend/SYCL.md", "ggml/src/ggml-sycl/CMakeLists.txt", "ggml/src/ggml-sycl/dpct/helper.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/outprod.cpp"]}
