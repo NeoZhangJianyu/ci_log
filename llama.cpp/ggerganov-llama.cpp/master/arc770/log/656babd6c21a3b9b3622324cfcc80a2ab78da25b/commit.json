@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-04-08 15:03:21", "title": "Revert \"sycl:remove redundant memcopy in function ggml_backend_sycl_buffer_set_tensor\"", "pr_id": "12812", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
