@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2025-04-09 11:22:04", "title": "sycl: update documentation to use -no-cnv", "pr_id": "12845", "files": ["docs/backend/SYCL.md"]}
