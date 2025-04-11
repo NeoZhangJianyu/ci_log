@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-04-11 13:33:50", "title": "SYCL: Add fp16 type support to unary op kernels", "pr_id": "12788", "files": ["ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/element_wise.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}

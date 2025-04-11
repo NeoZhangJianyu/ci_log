@@ -1,0 +1,1 @@
+{"author": "Ewan Crawford <ewan.cr@gmail.com>", "date": "2025-04-11 15:32:14", "title": "sycl: Support sycl_ext_oneapi_limited_graph", "pr_id": "12873", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
