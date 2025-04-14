@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-04-14 17:53:53", "title": "SYCL: Fix im2col", "pr_id": "12910", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/im2col.cpp"]}
