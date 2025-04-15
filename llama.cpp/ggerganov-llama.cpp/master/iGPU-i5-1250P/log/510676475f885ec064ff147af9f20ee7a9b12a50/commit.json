@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-04-15 14:07:42", "title": "SYCL: Add ROPE vision kernel", "pr_id": "12887", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/rope.cpp"]}
