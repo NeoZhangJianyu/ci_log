@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-04-25 17:37:51", "title": "change the reorder tensor from init to execute OP", "pr_id": "13003", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
