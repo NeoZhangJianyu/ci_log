@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-04-28 15:03:25", "title": "SYCL: Add all missing unary kernels", "pr_id": "13074", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/element_wise.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
