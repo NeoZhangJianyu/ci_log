@@ -1,0 +1,1 @@
+{"author": "Atharva Dubey <atharva.dubey@codeplay.com>", "date": "2025-05-12 06:15:32", "title": "enable dpcpp nightly builds with libraries", "pr_id": "13406", "files": ["ggml/src/ggml-sycl/CMakeLists.txt"]}

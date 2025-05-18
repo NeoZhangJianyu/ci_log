@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-05-06 20:27:06", "title": "SYCL: Disable reorder optimize by default and stop setting tensor extras when optimize is disabled", "pr_id": "13254", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
