@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2025-05-19 11:46:09", "title": "ci : upgraded oneAPI version in SYCL workflows and dockerfile", "pr_id": "13532", "files": [".devops/intel.Dockerfile", ".github/workflows/build.yml", ".github/workflows/release.yml"]}
