@@ -1,0 +1,1 @@
+{"author": "\u0141ukasz \u015alusarczyk <112692748+lslusarczyk@users.noreply.github.com>", "date": "2025-05-16 12:15:29", "title": "sycl : fixed compilation warnings", "pr_id": "13582", "files": ["ggml/src/ggml-sycl/element_wise.cpp"]}

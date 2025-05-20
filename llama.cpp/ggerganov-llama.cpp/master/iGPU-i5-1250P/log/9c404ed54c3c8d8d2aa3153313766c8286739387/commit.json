@@ -1,0 +1,1 @@
+{"author": "\u0141ukasz \u015alusarczyk <112692748+lslusarczyk@users.noreply.github.com>", "date": "2025-05-15 16:53:41", "title": "sycl: use oneDNN for matrices multiplication", "pr_id": "12972", "files": ["docs/backend/SYCL.md", "ggml/CMakeLists.txt", "ggml/src/ggml-sycl/CMakeLists.txt", "ggml/src/ggml-sycl/gemm.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}

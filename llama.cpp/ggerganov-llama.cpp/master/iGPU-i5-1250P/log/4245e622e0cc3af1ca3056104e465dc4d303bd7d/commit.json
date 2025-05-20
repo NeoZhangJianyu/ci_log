@@ -1,0 +1,1 @@
+{"author": "Svetlozar Georgiev <55534064+sgeor255@users.noreply.github.com>", "date": "2025-05-20 10:34:15", "title": "sycl: disable reorder for sycl mulmat", "pr_id": "13536", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
