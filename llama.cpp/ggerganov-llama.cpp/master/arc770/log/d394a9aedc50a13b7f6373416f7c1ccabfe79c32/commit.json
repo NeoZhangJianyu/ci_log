@@ -1,0 +1,1 @@
+{"author": "Nicol\u00f2 Scipione <nicolo.scipione@codeplay.com>", "date": "2025-05-22 13:54:43", "title": "sycl : Remove waits from function calls", "pr_id": "13702", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}

@@ -1,0 +1,1 @@
+{"author": "Nicol\u00f2 Scipione <nicolo.scipione@codeplay.com>", "date": "2025-05-20 02:54:43", "title": "sycl : Overcoming workaround for mmap", "pr_id": "allocation on Window", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "tools/llama-bench/README.md"]}

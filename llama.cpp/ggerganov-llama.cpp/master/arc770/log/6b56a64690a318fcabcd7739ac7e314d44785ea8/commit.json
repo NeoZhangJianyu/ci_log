@@ -1,0 +1,1 @@
+{"author": "Ewan Crawford <ewan@codeplay.com>", "date": "2025-05-22 09:24:09", "title": "SYCL: Avoid using with SYCL-Graph for unsupported nodes", "pr_id": "13587", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
