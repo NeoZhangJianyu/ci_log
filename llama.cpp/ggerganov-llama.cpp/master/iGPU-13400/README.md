@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[7dfad387e3f6ac98d383ded2d175eb59736a3993](https://github.com/ggerganov/llama.cpp/commit/7dfad387e3f6ac98d383ded2d175eb59736a3993)<br>2025-03-18 07:27:50<br>llama: Add support for RWKV v7 architect<br>ure<br>Molly Sophia  Log: [log](./log/7dfad387e3f6ac98d383ded2d175eb59736a3993)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.54<br>pp=29.12|0/0|2025.0.4|
 |[a53f7f7b8859f3e634415ab03e1e295b9861d7e6](https://github.com/ggerganov/llama.cpp/commit/a53f7f7b8859f3e634415ab03e1e295b9861d7e6)<br>2025-03-18 01:51:25<br>fixed compilation warnings in ggml-sycl<br>Łukasz Ślusarczyk  Log: [log](./log/a53f7f7b8859f3e634415ab03e1e295b9861d7e6)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.54<br>pp=28.99|0/0|2025.0.4|
 |[b3c9a65673a63a6c9a75da24ee00d13499494e0c](https://github.com/ggerganov/llama.cpp/commit/b3c9a65673a63a6c9a75da24ee00d13499494e0c)<br>2025-03-17 07:15:12<br>SYCL: set extras only on GGML_TYPE_Q4_0<br>Akarshan Biswas  Log: [log](./log/b3c9a65673a63a6c9a75da24ee00d13499494e0c)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.54<br>pp=29.01|0/0|2025.0.4|
 |[3d35d87b4113648e224b837bb88e6b2c4c7f29e5](https://github.com/ggerganov/llama.cpp/commit/3d35d87b4113648e224b837bb88e6b2c4c7f29e5)<br>2025-03-15 22:49:03<br>SYCL: Delete redundant plus sign and spa<br>ce<br>aubreyli  Log: [log](./log/3d35d87b4113648e224b837bb88e6b2c4c7f29e5)|100.0%|NA|('ok', 'pass', 0)|2.51|tg=2.54<br>pp=29.0|0/0|2025.0.4|
