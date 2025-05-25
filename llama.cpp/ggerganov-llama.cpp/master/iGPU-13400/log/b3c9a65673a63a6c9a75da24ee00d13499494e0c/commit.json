@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-03-17 07:15:12", "title": "SYCL: set extras only on GGML_TYPE_Q4_0", "pr_id": "12366", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
