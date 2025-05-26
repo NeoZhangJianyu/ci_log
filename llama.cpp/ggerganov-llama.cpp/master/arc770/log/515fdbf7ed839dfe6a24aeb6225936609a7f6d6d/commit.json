@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-05-25 12:38:37", "title": "SYCL: revert \"sycl: simplify bin_bcast_kernel", "pr_id": "13383)", "files": ["ggml/src/ggml-sycl/binbcast.cpp"]}
