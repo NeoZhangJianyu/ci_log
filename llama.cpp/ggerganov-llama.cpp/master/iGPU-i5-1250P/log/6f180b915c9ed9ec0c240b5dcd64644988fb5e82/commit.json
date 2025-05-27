@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-05-26 21:10:36", "title": "SYCL: Add non contiguous support in RMS_NORM and NORM kernels", "pr_id": "13611", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/norm.cpp"]}
