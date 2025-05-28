@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[e2f560175a195f63c3276972a3d1caec0bd13e05](https://github.com/ggerganov/llama.cpp/commit/e2f560175a195f63c3276972a3d1caec0bd13e05)<br>2025-03-25 16:10:18<br>SYCL: disable Q4_0 reorder optimization<br>Akarshan Biswas  Log: [log](./log/e2f560175a195f63c3276972a3d1caec0bd13e05)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.19|0/0|2025.0.4|
 |[c95fa362b3587d1822558f7e28414521075f254f](https://github.com/ggerganov/llama.cpp/commit/c95fa362b3587d1822558f7e28414521075f254f)<br>2025-03-24 23:05:38<br>ci: [SYCL] ggml-ci Use main GPU and enab<br>le sysman<br>Akarshan Biswas  Log: [log](./log/c95fa362b3587d1822558f7e28414521075f254f)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.54<br>pp=29.13|0/0|2025.0.4|
 |[48d7021c61ceda6fcf1a7294d2115b8e1a53ae95](https://github.com/ggerganov/llama.cpp/commit/48d7021c61ceda6fcf1a7294d2115b8e1a53ae95)<br>2025-03-24 18:28:32<br>CI: fix SYCL build<br>Akarshan Biswas  Log: [log](./log/48d7021c61ceda6fcf1a7294d2115b8e1a53ae95)|100.0%|NA|('ok', 'pass', 0)|2.51|tg=2.55<br>pp=29.16|0/0|2025.0.4|
 |[1aa87ee53d05505247c54612e40f6a38c680b433](https://github.com/ggerganov/llama.cpp/commit/1aa87ee53d05505247c54612e40f6a38c680b433)<br>2025-03-21 14:58:47<br>[SYCL] Fix build on Windows when ccache <br>enabled<br>蕭澧邦  Log: [log](./log/1aa87ee53d05505247c54612e40f6a38c680b433)|100.0%|NA|('ok', 'pass', 0)|2.51|tg=2.54<br>pp=29.0|0/0|2025.0.4|
