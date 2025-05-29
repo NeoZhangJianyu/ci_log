@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[8bbf26083d93274240a20d16cda324441c57fcc6](https://github.com/ggerganov/llama.cpp/commit/8bbf26083d93274240a20d16cda324441c57fcc6)<br>2025-04-01 13:41:39<br>SYCL: switch to SYCL namespace<br>Akarshan Biswas  Log: [log](./log/8bbf26083d93274240a20d16cda324441c57fcc6)|100.0%|NA|('ok', 'pass', 0)|2.51|tg=2.52<br>pp=28.97|0/0|2025.0.4|
 |[82939705421f4ef27e924879fdeed6d7b5f6d769](https://github.com/ggerganov/llama.cpp/commit/82939705421f4ef27e924879fdeed6d7b5f6d769)<br>2025-04-01 10:24:29<br>SYCL: Rename oneMKL to oneMath<br>Romain Biessy  Log: [log](./log/82939705421f4ef27e924879fdeed6d7b5f6d769)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.16|0/0|2025.0.4|
 |[6c02a032fa21d69e881ef9a5c94ba28ebaf1d749](https://github.com/ggerganov/llama.cpp/commit/6c02a032fa21d69e881ef9a5c94ba28ebaf1d749)<br>2025-03-31 14:55:24<br>SYCL: Remove misleading ggml_sycl_op_fla<br>tten function<br>Akarshan Biswas  Log: [log](./log/6c02a032fa21d69e881ef9a5c94ba28ebaf1d749)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.19|0/0|2025.0.4|
 |[f17a3bb4e8b0aa24c0f86636d234aca7dc2cfa01](https://github.com/ggerganov/llama.cpp/commit/f17a3bb4e8b0aa24c0f86636d234aca7dc2cfa01)<br>2025-03-27 07:16:00<br>SYCL: implement memset ggml backend buff<br>er interface<br>Akarshan Biswas  Log: [log](./log/f17a3bb4e8b0aa24c0f86636d234aca7dc2cfa01)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.12|0/0|2025.0.4|
