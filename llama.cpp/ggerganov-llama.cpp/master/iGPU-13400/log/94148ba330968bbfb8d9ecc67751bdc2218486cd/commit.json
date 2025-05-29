@@ -1,0 +1,1 @@
+{"author": "Nicol\u00f2 Scipione <nicolo.scipione@codeplay.com>", "date": "2025-04-04 16:00:46", "title": "sycl: allow ggml-sycl configuration and compilation using Visual Studio project/solution", "pr_id": "12625", "files": ["docs/backend/SYCL.md", "ggml/src/ggml-sycl/CMakeLists.txt"]}
