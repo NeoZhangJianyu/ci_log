@@ -1,0 +1,1 @@
+{"author": "Atharva Dubey <atharva.dubey@codeplay.com>", "date": "2025-04-03 13:12:39", "title": "ci : add env variable in ggml-ci and document the same in SYCL.md", "pr_id": "12736", "files": ["ci/run.sh", "docs/backend/SYCL.md"]}
