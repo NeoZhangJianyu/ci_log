@@ -1,3 +1,11 @@
++ gg_run_ctest_release
++ cd /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp
++ tee /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/tmp/ci_log/f3101a8cc665f73217c752a10a7042889275cfbc/tmp/results/ctest_release.log
++ rm -rf build-ci-release
++ mkdir build-ci-release
++ cd build-ci-release
++ set -e
++ tee -a /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/tmp/ci_log/f3101a8cc665f73217c752a10a7042889275cfbc/tmp/results/ctest_release-cmake.log
 + cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON -DLLAMA_CURL=OFF ..
 CMake Warning:
   Ignoring extra path from command line:
@@ -88,6 +96,7 @@ Call Stack (most recent call first):
 real	0m1.874s
 user	0m1.197s
 sys	0m0.673s
++ tee -a /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/tmp/ci_log/f3101a8cc665f73217c752a10a7042889275cfbc/tmp/results/ctest_release-make.log
 + make -j
 [  0%] Generating build details from Git
 [  2%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
@@ -437,6 +446,8 @@ sys	0m0.673s
 real	1m19.582s
 user	9m41.905s
 sys	0m26.036s
++ '[' -z ']'
++ tee -a /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/tmp/ci_log/f3101a8cc665f73217c752a10a7042889275cfbc/tmp/results/ctest_release-ctest.log
 + ctest --output-on-failure -L main
 Test project /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/build-ci-release
       Start  1: test-tokenizer-0-bert-bge
@@ -518,3 +529,7 @@ Total Test time (real) =  53.69 sec
 real	0m53.702s
 user	0m59.340s
 sys	0m12.622s
++ set +e
++ cur=0
++ echo 0
++ set +x

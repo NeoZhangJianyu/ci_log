@@ -1,4 +1,4 @@
-+ cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON ..
++ cmake -DCMAKE_BUILD_TYPE=Release -DLLAMA_FATAL_WARNINGS=ON -DLLAMA_SYCL=1 DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DLLAMA_SYCL_F16=ON -DLLAMA_CURL=OFF ..
 CMake Warning:
   Ignoring extra path from command line:
 
@@ -81,13 +81,10 @@ Call Stack (most recent call first):
 -- Found /opt/intel/oneapi/mkl/2025.0/lib/libmkl_tbb_thread.so
 -- Found /opt/intel/oneapi/compiler/2025.0/lib/libiomp5.so
 -- Including SYCL backend
--- Could NOT find CURL (missing: CURL_LIBRARY CURL_INCLUDE_DIR) 
-CMake Error at common/CMakeLists.txt:98 (message):
-  Could NOT find CURL.  Hint: to disable this feature, set -DLLAMA_CURL=OFF
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/build-ci-release
 
-
--- Configuring incomplete, errors occurred!
-
-real	0m1.693s
-user	0m1.067s
-sys	0m0.628s
+real	0m1.874s
+user	0m1.197s
+sys	0m0.673s
