@@ -1,0 +1,1 @@
+{"author": "zhouwg <zhouwg2000@gmail.com>", "date": "2025-04-07 23:22:57", "title": "sycl: remove redundant memcopy in function ggml_backend_sycl_buffer_set_tensor", "pr_id": "12734", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
