@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[b49a8ff96b769b8a4c36d89fb783ec0135be582b](https://github.com/ggerganov/llama.cpp/commit/b49a8ff96b769b8a4c36d89fb783ec0135be582b)<br>2025-05-30 19:40:57<br>SYCL: Add mrope kernel<br>Akarshan Biswas  Log: [log](./log/b49a8ff96b769b8a4c36d89fb783ec0135be582b)|100.0%|NA|('ok', 'pass', 0)|3.98|tg=4.13<br>pp=76.61|0/0|2025.0.4|
 |[f3101a8cc665f73217c752a10a7042889275cfbc](https://github.com/ggerganov/llama.cpp/commit/f3101a8cc665f73217c752a10a7042889275cfbc)<br>2025-05-27 20:52:59<br>SYCL: add gelu_erf kernel<br>Akarshan Biswas  Log: [log](./log/f3101a8cc665f73217c752a10a7042889275cfbc)|100.0%|NA|('ok', 'pass', 0)|4.0|tg=4.13<br>pp=76.59|0/0|2025.0.4|
 |[6f180b915c9ed9ec0c240b5dcd64644988fb5e82](https://github.com/ggerganov/llama.cpp/commit/6f180b915c9ed9ec0c240b5dcd64644988fb5e82)<br>2025-05-26 21:10:36<br>SYCL: Add non contiguous support in RMS_<br>NORM and NORM kernels<br>Akarshan Biswas  Log: [log](./log/6f180b915c9ed9ec0c240b5dcd64644988fb5e82)|97.0%|NA|('ok', 'pass', 0)|3.99|tg=4.12<br>pp=76.88|0/0|2025.0.4|
 |[9012eb9b454a82eaa4cd77ae904c0ea391e4db42](https://github.com/ggerganov/llama.cpp/commit/9012eb9b454a82eaa4cd77ae904c0ea391e4db42)<br>2025-05-26 10:28:53<br>sycl: Add more debug prints<br>Romain Biessy  Log: [log](./log/9012eb9b454a82eaa4cd77ae904c0ea391e4db42)|97.0%|NA|('ok', 'pass', 0)|3.98|tg=4.13<br>pp=76.92|0/0|2025.0.4|

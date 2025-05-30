@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-05-30 19:40:57", "title": "SYCL: Add mrope kernel", "pr_id": "13755", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/rope.cpp"]}
