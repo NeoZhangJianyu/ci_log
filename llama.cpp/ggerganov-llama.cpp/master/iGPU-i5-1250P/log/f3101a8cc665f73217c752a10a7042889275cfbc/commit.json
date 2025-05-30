@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-05-27 20:52:59", "title": "SYCL: add gelu_erf kernel", "pr_id": "13749", "files": ["ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/element_wise.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
