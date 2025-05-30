@@ -1,8 +1,3 @@
-### ctest_release
-
-Runs ctest in release mode
-- status: 8
-```
 + ctest --output-on-failure -L main
 Test project /home/zjy/ws/jenkins/workspace/ci-arc770@2/ggerganov-llama.cpp/build-ci-release
       Start  1: test-tokenizer-0-bert-bge
@@ -5634,4 +5629,3 @@ Errors while running CTest
 real	1m2.835s
 user	1m1.159s
 sys	0m13.758s
-```

@@ -2,7 +2,7 @@
 CMake Warning:
   Ignoring extra path from command line:
 
-   "/home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
+   "/home/zjy/ws/jenkins/workspace/ci-arc770@2/ggerganov-llama.cpp/build-ci-release/DCMAKE_C_COMPILER=icx"
 
 
 -- The C compiler identification is GNU 13.3.0
@@ -83,8 +83,8 @@ Call Stack (most recent call first):
 -- Including SYCL backend
 -- Configuring done (1.4s)
 -- Generating done (0.1s)
--- Build files have been written to: /home/zjy/ws/jenkins/workspace/ci-arc770/ggerganov-llama.cpp/build-ci-release
+-- Build files have been written to: /home/zjy/ws/jenkins/workspace/ci-arc770@2/ggerganov-llama.cpp/build-ci-release
 
-real	0m1.546s
-user	0m1.018s
-sys	0m0.530s
+real	0m1.574s
+user	0m1.042s
+sys	0m0.534s
