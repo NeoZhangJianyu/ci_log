@@ -1,0 +1,80 @@
++ make -j
+[  0%] Generating build details from Git
+[  0%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  0%] Building CXX object tools/mtmd/CMakeFiles/llama-qwen2vl-cli.dir/deprecation-warning.cpp.o
+[  0%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  1%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+[  1%] Building CXX object tools/mtmd/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o
+[  2%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  4%] Building CXX object tools/mtmd/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  5%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  5%] Building CXX object tools/mtmd/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o
+[  5%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[  6%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  6%] Built target build_info
+[  6%] Linking CXX executable ../../bin/llama-llava-cli
+[  7%] Linking CXX executable ../../bin/llama-qwen2vl-cli
+[  8%] Linking CXX executable ../../bin/llama-gemma3-cli
+[  8%] Built target sha1
+[  8%] Built target sha256
+[  8%] Linking CXX executable ../../bin/llama-minicpmv-cli
+[  8%] Built target llama-gemma3-cli
+[  8%] Built target llama-qwen2vl-cli
+[  8%] Built target llama-llava-cli
+[  8%] Built target llama-minicpmv-cli
+[  8%] Built target xxhash
+[  8%] Linking CXX shared library ../../bin/libggml-base.so
+[  8%] Built target ggml-base
+[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[  9%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 11%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/binbcast.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/getrows.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/gla.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/cpy.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+[ 20%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv.cpp.o
+[ 22%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 22%] Built target ggml-cpu
+[ 23%] Linking CXX shared library ../../../bin/libggml-sycl.so
+sh: 0: getcwd() failed: No such file or directory
+Built target ggml-sycl
+make: getcwd: No such file or directory
+make[2]: ggml/src/CMakeFiles/ggml.dir/build.make: No such file or directory
+make[2]: *** No rule to make target 'ggml/src/CMakeFiles/ggml.dir/build.make'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:1742: ggml/src/CMakeFiles/ggml.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+real	0m27.846s
+user	4m48.613s
+sys	0m12.296s
