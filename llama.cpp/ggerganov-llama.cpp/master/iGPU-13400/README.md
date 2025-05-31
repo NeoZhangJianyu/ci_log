@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[0a338ed013c23aecdce6449af736a35a465fa60f](https://github.com/ggerganov/llama.cpp/commit/0a338ed013c23aecdce6449af736a35a465fa60f)<br>2025-05-16 12:15:29<br>sycl : fixed compilation warnings<br>Łukasz Ślusarczyk  Log: [log](./log/0a338ed013c23aecdce6449af736a35a465fa60f)|97.0%|5494/5519|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.01|0/0|2025.0.4|
 |[9c404ed54c3c8d8d2aa3153313766c8286739387](https://github.com/ggerganov/llama.cpp/commit/9c404ed54c3c8d8d2aa3153313766c8286739387)<br>2025-05-15 16:53:41<br>sycl: use oneDNN for matrices multiplica<br>tion<br>Łukasz Ślusarczyk  Log: [log](./log/9c404ed54c3c8d8d2aa3153313766c8286739387)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.88|0/0|2025.0.4|
 |[02cdd2d8b092b5a4bb18e013c6887ce49ba20ac5](https://github.com/ggerganov/llama.cpp/commit/02cdd2d8b092b5a4bb18e013c6887ce49ba20ac5)<br>2025-05-15 16:39:52<br>sycl: simplify bin_bcast_kernel<br>Atharva Dubey  Log: [log](./log/02cdd2d8b092b5a4bb18e013c6887ce49ba20ac5)|97.0%|5495/5519|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.76|0/0|2025.0.4|
 |[64bb51cf90d3eede8c150a23d59a0c718b78065b](https://github.com/ggerganov/llama.cpp/commit/64bb51cf90d3eede8c150a23d59a0c718b78065b)<br>2025-05-15 16:35:44<br>sycl: reordered Q4_K MMVQ<br>Svetlozar Georgiev  Log: [log](./log/64bb51cf90d3eede8c150a23d59a0c718b78065b)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.96|0/0|2025.0.4|
