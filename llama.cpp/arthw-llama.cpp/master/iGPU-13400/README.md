@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[b1972f5f7890f28c5461b66d4f2db44c2eb853e0](https://github.com/arthw/llama.cpp/commit/b1972f5f7890f28c5461b66d4f2db44c2eb853e0)<br>2025-03-18 01:51:25<br>fixed compilation warnings in ggml-sycl<br>Łukasz Ślusarczyk  Log: [log](./log/b1972f5f7890f28c5461b66d4f2db44c2eb853e0)|97.0%|NA|('ok', 'pass', 0)|2.91|tg=2.97<br>pp=29.18|24/0|2025.0.4|
 |[104d8bd5cad87f3138d40acf5fee7dfed9ba3b6d](https://github.com/arthw/llama.cpp/commit/104d8bd5cad87f3138d40acf5fee7dfed9ba3b6d)<br>2025-03-17 07:15:12<br>SYCL: set extras only on GGML_TYPE_Q4_0<br>Akarshan Biswas  Log: [log](./log/104d8bd5cad87f3138d40acf5fee7dfed9ba3b6d)|97.0%|NA|('ok', 'pass', 0)|2.91|tg=2.98<br>pp=29.19|24/0|2025.0.4|
 |[874af051a3d066f5f417a026df8f2a91bdf31ac8](https://github.com/arthw/llama.cpp/commit/874af051a3d066f5f417a026df8f2a91bdf31ac8)<br>2025-03-15 22:49:03<br>SYCL: Delete redundant plus sign and spa<br>ce<br>aubreyli  Log: [log](./log/874af051a3d066f5f417a026df8f2a91bdf31ac8)|97.0%|NA|('ok', 'pass', 0)|2.9|tg=2.97<br>pp=29.0|24/0|2025.0.4|
 |[822a6d3d9d8987b70afcabfb8ecde01f980f4a82](https://github.com/arthw/llama.cpp/commit/822a6d3d9d8987b70afcabfb8ecde01f980f4a82)<br>2025-03-15 15:19:30<br>SYCL : support non-contiguous tensors in<br> binary ops<br>fairydreaming  Log: [log](./log/822a6d3d9d8987b70afcabfb8ecde01f980f4a82)|97.0%|NA|('ok', 'pass', 0)|2.91|tg=2.97<br>pp=29.01|24/0|2025.0.4|
