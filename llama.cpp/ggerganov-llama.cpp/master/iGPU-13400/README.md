@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[6f180b915c9ed9ec0c240b5dcd64644988fb5e82](https://github.com/ggerganov/llama.cpp/commit/6f180b915c9ed9ec0c240b5dcd64644988fb5e82)<br>2025-05-26 21:10:36<br>SYCL: Add non contiguous support in RMS_<br>NORM and NORM kernels<br>Akarshan Biswas  Log: [log](./log/6f180b915c9ed9ec0c240b5dcd64644988fb5e82)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.11|0/0|2025.0.4|
 |[9012eb9b454a82eaa4cd77ae904c0ea391e4db42](https://github.com/ggerganov/llama.cpp/commit/9012eb9b454a82eaa4cd77ae904c0ea391e4db42)<br>2025-05-26 10:28:53<br>sycl: Add more debug prints<br>Romain Biessy  Log: [log](./log/9012eb9b454a82eaa4cd77ae904c0ea391e4db42)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.19|0/0|2025.0.4|
 |[515fdbf7ed839dfe6a24aeb6225936609a7f6d6d](https://github.com/ggerganov/llama.cpp/commit/515fdbf7ed839dfe6a24aeb6225936609a7f6d6d)<br>2025-05-25 12:38:37<br>SYCL: revert "sycl: simplify bin_bcast_k<br>ernel<br>Akarshan Biswas  Log: [log](./log/515fdbf7ed839dfe6a24aeb6225936609a7f6d6d)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.17|0/0|2025.0.4|
 |[d394a9aedc50a13b7f6373416f7c1ccabfe79c32](https://github.com/ggerganov/llama.cpp/commit/d394a9aedc50a13b7f6373416f7c1ccabfe79c32)<br>2025-05-22 13:54:43<br>sycl : Remove waits from function calls<br>Nicolò Scipione  Log: [log](./log/d394a9aedc50a13b7f6373416f7c1ccabfe79c32)|97.0%|5501/5527|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.99|0/0|2025.0.4|
