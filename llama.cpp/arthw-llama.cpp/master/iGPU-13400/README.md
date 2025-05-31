@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[deb2d2a40c1ace90d23d38213f785ac9a11bc731](https://github.com/arthw/llama.cpp/commit/deb2d2a40c1ace90d23d38213f785ac9a11bc731)<br>2025-03-03 15:37:22<br>SYCL: Move CPY kernels to a separate fil<br>e and add few missing kernels<br>Akarshan Biswas  Log: [log](./log/deb2d2a40c1ace90d23d38213f785ac9a11bc731)|100.0%|NA|('ok', 'pass', 0)|2.91|tg=2.97<br>pp=29.16|24/0|2025.0.4|
 |[50463a7286ccf0510505caa0db097f478bcc8c4e](https://github.com/arthw/llama.cpp/commit/50463a7286ccf0510505caa0db097f478bcc8c4e)<br>2025-02-28 05:41:47<br>ggml : upgrade init_tensor API to return<br> a ggml_status<br>William Tambellini  Log: [log](./log/50463a7286ccf0510505caa0db097f478bcc8c4e)|100.0%|NA|('ok', 'pass', 0)|2.9|tg=2.97<br>pp=29.01|24/0|2025.0.4|
 |[c5dc8e9e4edc80a162fe673017384d2894f73d36](https://github.com/arthw/llama.cpp/commit/c5dc8e9e4edc80a162fe673017384d2894f73d36)<br>2025-02-27 09:21:51<br>fix ut fault of Q4_1, Q5..<br>arthw  Log: [log](./log/c5dc8e9e4edc80a162fe673017384d2894f73d36)|100.0%|NA|('ok', 'pass', 0)|2.91|tg=2.97<br>pp=29.0|24/0|2025.0.4|
 |[7ba151d24bef8ff866074a18586b504d7de49e47](https://github.com/arthw/llama.cpp/commit/7ba151d24bef8ff866074a18586b504d7de49e47)<br>2025-02-26 22:16:33<br>add new line at end of file<br>Neo Zhang Jianyu  Log: [log](./log/7ba151d24bef8ff866074a18586b504d7de49e47)|97.0%|3939/3943|('ok', 'pass', 0)|2.98|tg=3.05<br>pp=29.12|24/0|2025.0.4|
