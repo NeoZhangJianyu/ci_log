@@ -1,0 +1,1 @@
+{"author": "Atharva Dubey <atharva.dubey@codeplay.com>", "date": "2025-05-15 16:39:52", "title": "sycl: simplify bin_bcast_kernel", "pr_id": "13383", "files": ["ggml/src/ggml-sycl/binbcast.cpp"]}

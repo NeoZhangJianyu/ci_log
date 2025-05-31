@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[02cdd2d8b092b5a4bb18e013c6887ce49ba20ac5](https://github.com/ggerganov/llama.cpp/commit/02cdd2d8b092b5a4bb18e013c6887ce49ba20ac5)<br>2025-05-15 16:39:52<br>sycl: simplify bin_bcast_kernel<br>Atharva Dubey  Log: [log](./log/02cdd2d8b092b5a4bb18e013c6887ce49ba20ac5)|97.0%|5495/5519|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.76|0/0|2025.0.4|
 |[64bb51cf90d3eede8c150a23d59a0c718b78065b](https://github.com/ggerganov/llama.cpp/commit/64bb51cf90d3eede8c150a23d59a0c718b78065b)<br>2025-05-15 16:35:44<br>sycl: reordered Q4_K MMVQ<br>Svetlozar Georgiev  Log: [log](./log/64bb51cf90d3eede8c150a23d59a0c718b78065b)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.96|0/0|2025.0.4|
 |[14492144c286bbf38bb1903128403d9e2ebad54c](https://github.com/ggerganov/llama.cpp/commit/14492144c286bbf38bb1903128403d9e2ebad54c)<br>2025-05-12 06:15:32<br>enable dpcpp nightly builds with librari<br>es<br>Atharva Dubey  Log: [log](./log/14492144c286bbf38bb1903128403d9e2ebad54c)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.15|0/0|2025.0.4|
 |[17512a94d636c4b6c1332370acb3e5af3ca70918](https://github.com/ggerganov/llama.cpp/commit/17512a94d636c4b6c1332370acb3e5af3ca70918)<br>2025-05-09 16:34:08<br>sycl : implementation of reordered Q4_0 <br>MMVQ for Intel GPUs<br>Alberto Cabrera Pérez  Log: [log](./log/17512a94d636c4b6c1332370acb3e5af3ca70918)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.1|0/0|2025.0.4|
