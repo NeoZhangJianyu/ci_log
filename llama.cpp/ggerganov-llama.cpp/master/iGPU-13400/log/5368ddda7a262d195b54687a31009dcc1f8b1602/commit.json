@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-04-21 19:13:30", "title": "SYCL: Add non-contiguous support in ROPE", "pr_id": "12993", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/rope.cpp", "ggml/src/ggml-sycl/rope.hpp"]}
