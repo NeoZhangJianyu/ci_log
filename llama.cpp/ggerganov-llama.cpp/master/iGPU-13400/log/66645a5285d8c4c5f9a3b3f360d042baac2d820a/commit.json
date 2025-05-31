@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-05-05 13:39:10", "title": "SYCL: Disable mul_mat kernels for noncontiguous tensor b", "pr_id": "13308", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
