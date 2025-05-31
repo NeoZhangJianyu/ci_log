@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT<br>PassRate|Fault<br>Detail|<div style="width:100px">GGUF res</div>|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|-|
+|[13b0a04597a4581cad4d9027a848f450c623801d](https://github.com/ggerganov/llama.cpp/commit/13b0a04597a4581cad4d9027a848f450c623801d)<br>2025-05-05 13:09:35<br>whisper: remove MSVC warnings pragmas<br>Daniel Bevenius  Log: [log](./log/13b0a04597a4581cad4d9027a848f450c623801d)|100.0%|NA|('ok', 'pass', 0)|2.49|tg=2.53<br>pp=28.05|0/0|2025.0.4|
 |[a4c340f974f9b7ac0c1aae897aabaa54549a97e5](https://github.com/ggerganov/llama.cpp/commit/a4c340f974f9b7ac0c1aae897aabaa54549a97e5)<br>2025-04-28 15:03:25<br>SYCL: Add all missing unary kernels<br>Akarshan Biswas  Log: [log](./log/a4c340f974f9b7ac0c1aae897aabaa54549a97e5)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=28.97|0/0|2025.0.4|
 |[514c45608f93f66106a712dee1abe062099ce790](https://github.com/ggerganov/llama.cpp/commit/514c45608f93f66106a712dee1abe062099ce790)<br>2025-04-25 17:37:51<br>change the reorder tensor from init to e<br>xecute OP<br>Neo Zhang Jianyu  Log: [log](./log/514c45608f93f66106a712dee1abe062099ce790)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.0|0/0|2025.0.4|
 |[5368ddda7a262d195b54687a31009dcc1f8b1602](https://github.com/ggerganov/llama.cpp/commit/5368ddda7a262d195b54687a31009dcc1f8b1602)<br>2025-04-21 19:13:30<br>SYCL: Add non-contiguous support in ROPE<br><br>Akarshan Biswas  Log: [log](./log/5368ddda7a262d195b54687a31009dcc1f8b1602)|100.0%|NA|('ok', 'pass', 0)|2.5|tg=2.52<br>pp=29.01|0/0|2025.0.4|
