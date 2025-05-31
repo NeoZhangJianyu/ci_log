@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2025-05-19 14:38:20", "title": "sycl : backend documentation review", "pr_id": "13544", "files": ["docs/backend/SYCL.md", "docs/docker.md", "examples/sycl/run-llama2.sh", "examples/sycl/run-llama3.sh", "examples/sycl/win-run-llama2.bat", "examples/sycl/win-run-llama3.bat"]}
