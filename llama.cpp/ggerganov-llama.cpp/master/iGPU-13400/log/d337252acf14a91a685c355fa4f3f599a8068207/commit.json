@@ -1,0 +1,1 @@
+{"author": "Kai Pastor <dg0yt@darc.de>", "date": "2025-05-31 12:39:19", "title": "cmake : Fix broken CMake error messages", "pr_id": "gml/1252", "files": ["ggml/src/ggml-blas/CMakeLists.txt", "ggml/src/ggml-sycl/CMakeLists.txt"]}
