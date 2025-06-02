@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT PassRate<br>Detail|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|<div style="width:100px">GGUF res</div>|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|
+|[663445b0deb21fb602176da030d4154197a4fca6](https://github.com/ggerganov/llama.cpp/commit/663445b0deb21fb602176da030d4154197a4fca6)<br>2025-06-02 10:12:20<br>sycl: quantize and reorder the input to <br>q8_1 when reorder is enabled<br>Atharva Dubey  Log: [log](./log/663445b0deb21fb602176da030d4154197a4fca6)|100.0%<br>NA|42.85|tg=42.79<br>pp=914.83|('ok', 'pass', 0)|0/0|2025.0.4|
 |[d337252acf14a91a685c355fa4f3f599a8068207](https://github.com/ggerganov/llama.cpp/commit/d337252acf14a91a685c355fa4f3f599a8068207)<br>2025-05-31 12:39:19<br>cmake : Fix broken CMake error messages<br>Kai Pastor  Log: [log](./log/d337252acf14a91a685c355fa4f3f599a8068207)|100.0%<br>NA|42.83|tg=42.78<br>pp=914.5|('ok', 'pass', 0)|0/0|2025.0.4|
 |[b49a8ff96b769b8a4c36d89fb783ec0135be582b](https://github.com/ggerganov/llama.cpp/commit/b49a8ff96b769b8a4c36d89fb783ec0135be582b)<br>2025-05-30 19:40:57<br>SYCL: Add mrope kernel<br>Akarshan Biswas  Log: [log](./log/b49a8ff96b769b8a4c36d89fb783ec0135be582b)|100.0%<br>NA|42.21|tg=42.08<br>pp=912.25|('ok', 'pass', 0)|0/0|2025.0.4|
 |[f3101a8cc665f73217c752a10a7042889275cfbc](https://github.com/ggerganov/llama.cpp/commit/f3101a8cc665f73217c752a10a7042889275cfbc)<br>2025-05-27 20:52:59<br>SYCL: add gelu_erf kernel<br>Akarshan Biswas  Log: [log](./log/f3101a8cc665f73217c752a10a7042889275cfbc)|100.0%<br>NA|42.8|tg=42.62<br>pp=914.62|('ok', 'pass', 0)|0/0|2025.0.4|

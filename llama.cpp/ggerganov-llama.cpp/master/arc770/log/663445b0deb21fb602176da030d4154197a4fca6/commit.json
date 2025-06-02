@@ -1,0 +1,1 @@
+{"author": "Atharva Dubey <atharva.dubey@codeplay.com>", "date": "2025-06-02 10:12:20", "title": "sycl: quantize and reorder the input to q8_1 when reorder is enabled", "pr_id": "13826", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/mmvq.cpp", "ggml/src/ggml-sycl/vecdotq.hpp"]}
