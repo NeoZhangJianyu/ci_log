@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-06-07 18:58:20", "title": "SYCL: Implement few same quantized type copy kernels", "pr_id": "13739", "files": ["ggml/src/ggml-sycl/cpy.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
