@@ -1,0 +1,1 @@
+{"author": "Anton Mitkov <anton.mitkov@codeplay.com>", "date": "2025-06-12 14:15:11", "title": "sycl: Remove not needed copy f16->f32 for dnnl mul mat", "pr_id": "14125", "files": ["ggml/src/ggml-sycl/gemm.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
