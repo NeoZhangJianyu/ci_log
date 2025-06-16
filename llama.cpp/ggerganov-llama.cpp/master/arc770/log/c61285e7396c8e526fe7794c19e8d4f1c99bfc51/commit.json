@@ -1,0 +1,1 @@
+{"author": "Ewan Crawford <ewan@codeplay.com>", "date": "2025-06-13 08:45:37", "title": "SYCL: Bump oneMath commit", "pr_id": "14152", "files": ["ggml/src/ggml-sycl/CMakeLists.txt"]}

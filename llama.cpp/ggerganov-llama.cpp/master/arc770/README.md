@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT PassRate<br>Detail|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|<div style="width:100px">GGUF res</div>|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|
+|[c61285e7396c8e526fe7794c19e8d4f1c99bfc51](https://github.com/ggerganov/llama.cpp/commit/c61285e7396c8e526fe7794c19e8d4f1c99bfc51)<br>2025-06-13 08:45:37<br>SYCL: Bump oneMath commit<br>Ewan Crawford  Log: [log](./log/c61285e7396c8e526fe7794c19e8d4f1c99bfc51)|97.0%<br>NA|21.08|tg=21.03<br>pp=430.73|('ok', 'pass', 0)|0/0|2025.0.4|
 |[ed52f3668e633423054a4eab61bb7efee47025ab](https://github.com/ggerganov/llama.cpp/commit/ed52f3668e633423054a4eab61bb7efee47025ab)<br>2025-06-12 14:15:11<br>sycl: Remove not needed copy f16->f32 fo<br>r dnnl mul mat<br>Anton Mitkov  Log: [log](./log/ed52f3668e633423054a4eab61bb7efee47025ab)|97.0%<br>NA|21.09|tg=20.92<br>pp=432.32|('ok', 'pass', 0)|0/0|2025.0.4|
 |[f470bc36bed4d836b9de5a483fa0dfaee176d6f5](https://github.com/ggerganov/llama.cpp/commit/f470bc36bed4d836b9de5a483fa0dfaee176d6f5)<br>2025-06-09 22:47:13<br>ggml-cpu : split arch-specific implement<br>ations<br>xctan  Log: [log](./log/f470bc36bed4d836b9de5a483fa0dfaee176d6f5)|100.0%<br>NA|29.2|tg=20.85<br>pp=554.35|('ok', 'pass', 0)|0/0|2025.0.4|
 |[b460d16ae858c6624fd37aec316622a4060ca325](https://github.com/ggerganov/llama.cpp/commit/b460d16ae858c6624fd37aec316622a4060ca325)<br>2025-06-09 11:47:07<br>sycl: Add reorder to Q6_K mmvq implement<br>ation<br>Nicolò Scipione  Log: [log](./log/b460d16ae858c6624fd37aec316622a4060ca325)|100.0%<br>NA|41.88|tg=20.74<br>pp=553.83|('ok', 'pass', 0)|0/0|2025.0.4|
