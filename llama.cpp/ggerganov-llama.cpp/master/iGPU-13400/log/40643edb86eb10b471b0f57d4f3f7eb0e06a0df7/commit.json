@@ -1,0 +1,1 @@
+{"author": "Svetlozar Georgiev <55534064+sgeor255@users.noreply.github.com>", "date": "2025-06-13 17:32:56", "title": "sycl: fix docker image", "pr_id": "14144", "files": [".devops/intel.Dockerfile"]}
