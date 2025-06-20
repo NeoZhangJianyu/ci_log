@@ -1,0 +1,1 @@
+{"author": "Anton Mitkov <anton_b_mitkov@abv.bg>", "date": "2025-06-19 11:40:21", "title": "sycl: Cleanup codepaths in Get Rows in sycl backend", "pr_id": "14215", "files": ["ggml/src/ggml-sycl/getrows.cpp"]}
