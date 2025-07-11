@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-07-10 13:59:38", "title": "SYCL: Initial set_rows kernel implementation", "pr_id": "14562", "files": ["ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/set_rows.cpp", "ggml/src/ggml-sycl/set_rows.hpp"]}
