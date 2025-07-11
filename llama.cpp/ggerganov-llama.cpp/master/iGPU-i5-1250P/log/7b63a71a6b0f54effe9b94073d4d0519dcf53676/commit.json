@@ -1,0 +1,1 @@
+{"author": "Nicol\u00f2 Scipione <nicolo.scipione@codeplay.com>", "date": "2025-07-03 11:00:03", "title": "Fix conditional enabling following arch checks for ggml-sycl", "pr_id": "14504", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
