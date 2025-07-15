@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2025-07-13 10:36:33", "title": "ggml : add build-time message to remind about ggml_set_rows", "pr_id": "14661", "files": ["ggml/src/ggml-cann/ggml-cann.cpp", "ggml/src/ggml-cuda/ggml-cuda.cu", "ggml/src/ggml-opencl/ggml-opencl.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
