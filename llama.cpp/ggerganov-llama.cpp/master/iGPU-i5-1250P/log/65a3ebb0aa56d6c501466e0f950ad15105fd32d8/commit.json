@@ -1,0 +1,1 @@
+{"author": "Anton Mitkov <anton_b_mitkov@abv.bg>", "date": "2025-07-14 10:37:35", "title": "sycl: Batched mulmat rework for oneDNN dispatch", "pr_id": "14617", "files": ["ggml/src/ggml-sycl/gemm.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
