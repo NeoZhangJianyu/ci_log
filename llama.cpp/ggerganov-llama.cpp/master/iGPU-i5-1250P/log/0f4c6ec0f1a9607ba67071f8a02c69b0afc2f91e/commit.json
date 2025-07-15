@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-07-14 15:07:55", "title": "SYCL: use 1D kernel for set_rows", "pr_id": "14618", "files": ["ggml/src/ggml-sycl/set_rows.cpp"]}
