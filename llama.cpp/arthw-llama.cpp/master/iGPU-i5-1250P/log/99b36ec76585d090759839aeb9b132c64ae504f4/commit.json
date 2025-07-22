@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-07-18 10:23:14", "title": "use max work group size for device to replace the magic number", "pr_id": "14732", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
