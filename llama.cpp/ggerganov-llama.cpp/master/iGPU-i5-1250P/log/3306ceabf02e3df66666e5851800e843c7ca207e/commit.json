@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2025-08-05 18:39:55", "title": "sycl: fix mul_mat selection", "pr_id": "15092", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
