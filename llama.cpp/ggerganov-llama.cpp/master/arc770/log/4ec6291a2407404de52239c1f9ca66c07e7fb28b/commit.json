@@ -1,0 +1,1 @@
+{"author": "Donghyeon Jeong <54725479+djeong20@users.noreply.github.com>", "date": "2025-07-24 13:50:41", "title": "sycl: fix undefined variable in work group size check", "pr_id": "14843", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
