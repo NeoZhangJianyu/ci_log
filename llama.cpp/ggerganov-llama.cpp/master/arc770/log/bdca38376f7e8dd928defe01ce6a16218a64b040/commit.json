@@ -1,0 +1,1 @@
+{"author": "Anton Mitkov <anton_b_mitkov@abv.bg>", "date": "2025-07-14 18:12:42", "title": "sycl: Hotfix for non dnnl codepath", "pr_id": "14677", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
