@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2025-07-21 18:39:29", "title": "sycl: Fix im2col", "pr_id": "14797", "files": ["ggml/src/ggml-sycl/im2col.cpp"]}
