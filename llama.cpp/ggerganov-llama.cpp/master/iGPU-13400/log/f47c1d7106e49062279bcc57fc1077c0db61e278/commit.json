@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-06-29 21:07:58", "title": "SYCL: disable faulty fp16 exp kernel", "pr_id": "14395", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
