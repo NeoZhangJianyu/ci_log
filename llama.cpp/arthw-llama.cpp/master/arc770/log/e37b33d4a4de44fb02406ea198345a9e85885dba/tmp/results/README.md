@@ -1,0 +1,142 @@
+### ctest_release
+
+Runs ctest in release mode
+- status: 8
+```
++ ctest --output-on-failure -L main
+Test project /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release
+      Start  1: test-tokenizer-0-bert-bge
+ 1/29 Test  #1: test-tokenizer-0-bert-bge .........   Passed    0.10 sec
+      Start  2: test-tokenizer-0-command-r
+ 2/29 Test  #2: test-tokenizer-0-command-r ........   Passed    0.40 sec
+      Start  3: test-tokenizer-0-deepseek-coder
+ 3/29 Test  #3: test-tokenizer-0-deepseek-coder ...   Passed    0.13 sec
+      Start  4: test-tokenizer-0-deepseek-llm
+ 4/29 Test  #4: test-tokenizer-0-deepseek-llm .....   Passed    0.20 sec
+      Start  5: test-tokenizer-0-falcon
+ 5/29 Test  #5: test-tokenizer-0-falcon ...........   Passed    0.15 sec
+      Start  6: test-tokenizer-0-gpt-2
+ 6/29 Test  #6: test-tokenizer-0-gpt-2 ............   Passed    0.14 sec
+      Start  7: test-tokenizer-0-llama-bpe
+ 7/29 Test  #7: test-tokenizer-0-llama-bpe ........   Passed    0.32 sec
+      Start  8: test-tokenizer-0-llama-spm
+ 8/29 Test  #8: test-tokenizer-0-llama-spm ........   Passed    0.12 sec
+      Start  9: test-tokenizer-0-mpt
+ 9/29 Test  #9: test-tokenizer-0-mpt ..............   Passed    0.15 sec
+      Start 10: test-tokenizer-0-phi-3
+10/29 Test #10: test-tokenizer-0-phi-3 ............   Passed    0.12 sec
+      Start 11: test-tokenizer-0-qwen2
+11/29 Test #11: test-tokenizer-0-qwen2 ............   Passed    0.28 sec
+      Start 12: test-tokenizer-0-refact
+12/29 Test #12: test-tokenizer-0-refact ...........   Passed    0.14 sec
+      Start 13: test-tokenizer-0-starcoder
+13/29 Test #13: test-tokenizer-0-starcoder ........   Passed    0.15 sec
+      Start 14: test-sampling
+14/29 Test #14: test-sampling .....................   Passed    1.03 sec
+      Start 15: test-grammar-parser
+15/29 Test #15: test-grammar-parser ...............   Passed    0.03 sec
+      Start 16: test-grammar-integration
+16/29 Test #16: test-grammar-integration ..........   Passed    0.04 sec
+      Start 17: test-llama-grammar
+17/29 Test #17: test-llama-grammar ................   Passed    0.03 sec
+      Start 18: test-chat
+18/29 Test #18: test-chat .........................   Passed    0.40 sec
+      Start 19: test-json-schema-to-grammar
+19/29 Test #19: test-json-schema-to-grammar .......   Passed    1.82 sec
+      Start 20: test-tokenizer-1-llama-spm
+20/29 Test #20: test-tokenizer-1-llama-spm ........   Passed    0.23 sec
+      Start 21: test-log
+21/29 Test #21: test-log ..........................   Passed    0.04 sec
+      Start 22: test-arg-parser
+22/29 Test #22: test-arg-parser ...................   Passed    0.12 sec
+      Start 23: test-chat-template
+23/29 Test #23: test-chat-template ................   Passed    0.11 sec
+      Start 24: test-gguf
+24/29 Test #24: test-gguf .........................   Passed    0.32 sec
+      Start 25: test-backend-ops
+25/29 Test #25: test-backend-ops ..................Subprocess aborted***Exception:   1.99 sec
+detect 1 SYCL devices:[0] by ONEAPI_DEVICE_SELECTOR=level_zero:0
+Running with Environment Variables:
+  GGML_SYCL_DEBUG: 0
+  GGML_SYCL_DISABLE_OPT: 0
+Build with Macros:
+  GGML_SYCL_FORCE_MMQ: no
+  GGML_SYCL_F16: yes
+ggml_sycl_init: SYCL_USE_XMX: yes
+found 1 SYCL devices:
+Part1:
+|ID|        Device Type|  Ver|                                   Name|Global mem size|
+|--|-------------------|-----|---------------------------------------|---------------|
+| 0| [level_zero:gpu:0]|12.55|                Intel Arc A770 Graphics|         16225M|
+
+Part2:
+|ID|Max compute units|Max work group|Max subgroup|                    Driver version|
+|--|-----------------|--------------|------------|----------------------------------|
+| 0|              512|          1024|          32|                      1.3.29735+27|
+SYCL Optimization Feature:
+|ID|        Device Type|Reorder|
+|--|-------------------|-------|
+| 0| [level_zero:gpu:0]|      Y|
+Testing 2 devices
+
+Backend 1/2: SYCL0
+  Device description: Intel(R) Arc(TM) A770 Graphics
+  Device memory: 15473 MB (15473 MB free)
+
+  ABS(type=f16,ne_a=[128,2,2,2],v=0): not supported [SYCL0] 
+  ABS(type=f16,ne_a=[5,7,11,13],v=0): not supported [SYCL0] 
+  SGN(type=f16,ne_a=[128,2,2,2],v=0): not supported [SYCL0] 
+  SGN(type=f16,ne_a=[5,7,11,13],v=0): not supported [SYCL0] 
+  NEG(type=f16,ne_a=[128,2,2,2],v=0): /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/ggml/src/ggml-sycl/element_wise.cpp:741: GGML_ASSERT(src0->type == GGML_TYPE_F32) failed
+[New LWP 3037151]
+warning: File "/opt/intel/oneapi/compiler/2025.0/lib/libsycl.so.8.0.0-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /opt/intel/oneapi/compiler/2025.0/lib/libsycl.so.8.0.0-gdb.py
+line to your configuration file "/home/zjy/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/zjy/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007af7ceb107e3 in __GI___wait4 (pid=3037250, stat_loc=0x7ffe5527d2a4, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+warning: 30	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory
+#0  0x00007af7ceb107e3 in __GI___wait4 (pid=3037250, stat_loc=0x7ffe5527d2a4, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	in ../sysdeps/unix/sysv/linux/wait4.c
+#1  0x00007af7cf6865ab in ggml_abort () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-base.so
+#2  0x00007af7cf2ff236 in ggml_sycl_op_neg(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, float const*, float const*, float*, sycl::_V1::queue* const&) () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-sycl.so
+#3  0x00007af7cf266612 in ggml_sycl_op_flatten(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, void (*)(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, float const*, float const*, float*, sycl::_V1::queue* const&)) () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-sycl.so
+#4  0x00007af7cf2d792e in ggml_sycl_neg(ggml_backend_sycl_context&, ggml_tensor*) () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-sycl.so
+#5  0x00007af7cf23062b in ggml_sycl_compute_forward(ggml_backend_sycl_context&, ggml_tensor*) () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-sycl.so
+#6  0x00007af7cf2538bf in ggml_backend_sycl_graph_compute(ggml_backend*, ggml_cgraph*) () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-sycl.so
+#7  0x00007af7cf69c966 in ggml_backend_compare_graph_backend () from /home/zjy/ws/jenkins/workspace/ci-arc770@2/arthw-llama.cpp/build-ci-release/bin/libggml-base.so
+#8  0x000000000042976e in test_case::eval(ggml_backend*, ggml_backend*, char const*) ()
+#9  0x0000000000410693 in main ()
+[Inferior 1 (process 3037150) detached]
+
+      Start 28: test-barrier
+26/29 Test #28: test-barrier ......................   Passed    0.98 sec
+      Start 29: test-quantize-fns
+27/29 Test #29: test-quantize-fns .................   Passed   12.64 sec
+      Start 30: test-quantize-perf
+28/29 Test #30: test-quantize-perf ................   Passed    0.09 sec
+      Start 31: test-rope
+29/29 Test #31: test-rope .........................   Passed    0.09 sec
+
+97% tests passed, 1 tests failed out of 29
+
+Label Time Summary:
+main    =  22.38 sec*proc (29 tests)
+
+Total Test time (real) =  22.39 sec
+
+The following tests FAILED:
+	 25 - test-backend-ops (Subprocess aborted)
+Errors while running CTest
+
+real	0m22.394s
+user	0m21.964s
+sys	0m2.854s
+```
