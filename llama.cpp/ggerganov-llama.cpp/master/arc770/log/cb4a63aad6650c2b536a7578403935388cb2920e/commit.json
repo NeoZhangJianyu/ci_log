@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2025-07-24 11:09:57", "title": "sycl: fixed semantics of block offset calculation", "pr_id": "14814", "files": ["ggml/src/ggml-sycl/quants.hpp", "ggml/src/ggml-sycl/vecdotq.hpp"]}
