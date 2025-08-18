@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT PassRate<br>Detail|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|<div style="width:100px">GGUF res</div>|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|
+|[a7417f55945eb7c7a5ea6807e66564b8066a4e50](https://github.com/ggerganov/llama.cpp/commit/a7417f55945eb7c7a5ea6807e66564b8066a4e50)<br>2025-06-30 14:52:02<br>ggml-cpu: sycl: Re-enable exp f16<br>Romain Biessy  Log: [log](./log/a7417f55945eb7c7a5ea6807e66564b8066a4e50)|94.0%<br>NA|2.52|tg=2.53<br>pp=28.99|('ok', 'pass', 0)|0/0|2025.0.4|
 |[e9b6350e61d592634263a14b3d77ecbf6c1fb096](https://github.com/ggerganov/llama.cpp/commit/e9b6350e61d592634263a14b3d77ecbf6c1fb096)<br>2025-06-30 10:17:18<br>scripts : make the shell scripts cross-p<br>latform<br>Vedran Miletić  Log: [log](./log/e9b6350e61d592634263a14b3d77ecbf6c1fb096)|91.0%<br>6238/6239|2.51|tg=2.53<br>pp=29.0|('ok', 'pass', 0)|0/0|2025.0.4|
 |[f47c1d7106e49062279bcc57fc1077c0db61e278](https://github.com/ggerganov/llama.cpp/commit/f47c1d7106e49062279bcc57fc1077c0db61e278)<br>2025-06-29 21:07:58<br>SYCL: disable faulty fp16 exp kernel<br>Akarshan Biswas  Log: [log](./log/f47c1d7106e49062279bcc57fc1077c0db61e278)|91.0%<br>6238/6239|2.51|tg=2.53<br>pp=29.17|('ok', 'pass', 0)|0/0|2025.0.4|
 |[a0535ffa0d35fccfec3e1a0a3bfc9dbb6054d7c0](https://github.com/ggerganov/llama.cpp/commit/a0535ffa0d35fccfec3e1a0a3bfc9dbb6054d7c0)<br>2025-06-29 11:04:10<br>ggml : implement REGLU/GEGLU/SWIGLU ops<br>Sigbjørn Skjæret  Log: [log](./log/a0535ffa0d35fccfec3e1a0a3bfc9dbb6054d7c0)|91.0%<br>6236/6239|2.51|tg=2.53<br>pp=29.16|('ok', 'pass', 0)|0/0|2025.0.4|

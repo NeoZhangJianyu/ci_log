@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2025-06-30 14:52:02", "title": "ggml-cpu: sycl: Re-enable exp f16", "pr_id": "14462", "files": ["ggml/src/ggml-cpu/CMakeLists.txt", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
