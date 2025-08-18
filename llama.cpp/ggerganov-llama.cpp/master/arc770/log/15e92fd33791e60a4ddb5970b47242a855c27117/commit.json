@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2025-08-02 17:13:05", "title": "cuda, sycl : fix batched gemm when ne02 == 1 && ne03 > 1", "pr_id": "15038", "files": ["ggml/src/ggml-cuda/ggml-cuda.cu", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
