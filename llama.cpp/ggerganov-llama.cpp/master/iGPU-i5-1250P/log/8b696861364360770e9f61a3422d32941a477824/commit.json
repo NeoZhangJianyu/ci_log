@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-08-27 00:27:49", "title": "SYCL: fix rms_norm_mul_add for tensor dim not a multiple of sg_size", "pr_id": "15592", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
