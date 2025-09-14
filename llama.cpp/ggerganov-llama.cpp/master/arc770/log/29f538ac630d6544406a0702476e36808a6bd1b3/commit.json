@@ -1,0 +1,1 @@
+{"author": "Daniel Bevenius <daniel.bevenius@gmail.com>", "date": "2025-08-21 06:12:28", "title": "examples : remove references to `make` in examples [no ci]", "pr_id": "15457", "files": ["examples/batched.swift/README.md", "examples/passkey/README.md", "examples/retrieval/README.md", "examples/sycl/win-build-sycl.bat"]}
