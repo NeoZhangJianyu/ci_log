@@ -1,0 +1,1 @@
+{"author": "yael-works <106673277+yael-works@users.noreply.github.com>", "date": "2025-09-15 19:51:35", "title": "SYCL: Add COUNT_EQUAL operator support", "pr_id": "15991", "files": ["ggml/src/ggml-sycl/binbcast.cpp", "ggml/src/ggml-sycl/binbcast.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
