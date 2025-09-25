@@ -1,0 +1,1 @@
+{"author": "Georgi Gerganov <ggerganov@gmail.com>", "date": "2025-07-08 10:15:21", "title": "cuda : fix rope with partial rotation and non-cont src", "pr_id": "14580", "files": ["ggml/src/ggml-cuda/rope.cu", "ggml/src/ggml-sycl/rope.cpp", "tests/test-backend-ops.cpp"]}
