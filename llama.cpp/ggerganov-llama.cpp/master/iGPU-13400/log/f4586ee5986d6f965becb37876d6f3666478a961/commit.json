@@ -1,0 +1,1 @@
+{"author": "Romain Biessy <romain.biessy@codeplay.com>", "date": "2025-08-12 13:58:22", "title": "sycl: Fix and disable more configurations of mul_mat", "pr_id": "15151", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
