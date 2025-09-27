@@ -1,0 +1,1 @@
+{"author": "Akarshan Biswas <akarshan@menlo.ai>", "date": "2025-07-28 20:32:15", "title": "SYCL: Add set_rows support for quantized types", "pr_id": "14883", "files": ["ggml/src/ggml-sycl/cpy.cpp", "ggml/src/ggml-sycl/cpy.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/set_rows.cpp"]}
