@@ -1,0 +1,1 @@
+{"author": "Acly <aclysia@gmail.com>", "date": "2025-08-23 08:35:21", "title": "vulkan : support ggml_mean", "pr_id": "15393", "files": ["ggml/src/ggml-cuda/ggml-cuda.cu", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-vulkan/ggml-vulkan.cpp", "ggml/src/ggml-vulkan/vulkan-shaders/sum_rows.comp", "tests/test-backend-ops.cpp"]}
