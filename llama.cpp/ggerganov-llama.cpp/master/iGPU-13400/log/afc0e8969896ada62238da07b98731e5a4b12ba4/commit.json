@@ -1,0 +1,1 @@
+{"author": "Alberto Cabrera P\u00e9rez <alberto.cabrera@codeplay.com>", "date": "2025-07-28 11:05:53", "title": "sycl: refactor quantization to q8_1", "pr_id": "14815", "files": ["ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/quantize.hpp"]}
