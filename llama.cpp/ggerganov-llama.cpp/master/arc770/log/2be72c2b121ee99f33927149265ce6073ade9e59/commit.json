@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-10-02 15:16:25", "title": "SYCL: Update to oneAPI 2025.2", "pr_id": "16371", "files": [".devops/intel.Dockerfile", ".github/workflows/build.yml", ".github/workflows/release.yml", "docs/backend/SYCL.md"]}

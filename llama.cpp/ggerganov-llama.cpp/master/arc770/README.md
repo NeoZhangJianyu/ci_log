@@ -3,8 +3,8 @@
 ## Summary
 
 Figure
-![Performance](./perf.png)
 
+![Performance](./perf.png)
 ## Detail
 
 **GGUF res** is verified by script ./example/sycl/run.sh with llama2-7b-Q4 for correction
@@ -15,6 +15,7 @@ Figure
 
 |Commit Info|UT PassRate<br>Detail|GGUF Perf<br>(token/s)|Bench Perf<br>(token/s)|<div style="width:100px">GGUF res</div>|Warn/Err|oneAPI|
 |-|-|-|-|-|-|-|
+|[2be72c2b121ee99f33927149265ce6073ade9e59](https://github.com/ggerganov/llama.cpp/commit/2be72c2b121ee99f33927149265ce6073ade9e59)<br>2025-10-02 15:16:25<br>SYCL: Update to oneAPI 2025.2<br>Neo Zhang Jianyu  Log: [log](./log/2be72c2b121ee99f33927149265ce6073ade9e59)|92.0%<br>NA|32.14|tg=51.22<br>pp=872.64|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1: Select the platform for your web<br>site', 0)|0/0|2025.2.1|
 |[3ecb2f671a2f49d56357f99d135a94e841759178](https://github.com/ggerganov/llama.cpp/commit/3ecb2f671a2f49d56357f99d135a94e841759178)<br>2025-09-22 19:13:00<br>ggml : implement set_rows with i32 index<br><br>Sigbjørn Skjæret  Log: [log](./log/3ecb2f671a2f49d56357f99d135a94e841759178)|92.0%<br>NA|22.43|tg=39.37<br>pp=872.5|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1: Select the platform for your web<br>site', 0)|0/0|2025.2.1|
 |[c0b45097c33e2667a94444f08cc9e36bec0a5e2e](https://github.com/ggerganov/llama.cpp/commit/c0b45097c33e2667a94444f08cc9e36bec0a5e2e)<br>2025-09-18 13:46:17<br>rename optimize_graph to graph_optimize<br>Jeff Bolz  Log: [log](./log/c0b45097c33e2667a94444f08cc9e36bec0a5e2e)|92.0%<br>NA|29.27|tg=39.17<br>pp=867.48|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1: Select the platform for your web<br>site', 0)|0/0|2025.2.1|
 |[3913f8730ec6d6245480affc30ae3049107956f4](https://github.com/ggerganov/llama.cpp/commit/3913f8730ec6d6245480affc30ae3049107956f4)<br>2025-09-16 15:25:57<br>ggml : fix padding in timestep embedding<br> kernels<br>Daniel Bevenius  Log: [log](./log/3913f8730ec6d6245480affc30ae3049107956f4)|92.0%<br>NA|32.06|tg=42.49<br>pp=862.83|('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1: Select the platform for your web<br>site', 0)|0/0|2025.2.1|
