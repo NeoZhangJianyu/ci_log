@@ -3,8 +3,8 @@
 ## Summary
 
 Figure
-
-<img src="./perf.png" width="800" />
+![Performance](./images/perf.png)
+<img src="./images/perf.png" width="800" />
 
 ## Detail
 
