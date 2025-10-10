@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-10-09 15:25:11", "title": "[SYCL] refactor soft_max, add soft_max_back", "pr_id": "16472", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/dpct/helper.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/softmax.cpp", "ggml/src/ggml-sycl/softmax.hpp"]}
