@@ -1,0 +1,1 @@
+{"author": "GittyBurstein <g0534163997@gmail.com>", "date": "2025-10-16 16:26:21", "title": "sycl : add ARANGE operator", "pr_id": "16362", "files": ["ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/element_wise.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/presets.hpp"]}
