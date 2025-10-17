@@ -1,0 +1,1 @@
+{"author": "GittyBurstein <g0534163997@gmail.com>", "date": "2025-10-17 05:36:40", "title": "SYCL SET operator optimized for F32 tensors", "pr_id": "16350", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/presets.hpp", "ggml/src/ggml-sycl/set.cpp", "ggml/src/ggml-sycl/set.hpp"]}
