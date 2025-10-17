@@ -1,0 +1,1 @@
+{"author": "yael-works <106673277+yael-works@users.noreply.github.com>", "date": "2025-10-16 07:21:28", "title": "SYCL: Add GGML_OP_MEAN operator support", "pr_id": "16009", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
