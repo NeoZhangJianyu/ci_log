@@ -1,0 +1,1 @@
+{"author": "shani-f <s0556787439@gmail.com>", "date": "2025-10-27 03:19:50", "title": "sycl: add REPEAT_BACK operation support", "pr_id": "16734", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/repeat_back.cpp", "ggml/src/ggml-sycl/repeat_back.hpp"]}
