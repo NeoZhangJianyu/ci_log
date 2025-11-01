@@ -1,0 +1,1 @@
+{"author": "tamarPal <tamarp3385@gmail.com>", "date": "2025-10-28 03:50:33", "title": "sycl: add SSM_CONV operation support", "pr_id": "16800", "files": ["ggml/src/ggml-sycl/backend.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/ssm_conv.cpp", "ggml/src/ggml-sycl/ssm_conv.hpp"]}
