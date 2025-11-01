@@ -1,0 +1,1 @@
+{"author": "YaelLogic <y0548591250@gmail.com>", "date": "2025-10-29 08:14:39", "title": "sycl: add RMS_NORM_BACK operation support", "pr_id": "16808", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/norm.cpp", "ggml/src/ggml-sycl/norm.hpp"]}
