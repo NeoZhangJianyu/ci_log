@@ -1,0 +1,1 @@
+{"author": "Matthew Michel <matthew.michel@intel.com>", "date": "2025-10-22 20:05:15", "title": "sycl: use async memory allocation to fix crashes during graph recording", "pr_id": "16644", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
