@@ -1,0 +1,1 @@
+{"author": "shani-f <s0556787439@gmail.com>", "date": "2025-11-03 03:35:33", "title": "SYCL: optimized repeat_back kernel", "pr_id": "\u00d7 fewer asm instructions, 2\u00d7 faster)Feature/sycl repeat back op", "files": ["ggml/src/ggml-sycl/repeat_back.cpp"]}
