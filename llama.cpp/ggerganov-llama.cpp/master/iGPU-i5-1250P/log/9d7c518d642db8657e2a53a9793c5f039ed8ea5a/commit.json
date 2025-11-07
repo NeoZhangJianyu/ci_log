@@ -1,0 +1,1 @@
+{"author": "YehuditE <y8703470@gmail.com>", "date": "2025-11-06 12:02:33", "title": "sycl: add CONCAT operator support", "pr_id": "16047", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/concat.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
