@@ -1,0 +1,7 @@
+# CI Log
+
+This repo is used to save the CI log of projects:
+
+|Project|Note|
+|-|-|
+|[llama.cpp](./llama.cpp/README.html)||

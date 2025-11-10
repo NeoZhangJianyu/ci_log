@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ctest_release &mdash; Neo Zhang Jianyu CI log latest documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../../_static/custom.css?v=2e2c8cb8" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../../../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../../../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../../../index.html" class="icon icon-home">
+            Neo Zhang Jianyu CI log
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../README.html">llama.cpp</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/NeoZhangJianyu/ci_log">Repo</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../../../index.html">Neo Zhang Jianyu CI log</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ctest_release</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../../../../../_sources/docs/llama.cpp/arthw-llama.cpp/master/arc770/log/822a6d3d9d8987b70afcabfb8ecde01f980f4a82/tmp/results/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ctest-release">
+<h1>ctest_release<a class="headerlink" href="#ctest-release" title="Link to this heading"></a></h1>
+<p>Runs ctest in release mode</p>
+<ul class="simple">
+<li><p>status: 8</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+</span> <span class="n">ctest</span> <span class="o">--</span><span class="n">output</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">failure</span> <span class="o">-</span><span class="n">L</span> <span class="n">main</span>
+<span class="n">Test</span> <span class="n">project</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">zjy</span><span class="o">/</span><span class="n">ws</span><span class="o">/</span><span class="n">jenkins</span><span class="o">/</span><span class="n">workspace</span><span class="o">/</span><span class="n">ci</span><span class="o">-</span><span class="n">arc770</span><span class="o">/</span><span class="n">arthw</span><span class="o">-</span><span class="n">llama</span><span class="o">.</span><span class="n">cpp</span><span class="o">/</span><span class="n">build</span><span class="o">-</span><span class="n">ci</span><span class="o">-</span><span class="n">release</span>
+      <span class="n">Start</span>  <span class="mi">1</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">bert</span><span class="o">-</span><span class="n">bge</span>
+ <span class="mi">1</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#1: test-tokenizer-0-bert-bge .........   Passed    0.30 sec</span>
+      <span class="n">Start</span>  <span class="mi">2</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">command</span><span class="o">-</span><span class="n">r</span>
+ <span class="mi">2</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#2: test-tokenizer-0-command-r ........   Passed    0.43 sec</span>
+      <span class="n">Start</span>  <span class="mi">3</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">deepseek</span><span class="o">-</span><span class="n">coder</span>
+ <span class="mi">3</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#3: test-tokenizer-0-deepseek-coder ...   Passed    0.13 sec</span>
+      <span class="n">Start</span>  <span class="mi">4</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">deepseek</span><span class="o">-</span><span class="n">llm</span>
+ <span class="mi">4</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#4: test-tokenizer-0-deepseek-llm .....   Passed    0.21 sec</span>
+      <span class="n">Start</span>  <span class="mi">5</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">falcon</span>
+ <span class="mi">5</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#5: test-tokenizer-0-falcon ...........   Passed    0.16 sec</span>
+      <span class="n">Start</span>  <span class="mi">6</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">gpt</span><span class="o">-</span><span class="mi">2</span>
+ <span class="mi">6</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#6: test-tokenizer-0-gpt-2 ............   Passed    0.14 sec</span>
+      <span class="n">Start</span>  <span class="mi">7</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">llama</span><span class="o">-</span><span class="n">bpe</span>
+ <span class="mi">7</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#7: test-tokenizer-0-llama-bpe ........   Passed    0.30 sec</span>
+      <span class="n">Start</span>  <span class="mi">8</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">llama</span><span class="o">-</span><span class="n">spm</span>
+ <span class="mi">8</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#8: test-tokenizer-0-llama-spm ........   Passed    0.11 sec</span>
+      <span class="n">Start</span>  <span class="mi">9</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">mpt</span>
+ <span class="mi">9</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span>  <span class="c1">#9: test-tokenizer-0-mpt ..............   Passed    0.14 sec</span>
+      <span class="n">Start</span> <span class="mi">10</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">phi</span><span class="o">-</span><span class="mi">3</span>
+<span class="mi">10</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#10: test-tokenizer-0-phi-3 ............   Passed    0.12 sec</span>
+      <span class="n">Start</span> <span class="mi">11</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">qwen2</span>
+<span class="mi">11</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#11: test-tokenizer-0-qwen2 ............   Passed    0.27 sec</span>
+      <span class="n">Start</span> <span class="mi">12</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">refact</span>
+<span class="mi">12</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#12: test-tokenizer-0-refact ...........   Passed    0.15 sec</span>
+      <span class="n">Start</span> <span class="mi">13</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="n">starcoder</span>
+<span class="mi">13</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#13: test-tokenizer-0-starcoder ........   Passed    0.15 sec</span>
+      <span class="n">Start</span> <span class="mi">14</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">sampling</span>
+<span class="mi">14</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#14: test-sampling .....................   Passed    0.96 sec</span>
+      <span class="n">Start</span> <span class="mi">15</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">grammar</span><span class="o">-</span><span class="n">parser</span>
+<span class="mi">15</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#15: test-grammar-parser ...............   Passed    0.03 sec</span>
+      <span class="n">Start</span> <span class="mi">16</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">grammar</span><span class="o">-</span><span class="n">integration</span>
+<span class="mi">16</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#16: test-grammar-integration ..........   Passed    0.03 sec</span>
+      <span class="n">Start</span> <span class="mi">17</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">llama</span><span class="o">-</span><span class="n">grammar</span>
+<span class="mi">17</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#17: test-llama-grammar ................   Passed    0.03 sec</span>
+      <span class="n">Start</span> <span class="mi">18</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">chat</span>
+<span class="mi">18</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#18: test-chat .........................   Passed    0.38 sec</span>
+      <span class="n">Start</span> <span class="mi">19</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">json</span><span class="o">-</span><span class="n">schema</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">grammar</span>
+<span class="mi">19</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#19: test-json-schema-to-grammar .......   Passed    1.92 sec</span>
+      <span class="n">Start</span> <span class="mi">20</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">tokenizer</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">llama</span><span class="o">-</span><span class="n">spm</span>
+<span class="mi">20</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#20: test-tokenizer-1-llama-spm ........   Passed    0.20 sec</span>
+      <span class="n">Start</span> <span class="mi">21</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">log</span>
+<span class="mi">21</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#21: test-log ..........................   Passed    0.04 sec</span>
+      <span class="n">Start</span> <span class="mi">22</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">arg</span><span class="o">-</span><span class="n">parser</span>
+<span class="mi">22</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#22: test-arg-parser ...................   Passed    0.11 sec</span>
+      <span class="n">Start</span> <span class="mi">23</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">chat</span><span class="o">-</span><span class="n">template</span>
+<span class="mi">23</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#23: test-chat-template ................   Passed    0.10 sec</span>
+      <span class="n">Start</span> <span class="mi">24</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">gguf</span>
+<span class="mi">24</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#24: test-gguf .........................   Passed    0.43 sec</span>
+      <span class="n">Start</span> <span class="mi">25</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">backend</span><span class="o">-</span><span class="n">ops</span>
+<span class="mi">25</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#25: test-backend-ops ..................Subprocess aborted***Exception:   1.39 sec</span>
+<span class="n">detect</span> <span class="mi">1</span> <span class="n">SYCL</span> <span class="n">devices</span><span class="p">:[</span><span class="mi">0</span><span class="p">]</span> <span class="n">by</span> <span class="n">ONEAPI_DEVICE_SELECTOR</span><span class="o">=</span><span class="n">level_zero</span><span class="p">:</span><span class="mi">0</span>
+<span class="n">Running</span> <span class="k">with</span> <span class="n">Environment</span> <span class="n">Variables</span><span class="p">:</span>
+  <span class="n">GGML_SYCL_DEBUG</span><span class="p">:</span> <span class="mi">0</span>
+  <span class="n">GGML_SYCL_DISABLE_OPT</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Build</span> <span class="k">with</span> <span class="n">Macros</span><span class="p">:</span>
+  <span class="n">GGML_SYCL_FORCE_MMQ</span><span class="p">:</span> <span class="n">no</span>
+  <span class="n">GGML_SYCL_F16</span><span class="p">:</span> <span class="n">yes</span>
+<span class="n">ggml_sycl_init</span><span class="p">:</span> <span class="n">SYCL_USE_XMX</span><span class="p">:</span> <span class="n">yes</span>
+<span class="n">found</span> <span class="mi">1</span> <span class="n">SYCL</span> <span class="n">devices</span><span class="p">:</span>
+<span class="n">Part1</span><span class="p">:</span>
+<span class="o">|</span><span class="n">ID</span><span class="o">|</span>        <span class="n">Device</span> <span class="n">Type</span><span class="o">|</span>  <span class="n">Ver</span><span class="o">|</span>                                   <span class="n">Name</span><span class="o">|</span><span class="n">Global</span> <span class="n">mem</span> <span class="n">size</span><span class="o">|</span>
+<span class="o">|--|-------------------|-----|---------------------------------------|---------------|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="o">|</span> <span class="p">[</span><span class="n">level_zero</span><span class="p">:</span><span class="n">gpu</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="o">|</span><span class="mf">12.55</span><span class="o">|</span>                <span class="n">Intel</span> <span class="n">Arc</span> <span class="n">A770</span> <span class="n">Graphics</span><span class="o">|</span>         <span class="mi">16225</span><span class="n">M</span><span class="o">|</span>
+
+<span class="n">Part2</span><span class="p">:</span>
+<span class="o">|</span><span class="n">ID</span><span class="o">|</span><span class="n">Max</span> <span class="n">compute</span> <span class="n">units</span><span class="o">|</span><span class="n">Max</span> <span class="n">work</span> <span class="n">group</span><span class="o">|</span><span class="n">Max</span> <span class="n">subgroup</span><span class="o">|</span>                    <span class="n">Driver</span> <span class="n">version</span><span class="o">|</span>
+<span class="o">|--|-----------------|--------------|------------|----------------------------------|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="o">|</span>              <span class="mi">512</span><span class="o">|</span>          <span class="mi">1024</span><span class="o">|</span>          <span class="mi">32</span><span class="o">|</span>                      <span class="mf">1.3.29735</span><span class="o">+</span><span class="mi">27</span><span class="o">|</span>
+<span class="n">SYCL</span> <span class="n">Optimization</span> <span class="n">Feature</span><span class="p">:</span>
+<span class="o">|</span><span class="n">ID</span><span class="o">|</span>        <span class="n">Device</span> <span class="n">Type</span><span class="o">|</span><span class="n">Reorder</span><span class="o">|</span>
+<span class="o">|--|-------------------|-------|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="o">|</span> <span class="p">[</span><span class="n">level_zero</span><span class="p">:</span><span class="n">gpu</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="o">|</span>      <span class="n">Y</span><span class="o">|</span>
+<span class="n">Testing</span> <span class="mi">2</span> <span class="n">devices</span>
+
+<span class="n">Backend</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">:</span> <span class="n">SYCL0</span>
+  <span class="n">Device</span> <span class="n">description</span><span class="p">:</span> <span class="n">Intel</span><span class="p">(</span><span class="n">R</span><span class="p">)</span> <span class="n">Arc</span><span class="p">(</span><span class="n">TM</span><span class="p">)</span> <span class="n">A770</span> <span class="n">Graphics</span>
+  <span class="n">Device</span> <span class="n">memory</span><span class="p">:</span> <span class="mi">15473</span> <span class="n">MB</span> <span class="p">(</span><span class="mi">15473</span> <span class="n">MB</span> <span class="n">free</span><span class="p">)</span>
+
+  <span class="n">ABS</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">f16</span><span class="p">,</span><span class="n">ne_a</span><span class="o">=</span><span class="p">[</span><span class="mi">128</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> <span class="ow">not</span> <span class="n">supported</span> <span class="p">[</span><span class="n">SYCL0</span><span class="p">]</span> 
+  <span class="n">ABS</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">f16</span><span class="p">,</span><span class="n">ne_a</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> <span class="ow">not</span> <span class="n">supported</span> <span class="p">[</span><span class="n">SYCL0</span><span class="p">]</span> 
+  <span class="n">SGN</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">f16</span><span class="p">,</span><span class="n">ne_a</span><span class="o">=</span><span class="p">[</span><span class="mi">128</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> <span class="ow">not</span> <span class="n">supported</span> <span class="p">[</span><span class="n">SYCL0</span><span class="p">]</span> 
+  <span class="n">SGN</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">f16</span><span class="p">,</span><span class="n">ne_a</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> <span class="ow">not</span> <span class="n">supported</span> <span class="p">[</span><span class="n">SYCL0</span><span class="p">]</span> 
+  <span class="n">NEG</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">f16</span><span class="p">,</span><span class="n">ne_a</span><span class="o">=</span><span class="p">[</span><span class="mi">128</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span><span class="n">v</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">zjy</span><span class="o">/</span><span class="n">ws</span><span class="o">/</span><span class="n">jenkins</span><span class="o">/</span><span class="n">workspace</span><span class="o">/</span><span class="n">ci</span><span class="o">-</span><span class="n">arc770</span><span class="o">/</span><span class="n">arthw</span><span class="o">-</span><span class="n">llama</span><span class="o">.</span><span class="n">cpp</span><span class="o">/</span><span class="n">ggml</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">ggml</span><span class="o">-</span><span class="n">sycl</span><span class="o">/</span><span class="n">element_wise</span><span class="o">.</span><span class="n">cpp</span><span class="p">:</span><span class="mi">741</span><span class="p">:</span> <span class="n">GGML_ASSERT</span><span class="p">(</span><span class="n">src0</span><span class="o">-&gt;</span><span class="nb">type</span> <span class="o">==</span> <span class="n">GGML_TYPE_F32</span><span class="p">)</span> <span class="n">failed</span>
+<span class="n">Could</span> <span class="ow">not</span> <span class="n">attach</span> <span class="n">to</span> <span class="n">process</span><span class="o">.</span>  <span class="n">If</span> <span class="n">your</span> <span class="n">uid</span> <span class="n">matches</span> <span class="n">the</span> <span class="n">uid</span> <span class="n">of</span> <span class="n">the</span> <span class="n">target</span>
+<span class="n">process</span><span class="p">,</span> <span class="n">check</span> <span class="n">the</span> <span class="n">setting</span> <span class="n">of</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">kernel</span><span class="o">/</span><span class="n">yama</span><span class="o">/</span><span class="n">ptrace_scope</span><span class="p">,</span> <span class="ow">or</span> <span class="k">try</span>
+<span class="n">again</span> <span class="k">as</span> <span class="n">the</span> <span class="n">root</span> <span class="n">user</span><span class="o">.</span>  <span class="n">For</span> <span class="n">more</span> <span class="n">details</span><span class="p">,</span> <span class="n">see</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sysctl</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">ptrace</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">ptrace</span><span class="p">:</span> <span class="n">Inappropriate</span> <span class="n">ioctl</span> <span class="k">for</span> <span class="n">device</span><span class="o">.</span>
+<span class="n">No</span> <span class="n">stack</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">program</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">being</span> <span class="n">run</span><span class="o">.</span>
+
+      <span class="n">Start</span> <span class="mi">28</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">barrier</span>
+<span class="mi">26</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#28: test-barrier ......................   Passed    1.10 sec</span>
+      <span class="n">Start</span> <span class="mi">29</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">quantize</span><span class="o">-</span><span class="n">fns</span>
+<span class="mi">27</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#29: test-quantize-fns .................   Passed   12.46 sec</span>
+      <span class="n">Start</span> <span class="mi">30</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">quantize</span><span class="o">-</span><span class="n">perf</span>
+<span class="mi">28</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#30: test-quantize-perf ................   Passed    0.08 sec</span>
+      <span class="n">Start</span> <span class="mi">31</span><span class="p">:</span> <span class="n">test</span><span class="o">-</span><span class="n">rope</span>
+<span class="mi">29</span><span class="o">/</span><span class="mi">29</span> <span class="n">Test</span> <span class="c1">#31: test-rope .........................   Passed    0.08 sec</span>
+
+<span class="mi">97</span><span class="o">%</span> <span class="n">tests</span> <span class="n">passed</span><span class="p">,</span> <span class="mi">1</span> <span class="n">tests</span> <span class="n">failed</span> <span class="n">out</span> <span class="n">of</span> <span class="mi">29</span>
+
+<span class="n">Label</span> <span class="n">Time</span> <span class="n">Summary</span><span class="p">:</span>
+<span class="n">main</span>    <span class="o">=</span>  <span class="mf">21.96</span> <span class="n">sec</span><span class="o">*</span><span class="n">proc</span> <span class="p">(</span><span class="mi">29</span> <span class="n">tests</span><span class="p">)</span>
+
+<span class="n">Total</span> <span class="n">Test</span> <span class="n">time</span> <span class="p">(</span><span class="n">real</span><span class="p">)</span> <span class="o">=</span>  <span class="mf">21.96</span> <span class="n">sec</span>
+
+<span class="n">The</span> <span class="n">following</span> <span class="n">tests</span> <span class="n">FAILED</span><span class="p">:</span>
+	 <span class="mi">25</span> <span class="o">-</span> <span class="n">test</span><span class="o">-</span><span class="n">backend</span><span class="o">-</span><span class="n">ops</span> <span class="p">(</span><span class="n">Subprocess</span> <span class="n">aborted</span><span class="p">)</span>
+<span class="n">Errors</span> <span class="k">while</span> <span class="n">running</span> <span class="n">CTest</span>
+
+<span class="n">real</span>	<span class="mi">0</span><span class="n">m21</span><span class="mf">.971</span><span class="n">s</span>
+<span class="n">user</span>	<span class="mi">0</span><span class="n">m20</span><span class="mf">.078</span><span class="n">s</span>
+<span class="n">sys</span>	<span class="mi">0</span><span class="n">m2</span><span class="mf">.834</span><span class="n">s</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Neo Zhang Jianyu.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

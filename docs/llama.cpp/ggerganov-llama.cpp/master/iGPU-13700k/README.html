@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ggerganov/llama.cpp CI for iGPU-13700k by SYCL Backend &mdash; Neo Zhang Jianyu CI log latest documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css?v=2e2c8cb8" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            Neo Zhang Jianyu CI log
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html">llama.cpp</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/NeoZhangJianyu/ci_log">Repo</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">Neo Zhang Jianyu CI log</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ggerganov/llama.cpp CI for iGPU-13700k by SYCL Backend</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/docs/llama.cpp/ggerganov-llama.cpp/master/iGPU-13700k/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ggerganov-llama-cpp-ci-for-igpu-13700k-by-sycl-backend">
+<h1><a class="reference external" href="https://github.com/ggerganov/llama.cpp/tree/master">ggerganov/llama.cpp</a> CI for iGPU-13700k by SYCL Backend<a class="headerlink" href="#ggerganov-llama-cpp-ci-for-igpu-13700k-by-sycl-backend" title="Link to this heading"></a></h1>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
+<p>Figure</p>
+<p><img alt="Performance" src="../../../../../_images/perf6.png" /></p>
+</section>
+<section id="detail">
+<h2>Detail<a class="headerlink" href="#detail" title="Link to this heading"></a></h2>
+<p><strong>GGUF res</strong> is verified by script ./example/sycl/run.sh with llama2-7b-Q4 for correction</p>
+<p><strong>GGUF Perf</strong> is the performance data by script ./example/sycl/run.sh with llama2-7b-Q4</p>
+<p><strong>Bench Perf</strong> is the performance data by llama-bench with llama2-7b-Q4</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Commit Info</th>
+<th>UT PassRate<br>Detail</th>
+<th>GGUF Perf<br>(token/s)</th>
+<th>Bench Perf<br>(token/s)</th>
+<th><div style="width:100px">GGUF res</div></th>
+<th>Warn/Err<br>oneAPI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2a1507c1629975d9d20a503d6a14f44eff292c25">2a1507c1629975d9d20a503d6a14f44eff292c25</a><br>2024-11-19 09:02:23<br>sycl : Add option to set the SYCL archit<br>ecture for all targets<br>Romain Biessy  Log: <a href="./log/2a1507c1629975d9d20a503d6a14f44eff292c25">log</a></td>
+<td>93.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>598/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/557924f22237c76387a39c4db5abae154d57e754">557924f22237c76387a39c4db5abae154d57e754</a><br>2024-11-19 00:50:04<br>sycl: Revert MUL_MAT_OP support changes<br>Alberto Cabrera Pérez  Log: <a href="./log/557924f22237c76387a39c4db5abae154d57e754">log</a></td>
+<td>93.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>598/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/57f8355b29a8c7dfcd1fb6094758ad85644f8535">57f8355b29a8c7dfcd1fb6094758ad85644f8535</a><br>2024-11-15 12:10:45<br>sycl: Update Intel docker images to use <br>DPC++ 2025.0<br>Romain Biessy  Log: <a href="./log/57f8355b29a8c7dfcd1fb6094758ad85644f8535">log</a></td>
+<td>96.0%<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>598/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/5a54af4d4f588f109f31e456483fdf77096399d9">5a54af4d4f588f109f31e456483fdf77096399d9</a><br>2024-11-15 04:09:12<br>sycl: Use syclcompat::dp4a<br>Romain Biessy  Log: <a href="./log/5a54af4d4f588f109f31e456483fdf77096399d9">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.02</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>598/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/ae8de6d50a09d49545e0afab2e50cc4acfb280e2">ae8de6d50a09d49545e0afab2e50cc4acfb280e2</a><br>2024-11-14 18:04:35<br>ggml : build backends as libraries<br>Diego Devesa  Log: <a href="./log/ae8de6d50a09d49545e0afab2e50cc4acfb280e2">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.03</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>614/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2e82ffa4af29f87e7d3d6dff8060a2a79613b72f">2e82ffa4af29f87e7d3d6dff8060a2a79613b72f</a><br>2024-11-13 09:40:57<br>sycl : Fixes to broken builds and test-b<br>ackend-ops<br>Alberto Cabrera Pérez  Log: <a href="./log/2e82ffa4af29f87e7d3d6dff8060a2a79613b72f">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.03</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>614/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/3bcd40b3c593d14261fb2abfabad3c0fb5b9e318">3bcd40b3c593d14261fb2abfabad3c0fb5b9e318</a><br>2024-11-07 18:19:10<br>Optimize RWKV6 Operator Naming and Imple<br>ment Multi-core CPU/ SYCL Acceleration<br>Zhiyuan Li  Log: <a href="./log/3bcd40b3c593d14261fb2abfabad3c0fb5b9e318">log</a></td>
+<td>93.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>614/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/c5b0f4b5d90297f3e729fca7f78ddb25fcab5ddc">c5b0f4b5d90297f3e729fca7f78ddb25fcab5ddc</a><br>2024-10-30 02:01:23<br>llama : refactor model loader with backe<br>nd registry<br>Diego Devesa  Log: <a href="./log/c5b0f4b5d90297f3e729fca7f78ddb25fcab5ddc">log</a></td>
+<td>93.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>514/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/40f2555797f97314de749873cdc29dc102be66e2">40f2555797f97314de749873cdc29dc102be66e2</a><br>2024-10-24 21:23:33<br>ci : fix cmake flags for SYCL<br>Georgi Gerganov  Log: <a href="./log/40f2555797f97314de749873cdc29dc102be66e2">log</a></td>
+<td>93.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/1db8c84fc62857e1e45c1c7ea93bcd5344cb3d31">1db8c84fc62857e1e45c1c7ea93bcd5344cb3d31</a><br>2024-10-21 14:26:09<br>fix mul_mat_vec_q and *_vec_q error<br>Neo Zhang Jianyu  Log: <a href="./log/1db8c84fc62857e1e45c1c7ea93bcd5344cb3d31">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/87421a23e8c60e00a7b227d501e8aab2a1aff7ce">87421a23e8c60e00a7b227d501e8aab2a1aff7ce</a><br>2024-10-18 06:46:16<br>[SYCL] Add SYCL Backend registry, device<br> and Event Interfaces<br>Ouadie EL FAROUKI  Log: <a href="./log/87421a23e8c60e00a7b227d501e8aab2a1aff7ce">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/5639971466ed74386a1811938022f0c333007b55">5639971466ed74386a1811938022f0c333007b55</a><br>2024-10-03 07:50:44<br>Fixed dequant precision issues in Q4_1 a<br>nd Q5_1<br>Ouadie EL FAROUKI  Log: <a href="./log/5639971466ed74386a1811938022f0c333007b55">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/c83ad6d01e7b89ec71080d97c7e5db7ac1f4fda6">c83ad6d01e7b89ec71080d97c7e5db7ac1f4fda6</a><br>2024-10-03 01:49:47<br>ggml-backend : add device and backend re<br>g interfaces<br>Diego Devesa  Log: <a href="./log/c83ad6d01e7b89ec71080d97c7e5db7ac1f4fda6">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f536f4c4391bec74c432a924625c04e8c484d3ee">f536f4c4391bec74c432a924625c04e8c484d3ee</a><br>2024-10-02 13:57:18<br>[SYCL] Initial cmake support of SYCL for<br> AMD GPUs<br>Alberto Cabrera Pérez  Log: <a href="./log/f536f4c4391bec74c432a924625c04e8c484d3ee">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/95bc82fbc0df6d48cf66c857a4dda3d044f45ca2">95bc82fbc0df6d48cf66c857a4dda3d044f45ca2</a><br>2024-09-26 17:38:31<br>[SYCL] add missed dll file in package<br>Neo Zhang Jianyu  Log: <a href="./log/95bc82fbc0df6d48cf66c857a4dda3d044f45ca2">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/e62e9789cda3bf5573a747e55ec2a7ee32908f56">e62e9789cda3bf5573a747e55ec2a7ee32908f56</a><br>2024-09-23 08:58:06<br>Revert "[SYCL] fallback mmvq<br>Akarshan Biswas  Log: <a href="./log/e62e9789cda3bf5573a747e55ec2a7ee32908f56">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/d13edb17ed1ce3b961016cbdb616b1c8d161c026">d13edb17ed1ce3b961016cbdb616b1c8d161c026</a><br>2024-09-20 20:12:52<br>ggml : fix builds<br>Georgi Gerganov  Log: <a href="./log/d13edb17ed1ce3b961016cbdb616b1c8d161c026">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/424c5d00a9b97dd5559635872db9b57f87c23b02">424c5d00a9b97dd5559635872db9b57f87c23b02</a><br>2024-09-20 19:04:44<br>ggml/examples: add backend support for n<br>umerical optimization<br>Johannes Gäßler  Log: <a href="./log/424c5d00a9b97dd5559635872db9b57f87c23b02">log</a></td>
+<td>Build Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)</td>
+<td>77/3<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/faf67b3de4688f47c3b1019c89df255df2fd59b4">faf67b3de4688f47c3b1019c89df255df2fd59b4</a><br>2024-09-18 08:30:31<br>[SYCL]set context default value to avoid<br> memory issue, update guide<br>Neo Zhang Jianyu  Log: <a href="./log/faf67b3de4688f47c3b1019c89df255df2fd59b4">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/6988da94a261444859f78595899212eeedc5ff9d">6988da94a261444859f78595899212eeedc5ff9d</a><br>2024-09-15 18:55:52<br>cmake : correct order of sycl flags<br>Michael Podvitskiy  Log: <a href="./log/6988da94a261444859f78595899212eeedc5ff9d">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/7596487bebd58eade3cd0133d42a9008aaaf9d09">7596487bebd58eade3cd0133d42a9008aaaf9d09</a><br>2024-09-15 09:06:38<br>cmake : try to fix sycl+intel build<br>Michael Podvitskiy  Log: <a href="./log/7596487bebd58eade3cd0133d42a9008aaaf9d09">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/c9c8575a1a8a170329afca4c4df4c005806efb1d">c9c8575a1a8a170329afca4c4df4c005806efb1d</a><br>2024-09-12 17:44:17<br>enhance run script to be easy to change <br>the parameters<br>Neo Zhang Jianyu  Log: <a href="./log/c9c8575a1a8a170329afca4c4df4c005806efb1d">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/d6a04f872dea8ade92527bb1488d4b0b90cc49f0">d6a04f872dea8ade92527bb1488d4b0b90cc49f0</a><br>2024-09-12 14:23:49<br>ggml : hide ggml_object, ggml_cgraph, gg<br>ml_hash_set<br>Georgi Gerganov  Log: <a href="./log/d6a04f872dea8ade92527bb1488d4b0b90cc49f0">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.57</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>510/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/51b603863627c4074e77b7e556e18ece86bdf9a3">51b603863627c4074e77b7e556e18ece86bdf9a3</a><br>2024-09-11 01:53:42<br>sycl : update support conditions<br>Alberto Cabrera Pérez  Log: <a href="./log/51b603863627c4074e77b7e556e18ece86bdf9a3">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2a358fb0c4b6e917ac852aa17444cc94dd28a2a6">2a358fb0c4b6e917ac852aa17444cc94dd28a2a6</a><br>2024-09-08 19:05:29<br>[SYCL] add check malloc result on device<br><br>Neo Zhang Jianyu  Log: <a href="./log/2a358fb0c4b6e917ac852aa17444cc94dd28a2a6">log</a></td>
+<td>92.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/5910ea942772ab6cbc21d0ad2d1208750ba39e1d">5910ea942772ab6cbc21d0ad2d1208750ba39e1d</a><br>2024-09-04 16:26:33<br>[SYCL] Fix DMMV dequantization<br>Ouadie EL FAROUKI  Log: <a href="./log/5910ea942772ab6cbc21d0ad2d1208750ba39e1d">log</a></td>
+<td>96.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/cddae4884c853b1a7ab420458236d666e2e34423">cddae4884c853b1a7ab420458236d666e2e34423</a><br>2024-08-30 20:10:01<br>Correct typo run_llama2.sh &gt; run-llama2.<br>sh<br>蕭澧邦  Log: <a href="./log/cddae4884c853b1a7ab420458236d666e2e34423">log</a></td>
+<td>92.0%<br>1417/1421</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/11b84eb4578864827afcf956db5b571003f18180">11b84eb4578864827afcf956db5b571003f18180</a><br>2024-08-22 19:39:47<br>[SYCL] Add a space to supress a cmake wa<br>rning<br>Akarshan Biswas  Log: <a href="./log/11b84eb4578864827afcf956db5b571003f18180">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/1731d4238f9e4f925a750810e7f5480827c66dcf">1731d4238f9e4f925a750810e7f5480827c66dcf</a><br>2024-08-22 12:50:10<br>[SYCL] Add oneDNN primitive support<br>luoyu-intel  Log: <a href="./log/1731d4238f9e4f925a750810e7f5480827c66dcf">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/50addec9a532a6518146ab837a85504850627316">50addec9a532a6518146ab837a85504850627316</a><br>2024-08-20 23:50:17<br>[SYCL] fallback mmvq<br>Meng, Hengyu  Log: <a href="./log/50addec9a532a6518146ab837a85504850627316">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>494/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/4f8d19ff17faa601f456ee1db7d8b8a15fa3f90b">4f8d19ff17faa601f456ee1db7d8b8a15fa3f90b</a><br>2024-08-20 23:06:51<br>[SYCL] Fix SYCL <code>im2col</code> and <code>convert</code> O<br>verflow with Large Dims<br>zhentaoyu  Log: <a href="./log/4f8d19ff17faa601f456ee1db7d8b8a15fa3f90b">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>494/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/06943a69f678fb32829ff06d9c18367b17d4b361">06943a69f678fb32829ff06d9c18367b17d4b361</a><br>2024-08-13 21:13:15<br>ggml : move rope type enum to ggml.h<br>Daniel Bevenius  Log: <a href="./log/06943a69f678fb32829ff06d9c18367b17d4b361">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/a21c6fd45032a20180e026773582d21294c85619">a21c6fd45032a20180e026773582d21294c85619</a><br>2024-08-11 16:37:43<br>update guide<br>Neo Zhang  Log: <a href="./log/a21c6fd45032a20180e026773582d21294c85619">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/0478174d5959b66096ae6609fcb0df14cab66b51">0478174d5959b66096ae6609fcb0df14cab66b51</a><br>2024-08-07 11:25:36<br>[SYCL] Updated SYCL device filtering<br>Ouadie EL FAROUKI  Log: <a href="./log/0478174d5959b66096ae6609fcb0df14cab66b51">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2d5dd7bb3fa382806cd3e0bfc7a1d92349bc0ccf">2d5dd7bb3fa382806cd3e0bfc7a1d92349bc0ccf</a><br>2024-08-06 15:26:46<br>ggml : add epsilon as a parameter for gr<br>oup_norm<br>Molly Sophia  Log: <a href="./log/2d5dd7bb3fa382806cd3e0bfc7a1d92349bc0ccf">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/d4ff847153e9cf7220d1b39aa21172069e6e8cea">d4ff847153e9cf7220d1b39aa21172069e6e8cea</a><br>2024-08-06 09:09:12<br>[SYCL] correct .html name<br>Neo Zhang  Log: <a href="./log/d4ff847153e9cf7220d1b39aa21172069e6e8cea">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/0fbbd884589d585c3b43cae8c16938ffffb863b9">0fbbd884589d585c3b43cae8c16938ffffb863b9</a><br>2024-08-02 01:55:17<br>[SYCL] Fixing wrong VDR iq4nl value<br>Ouadie EL FAROUKI  Log: <a href="./log/0fbbd884589d585c3b43cae8c16938ffffb863b9">log</a></td>
+<td>92.0%<br>1347/1351</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/c887d8b01726b11ea03dbcaa9d44fa74422d0076">c887d8b01726b11ea03dbcaa9d44fa74422d0076</a><br>2024-07-30 14:56:51<br>[SYCL] Add <code>TIMESTEP_EMBEDDING</code> OP<br>zhentaoyu  Log: <a href="./log/c887d8b01726b11ea03dbcaa9d44fa74422d0076">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/0832de723695ab400316a6c49b9f712380e3a731">0832de723695ab400316a6c49b9f712380e3a731</a><br>2024-07-29 10:50:27<br>[SYCL] add conv support<br>Meng, Hengyu  Log: <a href="./log/0832de723695ab400316a6c49b9f712380e3a731">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>464/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2b1f616b208a4a21c4ee7a7eb85d822ff1d787af">2b1f616b208a4a21c4ee7a7eb85d822ff1d787af</a><br>2024-07-27 04:41:55<br>ggml : reduce hash table reset cost<br>slaren  Log: <a href="./log/2b1f616b208a4a21c4ee7a7eb85d822ff1d787af">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>450/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/ed67bcb24f2d6ac0072cae72620b2bd971741b98">ed67bcb24f2d6ac0072cae72620b2bd971741b98</a><br>2024-07-25 11:45:18<br>[SYCL] fix multi-gpu issue on sycl<br>Chen Xi  Log: <a href="./log/ed67bcb24f2d6ac0072cae72620b2bd971741b98">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>454/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f19bf99c015d3d745143e8bb4f056e0ea015ad40">f19bf99c015d3d745143e8bb4f056e0ea015ad40</a><br>2024-07-24 14:36:00<br>Build Llama SYCL Intel with static libs<br>Joe Todd  Log: <a href="./log/f19bf99c015d3d745143e8bb4f056e0ea015ad40">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/79167d9e49aef9caa98e13ee7ca067ec9f88b4b5">79167d9e49aef9caa98e13ee7ca067ec9f88b4b5</a><br>2024-07-24 11:55:26<br>Re-add erroneously removed -fsycl from G<br>GML_EXTRA_LIBS<br>Joe Todd  Log: <a href="./log/79167d9e49aef9caa98e13ee7ca067ec9f88b4b5">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>472/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/64cf50a0ed62d41e4f6c13e08a9b6b0816f46c6e">64cf50a0ed62d41e4f6c13e08a9b6b0816f46c6e</a><br>2024-07-23 14:58:37<br>sycl : Add support for non-release DPC++<br> &amp; oneMKL<br>Joe Todd  Log: <a href="./log/64cf50a0ed62d41e4f6c13e08a9b6b0816f46c6e">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>472/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/063d99ad11f1295046610ce5b97e105849a4b573">063d99ad11f1295046610ce5b97e105849a4b573</a><br>2024-07-23 07:43:28<br>[SYCL] fix scratch size of softmax<br>luoyu-intel  Log: <a href="./log/063d99ad11f1295046610ce5b97e105849a4b573">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/16bdfa42acb09175e88cf97e9d9e4e48f616d120">16bdfa42acb09175e88cf97e9d9e4e48f616d120</a><br>2024-07-15 19:32:15<br>[SYCL] add concat through dim 1/2<br>Meng, Hengyu  Log: <a href="./log/16bdfa42acb09175e88cf97e9d9e4e48f616d120">log</a></td>
+<td>91.0%<br>1279/1281</td>
+<td>2.59</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/b549a1bbefb2f1fbb8b558bac1f2ae7967e60964">b549a1bbefb2f1fbb8b558bac1f2ae7967e60964</a><br>2024-07-12 00:52:04<br>[SYCL] fix the mul_mat_id ut issues<br>Chen Xi  Log: <a href="./log/b549a1bbefb2f1fbb8b558bac1f2ae7967e60964">log</a></td>
+<td>91.0%<br>1279/1281</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>464/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f4444d992c16b6b9442f4770c7c3a10b19a08343">f4444d992c16b6b9442f4770c7c3a10b19a08343</a><br>2024-07-10 16:10:49<br>[SYCL] Use multi_ptr to clean up depreca<br>ted warnings<br>AidanBeltonS  Log: <a href="./log/f4444d992c16b6b9442f4770c7c3a10b19a08343">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/5b0b8d8cfb5ddf2118f686ba6c30fab3f71b384b">5b0b8d8cfb5ddf2118f686ba6c30fab3f71b384b</a><br>2024-07-09 15:03:15<br>sycl : Reenabled mmvq path for the SYCL <br>Nvidia Backend<br>Alberto Cabrera Pérez  Log: <a href="./log/5b0b8d8cfb5ddf2118f686ba6c30fab3f71b384b">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>692/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/a130eccef42b75a84da270411cefeed45c153e30">a130eccef42b75a84da270411cefeed45c153e30</a><br>2024-07-08 21:35:17<br>labeler : updated sycl to match docs and<br> code refactor<br>Alberto Cabrera Pérez  Log: <a href="./log/a130eccef42b75a84da270411cefeed45c153e30">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>692/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2ec846d558f6385ea647f7b8e665eb249c1ebce7">2ec846d558f6385ea647f7b8e665eb249c1ebce7</a><br>2024-07-08 14:22:41<br>sycl : fix powf call in device code<br>Alberto Cabrera Pérez  Log: <a href="./log/2ec846d558f6385ea647f7b8e665eb249c1ebce7">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>692/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/3f2d538b817112ad8429341c7e8657dcd660f4d3">3f2d538b817112ad8429341c7e8657dcd660f4d3</a><br>2024-07-08 13:51:31<br>scripts : fix sync for sycl<br>Georgi Gerganov  Log: <a href="./log/3f2d538b817112ad8429341c7e8657dcd660f4d3">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>692/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/be20e7f49d9e5c6d9e8d9b4871eeba3df7a1639d">be20e7f49d9e5c6d9e8d9b4871eeba3df7a1639d</a><br>2024-07-05 18:08:32<br>Reorganize documentation pages<br>Xuan Son Nguyen  Log: <a href="./log/be20e7f49d9e5c6d9e8d9b4871eeba3df7a1639d">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>692/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/1f3e1b66e21310ed78b964f72f19766549633f0e">1f3e1b66e21310ed78b964f72f19766549633f0e</a><br>2024-07-05 13:23:25<br>Enabled more data types for oneMKL gemm_<br>batch<br>Ouadie EL FAROUKI  Log: <a href="./log/1f3e1b66e21310ed78b964f72f19766549633f0e">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>692/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f09b7cb609d80b8031803f89255991dc8b35db69">f09b7cb609d80b8031803f89255991dc8b35db69</a><br>2024-07-05 10:32:29<br>rm get_work_group_size<br>Neo Zhang Jianyu  Log: <a href="./log/f09b7cb609d80b8031803f89255991dc8b35db69">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>548/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/a9554e20b66546b0549aebe2e1034bc8afe9d809">a9554e20b66546b0549aebe2e1034bc8afe9d809</a><br>2024-07-05 05:06:13<br>[SYCL] Fix WARP_SIZE=16 bug of Intel GPU<br><br>luoyu-intel  Log: <a href="./log/a9554e20b66546b0549aebe2e1034bc8afe9d809">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.6</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>690/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f619024764e72261f14d7c31d892b8fb976603b4">f619024764e72261f14d7c31d892b8fb976603b4</a><br>2024-07-04 02:07:19<br>[SYCL] Remove unneeded semicolons<br>AidanBeltonS  Log: <a href="./log/f619024764e72261f14d7c31d892b8fb976603b4">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>556/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/fadde6713506d9e6c124f5680ab8c7abebe31837">fadde6713506d9e6c124f5680ab8c7abebe31837</a><br>2024-07-03 02:55:34<br>Dequant improvements rebase<br>AidanBeltonS  Log: <a href="./log/fadde6713506d9e6c124f5680ab8c7abebe31837">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>556/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/07a3fc0608a68c0c93a5fbfa9c58f4c9ec64cb81">07a3fc0608a68c0c93a5fbfa9c58f4c9ec64cb81</a><br>2024-07-02 12:18:10<br>Removes multiple newlines at the end of <br>files that is breaking the editorconfig <br>step of CI.<br>Clint Herron  Log: <a href="./log/07a3fc0608a68c0c93a5fbfa9c58f4c9ec64cb81">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>550/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/a9f3b102157ba992cfe058909b7f6e1906d2d647">a9f3b102157ba992cfe058909b7f6e1906d2d647</a><br>2024-07-02 04:50:07<br>[SYCL] Fix win build conflict of math li<br>brary<br>luoyu-intel  Log: <a href="./log/a9f3b102157ba992cfe058909b7f6e1906d2d647">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>550/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/d08c20eddedb24515a3212e2de66bdff41a26b8c">d08c20eddedb24515a3212e2de66bdff41a26b8c</a><br>2024-07-02 02:16:00<br>[SYCL] Fix the sub group size of Intel<br>luoyu-intel  Log: <a href="./log/d08c20eddedb24515a3212e2de66bdff41a26b8c">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.63</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1: The original copy text needed sh<br>ould describe the products/ services.', <br>0)</td>
+<td>586/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/cb5fad4c6c2cbef92e9b8b63449e1cb7664e4846">cb5fad4c6c2cbef92e9b8b63449e1cb7664e4846</a><br>2024-07-01 20:39:06<br>CUDA: refactor and optimize IQ MMVQ<br>Johannes Gäßler  Log: <a href="./log/cb5fad4c6c2cbef92e9b8b63449e1cb7664e4846">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>530/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/197fe6c1d7bec6718ce901f0141b2725240f298c">197fe6c1d7bec6718ce901f0141b2725240f298c</a><br>2024-07-01 19:39:06<br>[SYCL] Update SYCL-Rope op and Refactor<br>zhentaoyu  Log: <a href="./log/197fe6c1d7bec6718ce901f0141b2725240f298c">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>530/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f3f65429c44bb195a9195bfdc19a30a79709db7b">f3f65429c44bb195a9195bfdc19a30a79709db7b</a><br>2024-06-26 18:33:02<br>llama : reorganize source code + improve<br> CMake<br>Georgi Gerganov  Log: <a href="./log/f3f65429c44bb195a9195bfdc19a30a79709db7b">log</a></td>
+<td>95.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>520/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/083bacce14c1aaf9976aa40e8266cdc25ac749d3">083bacce14c1aaf9976aa40e8266cdc25ac749d3</a><br>2024-06-25 10:19:20<br>[SYCL] Re-enabled mul_mat_batched_sycl<br>Meng, Hengyu  Log: <a href="./log/083bacce14c1aaf9976aa40e8266cdc25ac749d3">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>524/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/de391e4c803383bbea054b6edd016e78c024a74d">de391e4c803383bbea054b6edd016e78c024a74d</a><br>2024-06-20 13:19:05<br>[SYCL] Fix windows build and inference<br>luoyu-intel  Log: <a href="./log/de391e4c803383bbea054b6edd016e78c024a74d">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Customize your site', 6)</td>
+<td>524/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/623494a478134432fd2d7ee40135770a3340674f">623494a478134432fd2d7ee40135770a3340674f</a><br>2024-06-19 09:11:51<br>[SYCL] refactor<br>Meng, Hengyu  Log: <a href="./log/623494a478134432fd2d7ee40135770a3340674f">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Customize your site', 6)</td>
+<td>512/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/df68d4fa5dc929217d3e64d673e099d7a417b206">df68d4fa5dc929217d3e64d673e099d7a417b206</a><br>2024-06-17 11:17:07<br>[SYCL] Update README-sycl.html for Chapter<br> "Recommended release" and "News"<br>Neo Zhang  Log: <a href="./log/df68d4fa5dc929217d3e64d673e099d7a417b206">log</a></td>
+<td>91.0%<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>The number of work-items in each dimensi<br>on of a work-group cannot exceed {512, 5<br>', 0)</td>
+<td>450/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/7b2f4a7d193ef2475259bbe7656fcccfab4b1217">7b2f4a7d193ef2475259bbe7656fcccfab4b1217</a><br>2024-06-15 14:05:10<br>[SYCL] remove global variables<br>Meng, Hengyu  Log: <a href="./log/7b2f4a7d193ef2475259bbe7656fcccfab4b1217">log</a></td>
+<td>91.0%<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>The number of work-items in each dimensi<br>on of a work-group cannot exceed {512, 5<br>', 0)</td>
+<td>450/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/f578b86b2123d0f92afbaa98a031df4d4464e582">f578b86b2123d0f92afbaa98a031df4d4464e582</a><br>2024-06-13 03:11:35<br>move BLAS to a separate backend<br>slaren  Log: <a href="./log/f578b86b2123d0f92afbaa98a031df4d4464e582">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orsz onседа atir Byett, 1./<br>doV’4Cin2? TheCre or 2-over - components<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/1c641e6aac5c18b964e7b32d9dbbb4bf5301d0d7">1c641e6aac5c18b964e7b32d9dbbb4bf5301d0d7</a><br>2024-06-13 00:41:52<br><code>build</code>: rename main → llama-cli, server<br> → llama-server, llava-cli → llama-llava<br>-cli, etc...<br>Olivier Chafik  Log: <a href="./log/1c641e6aac5c18b964e7b32d9dbbb4bf5301d0d7">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/a9cae48003dfc4fe95b8f5c81682fc6e63425235">a9cae48003dfc4fe95b8f5c81682fc6e63425235</a><br>2024-06-12 16:00:22<br>tests : add non-cont unary tests<br>Georgi Gerganov  Log: <a href="./log/a9cae48003dfc4fe95b8f5c81682fc6e63425235">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orsz onседа atir Byett, 1./<br>doV’3ar/F(, knowledgejyl onop5all', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/af4ae502ddaeb03cd5861273ca2e9a5ae4551db7">af4ae502ddaeb03cd5861273ca2e9a5ae4551db7</a><br>2024-06-10 02:21:31<br>use the correct SYCL context for host US<br>M allocations<br>Ben Ashbaugh  Log: <a href="./log/af4ae502ddaeb03cd5861273ca2e9a5ae4551db7">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orsz onседа atir Byett, 1./<br>doV’4Cin2? TheCre or 2-over - components<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/fe1e3917cfa0f9397a765cfd0aef880674d938d5">fe1e3917cfa0f9397a765cfd0aef880674d938d5</a><br>2024-06-09 01:43:39<br>Revert "[SYCL] Update rpc-server.cpp to <br>include SYCL backend<br>slaren  Log: <a href="./log/fe1e3917cfa0f9397a765cfd0aef880674d938d5">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/d5c938cd7716b9a2ace49a43a469dfbffcff4d28">d5c938cd7716b9a2ace49a43a469dfbffcff4d28</a><br>2024-06-07 14:28:26<br>[SYCL] fix softmax r2r result wrong issu<br>e<br>pengxin99  Log: <a href="./log/d5c938cd7716b9a2ace49a43a469dfbffcff4d28">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/2b3389677a833cee0880226533a1768b1a9508d2">2b3389677a833cee0880226533a1768b1a9508d2</a><br>2024-06-05 11:29:20<br>ggml : refactor rope norm/neox<br>Georgi Gerganov  Log: <a href="./log/2b3389677a833cee0880226533a1768b1a9508d2">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/554c247caffed64465f372661f2826640cb10430">554c247caffed64465f372661f2826640cb10430</a><br>2024-06-04 21:23:20<br>ggml : remove OpenCL<br>Georgi Gerganov  Log: <a href="./log/554c247caffed64465f372661f2826640cb10430">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make report (v has have has got <br>(pay( Big and (c gu in to The(Col U +C C<br>', 6)</td>
+<td>457/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ggerganov/llama.cpp/commit/9422c5e34bbd302493b77a8f6d546154a1f4fe82">9422c5e34bbd302493b77a8f6d546154a1f4fe82</a><br>2024-06-02 19:13:54<br>[SYCL] Update rpc-server.cpp to include <br>SYCL backend<br>nickp27  Log: <a href="./log/9422c5e34bbd302493b77a8f6d546154a1f4fe82">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>457/0<br>2024.2.0</td>
+</tr>
+</tbody>
+</table></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Neo Zhang Jianyu.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

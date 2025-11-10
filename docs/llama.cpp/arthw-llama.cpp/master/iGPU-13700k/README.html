@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>arthw/llama.cpp CI for iGPU-13700k by SYCL Backend &mdash; Neo Zhang Jianyu CI log latest documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css?v=2e2c8cb8" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            Neo Zhang Jianyu CI log
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html">llama.cpp</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/NeoZhangJianyu/ci_log">Repo</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">Neo Zhang Jianyu CI log</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">arthw/llama.cpp CI for iGPU-13700k by SYCL Backend</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/docs/llama.cpp/arthw-llama.cpp/master/iGPU-13700k/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arthw-llama-cpp-ci-for-igpu-13700k-by-sycl-backend">
+<h1><a class="reference external" href="https://github.com/arthw/llama.cpp/tree/master">arthw/llama.cpp</a> CI for iGPU-13700k by SYCL Backend<a class="headerlink" href="#arthw-llama-cpp-ci-for-igpu-13700k-by-sycl-backend" title="Link to this heading"></a></h1>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
+<p>Figure</p>
+<p><img alt="Performance" src="../../../../../_images/perf2.png" /></p>
+</section>
+<section id="detail">
+<h2>Detail<a class="headerlink" href="#detail" title="Link to this heading"></a></h2>
+<p><strong>GGUF res</strong> is verified by script ./example/sycl/run.sh with llama2-7b-Q4 for correction</p>
+<p><strong>GGUF Perf</strong> is the performance data by script ./example/sycl/run.sh with llama2-7b-Q4</p>
+<p><strong>Bench Perf</strong> is the performance data by llama-bench with llama2-7b-Q4</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Commit Info</th>
+<th>UT PassRate<br>Detail</th>
+<th>GGUF Perf<br>(token/s)</th>
+<th>Bench Perf<br>(token/s)</th>
+<th><div style="width:100px">GGUF res</div></th>
+<th>Warn/Err<br>oneAPI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a97920143e2dc05e9919dabdb3de091dddec0d02">a97920143e2dc05e9919dabdb3de091dddec0d02</a><br>2024-11-19 08:20:52<br>fix for windows building<br>arthw  Log: <a href="./log/a97920143e2dc05e9919dabdb3de091dddec0d02">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>628/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/7e98ad63bd1f5f77db49495a29836a638d5b08d1">7e98ad63bd1f5f77db49495a29836a638d5b08d1</a><br>2024-11-18 15:18:04<br>fix error<br>arthw  Log: <a href="./log/7e98ad63bd1f5f77db49495a29836a638d5b08d1">log</a></td>
+<td>93.0%<br>1603/1607</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>536/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/71ee846eabeaa74f25273335f6a48599a23fe581">71ee846eabeaa74f25273335f6a48599a23fe581</a><br>2024-11-18 14:22:50<br>restore context to 4096 for perf test st<br>andard<br>arthw  Log: <a href="./log/71ee846eabeaa74f25273335f6a48599a23fe581">log</a></td>
+<td>93.0%<br>1597/1601</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/6b559cc88205d379ee838122cc53bd2993dc7006">6b559cc88205d379ee838122cc53bd2993dc7006</a><br>2024-11-15 12:10:45<br>sycl: Update Intel docker images to use <br>DPC++ 2025.0<br>Romain Biessy  Log: <a href="./log/6b559cc88205d379ee838122cc53bd2993dc7006">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>628/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/e0dc41a443fb42adb695d9e691be8aefde1212cd">e0dc41a443fb42adb695d9e691be8aefde1212cd</a><br>2024-11-15 04:09:12<br>sycl: Use syclcompat::dp4a<br>Romain Biessy  Log: <a href="./log/e0dc41a443fb42adb695d9e691be8aefde1212cd">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>628/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/b3abcd3a44b6078c333f073356ee2f05d5fb76ca">b3abcd3a44b6078c333f073356ee2f05d5fb76ca</a><br>2024-11-14 18:04:35<br>ggml : build backends as libraries<br>Diego Devesa  Log: <a href="./log/b3abcd3a44b6078c333f073356ee2f05d5fb76ca">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>644/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/4c7310ded88a4de290a0a97621ef8b2a235287d7">4c7310ded88a4de290a0a97621ef8b2a235287d7</a><br>2024-11-07 18:19:10<br>Optimize RWKV6 Operator Naming and Imple<br>ment Multi-core CPU/ SYCL Acceleration<br>Zhiyuan Li  Log: <a href="./log/4c7310ded88a4de290a0a97621ef8b2a235287d7">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>638/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/99255721763e472628dbbc2be25da42ba6a5dd7f">99255721763e472628dbbc2be25da42ba6a5dd7f</a><br>2024-10-30 02:01:23<br>llama : refactor model loader with backe<br>nd registry<br>Diego Devesa  Log: <a href="./log/99255721763e472628dbbc2be25da42ba6a5dd7f">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>538/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a5f5aad986e216bf5e3ee6a459e459486dd28849">a5f5aad986e216bf5e3ee6a459e459486dd28849</a><br>2024-10-24 21:23:33<br>ci : fix cmake flags for SYCL<br>Georgi Gerganov  Log: <a href="./log/a5f5aad986e216bf5e3ee6a459e459486dd28849">log</a></td>
+<td>93.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>536/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/f2b7df5b78789de5bee247d00c7f613448379363">f2b7df5b78789de5bee247d00c7f613448379363</a><br>2024-10-21 14:26:09<br>fix mul_mat_vec_q and *_vec_q error<br>Neo Zhang Jianyu  Log: <a href="./log/f2b7df5b78789de5bee247d00c7f613448379363">log</a></td>
+<td>Build Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)</td>
+<td>11/20<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/ccb5cbcb4b0b00a438232c311a6046252f8861ea">ccb5cbcb4b0b00a438232c311a6046252f8861ea</a><br>2024-10-18 06:46:16<br>[SYCL] Add SYCL Backend registry, device<br> and Event Interfaces<br>Ouadie EL FAROUKI  Log: <a href="./log/ccb5cbcb4b0b00a438232c311a6046252f8861ea">log</a></td>
+<td>93.0%<br>1603/1607</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>536/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/9ccecbac5d241de7a7d72d341df9415ce3b67c2a">9ccecbac5d241de7a7d72d341df9415ce3b67c2a</a><br>2024-10-03 07:50:44<br>Fixed dequant precision issues in Q4_1 a<br>nd Q5_1<br>Ouadie EL FAROUKI  Log: <a href="./log/9ccecbac5d241de7a7d72d341df9415ce3b67c2a">log</a></td>
+<td>96.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/230f88ac27b377ea6f863980e2af0990e78dc03a">230f88ac27b377ea6f863980e2af0990e78dc03a</a><br>2024-10-03 01:49:47<br>ggml-backend : add device and backend re<br>g interfaces<br>Diego Devesa  Log: <a href="./log/230f88ac27b377ea6f863980e2af0990e78dc03a">log</a></td>
+<td>96.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/8f7e0876fa473fdd63dd31eb5f9f4c49a22077e3">8f7e0876fa473fdd63dd31eb5f9f4c49a22077e3</a><br>2024-10-02 13:57:18<br>[SYCL] Initial cmake support of SYCL for<br> AMD GPUs<br>Alberto Cabrera Pérez  Log: <a href="./log/8f7e0876fa473fdd63dd31eb5f9f4c49a22077e3">log</a></td>
+<td>93.0%<br>1601/1605</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/5b9803ee14bd14a2a7579b5d4e4f7c9e9d2586aa">5b9803ee14bd14a2a7579b5d4e4f7c9e9d2586aa</a><br>2024-09-26 17:38:31<br>[SYCL] add missed dll file in package<br>Neo Zhang Jianyu  Log: <a href="./log/5b9803ee14bd14a2a7579b5d4e4f7c9e9d2586aa">log</a></td>
+<td>93.0%<br>1601/1605</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/45b9f19fa248ba09783496276e444699f92c174a">45b9f19fa248ba09783496276e444699f92c174a</a><br>2024-09-23 08:58:06<br>Revert "[SYCL] fallback mmvq<br>Akarshan Biswas  Log: <a href="./log/45b9f19fa248ba09783496276e444699f92c174a">log</a></td>
+<td>93.0%<br>1601/1605</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/50d253c1c513f4a537155664e4374bd7e159aedd">50d253c1c513f4a537155664e4374bd7e159aedd</a><br>2024-09-20 20:12:52<br>ggml : fix builds<br>Georgi Gerganov  Log: <a href="./log/50d253c1c513f4a537155664e4374bd7e159aedd">log</a></td>
+<td>93.0%<br>1597/1601</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/d4d42566debb6aeb05a8eb7d7aa2f976acd26ec8">d4d42566debb6aeb05a8eb7d7aa2f976acd26ec8</a><br>2024-09-20 19:04:44<br>ggml/examples: add backend support for n<br>umerical optimization<br>Johannes Gäßler  Log: <a href="./log/d4d42566debb6aeb05a8eb7d7aa2f976acd26ec8">log</a></td>
+<td>Build Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)</td>
+<td>76/3<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/6e0564c286a3bfc90d4abb6dbb658e9c70db81d9">6e0564c286a3bfc90d4abb6dbb658e9c70db81d9</a><br>2024-09-18 08:30:31<br>[SYCL]set context default value to avoid<br> memory issue, update guide<br>Neo Zhang Jianyu  Log: <a href="./log/6e0564c286a3bfc90d4abb6dbb658e9c70db81d9">log</a></td>
+<td>93.0%<br>1438/1442</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/74e41abc0e89395c568991df641349a74a6e8e5b">74e41abc0e89395c568991df641349a74a6e8e5b</a><br>2024-09-15 18:55:52<br>cmake : correct order of sycl flags<br>Michael Podvitskiy  Log: <a href="./log/74e41abc0e89395c568991df641349a74a6e8e5b">log</a></td>
+<td>92.0%<br>1438/1442</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/f86e8db62950f1bd93c274a41d6dfba9fac28f8c">f86e8db62950f1bd93c274a41d6dfba9fac28f8c</a><br>2024-09-15 09:06:38<br>cmake : try to fix sycl+intel build<br>Michael Podvitskiy  Log: <a href="./log/f86e8db62950f1bd93c274a41d6dfba9fac28f8c">log</a></td>
+<td>92.0%<br>1438/1442</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/299e70d39cb457b435f8881c12e479517b37f43b">299e70d39cb457b435f8881c12e479517b37f43b</a><br>2024-09-12 17:44:17<br>enhance run script to be easy to change <br>the parameters<br>Neo Zhang Jianyu  Log: <a href="./log/299e70d39cb457b435f8881c12e479517b37f43b">log</a></td>
+<td>92.0%<br>1438/1442</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/4aa7e80b7c4f1c81289725f28e98e716bcd15670">4aa7e80b7c4f1c81289725f28e98e716bcd15670</a><br>2024-09-12 14:23:49<br>ggml : hide ggml_object, ggml_cgraph, gg<br>ml_hash_set<br>Georgi Gerganov  Log: <a href="./log/4aa7e80b7c4f1c81289725f28e98e716bcd15670">log</a></td>
+<td>92.0%<br>1438/1442</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/7823459807682b5d299059eb725574a9ae60711c">7823459807682b5d299059eb725574a9ae60711c</a><br>2024-09-11 01:53:42<br>sycl : update support conditions<br>Alberto Cabrera Pérez  Log: <a href="./log/7823459807682b5d299059eb725574a9ae60711c">log</a></td>
+<td>92.0%<br>1438/1442</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/dd8df932a30a6d79558b87f27531be50ffef96b1">dd8df932a30a6d79558b87f27531be50ffef96b1</a><br>2024-09-08 19:05:29<br>[SYCL] add check malloc result on device<br><br>Neo Zhang Jianyu  Log: <a href="./log/dd8df932a30a6d79558b87f27531be50ffef96b1">log</a></td>
+<td>92.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/1085098fd47606ae881c712e34c178f01ad07084">1085098fd47606ae881c712e34c178f01ad07084</a><br>2024-08-30 20:10:01<br>Correct typo run_llama2.sh &gt; run-llama2.<br>sh<br>蕭澧邦  Log: <a href="./log/1085098fd47606ae881c712e34c178f01ad07084">log</a></td>
+<td>92.0%<br>1417/1421</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/bc65fcf2b7098793689e6892815dfc03a3f3e03f">bc65fcf2b7098793689e6892815dfc03a3f3e03f</a><br>2024-08-22 19:39:47<br>[SYCL] Add a space to supress a cmake wa<br>rning<br>Akarshan Biswas  Log: <a href="./log/bc65fcf2b7098793689e6892815dfc03a3f3e03f">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/88ed956ae969c0875246517cb757394c0192755d">88ed956ae969c0875246517cb757394c0192755d</a><br>2024-08-22 12:50:10<br>[SYCL] Add oneDNN primitive support<br>luoyu-intel  Log: <a href="./log/88ed956ae969c0875246517cb757394c0192755d">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>534/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/20ae2d8331ac563ec3f61b2f246018441fdfe9be">20ae2d8331ac563ec3f61b2f246018441fdfe9be</a><br>2024-08-20 23:50:17<br>[SYCL] fallback mmvq<br>Meng, Hengyu  Log: <a href="./log/20ae2d8331ac563ec3f61b2f246018441fdfe9be">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>516/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/5fcebd877e2372f5b4ce3a1cc635a8ce215983fa">5fcebd877e2372f5b4ce3a1cc635a8ce215983fa</a><br>2024-08-20 23:06:51<br>[SYCL] Fix SYCL <code>im2col</code> and <code>convert</code> O<br>verflow with Large Dims<br>zhentaoyu  Log: <a href="./log/5fcebd877e2372f5b4ce3a1cc635a8ce215983fa">log</a></td>
+<td>92.0%<br>1337/1342</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>516/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/7e935f3b64d17ff50637f0c7ce6b126250a90d8c">7e935f3b64d17ff50637f0c7ce6b126250a90d8c</a><br>2024-08-13 21:13:15<br>ggml : move rope type enum to ggml.h<br>Daniel Bevenius  Log: <a href="./log/7e935f3b64d17ff50637f0c7ce6b126250a90d8c">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>502/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/ee55b946a670ad1441d03f31c340c4c339aa04c4">ee55b946a670ad1441d03f31c340c4c339aa04c4</a><br>2024-08-11 16:37:43<br>update guide<br>Neo Zhang  Log: <a href="./log/ee55b946a670ad1441d03f31c340c4c339aa04c4">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>502/0<br>2025.0.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/75a32668b0d8d3e5f1c0fe62ed8e24b8d635a362">75a32668b0d8d3e5f1c0fe62ed8e24b8d635a362</a><br>2024-08-07 23:22:50<br>fix error<br>arthw  Log: <a href="./log/75a32668b0d8d3e5f1c0fe62ed8e24b8d635a362">log</a></td>
+<td>92.0%<br>1338/1342</td>
+<td>3.32</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>504/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/ef4b1efcb9754626ec8821ef65bb16dc24998d9d">ef4b1efcb9754626ec8821ef65bb16dc24998d9d</a><br>2024-08-07 11:25:36<br>[SYCL] Updated SYCL device filtering<br>Ouadie EL FAROUKI  Log: <a href="./log/ef4b1efcb9754626ec8821ef65bb16dc24998d9d">log</a></td>
+<td>Execute_Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)</td>
+<td>476/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/924ddb54d0ed737f7899a6cbf3ad5d67b21a90b6">924ddb54d0ed737f7899a6cbf3ad5d67b21a90b6</a><br>2024-08-06 15:26:46<br>ggml : add epsilon as a parameter for gr<br>oup_norm<br>Molly Sophia  Log: <a href="./log/924ddb54d0ed737f7899a6cbf3ad5d67b21a90b6">log</a></td>
+<td>Execute_Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Error to run gguf', 0)</td>
+<td>476/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/11c713b84415b93542dcb388cdc2b353c21c499c">11c713b84415b93542dcb388cdc2b353c21c499c</a><br>2024-08-02 01:55:17<br>[SYCL] Fixing wrong VDR iq4nl value<br>Ouadie EL FAROUKI  Log: <a href="./log/11c713b84415b93542dcb388cdc2b353c21c499c">log</a></td>
+<td>92.0%<br>1347/1351</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>504/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/345606c4b9f21678d0d2875b64d76c204ffb35c3">345606c4b9f21678d0d2875b64d76c204ffb35c3</a><br>2024-08-01 14:43:08<br>fix link<br>arthw  Log: <a href="./log/345606c4b9f21678d0d2875b64d76c204ffb35c3">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/7e63e58ab1acd81dc31d4b938529b40a366cbe6d">7e63e58ab1acd81dc31d4b938529b40a366cbe6d</a><br>2024-08-01 14:20:41<br>update guide<br>arthw  Log: <a href="./log/7e63e58ab1acd81dc31d4b938529b40a366cbe6d">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/f1bc5ad852d3007864bfca5c8898554a970fc1e6">f1bc5ad852d3007864bfca5c8898554a970fc1e6</a><br>2024-08-01 13:14:58<br>add final newline<br>arthw  Log: <a href="./log/f1bc5ad852d3007864bfca5c8898554a970fc1e6">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/4d71c98544c9150d974878867e1277a57d94ecb2">4d71c98544c9150d974878867e1277a57d94ecb2</a><br>2024-08-01 12:52:06<br>mv dpct/helper.hpp to dpct.hpp<br>arthw  Log: <a href="./log/4d71c98544c9150d974878867e1277a57d94ecb2">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/254a750249f74e838e744eedd8607f05fe9707d7">254a750249f74e838e744eedd8607f05fe9707d7</a><br>2024-08-01 12:48:18<br>rename device_infos to infos<br>arthw  Log: <a href="./log/254a750249f74e838e744eedd8607f05fe9707d7">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/6211ac040886495c44ad2ddee80204c9bcd6721a">6211ac040886495c44ad2ddee80204c9bcd6721a</a><br>2024-08-01 12:42:11<br>simple code for loop<br>arthw  Log: <a href="./log/6211ac040886495c44ad2ddee80204c9bcd6721a">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/1947c1200e1f5fd40ca8606454fe097efd3505aa">1947c1200e1f5fd40ca8606454fe097efd3505aa</a><br>2024-08-01 11:21:16<br>support set main gpu<br>arthw  Log: <a href="./log/1947c1200e1f5fd40ca8606454fe097efd3505aa">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/d5380f3af20cf5dd8d8a95854767891f29c5a4d1">d5380f3af20cf5dd8d8a95854767891f29c5a4d1</a><br>2024-07-30 23:49:34<br>refactor device in sycl_device, restore <br>ctx in create_queue<br>arthw  Log: <a href="./log/d5380f3af20cf5dd8d8a95854767891f29c5a4d1">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>472/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/e1256c69e3d63d539b8a31c2d0f83ba24aad2a95">e1256c69e3d63d539b8a31c2d0f83ba24aad2a95</a><br>2024-07-30 14:56:51<br>[SYCL] Add <code>TIMESTEP_EMBEDDING</code> OP<br>zhentaoyu  Log: <a href="./log/e1256c69e3d63d539b8a31c2d0f83ba24aad2a95">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>504/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/faaebf16a14e7417b2a76342ddd1ebb1e3e52f50">faaebf16a14e7417b2a76342ddd1ebb1e3e52f50</a><br>2024-07-29 10:50:27<br>[SYCL] add conv support<br>Meng, Hengyu  Log: <a href="./log/faaebf16a14e7417b2a76342ddd1ebb1e3e52f50">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>488/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/e702f2ff117a165dea685937dd4afb4c5306ec54">e702f2ff117a165dea685937dd4afb4c5306ec54</a><br>2024-07-27 04:41:55<br>ggml : reduce hash table reset cost<br>slaren  Log: <a href="./log/e702f2ff117a165dea685937dd4afb4c5306ec54">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>478/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/0aeae29190ccc052bdab49d6034dc96d9c51c99f">0aeae29190ccc052bdab49d6034dc96d9c51c99f</a><br>2024-07-24 14:36:00<br>Build Llama SYCL Intel with static libs<br>Joe Todd  Log: <a href="./log/0aeae29190ccc052bdab49d6034dc96d9c51c99f">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>482/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/146da8b6c635f817a78480ff71cceff8ed51ea5a">146da8b6c635f817a78480ff71cceff8ed51ea5a</a><br>2024-07-24 11:55:26<br>Re-add erroneously removed -fsycl from G<br>GML_EXTRA_LIBS<br>Joe Todd  Log: <a href="./log/146da8b6c635f817a78480ff71cceff8ed51ea5a">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/e2d7ec46fc0b64762fbf7b22d6e24b589b741438">e2d7ec46fc0b64762fbf7b22d6e24b589b741438</a><br>2024-07-23 14:58:37<br>sycl : Add support for non-release DPC++<br> &amp; oneMKL<br>Joe Todd  Log: <a href="./log/e2d7ec46fc0b64762fbf7b22d6e24b589b741438">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>480/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a9c03e482701d00291401eca929de66f08280a92">a9c03e482701d00291401eca929de66f08280a92</a><br>2024-07-23 07:43:28<br>[SYCL] fix scratch size of softmax<br>luoyu-intel  Log: <a href="./log/a9c03e482701d00291401eca929de66f08280a92">log</a></td>
+<td>92.0%<br>1332/1334</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>482/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/88db0dc6be323da7b2cd31f82752d9e552d56825">88db0dc6be323da7b2cd31f82752d9e552d56825</a><br>2024-07-15 19:32:15<br>[SYCL] add concat through dim 1/2<br>Meng, Hengyu  Log: <a href="./log/88db0dc6be323da7b2cd31f82752d9e552d56825">log</a></td>
+<td>91.0%<br>1279/1281</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>482/0<br>2024.2.1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a364ec78f3ab2c240269ff370265815357753012">a364ec78f3ab2c240269ff370265815357753012</a><br>2024-07-14 11:07:56<br>fix UT of concat<br>arthw  Log: <a href="./log/a364ec78f3ab2c240269ff370265815357753012">log</a></td>
+<td>91.0%<br>1279/1281</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>474/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/e700d37f68b5473390a3aa39f2c63aaa5f0d6eab">e700d37f68b5473390a3aa39f2c63aaa5f0d6eab</a><br>2024-07-14 01:02:58<br>mv softmax to separated file<br>Neo Zhang  Log: <a href="./log/e700d37f68b5473390a3aa39f2c63aaa5f0d6eab">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>472/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a4c8edcb67be8a496c27b67aa9d37690d9519e5e">a4c8edcb67be8a496c27b67aa9d37690d9519e5e</a><br>2024-07-14 00:15:55<br>fix for multiple cards<br>Neo Zhang  Log: <a href="./log/a4c8edcb67be8a496c27b67aa9d37690d9519e5e">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/74e3185cfd51d39a4738b631db5ced23eea7f1c6">74e3185cfd51d39a4738b631db5ced23eea7f1c6</a><br>2024-07-13 16:02:15<br>fix editorconfig check format issue<br>arthw  Log: <a href="./log/74e3185cfd51d39a4738b631db5ced23eea7f1c6">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/4cd9e48670c7009099f4d900a5f3461cfb802755">4cd9e48670c7009099f4d900a5f3461cfb802755</a><br>2024-07-13 14:43:57<br>cherry-pick b549a1bbefb2f1fbb8b558bac1f2<br>ae7967e60964,<br>arthw  Log: <a href="./log/4cd9e48670c7009099f4d900a5f3461cfb802755">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/fa700d1a84e9f41763f63acb3084541910e545b8">fa700d1a84e9f41763f63acb3084541910e545b8</a><br>2024-07-12 00:52:04<br>[SYCL] fix the mul_mat_id ut issues<br>Chen Xi  Log: <a href="./log/fa700d1a84e9f41763f63acb3084541910e545b8">log</a></td>
+<td>Build Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>./examples/sycl/run-llama2.sh: line 29: <br>./build/bin/llama-cli: No such file or d<br>', 0)</td>
+<td>53/2<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/35b1aff5cfd4f5dbf0d60a2084c995dd22f7eb2a">35b1aff5cfd4f5dbf0d60a2084c995dd22f7eb2a</a><br>2024-07-10 16:10:49<br>[SYCL] Use multi_ptr to clean up depreca<br>ted warnings<br>AidanBeltonS  Log: <a href="./log/35b1aff5cfd4f5dbf0d60a2084c995dd22f7eb2a">log</a></td>
+<td>Build Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>./examples/sycl/run-llama2.sh: line 29: <br>./build/bin/llama-cli: No such file or d<br>', 0)</td>
+<td>53/2<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/7a8fa37316f2765c9fc09422ce3939d1e5b79777">7a8fa37316f2765c9fc09422ce3939d1e5b79777</a><br>2024-07-08 21:35:17<br>labeler : updated sycl to match docs and<br> code refactor<br>Alberto Cabrera Pérez  Log: <a href="./log/7a8fa37316f2765c9fc09422ce3939d1e5b79777">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a7d77816921f8f1eb75a0ed79b245d86e71e6ff6">a7d77816921f8f1eb75a0ed79b245d86e71e6ff6</a><br>2024-07-08 14:22:41<br>sycl : fix powf call in device code<br>Alberto Cabrera Pérez  Log: <a href="./log/a7d77816921f8f1eb75a0ed79b245d86e71e6ff6">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/86d41e6e1c84be041736d339e5f643cd05cf1b70">86d41e6e1c84be041736d339e5f643cd05cf1b70</a><br>2024-07-08 13:51:31<br>scripts : fix sync for sycl<br>Georgi Gerganov  Log: <a href="./log/86d41e6e1c84be041736d339e5f643cd05cf1b70">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/16ab65b7b9e1ed8cc774c9d09d05bbc109a05a57">16ab65b7b9e1ed8cc774c9d09d05bbc109a05a57</a><br>2024-07-05 18:08:32<br>Reorganize documentation pages<br>Xuan Son Nguyen  Log: <a href="./log/16ab65b7b9e1ed8cc774c9d09d05bbc109a05a57">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>686/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/fdef7d606ef4864ceb5f51a576c0ecddec2cce2a">fdef7d606ef4864ceb5f51a576c0ecddec2cce2a</a><br>2024-07-04 11:55:23<br>replace get_work_group_size<br>Neo Zhang  Log: <a href="./log/fdef7d606ef4864ceb5f51a576c0ecddec2cce2a">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>556/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/249347995825713ad03b9cda3a036851f2e95033">249347995825713ad03b9cda3a036851f2e95033</a><br>2024-07-04 08:28:58<br>skip UT for BF16<br>Neo Zhang  Log: <a href="./log/249347995825713ad03b9cda3a036851f2e95033">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>564/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/9c593619f363fda422375b386674d558fa48d437">9c593619f363fda422375b386674d558fa48d437</a><br>2024-07-03 11:20:54<br>fix multiple gpu, add device choose mode<br>, update the guide for usages<br>Neo Zhang  Log: <a href="./log/9c593619f363fda422375b386674d558fa48d437">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>558/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/51be86243892833c9779ae903d5b54241ec2507a">51be86243892833c9779ae903d5b54241ec2507a</a><br>2024-07-03 02:55:34<br>Dequant improvements rebase<br>AidanBeltonS  Log: <a href="./log/51be86243892833c9779ae903d5b54241ec2507a">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>564/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/044995e2d1fbc21ca275be66a9cb580034124502">044995e2d1fbc21ca275be66a9cb580034124502</a><br>2024-07-02 12:18:10<br>Removes multiple newlines at the end of <br>files that is breaking the editorconfig <br>step of CI.<br>Clint Herron  Log: <a href="./log/044995e2d1fbc21ca275be66a9cb580034124502">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>558/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a9f3b102157ba992cfe058909b7f6e1906d2d647">a9f3b102157ba992cfe058909b7f6e1906d2d647</a><br>2024-07-02 04:50:07<br>[SYCL] Fix win build conflict of math li<br>brary<br>luoyu-intel  Log: <a href="./log/a9f3b102157ba992cfe058909b7f6e1906d2d647">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>550/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/d08c20eddedb24515a3212e2de66bdff41a26b8c">d08c20eddedb24515a3212e2de66bdff41a26b8c</a><br>2024-07-02 02:16:00<br>[SYCL] Fix the sub group size of Intel<br>luoyu-intel  Log: <a href="./log/d08c20eddedb24515a3212e2de66bdff41a26b8c">log</a></td>
+<td>91.0%<br>NA</td>
+<td>2.63</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1: The original copy text needed sh<br>ould describe the products/ services.', <br>0)</td>
+<td>586/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/cb5fad4c6c2cbef92e9b8b63449e1cb7664e4846">cb5fad4c6c2cbef92e9b8b63449e1cb7664e4846</a><br>2024-07-01 20:39:06<br>CUDA: refactor and optimize IQ MMVQ<br>Johannes Gäßler  Log: <a href="./log/cb5fad4c6c2cbef92e9b8b63449e1cb7664e4846">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>530/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/197fe6c1d7bec6718ce901f0141b2725240f298c">197fe6c1d7bec6718ce901f0141b2725240f298c</a><br>2024-07-01 19:39:06<br>[SYCL] Update SYCL-Rope op and Refactor<br>zhentaoyu  Log: <a href="./log/197fe6c1d7bec6718ce901f0141b2725240f298c">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>530/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/f3f65429c44bb195a9195bfdc19a30a79709db7b">f3f65429c44bb195a9195bfdc19a30a79709db7b</a><br>2024-06-26 18:33:02<br>llama : reorganize source code + improve<br> CMake<br>Georgi Gerganov  Log: <a href="./log/f3f65429c44bb195a9195bfdc19a30a79709db7b">log</a></td>
+<td>95.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>520/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/083bacce14c1aaf9976aa40e8266cdc25ac749d3">083bacce14c1aaf9976aa40e8266cdc25ac749d3</a><br>2024-06-25 10:19:20<br>[SYCL] Re-enabled mul_mat_batched_sycl<br>Meng, Hengyu  Log: <a href="./log/083bacce14c1aaf9976aa40e8266cdc25ac749d3">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.29</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>Step 1:#################################<br>########################################<br>', 0)</td>
+<td>524/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/de391e4c803383bbea054b6edd016e78c024a74d">de391e4c803383bbea054b6edd016e78c024a74d</a><br>2024-06-20 13:19:05<br>[SYCL] Fix windows build and inference<br>luoyu-intel  Log: <a href="./log/de391e4c803383bbea054b6edd016e78c024a74d">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Customize your site', 6)</td>
+<td>524/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/de2763118fd5b6ea89702cc9981349e0556b0c3d">de2763118fd5b6ea89702cc9981349e0556b0c3d</a><br>2024-06-19 22:54:15<br>fix to support multiple GPUs, fix set si<br>ngle device, unify id/device_id/device_i<br>ndex<br>Jianyu Zhang  Log: <a href="./log/de2763118fd5b6ea89702cc9981349e0556b0c3d">log</a></td>
+<td>Build Err<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>./examples/sycl/run-llama2.sh: line 29: <br>./build/bin/llama-cli: No such file or d<br>', 0)</td>
+<td>13/6<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/623494a478134432fd2d7ee40135770a3340674f">623494a478134432fd2d7ee40135770a3340674f</a><br>2024-06-19 09:11:51<br>[SYCL] refactor<br>Meng, Hengyu  Log: <a href="./log/623494a478134432fd2d7ee40135770a3340674f">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.28</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>512/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/df68d4fa5dc929217d3e64d673e099d7a417b206">df68d4fa5dc929217d3e64d673e099d7a417b206</a><br>2024-06-17 11:17:07<br>[SYCL] Update README-sycl.html for Chapter<br> "Recommended release" and "News"<br>Neo Zhang  Log: <a href="./log/df68d4fa5dc929217d3e64d673e099d7a417b206">log</a></td>
+<td>91.0%<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>The number of work-items in each dimensi<br>on of a work-group cannot exceed {512, 5<br>', 0)</td>
+<td>450/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/7b2f4a7d193ef2475259bbe7656fcccfab4b1217">7b2f4a7d193ef2475259bbe7656fcccfab4b1217</a><br>2024-06-15 14:05:10<br>[SYCL] remove global variables<br>Meng, Hengyu  Log: <a href="./log/7b2f4a7d193ef2475259bbe7656fcccfab4b1217">log</a></td>
+<td>91.0%<br>NA</td>
+<td>NA</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 0:<br>exp=Step 1: Get Domain and Hosting<br>The number of work-items in each dimensi<br>on of a work-group cannot exceed {512, 5<br>', 0)</td>
+<td>450/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/f578b86b2123d0f92afbaa98a031df4d4464e582">f578b86b2123d0f92afbaa98a031df4d4464e582</a><br>2024-06-13 03:11:35<br>move BLAS to a separate backend<br>slaren  Log: <a href="./log/f578b86b2123d0f92afbaa98a031df4d4464e582">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.24</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orsz onседа atir Byett, 1./<br>doV’4Cin2? TheCre or 2-over - components<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/1c641e6aac5c18b964e7b32d9dbbb4bf5301d0d7">1c641e6aac5c18b964e7b32d9dbbb4bf5301d0d7</a><br>2024-06-13 00:41:52<br><code>build</code>: rename main → llama-cli, server<br> → llama-server, llava-cli → llama-llava<br>-cli, etc...<br>Olivier Chafik  Log: <a href="./log/1c641e6aac5c18b964e7b32d9dbbb4bf5301d0d7">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/a9cae48003dfc4fe95b8f5c81682fc6e63425235">a9cae48003dfc4fe95b8f5c81682fc6e63425235</a><br>2024-06-12 16:00:22<br>tests : add non-cont unary tests<br>Georgi Gerganov  Log: <a href="./log/a9cae48003dfc4fe95b8f5c81682fc6e63425235">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in.O(men, Int 1unker, P<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/af4ae502ddaeb03cd5861273ca2e9a5ae4551db7">af4ae502ddaeb03cd5861273ca2e9a5ae4551db7</a><br>2024-06-10 02:21:31<br>use the correct SYCL context for host US<br>M allocations<br>Ben Ashbaugh  Log: <a href="./log/af4ae502ddaeb03cd5861273ca2e9a5ae4551db7">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/fe1e3917cfa0f9397a765cfd0aef880674d938d5">fe1e3917cfa0f9397a765cfd0aef880674d938d5</a><br>2024-06-09 01:43:39<br>Revert "[SYCL] Update rpc-server.cpp to <br>include SYCL backend<br>slaren  Log: <a href="./log/fe1e3917cfa0f9397a765cfd0aef880674d938d5">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orszomen, he jump -major30 <br>atau, OldC and 2 in. on your un(, with a<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/d5c938cd7716b9a2ace49a43a469dfbffcff4d28">d5c938cd7716b9a2ace49a43a469dfbffcff4d28</a><br>2024-06-07 14:28:26<br>[SYCL] fix softmax r2r result wrong issu<br>e<br>pengxin99  Log: <a href="./log/d5c938cd7716b9a2ace49a43a469dfbffcff4d28">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orsz onседа atir Byett, 1./<br>doV’4Cin2? TheCre or 2-over - components<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/2b3389677a833cee0880226533a1768b1a9508d2">2b3389677a833cee0880226533a1768b1a9508d2</a><br>2024-06-05 11:29:20<br>ggml : refactor rope norm/neox<br>Georgi Gerganov  Log: <a href="./log/2b3389677a833cee0880226533a1768b1a9508d2">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make,orsz onседа atir Byett, 1./<br>doV’4Cin2? TheCre or 2-over - components<br>', 6)</td>
+<td>463/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/554c247caffed64465f372661f2826640cb10430">554c247caffed64465f372661f2826640cb10430</a><br>2024-06-04 21:23:20<br>ggml : remove OpenCL<br>Georgi Gerganov  Log: <a href="./log/554c247caffed64465f372661f2826640cb10430">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.26</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('err', 'diff in line 6:<br>exp=Step 7: Make the site visible<br>Step 7: Make report (v has have has got <br>(pay( Big and (c gu in to The(Col U +C C<br>', 6)</td>
+<td>457/0<br>2024.2.0</td>
+</tr>
+<tr>
+<td><a href="https://github.com/arthw/llama.cpp/commit/9422c5e34bbd302493b77a8f6d546154a1f4fe82">9422c5e34bbd302493b77a8f6d546154a1f4fe82</a><br>2024-06-02 19:13:54<br>[SYCL] Update rpc-server.cpp to include <br>SYCL backend<br>nickp27  Log: <a href="./log/9422c5e34bbd302493b77a8f6d546154a1f4fe82">log</a></td>
+<td>91.0%<br>NA</td>
+<td>3.27</td>
+<td>tg=NA<br>pp=NA</td>
+<td>('ok', 'pass', 0)</td>
+<td>457/0<br>2024.2.0</td>
+</tr>
+</tbody>
+</table></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Neo Zhang Jianyu.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
