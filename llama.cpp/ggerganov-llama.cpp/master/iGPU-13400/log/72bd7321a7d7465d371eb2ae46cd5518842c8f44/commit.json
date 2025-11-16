@@ -1,0 +1,1 @@
+{"author": "shani-f <s0556787439@gmail.com>", "date": "2025-11-16 01:52:42", "title": "sycl : unify unary kernels with a generic implementation and enable wide operator support", "pr_id": "17213", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
