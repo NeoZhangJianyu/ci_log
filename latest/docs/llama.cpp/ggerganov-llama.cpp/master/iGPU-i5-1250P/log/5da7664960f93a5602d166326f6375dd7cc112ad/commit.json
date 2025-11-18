@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-11-12 14:44:29", "title": "[SYCL]fix ci crash about SSM_CONV", "pr_id": "17169", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
