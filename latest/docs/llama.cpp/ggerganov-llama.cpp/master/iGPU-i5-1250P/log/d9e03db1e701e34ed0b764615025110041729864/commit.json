@@ -1,0 +1,1 @@
+{"author": "Law Po Ying <30721578+yingying0906@users.noreply.github.com>", "date": "2025-12-07 09:18:18", "title": "sycl: add missing BF16 conversion support for Intel oneAPI", "pr_id": "17780", "files": ["ggml/src/ggml-sycl/convert.cpp"]}
