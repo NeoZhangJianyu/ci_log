@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2025-12-10 16:59:57", "title": "fix softmax for iGPU", "pr_id": "17838", "files": ["ggml/src/ggml-sycl/softmax.cpp"]}
