@@ -1,0 +1,1 @@
+{"author": "Rahul Sathe <150351592+rrsathe@users.noreply.github.com>", "date": "2025-12-31 06:38:44", "title": "Work around broken IntelSYCLConfig.cmake in Intel oneAPI 2025.x", "pr_id": "18345", "files": ["ggml/src/ggml-sycl/CMakeLists.txt"]}
