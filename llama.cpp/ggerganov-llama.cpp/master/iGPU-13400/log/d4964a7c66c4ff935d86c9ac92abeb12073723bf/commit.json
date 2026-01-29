@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-01-29 09:20:22", "title": "sycl: fix norm kernels: l2_norm, group_norm, rms_norm by remove assert to support more cases", "pr_id": "19154", "files": ["docs/ops/SYCL.csv", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/norm.cpp"]}
