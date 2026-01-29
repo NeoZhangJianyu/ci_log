@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-01-23 20:54:10", "title": "[SYCL] use malloc to support both iGPU and dGPU in same time", "pr_id": "18992", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
