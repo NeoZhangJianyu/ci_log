@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2025-12-23 12:59:12", "title": "[SYCL] replace llama-cli by llama-completion to rm the impact to test script", "pr_id": "18290", "files": ["examples/sycl/run-llama2.sh", "examples/sycl/run-llama3.sh", "examples/sycl/win-run-llama2.bat", "examples/sycl/win-run-llama3.bat"]}

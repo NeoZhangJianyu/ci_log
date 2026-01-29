@@ -1,0 +1,1 @@
+{"author": "Patryk Kaminski <kaminpatryk@gmail.com>", "date": "2026-01-28 16:33:54", "title": "ggml-sycl: remove unused syclcompat header", "pr_id": "19140", "files": ["ggml/src/ggml-sycl/dpct/helper.hpp"]}
