@@ -1,0 +1,1 @@
+{"author": "s8322 <s0527684199@gmail.com>", "date": "2026-01-30 06:01:38", "title": "sycl: implement GGML_UNARY_OP_SOFTPLUS", "pr_id": "19114", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/element_wise.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
