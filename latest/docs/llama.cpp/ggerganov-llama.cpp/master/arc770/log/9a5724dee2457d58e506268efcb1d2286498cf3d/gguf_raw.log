@@ -30,7 +30,7 @@ common_init_result: fitting params to device memory, for bugs during this step t
 llama_params_fit_impl: projected to use 5953 MiB of device memory vs. 15473 MiB of free device memory
 llama_params_fit_impl: will leave 9520 >= 1024 MiB of free device memory, no changes needed
 llama_params_fit: successfully fit params to free device memory
-llama_params_fit: fitting params to free memory took 0.02 seconds
+llama_params_fit: fitting params to free memory took 0.03 seconds
 llama_model_load_from_file_impl: using device SYCL0 (Intel(R) Arc(TM) A770 Graphics) (unknown id) - 15473 MiB free
 llama_model_loader: direct I/O is enabled, disabling mmap
 llama_model_loader: loaded meta data with 19 key-value pairs and 291 tensors from models/llama-2-7b.Q4_0.gguf (version GGUF V2)
@@ -123,5 +123,5 @@ load_tensors:        SYCL0 model buffer size =  3577.56 MiB
 load_tensors:    SYCL_Host model buffer size =    70.31 MiB
 llama_model_load: error loading model: unexpectedly reached end of file
 llama_model_load_from_file_impl: failed to load model
-./run_gguf.sh: line 34: 145189 Segmentation fault      (core dumped) ZES_ENABLE_SYSMAN=1 ${RUN_BIN} -m models/${GGUF_NAME} -p "${INPUT2}" -n 400 -e -ngl ${GGUF_NGL} -s 0
+./run_gguf.sh: line 34: 1154697 Segmentation fault      (core dumped) ZES_ENABLE_SYSMAN=1 ${RUN_BIN} -m models/${GGUF_NAME} -p "${INPUT2}" -n 400 -e -ngl ${GGUF_NGL} -s 0
 Error to run gguf

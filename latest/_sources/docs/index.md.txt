@@ -1,7 +1,8 @@
-# CI Log
+# llama.cpp CI for SYCL Backend
 
-This repo is used to save the CI log of projects:
+This CI system is developed and maintained by NeoZhangJianyu. If you have any issue, please contact to: [zhang.jianyu@outlook.com](zhang.jianyu@outlook.com).
 
-|Project|Note|
-|-|-|
-|[llama.cpp](./llama.cpp/README.html)||
+## Repo CI
+
+|Repo|Branch|Hardware|CI|Figure|
+|-|-|-|-|-|

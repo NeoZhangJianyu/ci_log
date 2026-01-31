@@ -1,0 +1,1 @@
+{"author": "RachelMantel <rrm85040@gmail.com>", "date": "2026-01-30 06:00:49", "title": "sycl: implement GGML_OP_TRI", "pr_id": "19089", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
