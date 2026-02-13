@@ -1,0 +1,1 @@
+{"author": "Tamar <Tamar0812@outlook.co.il>", "date": "2026-02-02 15:05:51", "title": "sycl: implement GGML_OP_TOP_K", "pr_id": "19242", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
