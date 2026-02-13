@@ -1,0 +1,1 @@
+{"author": "Nechama Krashinski <n.05567347@gmail.com>", "date": "2026-02-06 17:13:44", "title": "sycl: add F16 support for GGML_OP_CEIL", "pr_id": "19306", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
