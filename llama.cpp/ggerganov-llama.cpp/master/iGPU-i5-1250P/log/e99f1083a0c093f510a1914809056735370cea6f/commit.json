@@ -1,0 +1,1 @@
+{"author": "Maciej Lisowski <39798354+MaciejDromin@users.noreply.github.com>", "date": "2026-02-18 16:50:23", "title": "docs: Fix broken links for preparing models in Backends", "pr_id": "19684", "files": ["docs/backend/CANN.md", "docs/backend/SYCL.md"]}
