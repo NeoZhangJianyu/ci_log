@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-02-26 10:27:20", "title": "support permuted, remove check s0/s10", "pr_id": "19889", "files": ["ggml/src/ggml-sycl/binbcast.cpp"]}
