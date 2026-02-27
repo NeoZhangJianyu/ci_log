@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-02-27 09:26:07", "title": "replace the magic nunber 768 by max work group size to support iGPU", "pr_id": "19920", "files": ["ggml/src/ggml-sycl/add-id.cpp"]}
