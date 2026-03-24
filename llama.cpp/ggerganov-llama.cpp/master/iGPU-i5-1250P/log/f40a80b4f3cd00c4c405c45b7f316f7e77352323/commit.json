@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-22 22:06:27", "title": "support bf16 and quantized type", "pr_id": "20803", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
