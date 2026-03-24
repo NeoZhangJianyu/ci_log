@@ -1,0 +1,1 @@
+{"author": "Sigbj\u00f8rn Skj\u00e6ret <sigbjorn.skjaeret@scala.com>", "date": "2026-03-15 19:10:15", "title": "sycl : fix for untransposed GDA recurrent state", "pr_id": "20583", "files": ["ggml/src/ggml-sycl/gated_delta_net.cpp"]}
