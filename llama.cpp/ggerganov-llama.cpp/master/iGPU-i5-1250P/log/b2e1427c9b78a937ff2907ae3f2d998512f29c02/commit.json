@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-11 09:53:05", "title": "fix for failed UT case: ACC, L2_NORM, UPSCALE, fused_glu, unary", "pr_id": "20283", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/element_wise.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/norm.cpp"]}
