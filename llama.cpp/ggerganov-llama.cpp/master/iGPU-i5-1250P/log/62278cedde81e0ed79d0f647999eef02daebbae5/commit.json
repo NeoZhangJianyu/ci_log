@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-31 18:31:50", "title": "sycl : enhance fattn perf", "pr_id": "21185", "files": ["ggml/src/ggml-sycl/fattn-tile.hpp"]}
