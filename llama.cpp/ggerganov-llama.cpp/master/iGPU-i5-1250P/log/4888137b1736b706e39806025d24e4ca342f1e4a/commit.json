@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-04-02 15:08:32", "title": "sycl : fix llama_kv_cache hang when kv_cache is huge: 5GB", "pr_id": "21283", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
