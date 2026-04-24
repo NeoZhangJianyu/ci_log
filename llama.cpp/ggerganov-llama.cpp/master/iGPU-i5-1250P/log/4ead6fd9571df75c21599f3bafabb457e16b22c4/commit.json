@@ -1,0 +1,1 @@
+{"author": "Neo Zhang Jianyu <jianyu.zhang@intel.com>", "date": "2026-04-23 13:21:36", "title": "[SYCL] Update oneapi 2025.3.3, Seperate SYCL build, release Ubuntu 24 package.", "pr_id": "22078", "files": [".devops/intel.Dockerfile", ".github/workflows/build-sycl.yml", ".github/workflows/build.yml", ".github/workflows/release.yml", "docs/backend/SYCL.md"]}
