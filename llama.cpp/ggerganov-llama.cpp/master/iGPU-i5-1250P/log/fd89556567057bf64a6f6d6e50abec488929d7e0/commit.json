@@ -1,0 +1,1 @@
+{"author": "Devedse <2350015+devedse@users.noreply.github.com>", "date": "2026-05-09 07:50:24", "title": "[SYCL] Add BF16 support to GET_ROWS operation", "pr_id": "21391", "files": ["ggml/src/ggml-sycl/getrows.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
