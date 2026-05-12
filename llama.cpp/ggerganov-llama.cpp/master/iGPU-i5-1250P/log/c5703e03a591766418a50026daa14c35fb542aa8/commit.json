@@ -1,0 +1,1 @@
+{"author": "Intel AI Get-to Market Customer Success and Solutions <ai.gtm.css@gmail.com>", "date": "2026-05-08 17:05:22", "title": "sycl: support non-contiguous input in PAD op", "pr_id": "22148", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/pad.cpp"]}
