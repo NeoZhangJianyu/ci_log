@@ -1,0 +1,1 @@
+{"author": "Intel AI Get-to Market Customer Success and Solutions <ai.gtm.css@gmail.com>", "date": "2026-05-17 22:11:51", "title": "sycl: route small f32 matmuls to oneMKL, bypass oneDNN", "pr_id": "22150", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
