@@ -1,0 +1,1 @@
+{"author": "Intel AI Get-to Market Customer Success and Solutions <ai.gtm.css@gmail.com>", "date": "2026-05-18 23:44:02", "title": "sycl: add GGML_SYCL_USE_ASYNC_MEM_OP env toggle", "pr_id": "22153", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
