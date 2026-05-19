@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-05-11 13:01:47", "title": "[SYCL] Add OP im2col_3d", "pr_id": "22903", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/im2col.cpp", "ggml/src/ggml-sycl/im2col.hpp"]}
