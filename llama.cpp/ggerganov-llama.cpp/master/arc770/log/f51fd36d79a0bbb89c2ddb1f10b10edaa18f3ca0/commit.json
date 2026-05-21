@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-04-06 18:28:00", "title": "sycl : handle other FA case", "pr_id": "21377", "files": ["ggml/src/ggml-sycl/fattn-tile.hpp"]}
