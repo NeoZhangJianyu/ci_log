@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-25 17:48:37", "title": "sycl : fix wrong variable check by assert", "pr_id": "20903", "files": ["ggml/src/ggml-sycl/add-id.cpp"]}
