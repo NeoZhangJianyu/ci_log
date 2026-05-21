@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-29 09:02:45", "title": "[SYCL] Enhance build script to use half cores to build, avoid OS hang", "pr_id": "21093", "files": ["examples/sycl/build.sh", "examples/sycl/run-llama2.sh"]}
