@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-14 22:01:57", "title": "add op gated_delta_net", "pr_id": "20455", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/gated_delta_net.cpp", "ggml/src/ggml-sycl/gated_delta_net.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
