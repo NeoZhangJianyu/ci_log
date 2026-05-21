@@ -1,0 +1,1 @@
+{"author": "PMZFX <georgiopapairo@gmail.com>", "date": "2026-04-07 04:12:49", "title": "[SYCL] Add Q8_0 reorder optimization", "pr_id": "3x tg speedup on Intel Arc", "files": ["ggml/src/ggml-sycl/dequantize.hpp", "ggml/src/ggml-sycl/dmmv.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/mmvq.cpp", "ggml/src/ggml-sycl/quants.hpp", "ggml/src/ggml-sycl/vecdotq.hpp"]}
