@@ -1,0 +1,7271 @@
+### ctest_release
+
+Runs ctest in release mode
+- status: 8
+```
++ ctest --output-on-failure -L main
+Test project /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release
+      Start  1: test-tokenizer-0-bert-bge
+ 1/43 Test  #1: test-tokenizer-0-bert-bge .........   Passed    0.16 sec
+      Start  2: test-tokenizer-0-command-r
+ 2/43 Test  #2: test-tokenizer-0-command-r ........   Passed    0.31 sec
+      Start  3: test-tokenizer-0-deepseek-coder
+ 3/43 Test  #3: test-tokenizer-0-deepseek-coder ...   Passed    0.09 sec
+      Start  4: test-tokenizer-0-deepseek-llm
+ 4/43 Test  #4: test-tokenizer-0-deepseek-llm .....   Passed    0.15 sec
+      Start  5: test-tokenizer-0-falcon
+ 5/43 Test  #5: test-tokenizer-0-falcon ...........   Passed    0.12 sec
+      Start  6: test-tokenizer-0-gpt-2
+ 6/43 Test  #6: test-tokenizer-0-gpt-2 ............   Passed    0.11 sec
+      Start  7: test-tokenizer-0-llama-bpe
+ 7/43 Test  #7: test-tokenizer-0-llama-bpe ........   Passed    0.22 sec
+      Start  8: test-tokenizer-0-llama-spm
+ 8/43 Test  #8: test-tokenizer-0-llama-spm ........   Passed    0.10 sec
+      Start  9: test-tokenizer-0-mpt
+ 9/43 Test  #9: test-tokenizer-0-mpt ..............   Passed    0.11 sec
+      Start 10: test-tokenizer-0-phi-3
+10/43 Test #10: test-tokenizer-0-phi-3 ............   Passed    0.09 sec
+      Start 11: test-tokenizer-0-qwen2
+11/43 Test #11: test-tokenizer-0-qwen2 ............   Passed    0.19 sec
+      Start 12: test-tokenizer-0-refact
+12/43 Test #12: test-tokenizer-0-refact ...........   Passed    0.10 sec
+      Start 13: test-tokenizer-0-starcoder
+13/43 Test #13: test-tokenizer-0-starcoder ........   Passed    0.10 sec
+      Start 14: test-tokenizers-ggml-vocabs
+14/43 Test #14: test-tokenizers-ggml-vocabs .......   Passed    1.66 sec
+      Start 15: test-sampling
+15/43 Test #15: test-sampling .....................   Passed    0.72 sec
+      Start 16: test-reasoning-budget
+16/43 Test #16: test-reasoning-budget .............   Passed    0.04 sec
+      Start 17: test-grammar-parser
+17/43 Test #17: test-grammar-parser ...............   Passed    0.04 sec
+      Start 18: test-grammar-integration
+18/43 Test #18: test-grammar-integration ..........   Passed    0.06 sec
+      Start 19: test-llama-grammar
+19/43 Test #19: test-llama-grammar ................   Passed    0.04 sec
+      Start 20: test-chat
+20/43 Test #20: test-chat .........................   Passed    1.52 sec
+      Start 21: test-json-schema-to-grammar
+21/43 Test #21: test-json-schema-to-grammar .......   Passed    1.80 sec
+      Start 22: test-tokenizer-1-llama-spm
+22/43 Test #22: test-tokenizer-1-llama-spm ........   Passed    0.22 sec
+      Start 23: test-llama-archs
+23/43 Test #23: test-llama-archs ..................   Passed   10.12 sec
+      Start 24: test-chat-peg-parser
+24/43 Test #24: test-chat-peg-parser ..............   Passed    0.06 sec
+      Start 25: test-jinja
+25/43 Test #25: test-jinja ........................   Passed    0.09 sec
+      Start 27: test-chat-auto-parser
+26/43 Test #27: test-chat-auto-parser .............   Passed    0.10 sec
+      Start 28: test-chat-template
+27/43 Test #28: test-chat-template ................   Passed    0.09 sec
+      Start 29: test-json-partial
+28/43 Test #29: test-json-partial .................   Passed    0.04 sec
+      Start 30: test-log
+29/43 Test #30: test-log ..........................   Passed    0.05 sec
+      Start 31: test-peg-parser
+30/43 Test #31: test-peg-parser ...................   Passed    0.05 sec
+      Start 32: test-regex-partial
+31/43 Test #32: test-regex-partial ................   Passed    0.04 sec
+      Start 33: test-download-model
+32/43 Test #33: test-download-model ...............   Passed    9.05 sec
+      Start 34: test-thread-safety
+33/43 Test #34: test-thread-safety ................***Exception: SegFault  3.96 sec
+system_info: n_threads = 2 (n_threads_batch = 2) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+llama_model_load_from_file_impl: using device SYCL0 (Intel(R) Arc(TM) A770 Graphics) (unknown id) - 15473 MiB free
+llama_model_loader: loaded meta data with 20 key-value pairs and 57 tensors from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/tinyllamas/stories15M-q4_0.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv   1:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv   2:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv   3:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv   4:                       general.architecture str              = llama
+llama_model_loader: - kv   5:                               general.name str              = llama
+llama_model_loader: - kv   6:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv   7:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv   8:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv   9:          tokenizer.ggml.seperator_token_id u32              = 4294967295
+llama_model_loader: - kv  10:            tokenizer.ggml.padding_token_id u32              = 4294967295
+llama_model_loader: - kv  11:                       llama.context_length u32              = 128
+llama_model_loader: - kv  12:                     llama.embedding_length u32              = 288
+llama_model_loader: - kv  13:                  llama.feed_forward_length u32              = 768
+llama_model_loader: - kv  14:                 llama.attention.head_count u32              = 6
+llama_model_loader: - kv  15:                          llama.block_count u32              = 6
+llama_model_loader: - kv  16:                 llama.rope.dimension_count u32              = 48
+llama_model_loader: - kv  17:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  18:               general.quantization_version u32              = 2
+llama_model_loader: - kv  19:                          general.file_type u32              = 2
+llama_model_loader: - type  f32:   13 tensors
+llama_model_loader: - type q4_0:   43 tensors
+llama_model_loader: - type q8_0:    1 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_0
+print_info: file size   = 17.50 MiB (6.01 BPW) 
+load: empty token at index 30143
+load: bad special token: 'tokenizer.ggml.seperator_token_id' = 4294967295, using default id -1
+load: bad special token: 'tokenizer.ggml.padding_token_id' = 4294967295, using default id -1
+load: 0 unused tokens
+load: printing all EOG tokens:
+load:   - 2 ('</s>')
+load: special tokens cache size = 3
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+load: token to piece cache size = 0.1684 MB
+print_info: arch                  = llama
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 128
+print_info: n_embd                = 288
+print_info: n_embd_inp            = 288
+print_info: n_layer               = 6
+print_info: n_head                = 6
+print_info: n_head_kv             = 6
+print_info: n_rot                 = 48
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 48
+print_info: n_embd_head_v         = 48
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 288
+print_info: n_embd_v_gqa          = 288
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-05
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: n_ff                  = 768
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 0
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 10000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 128
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = ?B
+print_info: model params          = 24.41 M
+print_info: general.name          = llama
+print_info: vocab type            = SPM
+print_info: n_vocab               = 32000
+print_info: n_merges              = 0
+print_info: BOS token             = 1 '<s>'
+print_info: EOS token             = 2 '</s>'
+print_info: UNK token             = 0 '<unk>'
+print_info: LF token              = 13 '<0x0A>'
+print_info: EOG token             = 2 '</s>'
+print_info: max token length      = 48
+load_tensors: loading model tensors, this can take a while... (mmap = true, direct_io = false)
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 5 repeating layers to GPU
+load_tensors: offloaded 7/7 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =     4.94 MiB
+load_tensors:        SYCL0 model buffer size =    12.56 MiB
+.....................
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+llama_model_loader: loaded meta data with 20 key-value pairs and 57 tensors from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/tinyllamas/stories15M-q4_0.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv   1:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv   2:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv   3:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv   4:                       general.architecture str              = llama
+llama_model_loader: - kv   5:                               general.name str              = llama
+llama_model_loader: - kv   6:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv   7:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv   8:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv   9:          tokenizer.ggml.seperator_token_id u32              = 4294967295
+llama_model_loader: - kv  10:            tokenizer.ggml.padding_token_id u32              = 4294967295
+llama_model_loader: - kv  11:                       llama.context_length u32              = 128
+llama_model_loader: - kv  12:                     llama.embedding_length u32              = 288
+llama_model_loader: - kv  13:                  llama.feed_forward_length u32              = 768
+llama_model_loader: - kv  14:                 llama.attention.head_count u32              = 6
+llama_model_loader: - kv  15:                          llama.block_count u32              = 6
+llama_model_loader: - kv  16:                 llama.rope.dimension_count u32              = 48
+llama_model_loader: - kv  17:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  18:               general.quantization_version u32              = 2
+llama_model_loader: - kv  19:                          general.file_type u32              = 2
+llama_model_loader: - type  f32:   13 tensors
+llama_model_loader: - type q4_0:   43 tensors
+llama_model_loader: - type q8_0:    1 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_0
+print_info: file size   = 17.50 MiB (6.01 BPW) 
+load: empty token at index 30143
+load: bad special token: 'tokenizer.ggml.seperator_token_id' = 4294967295, using default id -1
+load: bad special token: 'tokenizer.ggml.padding_token_id' = 4294967295, using default id -1
+load: 0 unused tokens
+load: printing all EOG tokens:
+load:   - 2 ('</s>')
+load: special tokens cache size = 3
+load: token to piece cache size = 0.1684 MB
+print_info: arch                  = llama
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 128
+print_info: n_embd                = 288
+print_info: n_embd_inp            = 288
+print_info: n_layer               = 6
+print_info: n_head                = 6
+print_info: n_head_kv             = 6
+print_info: n_rot                 = 48
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 48
+print_info: n_embd_head_v         = 48
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 288
+print_info: n_embd_v_gqa          = 288
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-05
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: n_ff                  = 768
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 0
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 10000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 128
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = ?B
+print_info: model params          = 24.41 M
+print_info: general.name          = llama
+print_info: vocab type            = SPM
+print_info: n_vocab               = 32000
+print_info: n_merges              = 0
+print_info: BOS token             = 1 '<s>'
+print_info: EOS token             = 2 '</s>'
+print_info: UNK token             = 0 '<unk>'
+print_info: LF token              = 13 '<0x0A>'
+print_info: EOG token             = 2 '</s>'
+print_info: max token length      = 48
+load_tensors: loading model tensors, this can take a while... (mmap = true, direct_io = false)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 5 repeating layers to GPU
+load_tensors: offloaded 7/7 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    17.50 MiB
+load_tensors:   CPU_REPACK model buffer size =     3.20 MiB
+.....................
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+llama_model_load_from_file_impl: using device SYCL0 (Intel(R) Arc(TM) A770 Graphics) (unknown id) - 15473 MiB free
+llama_model_loader: loaded meta data with 20 key-value pairs and 57 tensors from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/tinyllamas/stories15M-q4_0.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv   1:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv   2:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv   3:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv   4:                       general.architecture str              = llama
+llama_model_loader: - kv   5:                               general.name str              = llama
+llama_model_loader: - kv   6:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv   7:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv   8:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv   9:          tokenizer.ggml.seperator_token_id u32              = 4294967295
+llama_model_loader: - kv  10:            tokenizer.ggml.padding_token_id u32              = 4294967295
+llama_model_loader: - kv  11:                       llama.context_length u32              = 128
+llama_model_loader: - kv  12:                     llama.embedding_length u32              = 288
+llama_model_loader: - kv  13:                  llama.feed_forward_length u32              = 768
+llama_model_loader: - kv  14:                 llama.attention.head_count u32              = 6
+llama_model_loader: - kv  15:                          llama.block_count u32              = 6
+llama_model_loader: - kv  16:                 llama.rope.dimension_count u32              = 48
+llama_model_loader: - kv  17:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  18:               general.quantization_version u32              = 2
+llama_model_loader: - kv  19:                          general.file_type u32              = 2
+llama_model_loader: - type  f32:   13 tensors
+llama_model_loader: - type q4_0:   43 tensors
+llama_model_loader: - type q8_0:    1 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_0
+print_info: file size   = 17.50 MiB (6.01 BPW) 
+load: empty token at index 30143
+load: bad special token: 'tokenizer.ggml.seperator_token_id' = 4294967295, using default id -1
+load: bad special token: 'tokenizer.ggml.padding_token_id' = 4294967295, using default id -1
+load: 0 unused tokens
+load: printing all EOG tokens:
+load:   - 2 ('</s>')
+load: special tokens cache size = 3
+load: token to piece cache size = 0.1684 MB
+print_info: arch                  = llama
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 128
+print_info: n_embd                = 288
+print_info: n_embd_inp            = 288
+print_info: n_layer               = 6
+print_info: n_head                = 6
+print_info: n_head_kv             = 6
+print_info: n_rot                 = 48
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 48
+print_info: n_embd_head_v         = 48
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 288
+print_info: n_embd_v_gqa          = 288
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-05
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: n_ff                  = 768
+print_info: n_expert              = 0
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 0
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 10000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 128
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = ?B
+print_info: model params          = 24.41 M
+print_info: general.name          = llama
+print_info: vocab type            = SPM
+print_info: n_vocab               = 32000
+print_info: n_merges              = 0
+print_info: BOS token             = 1 '<s>'
+print_info: EOS token             = 2 '</s>'
+print_info: UNK token             = 0 '<unk>'
+print_info: LF token              = 13 '<0x0A>'
+print_info: EOG token             = 2 '</s>'
+print_info: max token length      = 48
+load_tensors: loading model tensors, this can take a while... (mmap = true, direct_io = false)
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 5 repeating layers to GPU
+load_tensors: offloaded 7/7 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =     4.94 MiB
+load_tensors:        SYCL0 model buffer size =    12.56 MiB
+.....................
+Creating context 1/4 for model 1/3
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+Build with Macros:
+  GGML_SYCL_FORCE_MMQ: no
+  GGML_SYCL_F16: yes
+  GGML_SYCL_GRAPH: yes
+  GGML_SYCL_DNNL: yes
+Running with Environment Variables:
+  GGML_SYCL_DEBUG: 0
+  GGML_SYCL_DISABLE_OPT: 0
+  GGML_SYCL_DISABLE_GRAPH: 1
+  GGML_SYCL_DISABLE_DNN: 0
+  GGML_SYCL_PRIORITIZE_DMMV: 0
+  GGML_SYCL_ENABLE_FLASH_ATTN: 1
+Found 1 SYCL devices:
+|  |                   |                                       |       |Max    |        |Max  |Global |                     |
+|  |                   |                                       |       |compute|Max work|sub  |mem    |                     |
+|ID|        Device Type|                                   Name|Version|units  |group   |group|size   |       Driver version|
+|--|-------------------|---------------------------------------|-------|-------|--------|-----|-------|---------------------|
+Creating context 2/4 for model 1/3
+Creating context 1/4 for model 2/3
+Creating context 4/4 for model 1/3
+Creating context 2/4 for model 2/3
+Creating context 4/4 for model 2/3
+| 0| [level_zero:gpu:0]|                Intel Arc A770 Graphics|  12.55|    512|    1024|   32| 16225M|         1.14.37020+3|
+SYCL Optimization Feature:
+|ID|        Device Type|Reorder|
+|--|-------------------|-------|
+| 0| [level_zero:gpu:0]|      Y|
+Creating context 3/4 for model 2/3
+Creating context 3/4 for model 1/3
+Creating context 1/4 for model 3/3
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+Creating context 3/4 for model 3/3
+Creating context 2/4 for model 3/3
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+Creating context 4/4 for model 3/3
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_context: constructing llama_context
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context:        CPU  output buffer size =     0.12 MiB
+llama_kv_cache:        CPU KV buffer size =     1.69 MiB
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_context: constructing llama_context
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ctx         = 256
+llama_context: n_ubatch      = 32
+llama_context: n_ctx_seq     = 256
+llama_context: constructing llama_context
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_batch       = 256
+llama_context: freq_base     = 10000.0
+llama_context: n_ubatch      = 32
+llama_context: constructing llama_context
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: freq_scale    = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context: n_seq_max     = 1
+llama_context: freq_base     = 10000.0
+llama_context: n_ctx         = 256
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq     = 256
+llama_context: causal_attn   = 1
+llama_context: n_batch       = 256
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_context:        CPU  output buffer size =     0.12 MiB
+llama_context:        CPU  output buffer size =     0.12 MiB
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 256
+llama_context: n_ctx_seq     = 256
+llama_context: n_batch       = 256
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_context: n_ubatch      = 32
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (256) > n_ctx_train (128) -- possible training context overflow
+llama_kv_cache:        CPU KV buffer size =     1.69 MiB
+llama_kv_cache:        CPU KV buffer size =     1.69 MiB
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_context:        CPU  output buffer size =     0.12 MiB
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_kv_cache:        CPU KV buffer size =     1.69 MiB
+llama_context:  SYCL_Host  output buffer size =     0.12 MiB
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+sched_reserve: reserving ...
+sched_reserve: Flash Attention was auto, set to enabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+sched_reserve: fused Gated Delta Net (chunked) enabled
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: Flash Attention was auto, set to enabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: Flash Attention was auto, set to enabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: Flash Attention was auto, set to enabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve:        CPU compute buffer size =     4.13 MiB
+sched_reserve: graph nodes  = 193
+sched_reserve: graph splits = 1
+sched_reserve: reserve took 0.63 ms, sched copies = 1
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+sched_reserve:        CPU compute buffer size =     4.13 MiB
+sched_reserve: graph nodes  = 193
+sched_reserve: graph splits = 1
+sched_reserve: reserve took 0.62 ms, sched copies = 1
+sched_reserve:        CPU compute buffer size =     4.13 MiB
+sched_reserve: graph nodes  = 193
+sched_reserve: graph splits = 1
+sched_reserve: reserve took 0.65 ms, sched copies = 1
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve:        CPU compute buffer size =     4.13 MiB
+sched_reserve: graph nodes  = 193
+sched_reserve: graph splits = 1
+sched_reserve: reserve took 0.81 ms, sched copies = 1
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+sched_reserve: fused Gated Delta Net (chunked) enabled
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 1.24 ms, sched copies = 1
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 1.31 ms, sched copies = 1
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 1.38 ms, sched copies = 1
+llama_kv_cache:      SYCL0 KV buffer size =     1.69 MiB
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 0.94 ms, sched copies = 1
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 1.36 ms, sched copies = 1
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+llama_kv_cache: size =    1.69 MiB (   256 cells,   6 layers,  1/1 seqs), K (f16):    0.84 MiB, V (f16):    0.84 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 48
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 48
+sched_reserve: reserving ...
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve: layer 0 is assigned to device SYCL0 but the Flash Attention tensor is assigned to device CPU (usually due to missing support)
+sched_reserve: Flash Attention was auto, set to disabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 0.90 ms, sched copies = 1
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 0.92 ms, sched copies = 1
+sched_reserve:      SYCL0 compute buffer size =     4.08 MiB
+sched_reserve:  SYCL_Host compute buffer size =     0.10 MiB
+sched_reserve: graph nodes  = 222
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 1.43 ms, sched copies = 1
+Model 2/3, Context 4/4: The meaning of life is called rain. It is a wonderful rain, but it doesn't matter. So, the rain doesn't make things like a rainbow, it only makes it difficult to get something. The rain is difficult to get, but there is still lots of fun.
+One day, the rain stopped, and the sky was clear. But something else seemed to be the same rainbow. It was much bigger and more beautiful than any rainbow, and it was not difficult to get. The rainbow was so big, it seemed like it was going to rain.
+The rainbow started to rain even more. It was still
+
+Model 2/3, Context 3/4: The meaning of life is a distant story, but it is the start of a special week. Every week, the house rings together and the little girl loves her home. 
+One day, the girl asked her mum, "Why is it so special?"
+Her mum smiled and said, "Because it's very old and it's been a long time ago, and I love it. It reminds me of the time you first got it."
+The girl was so excited that she started jumping up and down. Then, she asked her mum, "Can I go and show everyone how it's soaring
+
+Model 2/3, Context 1/4: The meaning of life is on the outside world. It is a bright and sunny day and the sun is glowing in the sky.
+Two little friends were walking in the park, looking at the sky. One of them said to the other, “Look! A yellow butterfly! It's glowing so brightly. Do you want to try and catch it?”
+The other friend said, “No, I don't want to try. I want to catch it. Please, come along. We don't want to hurt it.”
+The first friend said, “I don't want to make it angry
+
+Model 2/3, Context 2/4: The meaning of life is a distant story and it's best to always pay attention to the time. It's called a reminder and you should stay calm and remember where you are. You should always listen when someone tells you something, even if it's hard or hard. That way, you will stay safe and remember that safety is important.
+But the rem comes from the most important thing: even if you don't understand, you will always remember.<s> Once upon a time, there was a little girl named Lily who loved to go camping. She went on a campsite with her family and they set up their tent
+
+Model 1/3, Context 3/4: The meaning of life is a
+
+
+      Start 35: test-arg-parser
+34/43 Test #35: test-arg-parser ...................Subprocess aborted***Exception: 542.33 sec
+error while handling argument "-m": expected value for argument
+
+usage:
+-m,    --model FNAME                    model path to load
+                                        (env: LLAMA_ARG_MODEL)
+
+
+to show complete usage, run with -h
+error while handling argument "-ngl": stoi
+
+usage:
+-ngl,  --gpu-layers, --n-gpu-layers N   max. number of layers to store in VRAM, either an exact number,
+                                        'auto', or 'all' (default: auto)
+                                        (env: LLAMA_ARG_N_GPU_LAYERS)
+
+
+to show complete usage, run with -h
+error while handling argument "-sm": invalid value
+
+usage:
+-sm,   --split-mode {none,layer,row}    how to split the model across multiple GPUs, one of:
+                                        - none: use one GPU only
+                                        - layer (default): split layers and KV across GPUs
+                                        - row: split rows across GPUs
+                                        (env: LLAMA_ARG_SPLIT_MODE)
+
+
+to show complete usage, run with -h
+error: invalid argument: --draft
+error: --model is required
+
+error while handling environment variable "LLAMA_ARG_THREADS": stoi
+
+
+warn: LLAMA_ARG_MODEL environment variable is set, but will be overwritten by command line argument -m
+[New LWP 1051063]
+warning: File "/opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8.0.0-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8.0.0-gdb.py
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007b1dd1310813 in __GI___wait4 (pid=1069314, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+warning: 30	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory
+#0  0x00007b1dd1310813 in __GI___wait4 (pid=1069314, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	in ../sysdeps/unix/sysv/linux/wait4.c
+#1  0x00007b1dd476d1c3 in ggml_print_backtrace () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-base.so.0
+#2  0x00007b1dd4780386 in ggml_uncaught_exception() () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-base.so.0
+#3  0x00007b1dd16bb0da in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#4  0x00007b1dd16a5a55 in std::terminate() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00007b1dd16bb391 in __cxa_throw () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#6  0x00000000004db960 in common_remote_get_content(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, common_remote_params const&) ()
+#7  0x0000000000429345 in main ()
+[Inferior 1 (process 1051061) detached]
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  error: cannot make GET request
+
+      Start 36: test-opt
+35/43 Test #36: test-opt ..........................   Passed    0.17 sec
+      Start 37: test-gguf
+36/43 Test #37: test-gguf .........................   Passed    0.23 sec
+      Start 38: test-backend-ops
+37/43 Test #38: test-backend-ops ..................Subprocess aborted***Exception:  21.29 sec
+Build with Macros:
+  GGML_SYCL_FORCE_MMQ: no
+  GGML_SYCL_F16: yes
+  GGML_SYCL_GRAPH: yes
+  GGML_SYCL_DNNL: yes
+Running with Environment Variables:
+  GGML_SYCL_DEBUG: 0
+  GGML_SYCL_DISABLE_OPT: 0
+  GGML_SYCL_DISABLE_GRAPH: 1
+  GGML_SYCL_DISABLE_DNN: 0
+  GGML_SYCL_PRIORITIZE_DMMV: 0
+  GGML_SYCL_ENABLE_FLASH_ATTN: 1
+Found 1 SYCL devices:
+|  |                   |                                       |       |Max    |        |Max  |Global |                     |
+|  |                   |                                       |       |compute|Max work|sub  |mem    |                     |
+|ID|        Device Type|                                   Name|Version|units  |group   |group|size   |       Driver version|
+|--|-------------------|---------------------------------------|-------|-------|--------|-----|-------|---------------------|
+| 0| [level_zero:gpu:0]|                Intel Arc A770 Graphics|  12.55|    512|    1024|   32| 16225M|         1.14.37020+3|
+SYCL Optimization Feature:
+|ID|        Device Type|Reorder|
+|--|-------------------|-------|
+| 0| [level_zero:gpu:0]|      Y|
+Testing 2 devices
+
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+Backend 1/2: SYCL0
+  Device description: Intel(R) Arc(TM) A770 Graphics
+  Device memory: 15473 MB (15473 MB free)
+
+  ABS(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  ABS(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  SGN(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SGN(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  NEG(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  NEG(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  STEP(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  STEP(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  TANH(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  TANH(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  ELU(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  ELU(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  RELU(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  RELU(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  SIGMOID(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SIGMOID(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  GELU(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  GELU(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  GELU_QUICK(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  GELU_QUICK(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  SILU(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SILU(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  HARDSWISH(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  HARDSWISH(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  HARDSIGMOID(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  HARDSIGMOID(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  EXP(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  EXP(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  EXPM1(type=f16,ne_a=[128,2,2,2],v=0): not supported [SYCL0] 
+  EXPM1(type=f16,ne_a=[5,7,11,13],v=0): not supported [SYCL0] 
+  SOFTPLUS(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SOFTPLUS(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  GELU_ERF(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  GELU_ERF(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  FLOOR(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  FLOOR(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  CEIL(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  CEIL(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  ROUND(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  ROUND(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  TRUNC(type=f16,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  TRUNC(type=f16,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  ABS(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  ABS(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  SGN(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SGN(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  NEG(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  NEG(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  STEP(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  STEP(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  TANH(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  TANH(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  ELU(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  ELU(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  RELU(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  RELU(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  SIGMOID(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SIGMOID(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  GELU(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  GELU(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  GELU_QUICK(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  GELU_QUICK(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  SILU(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SILU(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  HARDSWISH(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  HARDSWISH(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  HARDSIGMOID(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  HARDSIGMOID(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  EXP(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  EXP(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  EXPM1(type=f16,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  EXPM1(type=f16,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  SOFTPLUS(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SOFTPLUS(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  GELU_ERF(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  GELU_ERF(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  FLOOR(type=f16,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  FLOOR(type=f16,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  CEIL(type=f16,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  CEIL(type=f16,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  ROUND(type=f16,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  ROUND(type=f16,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  TRUNC(type=f16,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  TRUNC(type=f16,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  ABS(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  ABS(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  SGN(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SGN(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  NEG(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  NEG(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  STEP(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  STEP(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  TANH(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  TANH(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  ELU(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  ELU(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  RELU(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  RELU(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  SIGMOID(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SIGMOID(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  GELU(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  GELU(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  GELU_QUICK(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  GELU_QUICK(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  SILU(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SILU(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  HARDSWISH(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  HARDSWISH(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  HARDSIGMOID(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  HARDSIGMOID(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  EXP(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  EXP(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  EXPM1(type=f32,ne_a=[128,2,2,2],v=0): not supported [SYCL0] 
+  EXPM1(type=f32,ne_a=[5,7,11,13],v=0): not supported [SYCL0] 
+  SOFTPLUS(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  SOFTPLUS(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  GELU_ERF(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  GELU_ERF(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  FLOOR(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  FLOOR(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  CEIL(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  CEIL(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  ROUND(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  ROUND(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  TRUNC(type=f32,ne_a=[128,2,2,2],v=0): [1;32mOK[0m
+  TRUNC(type=f32,ne_a=[5,7,11,13],v=0): [1;32mOK[0m
+  ABS(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  ABS(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  SGN(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SGN(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  NEG(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  NEG(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  STEP(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  STEP(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  TANH(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  TANH(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  ELU(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  ELU(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  RELU(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  RELU(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  SIGMOID(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SIGMOID(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  GELU(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  GELU(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  GELU_QUICK(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  GELU_QUICK(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  SILU(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SILU(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  HARDSWISH(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  HARDSWISH(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  HARDSIGMOID(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  HARDSIGMOID(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  EXP(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  EXP(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  EXPM1(type=f32,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  EXPM1(type=f32,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  SOFTPLUS(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  SOFTPLUS(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  GELU_ERF(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  GELU_ERF(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  FLOOR(type=f32,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  FLOOR(type=f32,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  CEIL(type=f32,ne_a=[128,2,2,2],v=1): [1;32mOK[0m
+  CEIL(type=f32,ne_a=[5,7,11,13],v=1): [1;32mOK[0m
+  ROUND(type=f32,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  ROUND(type=f32,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  TRUNC(type=f32,ne_a=[128,2,2,2],v=1): not supported [SYCL0] 
+  TRUNC(type=f32,ne_a=[5,7,11,13],v=1): not supported [SYCL0] 
+  REGLU(type=f16,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  REGLU(type=f16,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  GEGLU(type=f16,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  SWIGLU(type=f16,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  GEGLU_ERF(type=f16,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f16,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[128,2,2,2],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[5,7,11,13],v=0,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[128,2,2,2],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[5,7,11,13],v=0,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[128,2,2,2],v=0,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[5,7,11,13],v=0,split): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  REGLU(type=f32,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  GEGLU(type=f32,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  SWIGLU(type=f32,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  GEGLU_ERF(type=f32,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[128,2,2,2],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[5,7,11,13],v=1,swapped=0): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[128,2,2,2],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[5,7,11,13],v=1,swapped=1): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[128,2,2,2],v=1,split): [1;32mOK[0m
+  GEGLU_QUICK(type=f32,ne_a=[5,7,11,13],v=1,split): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=0,alpha=0.500000,limit=2.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=0,alpha=0.500000,limit=7.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=0,alpha=1.702000,limit=2.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=0,alpha=1.702000,limit=7.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=1,alpha=0.500000,limit=2.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=1,alpha=0.500000,limit=7.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=1,alpha=1.702000,limit=2.000000): [1;32mOK[0m
+  SWIGLU_OAI(type=f32,ne_a=[128,2,2,2],v=1,alpha=1.702000,limit=7.000000): [1;32mOK[0m
+  GET_ROWS(type=f32,n=76800,m=5,r=4,be1=1,be2=2,v=0): [1;32mOK[0m
+  GET_ROWS(type=f32,n=256,m=80000,r=70000,be1=2,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=f32,n=256,m=5,r=4,be1=700,be2=100,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_0,n=76800,m=5,r=4,be1=1,be2=2,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_0,n=256,m=80000,r=70000,be1=2,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_0,n=256,m=5,r=4,be1=700,be2=100,v=0): [1;32mOK[0m
+  GET_ROWS(type=f32,n=1,m=8,r=2,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=f32,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=f32,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=f32,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=f32,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=f16,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=f16,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=f16,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=f16,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=bf16,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=bf16,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=bf16,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=bf16,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q4_0,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_0,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q4_0,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_0,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q4_1,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q5_0,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q5_0,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q5_0,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q5_0,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q5_1,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q8_0,n=256,m=5,r=4,be1=1,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q8_0,n=256,m=5,r=4,be1=1,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q8_0,n=256,m=5,r=4,be1=7,be2=1,v=0): [1;32mOK[0m
+  GET_ROWS(type=q8_0,n=256,m=5,r=4,be1=7,be2=1,v=1): [1;32mOK[0m
+  GET_ROWS(type=q1_0,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q1_0,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q1_0,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q1_0,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=mxfp4,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=mxfp4,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=mxfp4,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=mxfp4,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=nvfp4,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=nvfp4,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=nvfp4,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=nvfp4,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q2_K,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q2_K,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q2_K,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q2_K,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q3_K,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q3_K,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q3_K,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q3_K,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q4_K,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q4_K,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q4_K,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q4_K,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q5_K,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q5_K,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q5_K,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q5_K,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q6_K,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q6_K,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=q6_K,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=q6_K,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xxs,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xxs,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xxs,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xxs,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xs,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xs,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xs,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq2_xs,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq2_s,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq2_s,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq2_s,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq2_s,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq3_xxs,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq3_xxs,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq3_xxs,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq3_xxs,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq1_s,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq1_s,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq1_s,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq1_s,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq1_m,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq1_m,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq1_m,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq1_m,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq4_nl,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq4_nl,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq4_nl,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq4_nl,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq3_s,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq3_s,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq3_s,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq3_s,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq4_xs,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq4_xs,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=iq4_xs,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=iq4_xs,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=i32,n=256,m=5,r=4,be1=1,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=i32,n=256,m=5,r=4,be1=1,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS(type=i32,n=256,m=5,r=4,be1=7,be2=1,v=0): not supported [SYCL0] 
+  GET_ROWS(type=i32,n=256,m=5,r=4,be1=7,be2=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=f32,n=1,m=8,r=2,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=f32,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=f32,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=f16,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=f16,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=bf16,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=bf16,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q4_0,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q4_0,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q4_1,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q4_1,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q5_0,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q5_0,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q5_1,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q5_1,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q8_0,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q8_0,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q1_0,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q1_0,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=mxfp4,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=mxfp4,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=nvfp4,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=nvfp4,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q2_K,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q2_K,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q3_K,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q3_K,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q4_K,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q4_K,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q5_K,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q5_K,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q6_K,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=q6_K,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq2_xxs,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq2_xxs,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq2_xs,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq2_xs,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq2_s,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq2_s,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq3_xxs,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq3_xxs,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq1_s,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq1_s,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq1_m,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq1_m,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq4_nl,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq4_nl,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq3_s,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq3_s,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq4_xs,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=iq4_xs,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  GET_ROWS_BACK(type=i32,n=256,m=5,r=4,b=1,v=0): not supported [SYCL0] 
+  GET_ROWS_BACK(type=i32,n=256,m=5,r=4,b=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=f32,type_idx=i64,ne=[1,8,1,3],nr23=[1,1],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i32,ne=[1,8,1,3],nr23=[1,1],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i32,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[3,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[31,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[33,5,1,1],nr23=[2,3],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[3,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[31,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[33,5,1,1],nr23=[2,3],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[3,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[31,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[33,5,1,7],nr23=[2,3],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[3,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[31,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f32,type_idx=i64,ne=[33,5,1,7],nr23=[2,3],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[3,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[31,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[33,5,1,1],nr23=[2,3],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[3,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[31,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[33,5,1,1],nr23=[2,3],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[3,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[31,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[33,5,1,7],nr23=[2,3],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[3,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[31,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=f16,type_idx=i64,ne=[33,5,1,7],nr23=[2,3],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[3,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[31,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[33,5,1,1],nr23=[2,3],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[3,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[31,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[33,5,1,1],nr23=[2,3],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[3,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[31,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[33,5,1,7],nr23=[2,3],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[3,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[31,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=bf16,type_idx=i64,ne=[33,5,1,7],nr23=[2,3],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_0,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q4_1,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_0,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q5_1,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=q8_0,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[384,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[384,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[384,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q1_0,type_idx=i64,ne=[384,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=mxfp4,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[192,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[192,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[192,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=nvfp4,type_idx=i64,ne=[192,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q2_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q3_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q4_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q5_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=q6_K,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xxs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_xs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq2_s,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_xxs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_s,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq1_m,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[96,3,1,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=0): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): [1;32mOK[0m
+  SET_ROWS(type=iq4_nl,type_idx=i64,ne=[96,3,7,1],nr23=[2,3],r=2,v=1): [1;32mOK[0m
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq3_s,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,5,1,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,11,1,1],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[768,3,1,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=0): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,5,7,3],nr23=[1,1],r=1,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[256,11,1,7],nr23=[2,3],r=7,v=1): not supported [SYCL0] 
+  SET_ROWS(type=iq4_xs,type_idx=i64,ne=[768,3,7,1],nr23=[2,3],r=2,v=1): not supported [SYCL0] 
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,1],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,3],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,1],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,3],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,1],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,3],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,1],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,3],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,1],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,3],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,1],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,3],mode=0): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,1],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,3],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,1],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,3],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,1],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,3],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,1],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,3],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,1],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,3],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,1],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,3],mode=2): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,1],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,3],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,1],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,3],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,1],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,3],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,1],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,3],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,1],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,3],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,1],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,3],mode=8): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,1],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,1,3],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,1],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,8,3],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,1],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f16,type_idx=i64,ne_a=[128,32,512,3],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,1],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,1,3],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,1],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,8,3],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,1],mode=24): [1;32mOK[0m
+  ROPE_SET_ROWS(type=f32,type_idx=i64,ne_a=[128,32,512,3],mode=24): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=avg,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=1,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=1,k1=3,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=1,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=1,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=1,p0=1,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=0,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=0,p1=1): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=1,p1=0): [1;32mOK[0m
+  POOL_2D(pool_type=max,type_input=f32,ne_input=[10,10,3,1],k0=3,k1=3,s0=2,s1=2,p0=1,p1=1): [1;32mOK[0m
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=avg,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=1,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=1,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=1,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=1,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=1,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=2,p0=0): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[10,3,2,1],k0=3,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[11,1,3,2],k0=3,s0=2,p0=1): not supported [SYCL0] 
+  POOL_1D(pool_type=max,type_input=f32,ne_input=[128,2,1,3],k0=3,s0=2,p0=1): not supported [SYCL0] 
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[3000,128,1,1],ne_kernel=[3,128,1280,1],s0=1,s1=0,p0=1,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f32,ne_input=[3000,128,1,1],ne_kernel=[3,128,1280,1],s0=1,s1=0,p0=1,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[3000,128,1,1],ne_kernel=[3,128,1280,1],s0=1,s1=0,p0=1,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=1,s1=0,p0=0,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=1,s1=0,p0=0,p1=0,d0=3,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=1,s1=0,p0=3,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=1,s1=0,p0=3,p1=0,d0=3,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=3,s1=0,p0=0,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=3,s1=0,p0=0,p1=0,d0=3,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=3,s1=0,p0=3,p1=0,d0=1,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,2,2,1],ne_kernel=[3,2,2,1],s0=3,s1=0,p0=3,p1=0,d0=3,d1=0,is_2D=0): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[10,10,3,1],ne_kernel=[3,3,3,1],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f32,ne_input=[10,10,3,1],ne_kernel=[3,3,3,1],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[10,10,3,1],ne_kernel=[3,3,3,1],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=0,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=1,p0=3,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=0,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=1,s1=3,p0=3,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=0,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=1,p0=3,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=0,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=0,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=0,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=0,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=3,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=3,d0=1,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=3,d0=3,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,2,2],ne_kernel=[3,3,2,2],s0=3,s1=3,p0=3,p1=3,d0=3,d1=3,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,1,32],ne_kernel=[3,3,1,32],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,2,32],ne_kernel=[3,3,2,32],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,1,1024],ne_kernel=[3,3,1,1024],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,2,1024],ne_kernel=[3,3,2,1024],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,1,2048],ne_kernel=[3,3,1,2048],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,2,2048],ne_kernel=[3,3,2,2048],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,1,2560],ne_kernel=[3,3,1,2560],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[12,12,2,2560],ne_kernel=[3,3,2,2560],s0=1,s1=1,p0=1,p1=1,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[5,5,1,32],ne_kernel=[3,4,1,32],s0=1,s1=1,p0=0,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[2,2,1536,729],ne_kernel=[2,2,1536,4096],s0=1,s1=1,p0=0,p1=0,d0=1,d1=1,is_2D=1): [1;32mOK[0m
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[10,10,10,9],ne_kernel=[3,3,3,1],IC=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f16,dst_type=f32,ne_input=[10,10,10,9],ne_kernel=[3,3,3,1],IC=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f16,dst_type=f16,ne_input=[10,10,10,9],ne_kernel=[3,3,3,1],IC=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=1,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=1,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=1,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=0,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=0,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=0,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=1,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=1,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=1,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=1,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=0): not supported [SYCL0] 
+  IM2COL_3D(type_input=f32,type_kernel=f32,dst_type=f32,ne_input=[20,20,10,3],ne_kernel=[3,3,3,3],IC=3,s0=3,s1=3,s2=3,p0=3,p1=3,p2=3,d0=3,d1=3,d2=3,v=1): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f32,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f16,stride0=1,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=2,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,1,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,2,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,3,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[1,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[2,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[3,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,1,2],ne_kernel=[11,11,1,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,1],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,1,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,2,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,1,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,3,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[1,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[2,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[1,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[3,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f32,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D(ne_input=[141,133,25,2],ne_kernel=[11,11,25,12],type_kernel=f16,stride0=3,stride1=5,padding0=5,padding1=5,dilation0=2,dilation1=4,cwhn=0): not supported [SYCL0] 
+  CONV_2D_DW(ne_input=[17,34,9,1],ne_kernel=[3,3,1,9],stride=1,padding=0,dilation=1,cwhn=0): not supported [SYCL0] 
+  CONV_2D_DW(ne_input=[17,34,9,1],ne_kernel=[3,3,1,9],stride=1,padding=0,dilation=1,cwhn=1): not supported [SYCL0] 
+  CONV_2D_DW(ne_input=[32,8,64,1],ne_kernel=[3,3,1,64],stride=2,padding=1,dilation=1,cwhn=0): not supported [SYCL0] 
+  CONV_2D_DW(ne_input=[32,8,64,1],ne_kernel=[3,3,1,64],stride=2,padding=1,dilation=1,cwhn=1): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=4,ID=8,IH=8,IW=8,OC=8,KD=1,KH=1,KW=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f32): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=1,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=1,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=1,s1=1,s2=1,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=0,p1=0,p2=0,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=3,KW=3,s0=2,s1=2,s2=2,p0=1,p1=1,p2=1,d0=2,d1=2,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=2,IC=3,ID=18,IH=22,IW=20,OC=4,KD=3,KH=1,KW=5,s0=2,s1=1,s2=1,p0=2,p1=0,p2=1,d0=1,d1=1,d2=2,type_kernel=f16): not supported [SYCL0] 
+  CONV_3D(N=1,IC=4,ID=8,IH=8,IW=8,OC=8,KD=1,KH=1,KW=1,s0=1,s1=1,s2=1,p0=0,p1=0,p2=0,d0=1,d1=1,d2=1,type_kernel=f16): not supported [SYCL0] 
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[3,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[3,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[3,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[3,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[3,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[3,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1337,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1337,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1337,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1337,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1337,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1337,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1337,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1337,1,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1337,1,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[3,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[3,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[3,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[3,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[3,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[3,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[3,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[3,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[3,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1337,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1337,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1337,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1337,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1337,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1337,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1337,1,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1337,1,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1337,1,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[3,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[3,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[3,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[3,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[3,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[3,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1337,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1337,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,1,1,1],ne_kernel=[1337,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1337,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1337,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[1337,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1337,9,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1337,9,1,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,1,1,1],ne_kernel=[1337,9,1,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[3,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[3,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[3,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[3,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[3,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[3,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[3,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[3,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[3,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1337,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1337,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[1,7,1,1],ne_kernel=[1337,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1337,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1337,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,7,1,1],ne_kernel=[1337,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1337,9,7,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1337,9,7,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[13,7,1,1],ne_kernel=[1337,9,7,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[197,32,1,1],ne_kernel=[16,32,32,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[3,2,1,1],ne_kernel=[2,3,2,1],s0=3,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[3,2,1,1],ne_kernel=[2,3,2,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[3,2,1,1],ne_kernel=[2,3,2,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[3,2,1,1],ne_kernel=[3,2,2,1],s0=2,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[3,2,1,1],ne_kernel=[3,2,2,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[3,2,1,1],ne_kernel=[3,1,2,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_1D(ne_input=[2,1,1,1],ne_kernel=[3,1,1,1],s0=1,p0=0,d0=1): [1;32mOK[0m
+  CONV_TRANSPOSE_2D(kernel_type=f32,ne_input=[3,2,3,1],ne_kernel=[2,2,1,3],stride=1): not supported [SYCL0] 
+  CONV_TRANSPOSE_2D(kernel_type=f32,ne_input=[10,10,9,1],ne_kernel=[3,3,1,9],stride=2): not supported [SYCL0] 
+  CONV_TRANSPOSE_2D(kernel_type=f32,ne_input=[129,63,35,1],ne_kernel=[3,3,48,35],stride=1): not supported [SYCL0] 
+  CONV_TRANSPOSE_2D(kernel_type=f16,ne_input=[3,2,3,1],ne_kernel=[2,2,1,3],stride=1): not supported [SYCL0] 
+  CONV_TRANSPOSE_2D(kernel_type=f16,ne_input=[10,10,9,1],ne_kernel=[3,3,1,9],stride=2): not supported [SYCL0] 
+  CONV_TRANSPOSE_2D(kernel_type=f16,ne_input=[129,63,35,1],ne_kernel=[3,3,48,35],stride=1): not supported [SYCL0] 
+  COUNT_EQUAL(type=f32,ne=[4,500,1,1]): [1;32mOK[0m
+  COUNT_EQUAL(type=f32,ne=[4,5000,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[32,1,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[32,513,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[100,10,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[1024,10,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[1024,12,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[2000,10,1,1]): [1;32mOK[0m
+  ARGMAX(type=f32,ne=[5438,3,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,1],nr=[1,1,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,1],nr=[2,1,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,1],nr=[1,2,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,1],nr=[1,1,2,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,1],nr=[1,1,1,2]): [1;32mOK[0m
+  REPEAT(type=i32,ne=[10,5,4,1],nr=[2,1,1,1]): [1;32mOK[0m
+  REPEAT(type=i16,ne=[10,5,4,1],nr=[1,1,1,2]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,3],nr=[1,1,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,3],nr=[2,1,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,3],nr=[1,2,1,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,3],nr=[1,1,2,1]): [1;32mOK[0m
+  REPEAT(type=f32,ne=[10,5,4,3],nr=[1,1,1,2]): [1;32mOK[0m
+  REPEAT(type=i32,ne=[10,5,4,3],nr=[2,1,1,1]): [1;32mOK[0m
+  REPEAT(type=i16,ne=[10,5,4,3],nr=[1,1,1,2]): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,1,1,1],v=0): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[2,1,1,1],v=0): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,2,1,1],v=0): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,1,2,1],v=0): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,1,1,2],v=0): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,1,1,1],v=1): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[2,1,1,1],v=1): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,2,1,1],v=1): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,1,2,1],v=1): [1;32mOK[0m
+  REPEAT_BACK(type=f32,ne=[8,6,4,2],nr=[1,1,1,2],v=1): [1;32mOK[0m
+  DUP(type=f32,ne=[10,10,20,1]): [1;32mOK[0m
+  DUP(type=f16,ne=[10,10,20,1]): [1;32mOK[0m
+  DUP(type=i32,ne=[10,10,20,1]): [1;32mOK[0m
+  DUP(type=i16,ne=[10,10,20,1]): [1;32mOK[0m
+  DUP(type=f32,ne=[10,10,5,1],permute=[0,2,1,3]): [1;32mOK[0m
+  DUP(type=f16,ne=[10,10,5,1],permute=[0,2,1,3]): [1;32mOK[0m
+  DUP(type=f32,ne=[10,10,5,1],permute=[1,0,2,3]): [1;32mOK[0m
+  DUP(type=f16,ne=[10,10,5,1],permute=[1,0,2,3]): [1;32mOK[0m
+  DUP(type=i16,ne=[10,8,3,1],permute=[0,2,1,3]): [1;32mOK[0m
+  DUP(type=i16,ne=[10,8,3,1],permute=[1,2,0,3]): [1;32mOK[0m
+  SET(type_src=f32,type_dst=f32,ne=[6,5,4,3],dim=1,inplace=0): [1;32mOK[0m
+  SET(type_src=f32,type_dst=f32,ne=[6,5,4,3],dim=1,inplace=1): [1;32mOK[0m
+  SET(type_src=f32,type_dst=f32,ne=[6,5,4,3],dim=2,inplace=0): [1;32mOK[0m
+  SET(type_src=f32,type_dst=f32,ne=[6,5,4,3],dim=2,inplace=1): [1;32mOK[0m
+  SET(type_src=f32,type_dst=f32,ne=[6,5,4,3],dim=3,inplace=0): [1;32mOK[0m
+  SET(type_src=f32,type_dst=f32,ne=[6,5,4,3],dim=3,inplace=1): [1;32mOK[0m
+  SET(type_src=i32,type_dst=i32,ne=[6,5,4,3],dim=1,inplace=0): not supported [SYCL0] 
+  SET(type_src=i32,type_dst=i32,ne=[6,5,4,3],dim=1,inplace=1): not supported [SYCL0] 
+  SET(type_src=i32,type_dst=i32,ne=[6,5,4,3],dim=2,inplace=0): not supported [SYCL0] 
+  SET(type_src=i32,type_dst=i32,ne=[6,5,4,3],dim=2,inplace=1): not supported [SYCL0] 
+  SET(type_src=i32,type_dst=i32,ne=[6,5,4,3],dim=3,inplace=0): not supported [SYCL0] 
+  SET(type_src=i32,type_dst=i32,ne=[6,5,4,3],dim=3,inplace=1): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=f32,ne=[1,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[1,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[1,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[2,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[2,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[2,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[3,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[3,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[3,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[1,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[1,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[1,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[2,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[2,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[2,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[3,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[3,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[3,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=bf16,type_dst=bf16,ne=[1,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[1,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[1,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[2,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[2,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[2,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[3,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[3,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[3,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=q4_0,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=q4_1,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=q5_0,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=q5_1,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=q8_0,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[128,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[128,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[128,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[384,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[384,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q1_0,type_dst=q1_0,ne=[384,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=mxfp4,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[128,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[128,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[128,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[192,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[192,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=nvfp4,ne=[192,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=q2_K,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=q3_K,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=q4_K,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=q5_K,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=q6_K,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=iq2_xxs,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=iq2_xs,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=iq2_s,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=iq3_xxs,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=iq1_s,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=iq1_m,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[32,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[32,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[32,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[64,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[64,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[64,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[96,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[96,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=iq4_nl,ne=[96,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=iq3_s,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[256,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[512,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[512,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[512,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[768,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[768,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=iq4_xs,ne=[768,2,3,4],permute_src=[0,3,1,2],permute_dst=[0,2,1,3],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f16,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=bf16,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=bf16,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q4_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q4_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q4_1,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q4_1,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q5_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q5_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q5_1,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q5_1,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q8_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q8_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q1_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q1_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=mxfp4,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=mxfp4,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=nvfp4,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=nvfp4,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q2_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q2_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q3_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q3_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q4_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q4_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q5_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q5_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q6_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=q6_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq2_xxs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq2_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq2_xs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq2_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq2_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq2_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq3_xxs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq3_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq1_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq1_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq1_m,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq1_m,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq4_nl,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq4_nl,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq3_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq3_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq4_xs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=iq4_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=f16,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=f16,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=bf16,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q4_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q4_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q4_1,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q4_1,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q5_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q5_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q5_1,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q5_1,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q8_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q8_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q1_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q1_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=mxfp4,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=mxfp4,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=nvfp4,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=nvfp4,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q2_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q2_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q3_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q3_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q4_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q4_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q5_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q5_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q6_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=q6_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq2_xxs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq2_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq2_xs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq2_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq2_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq2_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq3_xxs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq3_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq1_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq1_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq1_m,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq1_m,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq4_nl,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq4_nl,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq3_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq3_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq4_xs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=iq4_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f16,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f16,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=bf16,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=bf16,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q4_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q4_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q4_1,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q4_1,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q5_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q5_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q5_1,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q5_1,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q8_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q8_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=q1_0,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q1_0,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=mxfp4,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=mxfp4,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=nvfp4,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=nvfp4,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q2_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q2_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q3_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q3_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q4_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q4_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q5_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q5_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q6_K,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=q6_K,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq2_xxs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq2_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq2_xs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq2_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq2_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq2_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq3_xxs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq3_xxs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq1_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq1_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq1_m,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq1_m,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq4_nl,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=iq4_nl,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=iq3_s,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq3_s,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq4_xs,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=iq4_xs,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=bf16,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=bf16,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_0,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_0,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q4_1,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_0,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q5_1,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q8_0,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=q1_0,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q1_0,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=mxfp4,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=nvfp4,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q2_K,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q3_K,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q4_K,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q5_K,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=q6_K,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xxs,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_xs,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq2_s,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_xxs,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_s,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq1_m,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_nl,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq3_s,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=f32,ne=[256,4,4,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=iq4_xs,type_dst=f32,ne=[256,2,3,4],permute_src=[0,2,1,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=f16,ne=[256,2,3,4],permute_src=[1,0,2,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f16,type_dst=f32,ne=[256,2,3,4],permute_src=[1,0,2,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f16,ne=[256,2,3,4],permute_src=[1,0,2,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[256,2,3,4],permute_src=[1,0,2,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=i32,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=i32,ne=[256,2,3,4],permute_src=[1,0,2,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=i32,type_dst=f32,ne=[256,2,3,4],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=i32,type_dst=f32,ne=[256,2,3,4],permute_src=[1,0,2,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=f16,ne=[256,4,3,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[256,4,3,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[256,4,3,3],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): [1;32mOK[0m
+  CPY(type_src=bf16,type_dst=bf16,ne=[256,4,3,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): not supported [SYCL0] 
+  CPY(type_src=f16,type_dst=f16,ne=[256,4,1,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): [1;32mOK[0m
+  CPY(type_src=f32,type_dst=f32,ne=[256,4,1,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): [1;32mOK[0m
+  CPY(type_src=bf16,type_dst=bf16,ne=[256,4,1,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): not supported [SYCL0] 
+  CPY(type_src=i32,type_dst=i32,ne=[256,4,1,1],permute_src=[0,0,0,0],permute_dst=[0,0,0,0],_src_transpose=1): not supported [SYCL0] 
+  CPY(type_src=i32,type_dst=i32,ne=[256,1,4,1],permute_src=[1,2,0,3],permute_dst=[0,0,0,0],_src_transpose=0): not supported [SYCL0] 
+  CPY(type_src=f32,type_dst=f32,ne=[256,1,4,1],permute_src=[1,2,0,3],permute_dst=[0,0,0,0],_src_transpose=0): [1;32mOK[0m
+  CONT(type=f32,ne=[2,1,1,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=f32,ne=[2,1,3,5],use_view_slice=1): [1;32mOK[0m
+  CONT(type=f32,ne=[2,3,5,7],use_view_slice=1): [1;32mOK[0m
+  CONT(type=f32,ne=[1,4,4,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=f32,ne=[1,8,17,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=f32,ne=[10,10,10,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=f32,ne=[2,1,1,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f32,ne=[2,1,3,5],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f32,ne=[2,3,5,7],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f32,ne=[1,4,4,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f32,ne=[1,8,17,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f32,ne=[10,10,10,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=i32,ne=[2,1,1,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=i32,ne=[2,1,3,5],use_view_slice=1): [1;32mOK[0m
+  CONT(type=i32,ne=[2,3,5,7],use_view_slice=1): [1;32mOK[0m
+  CONT(type=i32,ne=[1,4,4,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=i32,ne=[1,8,17,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=i32,ne=[10,10,10,1],use_view_slice=1): [1;32mOK[0m
+  CONT(type=i32,ne=[2,1,1,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=i32,ne=[2,1,3,5],use_view_slice=0): [1;32mOK[0m
+  CONT(type=i32,ne=[2,3,5,7],use_view_slice=0): [1;32mOK[0m
+  CONT(type=i32,ne=[1,4,4,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=i32,ne=[1,8,17,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=i32,ne=[10,10,10,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f16,ne=[2,1,1,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f16,ne=[2,1,3,5],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f16,ne=[2,3,5,7],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f16,ne=[1,4,4,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f16,ne=[1,8,17,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=f16,ne=[10,10,10,1],use_view_slice=0): [1;32mOK[0m
+  CONT(type=bf16,ne=[2,1,1,1],use_view_slice=0): not supported [SYCL0] 
+  CONT(type=bf16,ne=[2,1,3,5],use_view_slice=0): not supported [SYCL0] 
+  CONT(type=bf16,ne=[2,3,5,7],use_view_slice=0): not supported [SYCL0] 
+  CONT(type=bf16,ne=[1,4,4,1],use_view_slice=0): not supported [SYCL0] 
+  CONT(type=bf16,ne=[1,8,17,1],use_view_slice=0): not supported [SYCL0] 
+  CONT(type=bf16,ne=[10,10,10,1],use_view_slice=0): not supported [SYCL0] 
+  ADD(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f16,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f16,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f16,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f16,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,8,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,1,1],nr=[32,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,320,320],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,1,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,1],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,2,1,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,1,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,3],nr=[2,2,2,2],nf=1,perm1=1): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,6],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[10,5,4,5],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,120,120],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,4,320],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,65536,1],nr=[256,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1280,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1280,1,1,1],nr=[1,16,16,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1280,16,16,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1280,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,1280,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[16,16,1280,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,1920,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,2560,1],nr=[16,16,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,1280,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,1920,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[1,1,640,1],nr=[32,32,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[5120,1,1,1],nr=[1,256,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[640,1,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[64,262144,1,1],nr=[1,1,1,1],nf=1,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[16,5,4,3],nr=[1,1,1,1],nf=16,perm1=0): [1;32mOK[0m
+  MUL(type=f32,ne=[16,5,4,3],nr=[1,1,1,1],nf=16,perm1=0): [1;32mOK[0m
+  SUB(type=f32,ne=[16,5,4,3],nr=[1,1,1,1],nf=16,perm1=0): [1;32mOK[0m
+  DIV(type=f32,ne=[16,5,4,3],nr=[1,1,1,1],nf=16,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[2,1,1,1],nf=2,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[16,5,4,3],nr=[1,2,1,1],nf=3,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,2,1],nf=4,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[16,5,4,3],nr=[1,1,1,2],nf=5,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,1,2,2],nf=6,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[10,5,4,3],nr=[1,2,2,2],nf=7,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[16,5,4,3],nr=[2,2,2,2],nf=8,perm1=0): [1;32mOK[0m
+  ADD(type=f32,ne=[16,5,4,3],nr=[1,1,1,1],nf=16,perm1=0): [1;32mOK[0m
+  SCALE(type=f32,ne=[10,10,10,10],scale=2.000000,bias=0.000000,inplace=0): [1;32mOK[0m
+  SCALE(type=f32,ne=[10,10,10,10],scale=2.000000,bias=1.000000,inplace=0): [1;32mOK[0m
+  SCALE(type=f32,ne=[10,10,10,10],scale=2.000000,bias=1.000000,inplace=1): [1;32mOK[0m
+  SCALE(type=f32,ne=[100,10,10,10],scale=2.000000,bias=1.000000,inplace=0): [1;32mOK[0m
+  SOFTCAP(type=f32,ne=[10,10,10,10],softcap=50.000000): [1;32mOK[0m
+  SILU_BACK(type=f32,ne=[64,5,4,3],eps=0.000001): not supported [SYCL0] 
+  NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000000,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.000000,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[64,5,4,3],eps=0.000000): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.000000,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.000000,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.000000,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.000000,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[1025,5,4,3],eps=0.000000): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.000000,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.000000,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000001): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000001,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.000001): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.000001,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[64,5,4,3],eps=0.000001): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.000001,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.000001,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.000001): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.000001,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.000001): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.000001,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[1025,5,4,3],eps=0.000001): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.000001,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.000001,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000100): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000100,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.000100): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.000100,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[64,5,4,3],eps=0.000100): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.000100,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.000100,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.000100): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.000100,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.000100): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.000100,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[1025,5,4,3],eps=0.000100): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.000100,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.000100,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.100000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.100000,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.100000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=1,eps=0.100000,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[64,5,4,3],eps=0.100000): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.100000,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=0.100000,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.100000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=0,eps=0.100000,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.100000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=1,eps=0.100000,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[1025,5,4,3],eps=0.100000): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.100000,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=0.100000,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=0,eps=10.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=0,eps=10.000000,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[64,5,4,3],v=1,eps=10.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=1,eps=10.000000,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[64,5,4,3],eps=10.000000): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=10.000000,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[64,5,4,3],eps=10.000000,v=1): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=0,eps=10.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=0,eps=10.000000,inplace=0): [1;32mOK[0m
+  NORM(type=f32,ne=[1025,5,4,3],v=1,eps=10.000000): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[1025,5,4,3],v=1,eps=10.000000,inplace=0): [1;32mOK[0m
+  RMS_NORM_BACK(type=f32,ne=[1025,5,4,3],eps=10.000000): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=10.000000,v=0): [1;32mOK[0m
+  L2_NORM(type=f32,ne=[1025,5,4,3],eps=10.000000,v=1): [1;32mOK[0m
+  RMS_NORM(type=f32,ne=[64,5,4,3],v=0,eps=0.000001,inplace=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000000,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000000,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000000,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000000,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.000000,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.000000,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000000,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000000,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000000,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000000,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.000000,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.000000,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000001,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000001,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000001,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.000001,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.000001,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000001,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000001,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000001,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.000001,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.000001,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000100,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000100,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000100,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.000100,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.000100,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.000100,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000100,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000100,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000100,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.000100,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.000100,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.000100,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.100000,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.100000,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.100000,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=0.100000,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.100000,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=0.100000,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.100000,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.100000,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.100000,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=0.100000,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.100000,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=0.100000,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=1.000000,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=1.000000,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=1.000000,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[64,5,4,3],eps=1.000000,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=1.000000,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[64,5,4,3],eps=1.000000,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=1.000000,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=1.000000,broadcast=1,multi_add=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=1.000000,broadcast=0): [1;32mOK[0m
+  NORM_MUL_ADD(type=f32,ne=[1025,5,4,3],eps=1.000000,broadcast=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=1.000000,broadcast=0): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,5,4,3],eps=1.000000,broadcast=1): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1,1,1,1],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1,1,1,1],eps=0.000001,broadcast=0,multi_add=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1,1,1,1],eps=0.000001,broadcast=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[511,1,1,1],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[511,1,1,1],eps=0.000001,broadcast=0,multi_add=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[511,1,1,1],eps=0.000001,broadcast=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,1,1,1],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[1025,1,1,1],eps=0.000001,broadcast=0,multi_add=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[1025,1,1,1],eps=0.000001,broadcast=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[8192,1,1,1],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[8192,1,1,1],eps=0.000001,broadcast=0,multi_add=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[8192,1,1,1],eps=0.000001,broadcast=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[16896,1,1,1],eps=0.000001,broadcast=0,multi_add=0): [1;32mOK[0m
+  RMS_NORM_MUL_ADD(type=f32,ne=[16896,1,1,1],eps=0.000001,broadcast=0,multi_add=1): [1;32mOK[0m
+  ADD_RMS_NORM(type=f32,ne=[16896,1,1,1],eps=0.000001,broadcast=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=0,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=0,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=0): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,1,1,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,1,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[768,3,5,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,32,50,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[128,4,50,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  RMS_NORM_MUL_ROPE(ne=[8192,2,2,1],eps=0.000001,multi_add=1,set_rows=1,mode=2): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[3,1024,1,1],ne_b=[3,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[6,1024,1,1],ne_b=[3,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[3,1024,4,1],ne_b=[3,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[66,1024,1,1],ne_b=[3,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[66,1024,4,1],ne_b=[3,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[3,1536,1,1],ne_b=[3,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[6,1536,1,1],ne_b=[3,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[3,1536,4,1],ne_b=[3,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[66,1536,1,1],ne_b=[3,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[66,1536,4,1],ne_b=[3,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[3,2048,1,1],ne_b=[3,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[6,2048,1,1],ne_b=[3,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[3,2048,4,1],ne_b=[3,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[66,2048,1,1],ne_b=[3,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[66,2048,4,1],ne_b=[3,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[4,1024,1,1],ne_b=[4,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[8,1024,1,1],ne_b=[4,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[4,1024,4,1],ne_b=[4,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[67,1024,1,1],ne_b=[4,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[67,1024,4,1],ne_b=[4,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[4,1536,1,1],ne_b=[4,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[8,1536,1,1],ne_b=[4,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[4,1536,4,1],ne_b=[4,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[67,1536,1,1],ne_b=[4,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[67,1536,4,1],ne_b=[4,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[4,2048,1,1],ne_b=[4,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[8,2048,1,1],ne_b=[4,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[4,2048,4,1],ne_b=[4,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[67,2048,1,1],ne_b=[4,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[67,2048,4,1],ne_b=[4,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[9,1024,1,1],ne_b=[9,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[18,1024,1,1],ne_b=[9,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[9,1024,4,1],ne_b=[9,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[72,1024,1,1],ne_b=[9,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[72,1024,4,1],ne_b=[9,1024,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[9,1536,1,1],ne_b=[9,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[18,1536,1,1],ne_b=[9,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[9,1536,4,1],ne_b=[9,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[72,1536,1,1],ne_b=[9,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[72,1536,4,1],ne_b=[9,1536,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[9,2048,1,1],ne_b=[9,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[18,2048,1,1],ne_b=[9,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[9,2048,4,1],ne_b=[9,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[72,2048,1,1],ne_b=[9,2048,1,1]): [1;32mOK[0m
+  SSM_CONV(type=f32,ne_a=[72,2048,4,1],ne_b=[9,2048,1,1]): [1;32mOK[0m
+  SSM_SCAN(type=f32,d_state=16,head_dim=1,n_head=1024,n_group=1,n_seq_tokens=32,n_seqs=4): not supported [SYCL0] 
+  SSM_SCAN(type=f32,d_state=128,head_dim=64,n_head=16,n_group=2,n_seq_tokens=32,n_seqs=4): not supported [SYCL0] 
+  SSM_SCAN(type=f32,d_state=256,head_dim=64,n_head=8,n_group=2,n_seq_tokens=32,n_seqs=4): not supported [SYCL0] 
+  RWKV_WKV6(type=f32,head_count=32,head_size=64,n_seq_tokens=1,n_seqs=1): [1;32mOK[0m
+  RWKV_WKV6(type=f32,head_count=32,head_size=64,n_seq_tokens=32,n_seqs=1): [1;32mOK[0m
+  RWKV_WKV6(type=f32,head_count=32,head_size=64,n_seq_tokens=32,n_seqs=4): [1;32mOK[0m
+  RWKV_WKV6(type=f32,head_count=32,head_size=64,n_seq_tokens=128,n_seqs=4): [1;32mOK[0m
+  RWKV_WKV7(type=f32,head_count=32,head_size=64,n_seq_tokens=1,n_seqs=1): [1;32mOK[0m
+  RWKV_WKV7(type=f32,head_count=32,head_size=64,n_seq_tokens=32,n_seqs=1): [1;32mOK[0m
+  RWKV_WKV7(type=f32,head_count=32,head_size=64,n_seq_tokens=32,n_seqs=4): [1;32mOK[0m
+  RWKV_WKV7(type=f32,head_count=32,head_size=64,n_seq_tokens=128,n_seqs=4): [1;32mOK[0m
+  GATED_LINEAR_ATTN(type=f32,head_count=32,head_size=64,n_seq_tokens=1,n_seqs=1): [1;32mOK[0m
+  GATED_LINEAR_ATTN(type=f32,head_count=32,head_size=64,n_seq_tokens=32,n_seqs=1): [1;32mOK[0m
+  GATED_LINEAR_ATTN(type=f32,head_count=32,head_size=64,n_seq_tokens=32,n_seqs=4): [1;32mOK[0m
+  GATED_LINEAR_ATTN(type=f32,head_count=32,head_size=64,n_seq_tokens=128,n_seqs=4): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f32,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=f16,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=bf16,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_0,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q4_1,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_0,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q5_1,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=1,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=2,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=3,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=4,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=5,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=6,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=7,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=8,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+  MUL_MAT(type_a=q8_0,type_b=f32,m=16,n=9,k=256,bs=[1,1],nr=[1,1],per=[0,1,2,3],k_v=0,o=1): [1;32mOK[0m
+/hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/ggml/src/ggml-sycl/mmvq.cpp:1194: fatal error: unsupport data type=q1_0
+
+[New LWP 1071820]
+[New LWP 1071819]
+[New LWP 1071818]
+[New LWP 1069513]
+[New LWP 1069363]
+warning: File "/opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8.0.0-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8.0.0-gdb.py
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/jianyuzh/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007852e8d10813 in __GI___wait4 (pid=1416677, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+warning: 30	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory
+#0  0x00007852e8d10813 in __GI___wait4 (pid=1416677, stat_loc=0x0, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+30	in ../sysdeps/unix/sysv/linux/wait4.c
+#1  0x00007852ec5e71c3 in ggml_print_backtrace () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-base.so.0
+#2  0x00007852ec5e736b in ggml_abort () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-base.so.0
+#3  0x00007852e96601a1 in ggml_sycl_op_mul_mat_vec_q(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&) () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-sycl.so.0
+#4  0x00007852e95480e2 in void ggml_sycl_op_mul_mat<quantize_q8_1>(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, void (*)(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&)) () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-sycl.so.0
+#5  0x00007852e9536630 in ggml_sycl_mul_mat(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*) () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-sycl.so.0
+#6  0x00007852e9534f83 in ggml_backend_sycl_graph_compute_impl(ggml_backend_sycl_context*, ggml_cgraph*) () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-sycl.so.0
+#7  0x00007852e9533c17 in ggml_backend_sycl_graph_compute(ggml_backend*, ggml_cgraph*) () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-sycl.so.0
+#8  0x00007852ec60691c in ggml_backend_compare_graph_backend () from /hd1/jianyuzh/llama.cpp/llama.cpp_ci/ggerganov-llama.cpp/build-ci-release/bin/libggml-base.so.0
+#9  0x00000000004d8ed7 in test_case::eval(ggml_backend*, ggml_backend*, char const*, printer*) ()
+#10 0x000000000041668e in main ()
+[Inferior 1 (process 1069361) detached]
+
+      Start 43: test-barrier
+38/43 Test #43: test-barrier ......................   Passed    0.98 sec
+      Start 44: test-quantize-fns
+39/43 Test #44: test-quantize-fns .................   Passed   10.69 sec
+      Start 45: test-quantize-perf
+40/43 Test #45: test-quantize-perf ................   Passed    0.08 sec
+      Start 46: test-rope
+41/43 Test #46: test-rope .........................   Passed    0.08 sec
+      Start 47: test-mtmd-c-api
+42/43 Test #47: test-mtmd-c-api ...................   Passed    0.04 sec
+      Start 48: test-alloc
+43/43 Test #48: test-alloc ........................   Passed    0.05 sec
+
+93% tests passed, 3 tests failed out of 43
+
+Label Time Summary:
+main    = 598.50 sec*proc (42 tests)
+
+Total Test time (real) = 607.56 sec
+
+The following tests FAILED:
+	 34 - test-thread-safety (SEGFAULT)
+	 35 - test-arg-parser (Subprocess aborted)
+	 38 - test-backend-ops (Subprocess aborted)
+Errors while running CTest
+
+real	10m7.570s
+user	0m54.530s
+sys	0m18.232s
+```
