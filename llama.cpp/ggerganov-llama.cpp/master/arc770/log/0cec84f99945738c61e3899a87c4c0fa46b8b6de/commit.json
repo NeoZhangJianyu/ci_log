@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-03-11 09:53:34", "title": "fix op rope, add rope_back", "pr_id": "20293", "files": ["docs/ops.md", "docs/ops/SYCL.csv", "ggml/src/ggml-sycl/convert.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp", "ggml/src/ggml-sycl/rope.cpp", "ggml/src/ggml-sycl/rope.hpp"]}
