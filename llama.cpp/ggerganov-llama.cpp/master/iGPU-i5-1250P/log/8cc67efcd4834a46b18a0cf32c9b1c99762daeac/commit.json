@@ -1,0 +1,1 @@
+{"author": "Katostrofik <georgiopapairo@gmail.com>", "date": "2026-05-22 08:48:24", "title": "SYCL: add BF16 to DMMV kernel path", "pr_id": "4x tg speedup on Intel Arc", "files": ["ggml/src/ggml-sycl/dmmv.cpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
