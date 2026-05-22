@@ -1,0 +1,1 @@
+{"author": "Alexey Kopytko <alexey@kopytko.com>", "date": "2026-05-22 21:50:17", "title": "SYCL: improve MoE prefill throughput", "pr_id": "23142", "files": ["ggml/src/ggml-sycl/ggml-sycl.cpp"]}
