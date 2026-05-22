@@ -1,0 +1,86 @@
+run ./run_gguf.sh
+gguf paras: llama-2-7b.Q4_0.gguf, 33
+run cmd: ZES_ENABLE_SYSMAN=1 ./build/bin/llama-completion -m models/llama-2-7b.Q4_0.gguf -p "Building a website can be done in 10 simple steps:\nStep 1:" -n 400 -e -ngl 33 -s 0
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="--config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+The oneAPI toolkits no longer support 32-bit libraries, starting with the 2025.0 toolkit release. See the oneAPI release notes for more details.
+  
+0.00.102.722 I main: llama backend init
+0.00.102.742 I main: load the model and apply lora adapter, if any
+0.00.102.768 I common_init_result: fitting params to device memory ...
+0.00.102.769 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+get_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+0.00.834.207 W common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.00.975.367 I main: llama threadpool init, n_threads = 8
+0.00.975.379 I 
+0.00.975.405 I system_info: n_threads = 8 (n_threads_batch = 8) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.975.405 I 
+0.00.975.460 I sampler seed: 0
+0.00.975.466 I sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = -1
+	top_k = 40, top_p = 0.950, min_p = 0.050, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+0.00.975.470 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+0.00.975.470 I generate: n_ctx = 4096, n_batch = 2048, n_predict = 400, n_keep = 1
+0.00.975.470 I 
+ Building a website can be done in 10 simple steps:
+Step 1: Get to know the basics of web design
+Step 2: Set up a web hosting account
+Step 3: Download a content management system (CMS)
+Step 4: Select a theme for your website
+Step 5: Design your website
+Step 6: Add content to your website
+Step 7: Link to your social media accounts
+Step 8: Launch your website
+Step 9: Promote your website
+Step 10: Monitor and maintain your website
+Can you build a website yourself?
+How do I build my own website?
+What is needed to build a website?
+How much does it cost to have a website built?
+A website is a collection of related web pages on a single domain. Websites can be built by anyone with a computer and internet connection. The first step is to learn about web design principles. Then, you need to sign up for a web hosting account. After that, you can download a content management system (CMS) and choose a theme. Finally, you can design your website and add content.
+Website building is a process that involves a few steps. The first step is to choose a domain name. The second step is to choose a web hosting service. The third step is to choose a content management system. The fourth step is to design the website. The fifth step is to add content to the website. The sixth step is to promote the website. The seventh step is to monitor and maintain the website.
+To build a website, you will need a computer and a web hosting account. You can get a web hosting account from a web host such as Bluehost or DreamHost.
+A domain name is a website address that people use to access your website. You can purchase a domain name from a domain registrar such as GoDaddy or Namecheap.
+A web hosting service is a company that stores your website on their serversget_memory_info: [warning] ext_intel_free_memory is not supported (export/set ZES_ENABLE_SYSMAN=1 to support), use total memory as free memory
+.
+
+0.07.713.112 I common_perf_print:    sampling time =      14.58 ms
+0.07.713.112 I common_perf_print:    samplers time =       7.84 ms /   419 tokens
+0.07.713.113 I common_perf_print:        load time =     828.79 ms
+0.07.713.114 I common_perf_print: prompt eval time =     587.97 ms /    19 tokens (   30.95 ms per token,    32.31 tokens per second)
+0.07.713.115 I common_perf_print:        eval time =    6132.70 ms /   399 runs   (   15.37 ms per token,    65.06 tokens per second)
+0.07.713.115 I common_perf_print:       total time =    6737.75 ms /   418 tokens
+0.07.713.115 I common_perf_print: unaccounted time =       2.50 ms /   0.0 %      (total - sampling - prompt eval - eval) / (total)
+0.07.713.116 I common_perf_print:    graphs reused =        397
+Passed
+
