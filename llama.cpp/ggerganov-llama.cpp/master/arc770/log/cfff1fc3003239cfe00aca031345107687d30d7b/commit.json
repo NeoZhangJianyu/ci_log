@@ -1,0 +1,1 @@
+{"author": "Shane Tran Whitmire <64436119+dogunbound@users.noreply.github.com>", "date": "2026-05-07 00:25:57", "title": "sycl : fix test script", "pr_id": "22737", "files": ["examples/sycl/test.sh"]}
