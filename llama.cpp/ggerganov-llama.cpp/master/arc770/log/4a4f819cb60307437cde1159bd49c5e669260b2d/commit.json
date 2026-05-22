@@ -1,0 +1,1 @@
+{"author": "Intel AI Get-to Market Customer Success and Solutions <ai.gtm.css@gmail.com>", "date": "2026-05-08 22:42:40", "title": "sycl: Battlemage AOT build via spir64_gen + MMQ subgroup annotations", "pr_id": "22147", "files": ["ggml/src/ggml-sycl/CMakeLists.txt"]}
