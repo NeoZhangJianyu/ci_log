@@ -1,0 +1,1 @@
+{"author": "Neo Zhang <zhang.jianyu@outlook.com>", "date": "2026-05-18 13:11:19", "title": "sycl : fix error when use -mg 1 error", "pr_id": "23140", "files": ["examples/sycl/start-svr.sh", "examples/sycl/test.sh", "examples/sycl/win-start-svr.bat", "examples/sycl/win-test.bat"]}
