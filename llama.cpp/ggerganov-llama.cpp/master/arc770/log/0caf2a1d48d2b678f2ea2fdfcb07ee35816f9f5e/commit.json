@@ -1,0 +1,1 @@
+{"author": "Intel AI Get-to Market Customer Success and Solutions <ai.gtm.css@gmail.com>", "date": "2026-05-17 22:12:21", "title": "sycl: scalar SWAR byte-subtract in Q6_K MMVQ dot product", "pr_id": "22156", "files": ["ggml/src/ggml-sycl/vecdotq.hpp"]}
