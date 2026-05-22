@@ -1,0 +1,1 @@
+{"author": "Alexey Kopytko <alexey@kopytko.com>", "date": "2026-05-22 21:49:45", "title": "sycl : Level Zero detection in ggml_sycl_init", "pr_id": "23097", "files": ["ggml/src/ggml-sycl/common.hpp", "ggml/src/ggml-sycl/ggml-sycl.cpp"]}
