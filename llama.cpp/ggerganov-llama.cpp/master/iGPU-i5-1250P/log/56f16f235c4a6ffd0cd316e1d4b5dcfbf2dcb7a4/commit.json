@@ -1,0 +1,1 @@
+{"author": "karavayev <192749314+karavayev@users.noreply.github.com>", "date": "2026-05-22 08:48:56", "title": "SYCL : gated_delta_net K>1", "pr_id": "23174", "files": ["ggml/src/ggml-sycl/gated_delta_net.cpp"]}
