@@ -1,0 +1,492 @@
++ make -j
+[  0%] Building CXX object tools/mtmd/CMakeFiles/llama-qwen2vl-cli.dir/deprecation-warning.cpp.o
+[  0%] Building CXX object tools/mtmd/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o
+[  0%] Building CXX object tools/mtmd/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o
+[  0%] Building CXX object common/CMakeFiles/llama-common-base.dir/build-info.cpp.o
+[  0%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  0%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  1%] Building CXX object vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/httplib.cpp.o
+[  1%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[  1%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  2%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+[  2%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  2%] Building CXX object tools/ui/CMakeFiles/llama-ui-embed.dir/embed.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  3%] Building CXX object tools/mtmd/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  4%] Linking CXX executable ../../bin/llama-llava-cli
+[  4%] Linking CXX static library libllama-common-base.a
+[  4%] Linking CXX executable ../../bin/llama-gemma3-cli
+[  4%] Built target llama-common-base
+[  4%] Linking CXX executable ../../bin/llama-minicpmv-cli
+[  4%] Built target sha1
+[  4%] Built target sha256
+[  4%] Built target llama-llava-cli
+[  4%] Built target llama-gemma3-cli
+[  4%] Linking CXX executable ../../bin/llama-qwen2vl-cli
+[  4%] Built target llama-minicpmv-cli
+[  4%] Built target llama-qwen2vl-cli
+[  4%] Linking CXX executable llama-ui-embed
+[  4%] Built target llama-ui-embed
+[  4%] Provisioning UI assets
+-- UI: npm not found, skipping npm build
+-- UI: downloading from b9331: https://huggingface.co/buckets/ggml-org/llama-ui/resolve/b9331
+[  4%] Built target xxhash
+[  4%] Linking CXX shared library ../../bin/libggml-base.so
+[  4%] Built target ggml-base
+[  4%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[  4%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/add-id.cpp.o
+[  6%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/binbcast.cpp.o
+[  6%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[  6%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ggml-sycl.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[  7%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[  7%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/convert.cpp.o
+[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[  8%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/count-equal.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/cpy.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/common.cpp.o
+[  8%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/conv.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/concat.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/cumsum.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/diag.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/fattn.cpp.o
+[  9%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/dmmv.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/fattn-tile.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/fattn-buffers.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/element_wise.cpp.o
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/fill.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/getrows.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/im2col.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/gla.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmq.cpp.o
+[ 10%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/gated_delta_net.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/norm.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/outprod.cpp.o
+[ 11%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/mmvq.cpp.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/pad_reflect_1d.cpp.o
+[ 12%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/pad.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/softmax.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/roll.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ssm_scan.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/rope.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/repeat_back.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/set.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/set_rows.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/solve_tri.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/ssm_conv.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/tsembd.cpp.o
+[ 13%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/wkv.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/upscale.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq256-dv256.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq112-dv112.cpp.o
+[ 14%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq128-dv128.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq512-dv512.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq40-dv40.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq64-dv64.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq576-dv512.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq72-dv72.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq80-dv80.cpp.o
+[ 15%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq96-dv96.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-f16.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q4_1.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q5_0.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q4_0.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q8_0.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q5_1.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-f16.cpp.o
+[ 16%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q4_0.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q4_1.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q5_0.cpp.o
+[ 17%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q5_1.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-f16.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q8_0.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q4_0.cpp.o
+[ 18%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q4_1.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q5_0.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-f16.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q5_1.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q8_0.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q4_0.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q5_0.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q4_1.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q5_1.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q8_0.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q4_1.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q4_0.cpp.o
+[ 19%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q5_0.cpp.o
+[ 20%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-f16.cpp.o
+[ 20%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q5_1.cpp.o
+[ 20%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q8_0.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-f16.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q4_0.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q5_1.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q8_0.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q4_1.cpp.o
+[ 21%] Building CXX object ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q5_0.cpp.o
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q4_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_1-f16.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq256-dv256.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-f16.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q8_0-f16.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/fattn-tile.cpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq512-dv512.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-f16-q8_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_1-q5_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q8_0-q8_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_1-q5_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-f16-f16.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_1-q8_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq128-dv128.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-f16-q4_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_1-q4_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_1-q8_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq72-dv72.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q8_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq80-dv80.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_1-f16.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q4_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_1-q4_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-f16-q5_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_0-q5_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q8_0-q5_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_1-q4_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_1-q4_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-f16-q5_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q8_0-q4_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q5_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from 1 error generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq96-dv96.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:846: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q8_0.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:986: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q5_0.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-f16-q4_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_1-q5_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq576-dv512.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1112: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-f16.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_0-f16.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_0-q8_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q8_0-q5_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq112-dv112.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq64-dv64.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1154: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q5_0.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-tile-instance-dkq40-dv40.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q8_0-q4_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/sycl_hw.cpp:35:16: error: no member named 'intel_gpu_bmg_g31' in 'sycl::ext::oneapi::experimental::architecture'; did you mean 'intel_gpu_bmg_g21'?
+   35 |     {gpu_arch::intel_gpu_bmg_g31, {"intel_gpu_bmg_g31", GPU_FAMILY_DGPU_CLIENT_GAME}},
+      |      ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                intel_gpu_bmg_g21
+/opt/intel/oneapi/compiler/2025.0/include/sycl/ext/oneapi/experimental/architectures.def:100:21: note: 'intel_gpu_bmg_g21' declared here
+  100 | __SYCL_ARCHITECTURE(intel_gpu_bmg_g21, 0x0000000500400400)       // Battlemage G21
+      |                     ^
+1 error generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/sycl_hw.cpp:37:16: error: no member named 'intel_gpu_ptl_h' in 'sycl::ext::oneapi::experimental::architecture'; did you mean 'intel_gpu_mtl_h'?
+   37 |     {gpu_arch::intel_gpu_ptl_h,   {"intel_gpu_ptl_h",   GPU_FAMILY_IGPU_XE}},
+      |      ~~~~~~~~~~^~~~~~~~~~~~~~~
+      |                intel_gpu_mtl_h
+/opt/intel/oneapi/compiler/2025.0/include/sycl/ext/oneapi/experimental/architectures.def:98:21: note: 'intel_gpu_mtl_h' declared here
+   98 | __SYCL_ARCHITECTURE(intel_gpu_mtl_h, 0x0000000311c00400)         // Meteor Lake H
+      |                     ^
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:874: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q4_0.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1196: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-f16.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q5_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1126: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q4_0.cpp.o] Error 1
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/sycl_hw.cpp:38:16: error: no member named 'intel_gpu_ptl_u' in 'sycl::ext::oneapi::experimental::architecture'; did you mean 'intel_gpu_mtl_u'?
+   38 |     {gpu_arch::intel_gpu_ptl_u,   {"intel_gpu_ptl_u",   GPU_FAMILY_IGPU_XE}},
+      |      ~~~~~~~~~~^~~~~~~~~~~~~~~
+      |                intel_gpu_mtl_u
+/opt/intel/oneapi/compiler/2025.0/include/sycl/ext/oneapi/experimental/architectures.def:94:21: note: 'intel_gpu_mtl_u' declared here
+   94 | __SYCL_ARCHITECTURE(intel_gpu_mtl_u, 0x0000000311800400)         // Meteor Lake U
+      |                     ^
+1 error generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/sycl_hw.cpp:39:16: error: no member named 'intel_gpu_wcl' in 'sycl::ext::oneapi::experimental::architecture'
+   39 |     {gpu_arch::intel_gpu_wcl,     {"intel_gpu_wcl",     GPU_FAMILY_IGPU_XE}}
+      |      ~~~~~~~~~~^
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q4_1-q5_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:664: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq256-dv256.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:776: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-f16.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_0-q5_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_0-q4_0.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1224: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q4_1.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:860: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-f16.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1210: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q4_0.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:692: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq512-dv512.cpp.o] Error 1
+1 error generated.
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/fattn-vec-instance-q5_0-q4_1.cpp:3:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/template-instances/../fattn-vec.hpp:5:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    5 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:272: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/fattn-tile.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:888: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q4_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:804: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q4_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1014: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q8_0.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:958: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q4_0.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:916: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q5_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1266: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q8_0.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:818: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q5_0.cpp.o] Error 1
+4 errors generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:580: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/sycl_hw.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1182: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q8_0.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:706: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq576-dv512.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:944: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-f16.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:734: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq72-dv72.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1168: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q5_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:832: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q5_1.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1238: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q5_0.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:930: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q8_0.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:678: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq40-dv40.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:748: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq80-dv80.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1000: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q5_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:650: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq128-dv128.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:762: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq96-dv96.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:790: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-f16-q4_0.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1098: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q8_0.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:636: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq112-dv112.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1070: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q5_0.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:972: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_1-q4_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1028: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-f16.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:902: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q4_0-q5_0.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1140: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_1-q4_1.cpp.o] Error 1
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1042: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q4_0.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1084: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q5_1.cpp.o] Error 1
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:88:47: warning: unused parameter 'item_ct1' [-Wunused-parameter]
+   88 |                          [=](sycl::nd_item<3> item_ct1) {
+      |                                               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:274:47: warning: unused parameter 'item_ct1' [-Wunused-parameter]
+  274 |                          [=](sycl::nd_item<3> item_ct1) {
+      |                                               ^
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1252: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q8_0-q5_1.cpp.o] Error 1
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:720: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-tile-instance-dkq64-dv64.cpp.o] Error 1
+In file included from /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/fattn.cpp:18:
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/fattn-tile.hpp:2:10: fatal error: 'sycl/ext/oneapi/work_group_static.hpp' file not found
+    2 | #include <sycl/ext/oneapi/work_group_static.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:1056: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/template-instances/fattn-vec-instance-q5_0-q4_1.cpp.o] Error 1
+make[2]: *** [ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/build.make:286: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/fattn.cpp.o] Error 1
+2 warnings generated.
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:88:47: warning: unused parameter 'item_ct1' [-Wunused-parameter]
+   88 |                          [=](sycl::nd_item<3> item_ct1) {
+      |                                               ^
+/home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/ggml/src/ggml-sycl/im2col.cpp:274:47: warning: unused parameter 'item_ct1' [-Wunused-parameter]
+  274 |                          [=](sycl::nd_item<3> item_ct1) {
+      |                                               ^
+-- UI: download bundle.css from b9331 failed: "Timeout was reached"
+-- UI: downloading from latest: https://huggingface.co/buckets/ggml-org/llama-ui/resolve/latest
+2 warnings generated.
+[ 21%] Linking CXX static library libcpp-httplib.a
+[ 21%] Built target cpp-httplib
+[ 21%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 21%] Built target ggml-cpu
+make[1]: *** [CMakeFiles/Makefile2:1975: ggml/src/ggml-sycl/CMakeFiles/ggml-sycl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+-- UI: download bundle.css from latest failed: "Timeout was reached"
+-- UI: HF download failed
+CMake Warning at /home/zjy/ws/jenkins-home/workspace/ci-1250/ggerganov-llama.cpp/scripts/ui-assets.cmake:334 (message):
+  UI: no assets available - building without an embedded UI.  In a
+  disconnected environment, download the pre-built UI from a llama.cpp
+  release at https://github.com/ggml-org/llama.cpp/releases and extract to
+  tools/ui/dist.
+
+
+[ 21%] Built target llama-ui-assets
+make: *** [Makefile:146: all] Error 2
+
+real	2m0.855s
+user	18m27.713s
+sys	0m49.762s
